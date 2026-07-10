@@ -1,0 +1,5508 @@
+{
+  "ok": true,
+  "contract": "smallverse-avatar-body-render-manifest/v1",
+  "avatar_id": "694195a7a02bd82876d3bcce",
+  "gender": "female",
+  "angles": [
+    0,
+    45,
+    90,
+    135,
+    180,
+    225,
+    270,
+    315
+  ],
+  "asset_root": "/avatar-assets",
+  "body_xml": "/avatar-assets/avatars/body/base/unisex/avatar.xml",
+  "frame_palette": "/avatar-assets/avatars/body/base/unisex/frame_palette.xml",
+  "fallback_full_body": "/avatar-renders/694195a7a02bd82876d3bcce/saveAvatar-carved-1.png",
+  "fallback_preview": "/avatar-renders/694195a7a02bd82876d3bcce/saveAvatar-carved-0.png",
+  "fallback_thumb": "/avatar-renders/694195a7a02bd82876d3bcce/saveAvatar-carved-2.png",
+  "selected_options": {
+    "CuteEyeShadowOptions": "CuteLightBrownShadow",
+    "TopColorOptions": "White",
+    "OuterColorOptions": "Brown",
+    "BottomColorOptions": "Black",
+    "BeltColorOptions": "White",
+    "NecklaceColorOptions": "Yellow",
+    "GenderOptions": "Female",
+    "JSTop": "JumpTshirt",
+    "JSBottom": "JumpPants",
+    "JSFeet": "NoShoe",
+    "BodySkin": "Arms,Legs,Torso",
+    "EyeShadowOptions": "CutevanillaShadow",
+    "LipstickOptions": "LipStickPalmy",
+    "FaceBOptions": "FaceCuteTwo",
+    "MouthOptions": "MouthUmphStick",
+    "FaceAOptions": "FaceThinOne",
+    "HighlightOptions": "HairColorFieryRed",
+    "NoseAOptions": "NoseStraightOne",
+    "NoseBOptions": "NoseButtonTwo",
+    "HairstyleOptions": "HairBerryTinted",
+    "DecalOptions": "Freckles,Rouge",
+    "FoundationOptions": "Sheen3",
+    "BlusherOptions": "80sBlusher",
+    "BlusherColorOptions": "BlusherCandy",
+    "EyeOptions": "EyesFairyReal",
+    "BrowOptions": "BrowsMedium",
+    "EyeColorOptions": "EyeColorLightBlue",
+    "HatColorOptions": "HatColorWhite",
+    "HairColorOptions": "HairColorFieryRed",
+    "EyebrowColorOptions": "EyebrowColorPeach",
+    "TintOptions": "HairTintPink",
+    "SkinColorOptions": "SkinColorPink"
+  },
+  "color_options": {
+    "TopColorOptions": "White",
+    "OuterColorOptions": "Brown",
+    "BottomColorOptions": "Black",
+    "BeltColorOptions": "White",
+    "NecklaceColorOptions": "Yellow",
+    "BlusherColorOptions": "BlusherCandy",
+    "EyeColorOptions": "EyeColorLightBlue",
+    "HatColorOptions": "HatColorWhite",
+    "HairColorOptions": "HairColorFieryRed",
+    "EyebrowColorOptions": "EyebrowColorPeach",
+    "SkinColorOptions": "SkinColorPink"
+  },
+  "transforms": {
+    "MouthTransform": {
+      "ty": "-3.925233644859813",
+      "sx": "0.9447272727272727",
+      "sy": "0.9447272727272727"
+    },
+    "LeftEyeTransform": {
+      "tx": "3.387096774193548",
+      "sx": "0.8772043010752688",
+      "sy": "0.8772043010752688",
+      "r": "5"
+    },
+    "RightEyeTransform": {
+      "tx": "-3.387096774193548",
+      "sx": "0.8772043010752688",
+      "sy": "0.8772043010752688",
+      "r": "-5"
+    }
+  },
+  "weights": {
+    "FaceCuteTwo": "0.87",
+    "FaceThinOne": "0.13",
+    "NoseStraightOne": "0.42",
+    "NoseButtonTwo": "0.58"
+  },
+  "dances": [
+    {
+      "id": "Dance 1",
+      "frames": [
+        {
+          "r": "0",
+          "d": "5",
+          "h": "Forward",
+          "a": "Relaxed",
+          "l": "Relaxed"
+        },
+        {
+          "r": "45",
+          "d": "5",
+          "h": "HalfLeft",
+          "a": "Walk3",
+          "l": "Walk1"
+        },
+        {
+          "r": "0",
+          "d": "5",
+          "h": "HalfRight",
+          "a": "Relaxed",
+          "l": "Walk3"
+        },
+        {
+          "r": "315",
+          "d": "5",
+          "h": "HalfRight",
+          "a": "Walk1",
+          "l": "Walk4"
+        },
+        {
+          "r": "225",
+          "d": "3",
+          "h": "HalfRight",
+          "a": "Walk1",
+          "l": "Walk4"
+        },
+        {
+          "r": "180",
+          "d": "3",
+          "h": "HalfRight",
+          "a": "Walk2",
+          "l": "Walk4"
+        },
+        {
+          "r": "135",
+          "d": "3",
+          "h": "HalfRight",
+          "a": "Walk3",
+          "l": "Walk4"
+        },
+        {
+          "r": "90",
+          "d": "3",
+          "h": "HalfRight",
+          "a": "Walk1",
+          "l": "Walk4"
+        },
+        {
+          "r": "45",
+          "d": "3",
+          "h": "HalfRight",
+          "a": "Walk2",
+          "l": "Walk4"
+        }
+      ]
+    },
+    {
+      "id": "Dance 2",
+      "frames": [
+        {
+          "r": "0",
+          "d": "5",
+          "h": "Forward",
+          "a": "Relaxed",
+          "l": "Relaxed"
+        },
+        {
+          "r": "45",
+          "d": "5",
+          "h": "HalfLeft",
+          "a": "Walk3",
+          "l": "Walk1"
+        },
+        {
+          "r": "0",
+          "d": "5",
+          "h": "HalfRight",
+          "a": "Relaxed",
+          "l": "Walk3"
+        },
+        {
+          "r": "315",
+          "d": "5",
+          "h": "HalfRight",
+          "a": "Walk1",
+          "l": "Walk4"
+        },
+        {
+          "r": "225",
+          "d": "3",
+          "h": "HalfRight",
+          "a": "Walk1",
+          "l": "Walk4"
+        },
+        {
+          "r": "180",
+          "d": "3",
+          "h": "HalfRight",
+          "a": "Walk2",
+          "l": "Walk4"
+        },
+        {
+          "r": "135",
+          "d": "3",
+          "h": "HalfRight",
+          "a": "Walk3",
+          "l": "Walk4"
+        },
+        {
+          "r": "90",
+          "d": "3",
+          "h": "HalfRight",
+          "a": "Walk1",
+          "l": "Walk4"
+        },
+        {
+          "r": "45",
+          "d": "3",
+          "h": "HalfRight",
+          "a": "Walk2",
+          "l": "Walk4"
+        }
+      ]
+    },
+    {
+      "id": "Dance 3",
+      "frames": [
+        {
+          "r": "0",
+          "d": "5",
+          "h": "Forward",
+          "a": "Relaxed",
+          "l": "Relaxed"
+        },
+        {
+          "r": "45",
+          "d": "5",
+          "h": "HalfLeft",
+          "a": "Walk3",
+          "l": "Walk1"
+        },
+        {
+          "r": "0",
+          "d": "5",
+          "h": "HalfRight",
+          "a": "Relaxed",
+          "l": "Walk3"
+        },
+        {
+          "r": "315",
+          "d": "5",
+          "h": "HalfRight",
+          "a": "Walk1",
+          "l": "Walk4"
+        },
+        {
+          "r": "225",
+          "d": "3",
+          "h": "HalfRight",
+          "a": "Walk1",
+          "l": "Walk4"
+        },
+        {
+          "r": "180",
+          "d": "3",
+          "h": "HalfRight",
+          "a": "Walk2",
+          "l": "Walk4"
+        },
+        {
+          "r": "135",
+          "d": "3",
+          "h": "HalfRight",
+          "a": "Walk3",
+          "l": "Walk4"
+        },
+        {
+          "r": "90",
+          "d": "3",
+          "h": "HalfRight",
+          "a": "Walk1",
+          "l": "Walk4"
+        },
+        {
+          "r": "45",
+          "d": "3",
+          "h": "HalfRight",
+          "a": "Walk2",
+          "l": "Walk4"
+        }
+      ]
+    }
+  ],
+  "selected_assets": {
+    "torso": "/avatar-assets/avatars/body/base/female/tshirt_torso.png",
+    "arms_idle": "/avatar-assets/items/base/consumables/clothing/shared/shr_short_arm_idle.png",
+    "arms_walk1": "/avatar-assets/items/base/consumables/clothing/shared/shr_short_arm_walk1.png",
+    "arms_walk2": "/avatar-assets/items/base/consumables/clothing/shared/shr_short_arm_walk2.png",
+    "arms_walk3": "/avatar-assets/items/base/consumables/clothing/shared/shr_short_arm_walk3.png",
+    "legs_idle": "/avatar-assets/avatars/body/base/unisex/skinny_leg_idle.png",
+    "legs_walk1": "/avatar-assets/avatars/body/base/unisex/skinny_leg_walk1.png",
+    "legs_walk2": "/avatar-assets/avatars/body/base/unisex/skinny_leg_walk2.png",
+    "legs_walk3": "/avatar-assets/avatars/body/base/unisex/skinny_leg_walk3.png",
+    "legs_walk4": "/avatar-assets/avatars/body/base/unisex/skinny_leg_walk4.png",
+    "feet_idle": "/avatar-assets/avatars/body/base/unisex/foot_idle.png"
+  },
+  "body_model": {
+    "textures": {
+      "Head": {
+        "id": "Head",
+        "source": "avatars/body/base/unisex/head.png",
+        "cols": "4",
+        "rows": "2"
+      },
+      "Torso": {
+        "id": "Torso",
+        "source": "composite",
+        "cols": "5",
+        "rows": "1"
+      },
+      "TorsoLying": {
+        "id": "TorsoLying",
+        "source": "composite",
+        "cols": "2",
+        "rows": "1"
+      },
+      "ArmIdle": {
+        "id": "ArmIdle",
+        "source": "composite",
+        "cols": "4",
+        "rows": "2"
+      },
+      "ArmWalk1": {
+        "id": "ArmWalk1",
+        "source": "composite",
+        "cols": "4",
+        "rows": "2"
+      },
+      "ArmWalk2": {
+        "id": "ArmWalk2",
+        "source": "composite",
+        "cols": "4",
+        "rows": "2"
+      },
+      "ArmWalk3": {
+        "id": "ArmWalk3",
+        "source": "composite",
+        "cols": "4",
+        "rows": "2"
+      },
+      "ArmSit": {
+        "id": "ArmSit",
+        "source": "composite",
+        "cols": "4",
+        "rows": "1"
+      },
+      "ArmRaise": {
+        "id": "ArmRaise",
+        "source": "composite",
+        "cols": "4",
+        "rows": "2"
+      },
+      "ArmThrow": {
+        "id": "ArmThrow",
+        "source": "composite",
+        "cols": "4",
+        "rows": "2"
+      },
+      "ArmRaiseWave1": {
+        "id": "ArmRaiseWave1",
+        "source": "composite",
+        "cols": "4",
+        "rows": "2"
+      },
+      "ArmRaiseWave2": {
+        "id": "ArmRaiseWave2",
+        "source": "composite",
+        "cols": "4",
+        "rows": "2"
+      },
+      "ArmThrowThrow": {
+        "id": "ArmThrowThrow",
+        "source": "composite",
+        "cols": "4",
+        "rows": "2"
+      },
+      "ArmThrowThumb": {
+        "id": "ArmThrowThumb",
+        "source": "composite",
+        "cols": "4",
+        "rows": "2"
+      },
+      "ArmThrowStop": {
+        "id": "ArmThrowStop",
+        "source": "composite",
+        "cols": "4",
+        "rows": "2"
+      },
+      "ArmThrowPoint": {
+        "id": "ArmThrowPoint",
+        "source": "composite",
+        "cols": "4",
+        "rows": "2"
+      },
+      "ArmThrowHold": {
+        "id": "ArmThrowHold",
+        "source": "composite",
+        "cols": "4",
+        "rows": "2"
+      },
+      "ArmThrowOpen": {
+        "id": "ArmThrowOpen",
+        "source": "composite",
+        "cols": "4",
+        "rows": "2"
+      },
+      "LegIdle": {
+        "id": "LegIdle",
+        "source": "composite",
+        "cols": "4",
+        "rows": "2"
+      },
+      "LegWalk1": {
+        "id": "LegWalk1",
+        "source": "composite",
+        "cols": "4",
+        "rows": "2"
+      },
+      "LegWalk2": {
+        "id": "LegWalk2",
+        "source": "composite",
+        "cols": "4",
+        "rows": "2"
+      },
+      "LegWalk3": {
+        "id": "LegWalk3",
+        "source": "composite",
+        "cols": "4",
+        "rows": "2"
+      },
+      "LegWalk4": {
+        "id": "LegWalk4",
+        "source": "composite",
+        "cols": "4",
+        "rows": "2"
+      },
+      "LegSitUpper": {
+        "id": "LegSitUpper",
+        "source": "composite",
+        "cols": "4",
+        "rows": "1"
+      },
+      "LegSitLower": {
+        "id": "LegSitLower",
+        "source": "composite",
+        "cols": "4",
+        "rows": "1"
+      },
+      "LegSitUpperBare": {
+        "id": "LegSitUpperBare",
+        "source": "avatars/body/base/unisex/leg_sit_upper.png",
+        "cols": "4",
+        "rows": "1"
+      },
+      "LegSitLowerBare": {
+        "id": "LegSitLowerBare",
+        "source": "avatars/body/base/unisex/leg_sit_lower.png",
+        "cols": "4",
+        "rows": "1"
+      },
+      "TorsoMaleBare": {
+        "id": "TorsoMaleBare",
+        "source": "avatars/body/base/male/torso.png",
+        "cols": "5",
+        "rows": "1"
+      },
+      "TorsoFemaleBare": {
+        "id": "TorsoFemaleBare",
+        "source": "avatars/body/base/female/torso.png",
+        "cols": "5",
+        "rows": "1"
+      },
+      "TorsoLyingBareMale": {
+        "id": "TorsoLyingBareMale",
+        "source": "avatars/body/base/male/torso_reclining.png",
+        "cols": "2",
+        "rows": "1"
+      },
+      "TorsoLyingBareFemale": {
+        "id": "TorsoLyingBareFemale",
+        "source": "avatars/body/base/female/torso_reclining.png",
+        "cols": "2",
+        "rows": "1"
+      },
+      "ArmBare": {
+        "id": "ArmBare",
+        "source": "avatars/body/base/unisex/arm_idle.png",
+        "cols": "4",
+        "rows": "2"
+      },
+      "ArmBareWalk1": {
+        "id": "ArmBareWalk1",
+        "source": "avatars/body/base/unisex/arm_walk1.png",
+        "cols": "4",
+        "rows": "2"
+      },
+      "ArmBareWalk2": {
+        "id": "ArmBareWalk2",
+        "source": "avatars/body/base/unisex/arm_walk2.png",
+        "cols": "4",
+        "rows": "2"
+      },
+      "ArmBareWalk3": {
+        "id": "ArmBareWalk3",
+        "source": "avatars/body/base/unisex/arm_walk3.png",
+        "cols": "4",
+        "rows": "2"
+      },
+      "HandBareThrow": {
+        "id": "HandBareThrow",
+        "source": "avatars/body/base/unisex/throw_throw.png",
+        "cols": "4",
+        "rows": "2"
+      },
+      "ArmBareThrow": {
+        "id": "ArmBareThrow",
+        "source": "avatars/body/base/unisex/arm_throw.png",
+        "cols": "4",
+        "rows": "2"
+      },
+      "ArmSitBare": {
+        "id": "ArmSitBare",
+        "source": "avatars/body/base/unisex/arm_sit.png",
+        "cols": "4",
+        "rows": "1"
+      },
+      "LegBare": {
+        "id": "LegBare",
+        "source": "avatars/body/base/unisex/leg_idle.png",
+        "cols": "4",
+        "rows": "2"
+      },
+      "LegBareWalk1": {
+        "id": "LegBareWalk1",
+        "source": "avatars/body/base/unisex/leg_walk1.png",
+        "cols": "4",
+        "rows": "2"
+      },
+      "LegBareWalk2": {
+        "id": "LegBareWalk2",
+        "source": "avatars/body/base/unisex/leg_walk2.png",
+        "cols": "4",
+        "rows": "2"
+      },
+      "LegBareWalk3": {
+        "id": "LegBareWalk3",
+        "source": "avatars/body/base/unisex/leg_walk3.png",
+        "cols": "4",
+        "rows": "2"
+      },
+      "LegBareWalk4": {
+        "id": "LegBareWalk4",
+        "source": "avatars/body/base/unisex/leg_walk4.png",
+        "cols": "4",
+        "rows": "2"
+      },
+      "FootBare": {
+        "id": "FootBare",
+        "source": "avatars/body/base/unisex/foot_idle.png",
+        "cols": "4",
+        "rows": "2"
+      },
+      "FootSitBare": {
+        "id": "FootSitBare",
+        "source": "avatars/body/base/unisex/foot_sit.png",
+        "cols": "4",
+        "rows": "1"
+      },
+      "Shadow": {
+        "id": "Shadow",
+        "source": "avatars/body/base/unisex/shadow.png",
+        "cols": "1",
+        "rows": "1"
+      }
+    },
+    "interesting_nodes": {
+      "Head": {
+        "node": {
+          "id": "Head",
+          "x": "-0.02",
+          "y": "1.4"
+        },
+        "layers": [
+          {
+            "id": "Forward",
+            "texture": "Head",
+            "y": "25",
+            "views": [
+              {
+                "angle": "45",
+                "col": "3",
+                "row": "1",
+                "x": "2",
+                "y": "1"
+              },
+              {
+                "angle": "90",
+                "y": "1"
+              },
+              {
+                "angle": "135",
+                "col": "1",
+                "x": "-3",
+                "y": "1"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "x": "-5"
+              },
+              {
+                "angle": "225",
+                "col": "3",
+                "x": "-3",
+                "y": "-2"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "y": "-3"
+              },
+              {
+                "angle": "315",
+                "col": "1",
+                "row": "1",
+                "x": "3",
+                "y": "-2"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "row": "1",
+                "x": "5"
+              }
+            ]
+          },
+          {
+            "id": "LeftHalf",
+            "texture": "Head",
+            "y": "25",
+            "views": [
+              {
+                "angle": "45",
+                "col": "2",
+                "row": "1",
+                "x": "5",
+                "y": "1"
+              },
+              {
+                "angle": "90",
+                "col": "3",
+                "row": "1",
+                "x": "3",
+                "y": "1"
+              },
+              {
+                "angle": "135",
+                "y": "1"
+              },
+              {
+                "angle": "180",
+                "col": "1",
+                "x": "-3",
+                "y": "1"
+              },
+              {
+                "angle": "225",
+                "col": "2",
+                "x": "-4"
+              },
+              {
+                "angle": "270",
+                "col": "3",
+                "x": "-4",
+                "y": "-2"
+              },
+              {
+                "angle": "315",
+                "row": "1",
+                "x": "-1",
+                "y": "-3"
+              },
+              {
+                "angle": "0",
+                "col": "1",
+                "row": "1",
+                "x": "3",
+                "y": "-1"
+              }
+            ]
+          },
+          {
+            "id": "RightHalf",
+            "texture": "Head",
+            "y": "25",
+            "views": [
+              {
+                "angle": "45",
+                "y": "1"
+              },
+              {
+                "angle": "90",
+                "col": "1",
+                "x": "-4",
+                "y": "2"
+              },
+              {
+                "angle": "135",
+                "col": "2",
+                "x": "-4",
+                "y": "1"
+              },
+              {
+                "angle": "180",
+                "col": "3",
+                "x": "-4",
+                "y": "-1"
+              },
+              {
+                "angle": "225",
+                "row": "1",
+                "x": "1",
+                "y": "-3"
+              },
+              {
+                "angle": "270",
+                "col": "1",
+                "row": "1",
+                "x": "4",
+                "y": "-1"
+              },
+              {
+                "angle": "315",
+                "col": "2",
+                "row": "1",
+                "x": "4"
+              },
+              {
+                "angle": "0",
+                "col": "3",
+                "row": "1",
+                "x": "4",
+                "y": "1"
+              }
+            ]
+          },
+          {
+            "id": "LeftFull",
+            "texture": "Head",
+            "y": "25",
+            "views": [
+              {
+                "angle": "45",
+                "col": "1",
+                "row": "1",
+                "x": "4"
+              },
+              {
+                "angle": "90",
+                "col": "2",
+                "row": "1",
+                "x": "5",
+                "y": "1"
+              },
+              {
+                "angle": "135",
+                "col": "3",
+                "row": "1",
+                "x": "4",
+                "y": "1"
+              },
+              {
+                "angle": "180",
+                "x": "2",
+                "y": "1"
+              },
+              {
+                "angle": "225",
+                "col": "1",
+                "x": "-5"
+              },
+              {
+                "angle": "270",
+                "col": "2",
+                "x": "-5"
+              },
+              {
+                "angle": "315",
+                "col": "3",
+                "x": "-5",
+                "y": "-2"
+              },
+              {
+                "angle": "0",
+                "row": "1",
+                "y": "-3"
+              }
+            ]
+          },
+          {
+            "id": "RightFull",
+            "texture": "Head",
+            "y": "25",
+            "views": [
+              {
+                "angle": "45",
+                "col": "1",
+                "x": "-5",
+                "y": "2"
+              },
+              {
+                "angle": "90",
+                "col": "2",
+                "x": "-5",
+                "y": "1"
+              },
+              {
+                "angle": "135",
+                "col": "3",
+                "x": "-3"
+              },
+              {
+                "angle": "180",
+                "row": "1",
+                "y": "-3"
+              },
+              {
+                "angle": "225",
+                "col": "1",
+                "row": "1",
+                "x": "5",
+                "y": "-2"
+              },
+              {
+                "angle": "270",
+                "col": "2",
+                "row": "1",
+                "x": "5",
+                "y": "-1"
+              },
+              {
+                "angle": "315",
+                "col": "3",
+                "row": "1",
+                "x": "4"
+              },
+              {
+                "angle": "0",
+                "x": "-2",
+                "y": "1"
+              }
+            ]
+          }
+        ]
+      },
+      "Torso": {
+        "node": {
+          "id": "Torso",
+          "y": "0.875"
+        },
+        "layers": [
+          {
+            "id": "Idle",
+            "texture": "Torso",
+            "y": "19",
+            "views": [
+              {
+                "angle": "45",
+                "col": "1",
+                "x": "1",
+                "y": "-6",
+                "hm": "true"
+              },
+              {
+                "angle": "90",
+                "x": "-1",
+                "y": "-7"
+              },
+              {
+                "angle": "135",
+                "col": "1",
+                "x": "-2",
+                "y": "-6"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "y": "-7"
+              },
+              {
+                "angle": "225",
+                "col": "3",
+                "y": "-7"
+              },
+              {
+                "angle": "270",
+                "col": "4",
+                "x": "-1",
+                "y": "-7"
+              },
+              {
+                "angle": "315",
+                "col": "3",
+                "y": "-7",
+                "hm": "true"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "y": "-7",
+                "hm": "true"
+              }
+            ]
+          },
+          {
+            "id": "IdleMaleBare",
+            "texture": "TorsoMaleBare",
+            "y": "19",
+            "views": [
+              {
+                "angle": "45",
+                "col": "1",
+                "x": "1",
+                "y": "-6",
+                "hm": "true"
+              },
+              {
+                "angle": "90",
+                "x": "-1",
+                "y": "-7"
+              },
+              {
+                "angle": "135",
+                "col": "1",
+                "x": "-2",
+                "y": "-6"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "y": "-7"
+              },
+              {
+                "angle": "225",
+                "col": "3",
+                "y": "-7"
+              },
+              {
+                "angle": "270",
+                "col": "4",
+                "x": "-1",
+                "y": "-7"
+              },
+              {
+                "angle": "315",
+                "col": "3",
+                "y": "-7",
+                "hm": "true"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "y": "-7",
+                "hm": "true"
+              }
+            ]
+          },
+          {
+            "id": "IdleFemaleBare",
+            "texture": "TorsoFemaleBare",
+            "y": "19",
+            "views": [
+              {
+                "angle": "45",
+                "col": "1",
+                "x": "1",
+                "y": "-6",
+                "hm": "true"
+              },
+              {
+                "angle": "90",
+                "x": "-1",
+                "y": "-7"
+              },
+              {
+                "angle": "135",
+                "col": "1",
+                "x": "-2",
+                "y": "-6"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "y": "-7"
+              },
+              {
+                "angle": "225",
+                "col": "3",
+                "y": "-7"
+              },
+              {
+                "angle": "270",
+                "col": "4",
+                "x": "-1",
+                "y": "-7"
+              },
+              {
+                "angle": "315",
+                "col": "3",
+                "y": "-7",
+                "hm": "true"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "y": "-7",
+                "hm": "true"
+              }
+            ]
+          },
+          {
+            "id": "Lying",
+            "texture": "TorsoLying",
+            "y": "19",
+            "views": [
+              {
+                "angle": "45",
+                "x": "1",
+                "y": "-6",
+                "hm": "true"
+              },
+              {
+                "angle": "135",
+                "x": "-2",
+                "y": "-6"
+              },
+              {
+                "angle": "225",
+                "col": "1",
+                "x": "4",
+                "y": "-7"
+              },
+              {
+                "angle": "315",
+                "col": "1",
+                "x": "-5",
+                "y": "-7",
+                "hm": "true"
+              }
+            ]
+          },
+          {
+            "id": "LyingBareMale",
+            "texture": "TorsoLyingBareMale",
+            "y": "19",
+            "views": [
+              {
+                "angle": "45",
+                "x": "28",
+                "y": "25",
+                "hm": "true"
+              },
+              {
+                "angle": "135",
+                "x": "-28",
+                "y": "25"
+              },
+              {
+                "angle": "225",
+                "col": "1",
+                "x": "-29",
+                "y": "1"
+              },
+              {
+                "angle": "315",
+                "col": "1",
+                "x": "28",
+                "y": "1",
+                "hm": "true"
+              }
+            ]
+          },
+          {
+            "id": "LyingBareFemale",
+            "texture": "TorsoLyingBareFemale",
+            "y": "19",
+            "views": [
+              {
+                "angle": "45",
+                "x": "28",
+                "y": "25",
+                "hm": "true"
+              },
+              {
+                "angle": "135",
+                "x": "-28",
+                "y": "25"
+              },
+              {
+                "angle": "225",
+                "col": "1",
+                "x": "-29",
+                "y": "1"
+              },
+              {
+                "angle": "315",
+                "col": "1",
+                "x": "28",
+                "y": "1",
+                "hm": "true"
+              }
+            ]
+          }
+        ]
+      },
+      "LeftArm": {
+        "node": {
+          "id": "LeftArm",
+          "y": "0.5313",
+          "z": "0.1875"
+        },
+        "layers": [
+          {
+            "id": "Idle",
+            "texture": "ArmIdle",
+            "x": "-6",
+            "y": "14",
+            "views": [
+              {
+                "angle": "45",
+                "col": "1",
+                "x": "2",
+                "y": "1",
+                "hm": "true"
+              },
+              {
+                "angle": "90",
+                "x": "2",
+                "y": "-2",
+                "hm": "true"
+              },
+              {
+                "angle": "135",
+                "col": "3",
+                "row": "1",
+                "x": "3",
+                "y": "-3",
+                "hm": "true"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "row": "1",
+                "x": "9",
+                "y": "-3",
+                "hm": "true"
+              },
+              {
+                "angle": "225",
+                "col": "1",
+                "row": "1",
+                "x": "11",
+                "y": "-3",
+                "hm": "true"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "11",
+                "y": "-1",
+                "hm": "true"
+              },
+              {
+                "angle": "315",
+                "col": "3",
+                "x": "7",
+                "y": "1",
+                "hm": "true"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "x": "3",
+                "y": "2",
+                "hm": "true"
+              }
+            ]
+          },
+          {
+            "id": "Bare",
+            "texture": "ArmBare",
+            "x": "-6",
+            "y": "14",
+            "views": [
+              {
+                "angle": "45",
+                "col": "1",
+                "x": "2",
+                "y": "1",
+                "hm": "true"
+              },
+              {
+                "angle": "90",
+                "x": "2",
+                "y": "-2",
+                "hm": "true"
+              },
+              {
+                "angle": "135",
+                "col": "3",
+                "row": "1",
+                "x": "3",
+                "y": "-3",
+                "hm": "true"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "row": "1",
+                "x": "9",
+                "y": "-3",
+                "hm": "true"
+              },
+              {
+                "angle": "225",
+                "col": "1",
+                "row": "1",
+                "x": "11",
+                "y": "-3",
+                "hm": "true"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "11",
+                "y": "-1",
+                "hm": "true"
+              },
+              {
+                "angle": "315",
+                "col": "3",
+                "x": "7",
+                "y": "1",
+                "hm": "true"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "x": "3",
+                "y": "2",
+                "hm": "true"
+              }
+            ]
+          },
+          {
+            "id": "Walk1",
+            "texture": "ArmWalk1",
+            "x": "-6",
+            "y": "14",
+            "views": [
+              {
+                "angle": "45",
+                "col": "1",
+                "x": "-2",
+                "y": "-3",
+                "hm": "true"
+              },
+              {
+                "angle": "90",
+                "x": "4",
+                "y": "-5",
+                "hm": "true"
+              },
+              {
+                "angle": "135",
+                "col": "3",
+                "row": "1",
+                "x": "9",
+                "y": "-5",
+                "hm": "true"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "row": "1",
+                "x": "16",
+                "y": "-4",
+                "hm": "true"
+              },
+              {
+                "angle": "225",
+                "col": "1",
+                "row": "1",
+                "x": "16",
+                "y": "-2",
+                "hm": "true"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "8",
+                "y": "3",
+                "hm": "true"
+              },
+              {
+                "angle": "315",
+                "col": "3",
+                "y": "3",
+                "hm": "true"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "x": "-4",
+                "hm": "true"
+              }
+            ]
+          },
+          {
+            "id": "Walk2",
+            "texture": "ArmWalk2",
+            "x": "-6",
+            "y": "14",
+            "views": [
+              {
+                "angle": "45",
+                "col": "1",
+                "x": "6",
+                "y": "-3",
+                "hm": "true"
+              },
+              {
+                "angle": "90",
+                "x": "2",
+                "y": "-5",
+                "hm": "true"
+              },
+              {
+                "angle": "135",
+                "col": "3",
+                "row": "1",
+                "x": "1",
+                "y": "-5",
+                "hm": "true"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "row": "1",
+                "x": "4",
+                "y": "-7",
+                "hm": "true"
+              },
+              {
+                "angle": "225",
+                "col": "1",
+                "row": "1",
+                "x": "7",
+                "y": "-5",
+                "hm": "true"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "6",
+                "y": "-3",
+                "hm": "true"
+              },
+              {
+                "angle": "315",
+                "col": "3",
+                "x": "8",
+                "y": "-1",
+                "hm": "true"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "x": "7",
+                "hm": "true"
+              }
+            ]
+          },
+          {
+            "id": "Walk3",
+            "texture": "ArmWalk3",
+            "x": "-6",
+            "y": "14",
+            "views": [
+              {
+                "angle": "45",
+                "col": "1",
+                "x": "8",
+                "y": "-2",
+                "hm": "true"
+              },
+              {
+                "angle": "90",
+                "x": "1",
+                "y": "-4",
+                "hm": "true"
+              },
+              {
+                "angle": "135",
+                "col": "3",
+                "row": "1",
+                "x": "-7",
+                "y": "-6",
+                "hm": "true"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "row": "1",
+                "x": "-3",
+                "y": "-9",
+                "hm": "true"
+              },
+              {
+                "angle": "225",
+                "col": "1",
+                "row": "1",
+                "x": "3",
+                "y": "-13",
+                "hm": "true"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "9",
+                "y": "-11",
+                "hm": "true"
+              },
+              {
+                "angle": "315",
+                "col": "3",
+                "x": "15",
+                "y": "-3",
+                "hm": "true"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "x": "15",
+                "y": "1",
+                "hm": "true"
+              }
+            ]
+          },
+          {
+            "id": "BareWalk1",
+            "texture": "ArmBareWalk1",
+            "x": "-6",
+            "y": "14",
+            "views": [
+              {
+                "angle": "45",
+                "col": "1",
+                "x": "-2",
+                "y": "-3",
+                "hm": "true"
+              },
+              {
+                "angle": "90",
+                "x": "4",
+                "y": "-5",
+                "hm": "true"
+              },
+              {
+                "angle": "135",
+                "col": "3",
+                "row": "1",
+                "x": "9",
+                "y": "-5",
+                "hm": "true"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "row": "1",
+                "x": "16",
+                "y": "-4",
+                "hm": "true"
+              },
+              {
+                "angle": "225",
+                "col": "1",
+                "row": "1",
+                "x": "16",
+                "y": "-2",
+                "hm": "true"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "8",
+                "y": "3",
+                "hm": "true"
+              },
+              {
+                "angle": "315",
+                "col": "3",
+                "y": "3",
+                "hm": "true"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "x": "-4",
+                "hm": "true"
+              }
+            ]
+          },
+          {
+            "id": "BareWalk2",
+            "texture": "ArmBareWalk2",
+            "x": "-6",
+            "y": "14",
+            "views": [
+              {
+                "angle": "45",
+                "col": "1",
+                "x": "6",
+                "y": "-3",
+                "hm": "true"
+              },
+              {
+                "angle": "90",
+                "x": "2",
+                "y": "-5",
+                "hm": "true"
+              },
+              {
+                "angle": "135",
+                "col": "3",
+                "row": "1",
+                "x": "1",
+                "y": "-5",
+                "hm": "true"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "row": "1",
+                "x": "4",
+                "y": "-7",
+                "hm": "true"
+              },
+              {
+                "angle": "225",
+                "col": "1",
+                "row": "1",
+                "x": "7",
+                "y": "-5",
+                "hm": "true"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "6",
+                "y": "-3",
+                "hm": "true"
+              },
+              {
+                "angle": "315",
+                "col": "3",
+                "x": "8",
+                "y": "-1",
+                "hm": "true"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "x": "7",
+                "hm": "true"
+              }
+            ]
+          },
+          {
+            "id": "BareWalk3",
+            "texture": "ArmBareWalk3",
+            "x": "-6",
+            "y": "14",
+            "views": [
+              {
+                "angle": "45",
+                "col": "1",
+                "x": "8",
+                "y": "-2",
+                "hm": "true"
+              },
+              {
+                "angle": "90",
+                "x": "1",
+                "y": "-4",
+                "hm": "true"
+              },
+              {
+                "angle": "135",
+                "col": "3",
+                "row": "1",
+                "x": "-7",
+                "y": "-6",
+                "hm": "true"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "row": "1",
+                "x": "-3",
+                "y": "-9",
+                "hm": "true"
+              },
+              {
+                "angle": "225",
+                "col": "1",
+                "row": "1",
+                "x": "3",
+                "y": "-13",
+                "hm": "true"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "9",
+                "y": "-11",
+                "hm": "true"
+              },
+              {
+                "angle": "315",
+                "col": "3",
+                "x": "15",
+                "y": "-3",
+                "hm": "true"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "x": "15",
+                "y": "1",
+                "hm": "true"
+              }
+            ]
+          },
+          {
+            "id": "Sit",
+            "texture": "ArmSit",
+            "x": "-6",
+            "y": "14",
+            "views": [
+              {
+                "angle": "45",
+                "col": "1",
+                "x": "9",
+                "y": "-18",
+                "hm": "true"
+              },
+              {
+                "angle": "135",
+                "x": "-14",
+                "y": "-19",
+                "hm": "true"
+              },
+              {
+                "angle": "225",
+                "col": "3",
+                "x": "4",
+                "y": "-24",
+                "hm": "true"
+              },
+              {
+                "angle": "315",
+                "col": "2",
+                "x": "23",
+                "y": "-22",
+                "hm": "true"
+              }
+            ]
+          },
+          {
+            "id": "SitBare",
+            "texture": "ArmSitBare",
+            "x": "-6",
+            "y": "14",
+            "views": [
+              {
+                "angle": "45",
+                "col": "1",
+                "x": "9",
+                "y": "-18",
+                "hm": "true"
+              },
+              {
+                "angle": "135",
+                "x": "-14",
+                "y": "-19",
+                "hm": "true"
+              },
+              {
+                "angle": "225",
+                "col": "3",
+                "x": "4",
+                "y": "-24",
+                "hm": "true"
+              },
+              {
+                "angle": "315",
+                "col": "2",
+                "x": "23",
+                "y": "-22",
+                "hm": "true"
+              }
+            ]
+          },
+          {
+            "id": "ArmRaise",
+            "texture": "ArmRaise",
+            "x": "-6",
+            "y": "14",
+            "views": [
+              {
+                "angle": "45",
+                "col": "1",
+                "x": "11",
+                "y": "-52",
+                "hm": "true"
+              },
+              {
+                "angle": "90",
+                "x": "18",
+                "y": "-53",
+                "hm": "true"
+              },
+              {
+                "angle": "135",
+                "col": "3",
+                "row": "1",
+                "x": "16",
+                "y": "-43",
+                "hm": "true"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "row": "1",
+                "x": "13",
+                "y": "-39",
+                "hm": "true"
+              },
+              {
+                "angle": "225",
+                "col": "1",
+                "row": "1",
+                "x": "3",
+                "y": "-40",
+                "hm": "true"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "-7",
+                "y": "-44",
+                "hm": "true"
+              },
+              {
+                "angle": "315",
+                "col": "3",
+                "x": "-5",
+                "y": "-50",
+                "hm": "true"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "x": "-1",
+                "y": "-53",
+                "hm": "true"
+              }
+            ]
+          },
+          {
+            "id": "ArmThrow",
+            "texture": "ArmThrow",
+            "x": "-6",
+            "y": "14",
+            "views": [
+              {
+                "angle": "45",
+                "col": "1",
+                "x": "22",
+                "y": "-18",
+                "hm": "true"
+              },
+              {
+                "angle": "90",
+                "x": "3",
+                "y": "-20",
+                "hm": "true"
+              },
+              {
+                "angle": "135",
+                "col": "3",
+                "row": "1",
+                "x": "-16",
+                "y": "-23",
+                "hm": "true"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "row": "1",
+                "x": "-20",
+                "y": "-36",
+                "hm": "true"
+              },
+              {
+                "angle": "225",
+                "col": "1",
+                "row": "1",
+                "x": "-7",
+                "y": "-42",
+                "hm": "true"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "9",
+                "y": "-45",
+                "hm": "true"
+              },
+              {
+                "angle": "315",
+                "col": "3",
+                "x": "30",
+                "y": "-40",
+                "hm": "true"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "x": "30",
+                "y": "-29",
+                "hm": "true"
+              }
+            ]
+          },
+          {
+            "id": "ArmRaiseWave1",
+            "texture": "ArmRaiseWave1",
+            "x": "-6",
+            "y": "14",
+            "views": [
+              {
+                "angle": "45",
+                "col": "1",
+                "x": "16",
+                "y": "-73",
+                "hm": "true"
+              },
+              {
+                "angle": "90",
+                "x": "28",
+                "y": "-71",
+                "hm": "true"
+              },
+              {
+                "angle": "135",
+                "col": "3",
+                "row": "1",
+                "x": "27",
+                "y": "-62",
+                "hm": "true"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "row": "1",
+                "x": "17",
+                "y": "-58",
+                "hm": "true"
+              },
+              {
+                "angle": "225",
+                "col": "1",
+                "row": "1",
+                "x": "-4",
+                "y": "-58",
+                "hm": "true"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "-19",
+                "y": "-63",
+                "hm": "true"
+              },
+              {
+                "angle": "315",
+                "col": "3",
+                "x": "-16",
+                "y": "-70",
+                "hm": "true"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "x": "-5",
+                "y": "-74",
+                "hm": "true"
+              }
+            ]
+          },
+          {
+            "id": "ArmRaiseWave2",
+            "texture": "ArmRaiseWave2",
+            "x": "-6",
+            "y": "14",
+            "views": [
+              {
+                "angle": "45",
+                "col": "1",
+                "x": "16",
+                "y": "-73",
+                "hm": "true"
+              },
+              {
+                "angle": "90",
+                "x": "28",
+                "y": "-71",
+                "hm": "true"
+              },
+              {
+                "angle": "135",
+                "col": "3",
+                "row": "1",
+                "x": "27",
+                "y": "-62",
+                "hm": "true"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "row": "1",
+                "x": "17",
+                "y": "-58",
+                "hm": "true"
+              },
+              {
+                "angle": "225",
+                "col": "1",
+                "row": "1",
+                "x": "-4",
+                "y": "-58",
+                "hm": "true"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "-19",
+                "y": "-63",
+                "hm": "true"
+              },
+              {
+                "angle": "315",
+                "col": "3",
+                "x": "-16",
+                "y": "-70",
+                "hm": "true"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "x": "-5",
+                "y": "-74",
+                "hm": "true"
+              }
+            ]
+          },
+          {
+            "id": "ArmThrowThrow",
+            "texture": "ArmThrowThrow",
+            "x": "-6",
+            "y": "14",
+            "views": [
+              {
+                "angle": "45",
+                "col": "1",
+                "x": "33",
+                "y": "-28",
+                "hm": "true"
+              },
+              {
+                "angle": "90",
+                "x": "3",
+                "y": "-22",
+                "hm": "true"
+              },
+              {
+                "angle": "135",
+                "col": "3",
+                "row": "1",
+                "x": "-28",
+                "y": "-28",
+                "hm": "true"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "row": "1",
+                "x": "-37",
+                "y": "-43",
+                "hm": "true"
+              },
+              {
+                "angle": "225",
+                "col": "1",
+                "row": "1",
+                "x": "-25",
+                "y": "-58",
+                "hm": "true"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "6",
+                "y": "-62",
+                "hm": "true"
+              },
+              {
+                "angle": "315",
+                "col": "3",
+                "x": "37",
+                "y": "-54",
+                "hm": "true"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "x": "46",
+                "y": "-41",
+                "hm": "true"
+              }
+            ]
+          },
+          {
+            "id": "ArmThrowThumb",
+            "texture": "ArmThrowThumb",
+            "x": "-6",
+            "y": "14",
+            "views": [
+              {
+                "angle": "45",
+                "col": "1",
+                "x": "33",
+                "y": "-28",
+                "hm": "true"
+              },
+              {
+                "angle": "90",
+                "x": "3",
+                "y": "-22",
+                "hm": "true"
+              },
+              {
+                "angle": "135",
+                "col": "3",
+                "row": "1",
+                "x": "-28",
+                "y": "-28",
+                "hm": "true"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "row": "1",
+                "x": "-37",
+                "y": "-43",
+                "hm": "true"
+              },
+              {
+                "angle": "225",
+                "col": "1",
+                "row": "1",
+                "x": "-25",
+                "y": "-58",
+                "hm": "true"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "6",
+                "y": "-62",
+                "hm": "true"
+              },
+              {
+                "angle": "315",
+                "col": "3",
+                "x": "37",
+                "y": "-54",
+                "hm": "true"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "x": "46",
+                "y": "-41",
+                "hm": "true"
+              }
+            ]
+          },
+          {
+            "id": "ArmThrowStop",
+            "texture": "ArmThrowStop",
+            "x": "-6",
+            "y": "14",
+            "views": [
+              {
+                "angle": "45",
+                "col": "1",
+                "x": "33",
+                "y": "-28",
+                "hm": "true"
+              },
+              {
+                "angle": "90",
+                "x": "3",
+                "y": "-22",
+                "hm": "true"
+              },
+              {
+                "angle": "135",
+                "col": "3",
+                "row": "1",
+                "x": "-28",
+                "y": "-28",
+                "hm": "true"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "row": "1",
+                "x": "-37",
+                "y": "-43",
+                "hm": "true"
+              },
+              {
+                "angle": "225",
+                "col": "1",
+                "row": "1",
+                "x": "-25",
+                "y": "-58",
+                "hm": "true"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "6",
+                "y": "-62",
+                "hm": "true"
+              },
+              {
+                "angle": "315",
+                "col": "3",
+                "x": "37",
+                "y": "-54",
+                "hm": "true"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "x": "46",
+                "y": "-41",
+                "hm": "true"
+              }
+            ]
+          },
+          {
+            "id": "ArmThrowPoint",
+            "texture": "ArmThrowPoint",
+            "x": "-6",
+            "y": "14",
+            "views": [
+              {
+                "angle": "45",
+                "col": "1",
+                "x": "33",
+                "y": "-28",
+                "hm": "true"
+              },
+              {
+                "angle": "90",
+                "x": "3",
+                "y": "-22",
+                "hm": "true"
+              },
+              {
+                "angle": "135",
+                "col": "3",
+                "row": "1",
+                "x": "-28",
+                "y": "-28",
+                "hm": "true"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "row": "1",
+                "x": "-37",
+                "y": "-43",
+                "hm": "true"
+              },
+              {
+                "angle": "225",
+                "col": "1",
+                "row": "1",
+                "x": "-25",
+                "y": "-58",
+                "hm": "true"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "6",
+                "y": "-62",
+                "hm": "true"
+              },
+              {
+                "angle": "315",
+                "col": "3",
+                "x": "37",
+                "y": "-54",
+                "hm": "true"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "x": "46",
+                "y": "-41",
+                "hm": "true"
+              }
+            ]
+          },
+          {
+            "id": "ArmThrowHold",
+            "texture": "ArmThrowHold",
+            "x": "-6",
+            "y": "14",
+            "views": [
+              {
+                "angle": "45",
+                "col": "1",
+                "x": "33",
+                "y": "-28",
+                "hm": "true"
+              },
+              {
+                "angle": "90",
+                "x": "3",
+                "y": "-22",
+                "hm": "true"
+              },
+              {
+                "angle": "135",
+                "col": "3",
+                "row": "1",
+                "x": "-28",
+                "y": "-28",
+                "hm": "true"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "row": "1",
+                "x": "-37",
+                "y": "-43",
+                "hm": "true"
+              },
+              {
+                "angle": "225",
+                "col": "1",
+                "row": "1",
+                "x": "-25",
+                "y": "-58",
+                "hm": "true"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "6",
+                "y": "-62",
+                "hm": "true"
+              },
+              {
+                "angle": "315",
+                "col": "3",
+                "x": "37",
+                "y": "-54",
+                "hm": "true"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "x": "46",
+                "y": "-41",
+                "hm": "true"
+              }
+            ]
+          },
+          {
+            "id": "ArmThrowOpen",
+            "texture": "ArmThrowOpen",
+            "x": "-6",
+            "y": "14",
+            "views": [
+              {
+                "angle": "45",
+                "col": "1",
+                "x": "33",
+                "y": "-28",
+                "hm": "true"
+              },
+              {
+                "angle": "90",
+                "x": "3",
+                "y": "-22",
+                "hm": "true"
+              },
+              {
+                "angle": "135",
+                "col": "3",
+                "row": "1",
+                "x": "-28",
+                "y": "-28",
+                "hm": "true"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "row": "1",
+                "x": "-37",
+                "y": "-43",
+                "hm": "true"
+              },
+              {
+                "angle": "225",
+                "col": "1",
+                "row": "1",
+                "x": "-25",
+                "y": "-58",
+                "hm": "true"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "6",
+                "y": "-62",
+                "hm": "true"
+              },
+              {
+                "angle": "315",
+                "col": "3",
+                "x": "37",
+                "y": "-54",
+                "hm": "true"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "x": "46",
+                "y": "-41",
+                "hm": "true"
+              }
+            ]
+          },
+          {
+            "id": "ArmBareThrow",
+            "texture": "ArmBareThrow",
+            "x": "-6",
+            "y": "14",
+            "views": [
+              {
+                "angle": "45",
+                "col": "1",
+                "x": "22",
+                "y": "-18",
+                "hm": "true"
+              },
+              {
+                "angle": "90",
+                "x": "3",
+                "y": "-20",
+                "hm": "true"
+              },
+              {
+                "angle": "135",
+                "col": "3",
+                "row": "1",
+                "x": "-16",
+                "y": "-23",
+                "hm": "true"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "row": "1",
+                "x": "-20",
+                "y": "-36",
+                "hm": "true"
+              },
+              {
+                "angle": "225",
+                "col": "1",
+                "row": "1",
+                "x": "-7",
+                "y": "-42",
+                "hm": "true"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "9",
+                "y": "-45",
+                "hm": "true"
+              },
+              {
+                "angle": "315",
+                "col": "3",
+                "x": "30",
+                "y": "-40",
+                "hm": "true"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "x": "30",
+                "y": "-29",
+                "hm": "true"
+              }
+            ]
+          },
+          {
+            "id": "HandBareThrow",
+            "texture": "HandBareThrow",
+            "x": "-6",
+            "y": "14",
+            "views": [
+              {
+                "angle": "45",
+                "col": "1",
+                "x": "33",
+                "y": "-28",
+                "hm": "true"
+              },
+              {
+                "angle": "90",
+                "x": "3",
+                "y": "-22",
+                "hm": "true"
+              },
+              {
+                "angle": "135",
+                "col": "3",
+                "row": "1",
+                "x": "-28",
+                "y": "-28",
+                "hm": "true"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "row": "1",
+                "x": "-37",
+                "y": "-43",
+                "hm": "true"
+              },
+              {
+                "angle": "225",
+                "col": "1",
+                "row": "1",
+                "x": "-25",
+                "y": "-58",
+                "hm": "true"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "6",
+                "y": "-62",
+                "hm": "true"
+              },
+              {
+                "angle": "315",
+                "col": "3",
+                "x": "37",
+                "y": "-54",
+                "hm": "true"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "x": "46",
+                "y": "-41",
+                "hm": "true"
+              }
+            ]
+          }
+        ]
+      },
+      "RightArm": {
+        "node": {
+          "id": "RightArm",
+          "y": "0.5313",
+          "z": "-0.1875"
+        },
+        "layers": [
+          {
+            "id": "Idle",
+            "texture": "ArmIdle",
+            "x": "-6",
+            "y": "14",
+            "views": [
+              {
+                "angle": "45",
+                "col": "3",
+                "row": "1",
+                "x": "8",
+                "y": "-3"
+              },
+              {
+                "angle": "90",
+                "x": "10",
+                "y": "-2"
+              },
+              {
+                "angle": "135",
+                "col": "1",
+                "x": "9",
+                "y": "1"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "x": "8",
+                "y": "3"
+              },
+              {
+                "angle": "225",
+                "col": "3",
+                "x": "5",
+                "y": "1"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "1",
+                "y": "-1"
+              },
+              {
+                "angle": "315",
+                "col": "1",
+                "row": "1",
+                "x": "1",
+                "y": "-3"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "row": "1",
+                "x": "3",
+                "y": "-3"
+              }
+            ]
+          },
+          {
+            "id": "Bare",
+            "texture": "ArmBare",
+            "x": "-6",
+            "y": "14",
+            "views": [
+              {
+                "angle": "45",
+                "col": "3",
+                "row": "1",
+                "x": "8",
+                "y": "-3"
+              },
+              {
+                "angle": "90",
+                "x": "10",
+                "y": "-2"
+              },
+              {
+                "angle": "135",
+                "col": "1",
+                "x": "9",
+                "y": "1"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "x": "8",
+                "y": "3"
+              },
+              {
+                "angle": "225",
+                "col": "3",
+                "x": "5",
+                "y": "1"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "1",
+                "y": "-1"
+              },
+              {
+                "angle": "315",
+                "col": "1",
+                "row": "1",
+                "x": "1",
+                "y": "-3"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "row": "1",
+                "x": "3",
+                "y": "-3"
+              }
+            ]
+          },
+          {
+            "id": "Walk1",
+            "texture": "ArmWalk1",
+            "x": "-6",
+            "y": "14",
+            "views": [
+              {
+                "angle": "45",
+                "col": "3",
+                "row": "1",
+                "x": "2",
+                "y": "-5"
+              },
+              {
+                "angle": "90",
+                "x": "8",
+                "y": "-5"
+              },
+              {
+                "angle": "135",
+                "col": "1",
+                "x": "13",
+                "y": "-3"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "x": "15",
+                "y": "1"
+              },
+              {
+                "angle": "225",
+                "col": "3",
+                "x": "12",
+                "y": "3"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "4",
+                "y": "3"
+              },
+              {
+                "angle": "315",
+                "col": "1",
+                "row": "1",
+                "x": "-4",
+                "y": "-2"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "row": "1",
+                "x": "-4",
+                "y": "-4"
+              }
+            ]
+          },
+          {
+            "id": "Walk2",
+            "texture": "ArmWalk2",
+            "x": "-6",
+            "y": "14",
+            "views": [
+              {
+                "angle": "45",
+                "col": "3",
+                "row": "1",
+                "x": "9",
+                "y": "-5"
+              },
+              {
+                "angle": "90",
+                "x": "9",
+                "y": "-5"
+              },
+              {
+                "angle": "135",
+                "col": "1",
+                "x": "4",
+                "y": "-3"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "x": "4",
+                "y": "2"
+              },
+              {
+                "angle": "225",
+                "col": "3",
+                "x": "3",
+                "y": "-1"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "5",
+                "y": "-3"
+              },
+              {
+                "angle": "315",
+                "col": "1",
+                "row": "1",
+                "x": "4",
+                "y": "-5"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "row": "1",
+                "x": "7",
+                "y": "-7"
+              }
+            ]
+          },
+          {
+            "id": "Walk3",
+            "texture": "ArmWalk3",
+            "x": "-6",
+            "y": "14",
+            "views": [
+              {
+                "angle": "45",
+                "col": "3",
+                "row": "1",
+                "x": "18",
+                "y": "-6"
+              },
+              {
+                "angle": "90",
+                "x": "11",
+                "y": "-4"
+              },
+              {
+                "angle": "135",
+                "col": "1",
+                "x": "3",
+                "y": "-2"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "x": "-3",
+                "y": "2"
+              },
+              {
+                "angle": "225",
+                "col": "3",
+                "x": "-3",
+                "y": "-3"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "3",
+                "y": "-11"
+              },
+              {
+                "angle": "315",
+                "col": "1",
+                "row": "1",
+                "x": "9",
+                "y": "-13"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "row": "1",
+                "x": "15",
+                "y": "-9"
+              }
+            ]
+          },
+          {
+            "id": "BareWalk1",
+            "texture": "ArmBareWalk1",
+            "x": "-6",
+            "y": "14",
+            "views": [
+              {
+                "angle": "45",
+                "col": "3",
+                "row": "1",
+                "x": "2",
+                "y": "-5"
+              },
+              {
+                "angle": "90",
+                "x": "8",
+                "y": "-5"
+              },
+              {
+                "angle": "135",
+                "col": "1",
+                "x": "13",
+                "y": "-3"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "x": "15",
+                "y": "1"
+              },
+              {
+                "angle": "225",
+                "col": "3",
+                "x": "12",
+                "y": "3"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "4",
+                "y": "3"
+              },
+              {
+                "angle": "315",
+                "col": "1",
+                "row": "1",
+                "x": "-4",
+                "y": "-2"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "row": "1",
+                "x": "-4",
+                "y": "-4"
+              }
+            ]
+          },
+          {
+            "id": "BareWalk2",
+            "texture": "ArmBareWalk2",
+            "x": "-6",
+            "y": "14",
+            "views": [
+              {
+                "angle": "45",
+                "col": "3",
+                "row": "1",
+                "x": "9",
+                "y": "-5"
+              },
+              {
+                "angle": "90",
+                "x": "9",
+                "y": "-5"
+              },
+              {
+                "angle": "135",
+                "col": "1",
+                "x": "4",
+                "y": "-3"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "x": "4",
+                "y": "2"
+              },
+              {
+                "angle": "225",
+                "col": "3",
+                "x": "3",
+                "y": "-1"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "5",
+                "y": "-3"
+              },
+              {
+                "angle": "315",
+                "col": "1",
+                "row": "1",
+                "x": "4",
+                "y": "-5"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "row": "1",
+                "x": "7",
+                "y": "-7"
+              }
+            ]
+          },
+          {
+            "id": "BareWalk3",
+            "texture": "ArmBareWalk3",
+            "x": "-6",
+            "y": "14",
+            "views": [
+              {
+                "angle": "45",
+                "col": "3",
+                "row": "1",
+                "x": "18",
+                "y": "-6"
+              },
+              {
+                "angle": "90",
+                "x": "11",
+                "y": "-4"
+              },
+              {
+                "angle": "135",
+                "col": "1",
+                "x": "3",
+                "y": "-2"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "x": "-3",
+                "y": "2"
+              },
+              {
+                "angle": "225",
+                "col": "3",
+                "x": "-3",
+                "y": "-3"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "3",
+                "y": "-11"
+              },
+              {
+                "angle": "315",
+                "col": "1",
+                "row": "1",
+                "x": "9",
+                "y": "-13"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "row": "1",
+                "x": "15",
+                "y": "-9"
+              }
+            ]
+          },
+          {
+            "id": "Sit",
+            "texture": "ArmSit",
+            "x": "-6",
+            "y": "14",
+            "views": [
+              {
+                "angle": "45",
+                "x": "25",
+                "y": "-19"
+              },
+              {
+                "angle": "135",
+                "col": "1",
+                "x": "2",
+                "y": "-18"
+              },
+              {
+                "angle": "225",
+                "col": "2",
+                "x": "-11",
+                "y": "-22"
+              },
+              {
+                "angle": "315",
+                "col": "3",
+                "x": "8",
+                "y": "-24"
+              }
+            ]
+          },
+          {
+            "id": "SitBare",
+            "texture": "ArmSitBare",
+            "x": "-6",
+            "y": "14",
+            "views": [
+              {
+                "angle": "45",
+                "x": "25",
+                "y": "-19"
+              },
+              {
+                "angle": "135",
+                "col": "1",
+                "x": "2",
+                "y": "-18"
+              },
+              {
+                "angle": "225",
+                "col": "2",
+                "x": "-11",
+                "y": "-22"
+              },
+              {
+                "angle": "315",
+                "col": "3",
+                "x": "8",
+                "y": "-24"
+              }
+            ]
+          },
+          {
+            "id": "ArmRaise",
+            "texture": "ArmRaise",
+            "x": "-6",
+            "y": "14",
+            "views": [
+              {
+                "angle": "45",
+                "col": "3",
+                "row": "1",
+                "x": "-5",
+                "y": "-42"
+              },
+              {
+                "angle": "90",
+                "x": "-6",
+                "y": "-53"
+              },
+              {
+                "angle": "135",
+                "col": "1",
+                "y": "-52"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "x": "13",
+                "y": "-53"
+              },
+              {
+                "angle": "225",
+                "col": "3",
+                "x": "15",
+                "y": "-51"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "19",
+                "y": "-44"
+              },
+              {
+                "angle": "315",
+                "col": "1",
+                "row": "1",
+                "x": "9",
+                "y": "-38"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "row": "1",
+                "x": "-1",
+                "y": "-38"
+              }
+            ]
+          },
+          {
+            "id": "ArmThrow",
+            "texture": "ArmThrow",
+            "x": "-6",
+            "y": "14",
+            "views": [
+              {
+                "angle": "45",
+                "col": "3",
+                "row": "1",
+                "x": "27",
+                "y": "-22"
+              },
+              {
+                "angle": "90",
+                "x": "9",
+                "y": "-19"
+              },
+              {
+                "angle": "135",
+                "col": "1",
+                "x": "-10",
+                "y": "-18"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "x": "-19",
+                "y": "-29"
+              },
+              {
+                "angle": "225",
+                "col": "3",
+                "x": "-18",
+                "y": "-40"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "3",
+                "y": "-45"
+              },
+              {
+                "angle": "315",
+                "col": "1",
+                "row": "1",
+                "x": "18",
+                "y": "-42"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "row": "1",
+                "x": "31",
+                "y": "-35"
+              }
+            ]
+          },
+          {
+            "id": "ArmRaiseWave1",
+            "texture": "ArmRaiseWave1",
+            "x": "-6",
+            "y": "14",
+            "views": [
+              {
+                "angle": "45",
+                "col": "3",
+                "row": "1",
+                "x": "-16",
+                "y": "-61"
+              },
+              {
+                "angle": "90",
+                "x": "-16",
+                "y": "-71"
+              },
+              {
+                "angle": "135",
+                "col": "1",
+                "x": "-5",
+                "y": "-73"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "x": "17",
+                "y": "-74"
+              },
+              {
+                "angle": "225",
+                "col": "3",
+                "x": "27",
+                "y": "-72"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "31",
+                "y": "-63"
+              },
+              {
+                "angle": "315",
+                "col": "1",
+                "row": "1",
+                "x": "16",
+                "y": "-56"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "row": "1",
+                "x": "-5",
+                "y": "-57"
+              }
+            ]
+          },
+          {
+            "id": "ArmRaiseWave2",
+            "texture": "ArmRaiseWave2",
+            "x": "-6",
+            "y": "14",
+            "views": [
+              {
+                "angle": "45",
+                "col": "3",
+                "row": "1",
+                "x": "-16",
+                "y": "-61"
+              },
+              {
+                "angle": "90",
+                "x": "-16",
+                "y": "-71"
+              },
+              {
+                "angle": "135",
+                "col": "1",
+                "x": "-5",
+                "y": "-73"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "x": "17",
+                "y": "-74"
+              },
+              {
+                "angle": "225",
+                "col": "3",
+                "x": "27",
+                "y": "-72"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "31",
+                "y": "-63"
+              },
+              {
+                "angle": "315",
+                "col": "1",
+                "row": "1",
+                "x": "16",
+                "y": "-56"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "row": "1",
+                "x": "-5",
+                "y": "-57"
+              }
+            ]
+          },
+          {
+            "id": "ArmThrowThrow",
+            "texture": "ArmThrowThrow",
+            "x": "-6",
+            "y": "14",
+            "views": [
+              {
+                "angle": "45",
+                "col": "3",
+                "row": "1",
+                "x": "38",
+                "y": "-28"
+              },
+              {
+                "angle": "90",
+                "x": "8",
+                "y": "-22"
+              },
+              {
+                "angle": "135",
+                "col": "1",
+                "x": "-22",
+                "y": "-28"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "x": "-36",
+                "y": "-41"
+              },
+              {
+                "angle": "225",
+                "col": "3",
+                "x": "-26",
+                "y": "-54"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "5",
+                "y": "-62"
+              },
+              {
+                "angle": "315",
+                "col": "1",
+                "row": "1",
+                "x": "35",
+                "y": "-58"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "row": "1",
+                "x": "47",
+                "y": "-42"
+              }
+            ]
+          },
+          {
+            "id": "ArmThrowThumb",
+            "texture": "ArmThrowThumb",
+            "x": "-6",
+            "y": "14",
+            "views": [
+              {
+                "angle": "45",
+                "col": "3",
+                "row": "1",
+                "x": "38",
+                "y": "-28"
+              },
+              {
+                "angle": "90",
+                "x": "8",
+                "y": "-22"
+              },
+              {
+                "angle": "135",
+                "col": "1",
+                "x": "-22",
+                "y": "-28"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "x": "-36",
+                "y": "-41"
+              },
+              {
+                "angle": "225",
+                "col": "3",
+                "x": "-26",
+                "y": "-54"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "5",
+                "y": "-62"
+              },
+              {
+                "angle": "315",
+                "col": "1",
+                "row": "1",
+                "x": "35",
+                "y": "-58"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "row": "1",
+                "x": "47",
+                "y": "-42"
+              }
+            ]
+          },
+          {
+            "id": "ArmThrowStop",
+            "texture": "ArmThrowStop",
+            "x": "-6",
+            "y": "14",
+            "views": [
+              {
+                "angle": "45",
+                "col": "3",
+                "row": "1",
+                "x": "38",
+                "y": "-28"
+              },
+              {
+                "angle": "90",
+                "x": "8",
+                "y": "-22"
+              },
+              {
+                "angle": "135",
+                "col": "1",
+                "x": "-22",
+                "y": "-28"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "x": "-36",
+                "y": "-41"
+              },
+              {
+                "angle": "225",
+                "col": "3",
+                "x": "-26",
+                "y": "-54"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "5",
+                "y": "-62"
+              },
+              {
+                "angle": "315",
+                "col": "1",
+                "row": "1",
+                "x": "35",
+                "y": "-58"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "row": "1",
+                "x": "47",
+                "y": "-42"
+              }
+            ]
+          },
+          {
+            "id": "ArmThrowPoint",
+            "texture": "ArmThrowPoint",
+            "x": "-6",
+            "y": "14",
+            "views": [
+              {
+                "angle": "45",
+                "col": "3",
+                "row": "1",
+                "x": "38",
+                "y": "-28"
+              },
+              {
+                "angle": "90",
+                "x": "8",
+                "y": "-22"
+              },
+              {
+                "angle": "135",
+                "col": "1",
+                "x": "-22",
+                "y": "-28"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "x": "-36",
+                "y": "-41"
+              },
+              {
+                "angle": "225",
+                "col": "3",
+                "x": "-26",
+                "y": "-54"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "5",
+                "y": "-62"
+              },
+              {
+                "angle": "315",
+                "col": "1",
+                "row": "1",
+                "x": "35",
+                "y": "-58"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "row": "1",
+                "x": "47",
+                "y": "-42"
+              }
+            ]
+          },
+          {
+            "id": "ArmThrowHold",
+            "texture": "ArmThrowHold",
+            "x": "-6",
+            "y": "14",
+            "views": [
+              {
+                "angle": "45",
+                "col": "3",
+                "row": "1",
+                "x": "38",
+                "y": "-28"
+              },
+              {
+                "angle": "90",
+                "x": "8",
+                "y": "-22"
+              },
+              {
+                "angle": "135",
+                "col": "1",
+                "x": "-22",
+                "y": "-28"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "x": "-36",
+                "y": "-41"
+              },
+              {
+                "angle": "225",
+                "col": "3",
+                "x": "-26",
+                "y": "-54"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "5",
+                "y": "-62"
+              },
+              {
+                "angle": "315",
+                "col": "1",
+                "row": "1",
+                "x": "35",
+                "y": "-58"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "row": "1",
+                "x": "47",
+                "y": "-42"
+              }
+            ]
+          },
+          {
+            "id": "ArmThrowOpen",
+            "texture": "ArmThrowOpen",
+            "x": "-6",
+            "y": "14",
+            "views": [
+              {
+                "angle": "45",
+                "col": "3",
+                "row": "1",
+                "x": "38",
+                "y": "-28"
+              },
+              {
+                "angle": "90",
+                "x": "8",
+                "y": "-22"
+              },
+              {
+                "angle": "135",
+                "col": "1",
+                "x": "-22",
+                "y": "-28"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "x": "-36",
+                "y": "-41"
+              },
+              {
+                "angle": "225",
+                "col": "3",
+                "x": "-26",
+                "y": "-54"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "5",
+                "y": "-62"
+              },
+              {
+                "angle": "315",
+                "col": "1",
+                "row": "1",
+                "x": "35",
+                "y": "-58"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "row": "1",
+                "x": "47",
+                "y": "-42"
+              }
+            ]
+          },
+          {
+            "id": "ArmBareThrow",
+            "texture": "ArmBareThrow",
+            "x": "-6",
+            "y": "14",
+            "views": [
+              {
+                "angle": "45",
+                "col": "3",
+                "row": "1",
+                "x": "27",
+                "y": "-22"
+              },
+              {
+                "angle": "90",
+                "x": "9",
+                "y": "-19"
+              },
+              {
+                "angle": "135",
+                "col": "1",
+                "x": "-10",
+                "y": "-18"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "x": "-19",
+                "y": "-29"
+              },
+              {
+                "angle": "225",
+                "col": "3",
+                "x": "-18",
+                "y": "-40"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "3",
+                "y": "-45"
+              },
+              {
+                "angle": "315",
+                "col": "1",
+                "row": "1",
+                "x": "18",
+                "y": "-42"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "row": "1",
+                "x": "31",
+                "y": "-35"
+              }
+            ]
+          },
+          {
+            "id": "HandBareThrow",
+            "texture": "HandBareThrow",
+            "x": "-6",
+            "y": "14",
+            "views": [
+              {
+                "angle": "45",
+                "col": "3",
+                "row": "1",
+                "x": "38",
+                "y": "-28"
+              },
+              {
+                "angle": "90",
+                "x": "8",
+                "y": "-22"
+              },
+              {
+                "angle": "135",
+                "col": "1",
+                "x": "-22",
+                "y": "-28"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "x": "-36",
+                "y": "-41"
+              },
+              {
+                "angle": "225",
+                "col": "3",
+                "x": "-26",
+                "y": "-54"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "5",
+                "y": "-62"
+              },
+              {
+                "angle": "315",
+                "col": "1",
+                "row": "1",
+                "x": "35",
+                "y": "-58"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "row": "1",
+                "x": "47",
+                "y": "-42"
+              }
+            ]
+          }
+        ]
+      },
+      "LeftLegWhole": {
+        "node": {
+          "id": "LeftLegWhole",
+          "z": "0.125"
+        },
+        "layers": [
+          {
+            "id": "Idle",
+            "texture": "LegIdle",
+            "x": "5",
+            "y": "26",
+            "views": [
+              {
+                "angle": "45",
+                "col": "1",
+                "x": "-9",
+                "y": "-12",
+                "hm": "true"
+              },
+              {
+                "angle": "90",
+                "x": "-11",
+                "y": "-11",
+                "hm": "true"
+              },
+              {
+                "angle": "135",
+                "col": "3",
+                "row": "1",
+                "x": "-7",
+                "y": "-12",
+                "hm": "true"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "row": "1",
+                "x": "-5",
+                "y": "-11",
+                "hm": "true"
+              },
+              {
+                "angle": "225",
+                "col": "1",
+                "row": "1",
+                "x": "-2",
+                "y": "-14",
+                "hm": "true"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "-3",
+                "y": "-14",
+                "hm": "true"
+              },
+              {
+                "angle": "315",
+                "col": "3",
+                "x": "-1",
+                "y": "-15",
+                "hm": "true"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "x": "-4",
+                "y": "-16",
+                "hm": "true"
+              }
+            ]
+          },
+          {
+            "id": "Bare",
+            "texture": "LegBare",
+            "x": "5",
+            "y": "26",
+            "views": [
+              {
+                "angle": "45",
+                "col": "1",
+                "x": "-9",
+                "y": "-12",
+                "hm": "true"
+              },
+              {
+                "angle": "90",
+                "x": "-11",
+                "y": "-11",
+                "hm": "true"
+              },
+              {
+                "angle": "135",
+                "col": "3",
+                "row": "1",
+                "x": "-7",
+                "y": "-12",
+                "hm": "true"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "row": "1",
+                "x": "-5",
+                "y": "-11",
+                "hm": "true"
+              },
+              {
+                "angle": "225",
+                "col": "1",
+                "row": "1",
+                "x": "-2",
+                "y": "-14",
+                "hm": "true"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "-3",
+                "y": "-14",
+                "hm": "true"
+              },
+              {
+                "angle": "315",
+                "col": "3",
+                "x": "-1",
+                "y": "-15",
+                "hm": "true"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "x": "-4",
+                "y": "-16",
+                "hm": "true"
+              }
+            ]
+          },
+          {
+            "id": "BareFoot",
+            "texture": "FootBare",
+            "x": "5",
+            "y": "26",
+            "views": [
+              {
+                "angle": "45",
+                "col": "1",
+                "x": "-9",
+                "y": "-12",
+                "hm": "true"
+              },
+              {
+                "angle": "90",
+                "x": "-11",
+                "y": "-11",
+                "hm": "true"
+              },
+              {
+                "angle": "135",
+                "col": "3",
+                "row": "1",
+                "x": "-7",
+                "y": "-12",
+                "hm": "true"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "row": "1",
+                "x": "-5",
+                "y": "-11",
+                "hm": "true"
+              },
+              {
+                "angle": "225",
+                "col": "1",
+                "row": "1",
+                "x": "-2",
+                "y": "-14",
+                "hm": "true"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "-3",
+                "y": "-14",
+                "hm": "true"
+              },
+              {
+                "angle": "315",
+                "col": "3",
+                "x": "-1",
+                "y": "-15",
+                "hm": "true"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "x": "-4",
+                "y": "-16",
+                "hm": "true"
+              }
+            ]
+          },
+          {
+            "id": "Walk1",
+            "texture": "LegWalk1",
+            "x": "5",
+            "y": "26",
+            "views": [
+              {
+                "angle": "45",
+                "col": "1",
+                "y": "-11",
+                "hm": "true"
+              },
+              {
+                "angle": "90",
+                "x": "-11",
+                "y": "-10",
+                "hm": "true"
+              },
+              {
+                "angle": "135",
+                "col": "3",
+                "row": "1",
+                "x": "-16",
+                "y": "-13",
+                "hm": "true"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "row": "1",
+                "x": "-16",
+                "y": "-17",
+                "hm": "true"
+              },
+              {
+                "angle": "225",
+                "col": "1",
+                "row": "1",
+                "x": "-9",
+                "y": "-20",
+                "hm": "true"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "-3",
+                "y": "-20",
+                "hm": "true"
+              },
+              {
+                "angle": "315",
+                "col": "3",
+                "x": "2",
+                "y": "-19",
+                "hm": "true"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "x": "4",
+                "y": "-15",
+                "hm": "true"
+              }
+            ]
+          },
+          {
+            "id": "Walk2",
+            "texture": "LegWalk2",
+            "x": "5",
+            "y": "26",
+            "views": [
+              {
+                "angle": "45",
+                "col": "1",
+                "x": "-6",
+                "y": "-12",
+                "hm": "true"
+              },
+              {
+                "angle": "90",
+                "x": "-9",
+                "y": "-11",
+                "hm": "true"
+              },
+              {
+                "angle": "135",
+                "col": "3",
+                "row": "1",
+                "x": "-11",
+                "y": "-16",
+                "hm": "true"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "row": "1",
+                "x": "-6",
+                "y": "-13",
+                "hm": "true"
+              },
+              {
+                "angle": "225",
+                "col": "1",
+                "row": "1",
+                "x": "-1",
+                "y": "-16",
+                "hm": "true"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "-3",
+                "y": "-16",
+                "hm": "true"
+              },
+              {
+                "angle": "315",
+                "col": "3",
+                "x": "-1",
+                "y": "-16",
+                "hm": "true"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "x": "-3",
+                "y": "-16",
+                "hm": "true"
+              }
+            ]
+          },
+          {
+            "id": "Walk3",
+            "texture": "LegWalk3",
+            "x": "5",
+            "y": "26",
+            "views": [
+              {
+                "angle": "45",
+                "col": "1",
+                "x": "-16",
+                "y": "-11",
+                "hm": "true"
+              },
+              {
+                "angle": "90",
+                "x": "-13",
+                "y": "-10",
+                "hm": "true"
+              },
+              {
+                "angle": "135",
+                "col": "3",
+                "row": "1",
+                "x": "-3",
+                "y": "-15",
+                "hm": "true"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "row": "1",
+                "x": "6",
+                "y": "-13",
+                "hm": "true"
+              },
+              {
+                "angle": "225",
+                "col": "1",
+                "row": "1",
+                "x": "4",
+                "y": "-12",
+                "hm": "true"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "-1",
+                "y": "-10",
+                "hm": "true"
+              },
+              {
+                "angle": "315",
+                "col": "3",
+                "x": "-7",
+                "y": "-9",
+                "hm": "true"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "x": "-17",
+                "y": "-15",
+                "hm": "true"
+              }
+            ]
+          },
+          {
+            "id": "Walk4",
+            "texture": "LegWalk4",
+            "x": "5",
+            "y": "26",
+            "views": [
+              {
+                "angle": "45",
+                "col": "1",
+                "x": "-11",
+                "y": "-17",
+                "hm": "true"
+              },
+              {
+                "angle": "90",
+                "x": "-9",
+                "y": "-16",
+                "hm": "true"
+              },
+              {
+                "angle": "135",
+                "col": "3",
+                "row": "1",
+                "x": "-7",
+                "y": "-18",
+                "hm": "true"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "row": "1",
+                "x": "-2",
+                "y": "-18",
+                "hm": "true"
+              },
+              {
+                "angle": "225",
+                "col": "1",
+                "row": "1",
+                "y": "-16",
+                "hm": "true"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "-1",
+                "y": "-16",
+                "hm": "true"
+              },
+              {
+                "angle": "315",
+                "col": "3",
+                "x": "-4",
+                "y": "-17",
+                "hm": "true"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "x": "-8",
+                "y": "-18",
+                "hm": "true"
+              }
+            ]
+          },
+          {
+            "id": "BareWalk1",
+            "texture": "LegBareWalk1",
+            "x": "5",
+            "y": "26",
+            "views": [
+              {
+                "angle": "45",
+                "col": "1",
+                "y": "-11",
+                "hm": "true"
+              },
+              {
+                "angle": "90",
+                "x": "-11",
+                "y": "-10",
+                "hm": "true"
+              },
+              {
+                "angle": "135",
+                "col": "3",
+                "row": "1",
+                "x": "-16",
+                "y": "-13",
+                "hm": "true"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "row": "1",
+                "x": "-16",
+                "y": "-17",
+                "hm": "true"
+              },
+              {
+                "angle": "225",
+                "col": "1",
+                "row": "1",
+                "x": "-9",
+                "y": "-20",
+                "hm": "true"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "-3",
+                "y": "-20",
+                "hm": "true"
+              },
+              {
+                "angle": "315",
+                "col": "3",
+                "x": "2",
+                "y": "-19",
+                "hm": "true"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "x": "4",
+                "y": "-15",
+                "hm": "true"
+              }
+            ]
+          },
+          {
+            "id": "BareWalk2",
+            "texture": "LegBareWalk2",
+            "x": "5",
+            "y": "26",
+            "views": [
+              {
+                "angle": "45",
+                "col": "1",
+                "x": "-6",
+                "y": "-12",
+                "hm": "true"
+              },
+              {
+                "angle": "90",
+                "x": "-9",
+                "y": "-11",
+                "hm": "true"
+              },
+              {
+                "angle": "135",
+                "col": "3",
+                "row": "1",
+                "x": "-11",
+                "y": "-16",
+                "hm": "true"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "row": "1",
+                "x": "-6",
+                "y": "-13",
+                "hm": "true"
+              },
+              {
+                "angle": "225",
+                "col": "1",
+                "row": "1",
+                "x": "-1",
+                "y": "-16",
+                "hm": "true"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "-3",
+                "y": "-16",
+                "hm": "true"
+              },
+              {
+                "angle": "315",
+                "col": "3",
+                "x": "-1",
+                "y": "-16",
+                "hm": "true"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "x": "-3",
+                "y": "-16",
+                "hm": "true"
+              }
+            ]
+          },
+          {
+            "id": "BareWalk3",
+            "texture": "LegBareWalk3",
+            "x": "5",
+            "y": "26",
+            "views": [
+              {
+                "angle": "45",
+                "col": "1",
+                "x": "-16",
+                "y": "-11",
+                "hm": "true"
+              },
+              {
+                "angle": "90",
+                "x": "-13",
+                "y": "-10",
+                "hm": "true"
+              },
+              {
+                "angle": "135",
+                "col": "3",
+                "row": "1",
+                "x": "-3",
+                "y": "-15",
+                "hm": "true"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "row": "1",
+                "x": "6",
+                "y": "-13",
+                "hm": "true"
+              },
+              {
+                "angle": "225",
+                "col": "1",
+                "row": "1",
+                "x": "4",
+                "y": "-12",
+                "hm": "true"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "-1",
+                "y": "-10",
+                "hm": "true"
+              },
+              {
+                "angle": "315",
+                "col": "3",
+                "x": "-7",
+                "y": "-9",
+                "hm": "true"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "x": "-17",
+                "y": "-15",
+                "hm": "true"
+              }
+            ]
+          },
+          {
+            "id": "BareWalk4",
+            "texture": "LegBareWalk4",
+            "x": "5",
+            "y": "26",
+            "views": [
+              {
+                "angle": "45",
+                "col": "1",
+                "x": "-11",
+                "y": "-17",
+                "hm": "true"
+              },
+              {
+                "angle": "90",
+                "x": "-9",
+                "y": "-16",
+                "hm": "true"
+              },
+              {
+                "angle": "135",
+                "col": "3",
+                "row": "1",
+                "x": "-7",
+                "y": "-18",
+                "hm": "true"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "row": "1",
+                "x": "-2",
+                "y": "-18",
+                "hm": "true"
+              },
+              {
+                "angle": "225",
+                "col": "1",
+                "row": "1",
+                "y": "-16",
+                "hm": "true"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "-1",
+                "y": "-16",
+                "hm": "true"
+              },
+              {
+                "angle": "315",
+                "col": "3",
+                "x": "-4",
+                "y": "-17",
+                "hm": "true"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "x": "-8",
+                "y": "-18",
+                "hm": "true"
+              }
+            ]
+          }
+        ]
+      },
+      "RightLegWhole": {
+        "node": {
+          "id": "RightLegWhole",
+          "z": "-0.125"
+        },
+        "layers": [
+          {
+            "id": "Idle",
+            "texture": "LegIdle",
+            "x": "10",
+            "y": "23",
+            "views": [
+              {
+                "angle": "45",
+                "col": "3",
+                "row": "1",
+                "x": "-10",
+                "y": "-9"
+              },
+              {
+                "angle": "90",
+                "x": "-5",
+                "y": "-8"
+              },
+              {
+                "angle": "135",
+                "col": "1",
+                "x": "-8",
+                "y": "-9"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "x": "-12",
+                "y": "-13"
+              },
+              {
+                "angle": "225",
+                "col": "3",
+                "x": "-15",
+                "y": "-11"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "-12",
+                "y": "-11"
+              },
+              {
+                "angle": "315",
+                "col": "1",
+                "row": "1",
+                "x": "-14",
+                "y": "-13"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "row": "1",
+                "x": "-11",
+                "y": "-8"
+              }
+            ]
+          },
+          {
+            "id": "Bare",
+            "texture": "LegBare",
+            "x": "10",
+            "y": "23",
+            "views": [
+              {
+                "angle": "45",
+                "col": "3",
+                "row": "1",
+                "x": "-10",
+                "y": "-9"
+              },
+              {
+                "angle": "90",
+                "x": "-5",
+                "y": "-8"
+              },
+              {
+                "angle": "135",
+                "col": "1",
+                "x": "-8",
+                "y": "-9"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "x": "-12",
+                "y": "-13"
+              },
+              {
+                "angle": "225",
+                "col": "3",
+                "x": "-15",
+                "y": "-11"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "-12",
+                "y": "-11"
+              },
+              {
+                "angle": "315",
+                "col": "1",
+                "row": "1",
+                "x": "-14",
+                "y": "-13"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "row": "1",
+                "x": "-11",
+                "y": "-8"
+              }
+            ]
+          },
+          {
+            "id": "BareFoot",
+            "texture": "FootBare",
+            "x": "10",
+            "y": "23",
+            "views": [
+              {
+                "angle": "45",
+                "col": "3",
+                "row": "1",
+                "x": "-10",
+                "y": "-9"
+              },
+              {
+                "angle": "90",
+                "x": "-5",
+                "y": "-8"
+              },
+              {
+                "angle": "135",
+                "col": "1",
+                "x": "-8",
+                "y": "-9"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "x": "-12",
+                "y": "-13"
+              },
+              {
+                "angle": "225",
+                "col": "3",
+                "x": "-15",
+                "y": "-11"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "-12",
+                "y": "-11"
+              },
+              {
+                "angle": "315",
+                "col": "1",
+                "row": "1",
+                "x": "-14",
+                "y": "-13"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "row": "1",
+                "x": "-11",
+                "y": "-8"
+              }
+            ]
+          },
+          {
+            "id": "Walk1",
+            "texture": "LegWalk1",
+            "x": "10",
+            "y": "23",
+            "views": [
+              {
+                "angle": "45",
+                "col": "3",
+                "row": "1",
+                "y": "-9"
+              },
+              {
+                "angle": "90",
+                "x": "-4",
+                "y": "-7"
+              },
+              {
+                "angle": "135",
+                "col": "1",
+                "x": "-16",
+                "y": "-8"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "x": "-19",
+                "y": "-12"
+              },
+              {
+                "angle": "225",
+                "col": "3",
+                "x": "-17",
+                "y": "-15"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "-11",
+                "y": "-17"
+              },
+              {
+                "angle": "315",
+                "col": "1",
+                "row": "1",
+                "x": "-6",
+                "y": "-19"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "row": "1",
+                "x": "1",
+                "y": "-14"
+              }
+            ]
+          },
+          {
+            "id": "Walk2",
+            "texture": "LegWalk2",
+            "x": "10",
+            "y": "23",
+            "views": [
+              {
+                "angle": "45",
+                "col": "3",
+                "row": "1",
+                "x": "-5",
+                "y": "-12"
+              },
+              {
+                "angle": "90",
+                "x": "-6",
+                "y": "-8"
+              },
+              {
+                "angle": "135",
+                "col": "1",
+                "x": "-10",
+                "y": "-9"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "x": "-12",
+                "y": "-13"
+              },
+              {
+                "angle": "225",
+                "col": "3",
+                "x": "-14",
+                "y": "-12"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "-11",
+                "y": "-13"
+              },
+              {
+                "angle": "315",
+                "col": "1",
+                "row": "1",
+                "x": "-14",
+                "y": "-15"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "row": "1",
+                "x": "-9",
+                "y": "-10"
+              }
+            ]
+          },
+          {
+            "id": "Walk3",
+            "texture": "LegWalk3",
+            "x": "10",
+            "y": "23",
+            "views": [
+              {
+                "angle": "45",
+                "col": "3",
+                "row": "1",
+                "x": "-14",
+                "y": "-11"
+              },
+              {
+                "angle": "90",
+                "x": "-3",
+                "y": "-7"
+              },
+              {
+                "angle": "135",
+                "col": "1",
+                "x": "-1",
+                "y": "-8"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "x": "1",
+                "y": "-12"
+              },
+              {
+                "angle": "225",
+                "col": "3",
+                "x": "-9",
+                "y": "-5"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "-14",
+                "y": "-7"
+              },
+              {
+                "angle": "315",
+                "col": "1",
+                "row": "1",
+                "x": "-20",
+                "y": "-11"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "row": "1",
+                "x": "-22",
+                "y": "-10"
+              }
+            ]
+          },
+          {
+            "id": "Walk4",
+            "texture": "LegWalk4",
+            "x": "10",
+            "y": "23",
+            "views": [
+              {
+                "angle": "45",
+                "col": "3",
+                "row": "1",
+                "x": "-9",
+                "y": "-14"
+              },
+              {
+                "angle": "90",
+                "x": "-6",
+                "y": "-13"
+              },
+              {
+                "angle": "135",
+                "col": "1",
+                "x": "-5",
+                "y": "-14"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "x": "-7",
+                "y": "-15"
+              },
+              {
+                "angle": "225",
+                "col": "3",
+                "x": "-11",
+                "y": "-13"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "-13",
+                "y": "-13"
+              },
+              {
+                "angle": "315",
+                "col": "1",
+                "row": "1",
+                "x": "-15",
+                "y": "-15"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "row": "1",
+                "x": "-13",
+                "y": "-15"
+              }
+            ]
+          },
+          {
+            "id": "BareWalk1",
+            "texture": "LegBareWalk1",
+            "x": "10",
+            "y": "23",
+            "views": [
+              {
+                "angle": "45",
+                "col": "3",
+                "row": "1",
+                "y": "-9"
+              },
+              {
+                "angle": "90",
+                "x": "-4",
+                "y": "-7"
+              },
+              {
+                "angle": "135",
+                "col": "1",
+                "x": "-16",
+                "y": "-8"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "x": "-19",
+                "y": "-12"
+              },
+              {
+                "angle": "225",
+                "col": "3",
+                "x": "-17",
+                "y": "-15"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "-11",
+                "y": "-17"
+              },
+              {
+                "angle": "315",
+                "col": "1",
+                "row": "1",
+                "x": "-6",
+                "y": "-19"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "row": "1",
+                "x": "1",
+                "y": "-14"
+              }
+            ]
+          },
+          {
+            "id": "BareWalk2",
+            "texture": "LegBareWalk2",
+            "x": "10",
+            "y": "23",
+            "views": [
+              {
+                "angle": "45",
+                "col": "3",
+                "row": "1",
+                "x": "-5",
+                "y": "-12"
+              },
+              {
+                "angle": "90",
+                "x": "-6",
+                "y": "-8"
+              },
+              {
+                "angle": "135",
+                "col": "1",
+                "x": "-10",
+                "y": "-9"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "x": "-12",
+                "y": "-13"
+              },
+              {
+                "angle": "225",
+                "col": "3",
+                "x": "-14",
+                "y": "-12"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "-11",
+                "y": "-13"
+              },
+              {
+                "angle": "315",
+                "col": "1",
+                "row": "1",
+                "x": "-14",
+                "y": "-15"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "row": "1",
+                "x": "-9",
+                "y": "-10"
+              }
+            ]
+          },
+          {
+            "id": "BareWalk3",
+            "texture": "LegBareWalk3",
+            "x": "10",
+            "y": "23",
+            "views": [
+              {
+                "angle": "45",
+                "col": "3",
+                "row": "1",
+                "x": "-14",
+                "y": "-11"
+              },
+              {
+                "angle": "90",
+                "x": "-3",
+                "y": "-7"
+              },
+              {
+                "angle": "135",
+                "col": "1",
+                "x": "-1",
+                "y": "-8"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "x": "1",
+                "y": "-12"
+              },
+              {
+                "angle": "225",
+                "col": "3",
+                "x": "-9",
+                "y": "-5"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "-14",
+                "y": "-7"
+              },
+              {
+                "angle": "315",
+                "col": "1",
+                "row": "1",
+                "x": "-20",
+                "y": "-11"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "row": "1",
+                "x": "-22",
+                "y": "-10"
+              }
+            ]
+          },
+          {
+            "id": "BareWalk4",
+            "texture": "LegBareWalk4",
+            "x": "10",
+            "y": "23",
+            "views": [
+              {
+                "angle": "45",
+                "col": "3",
+                "row": "1",
+                "x": "-9",
+                "y": "-14"
+              },
+              {
+                "angle": "90",
+                "x": "-6",
+                "y": "-13"
+              },
+              {
+                "angle": "135",
+                "col": "1",
+                "x": "-5",
+                "y": "-14"
+              },
+              {
+                "angle": "180",
+                "col": "2",
+                "x": "-7",
+                "y": "-15"
+              },
+              {
+                "angle": "225",
+                "col": "3",
+                "x": "-11",
+                "y": "-13"
+              },
+              {
+                "angle": "270",
+                "row": "1",
+                "x": "-13",
+                "y": "-13"
+              },
+              {
+                "angle": "315",
+                "col": "1",
+                "row": "1",
+                "x": "-15",
+                "y": "-15"
+              },
+              {
+                "angle": "0",
+                "col": "2",
+                "row": "1",
+                "x": "-13",
+                "y": "-15"
+              }
+            ]
+          }
+        ]
+      },
+      "LeftLegUpper": {
+        "node": {
+          "id": "LeftLegUpper",
+          "z": "0.125"
+        },
+        "layers": [
+          {
+            "id": "Sit",
+            "texture": "LegSitUpper",
+            "x": "5",
+            "y": "24",
+            "views": [
+              {
+                "angle": "45",
+                "col": "1",
+                "x": "7",
+                "y": "-28",
+                "hm": "true"
+              },
+              {
+                "angle": "135",
+                "x": "-26",
+                "y": "-31",
+                "hm": "true"
+              },
+              {
+                "angle": "225",
+                "col": "3",
+                "x": "-18",
+                "y": "-38",
+                "hm": "true"
+              },
+              {
+                "angle": "315",
+                "col": "2",
+                "x": "9",
+                "y": "-34",
+                "hm": "true"
+              }
+            ]
+          },
+          {
+            "id": "SitBare",
+            "texture": "LegSitUpperBare",
+            "x": "5",
+            "y": "24",
+            "views": [
+              {
+                "angle": "45",
+                "col": "1",
+                "x": "7",
+                "y": "-28",
+                "hm": "true"
+              },
+              {
+                "angle": "135",
+                "x": "-26",
+                "y": "-31",
+                "hm": "true"
+              },
+              {
+                "angle": "225",
+                "col": "3",
+                "x": "-18",
+                "y": "-38",
+                "hm": "true"
+              },
+              {
+                "angle": "315",
+                "col": "2",
+                "x": "9",
+                "y": "-34",
+                "hm": "true"
+              }
+            ]
+          }
+        ]
+      },
+      "RightLegUpper": {
+        "node": {
+          "id": "RightLegUpper",
+          "z": "-0.125"
+        },
+        "layers": [
+          {
+            "id": "Sit",
+            "texture": "LegSitUpper",
+            "x": "10",
+            "y": "21",
+            "views": [
+              {
+                "angle": "45",
+                "x": "9",
+                "y": "-28"
+              },
+              {
+                "angle": "135",
+                "col": "1",
+                "x": "-25",
+                "y": "-24"
+              },
+              {
+                "angle": "225",
+                "col": "2",
+                "x": "-25",
+                "y": "-31"
+              },
+              {
+                "angle": "315",
+                "col": "3",
+                "x": "2",
+                "y": "-35"
+              }
+            ]
+          },
+          {
+            "id": "SitBare",
+            "texture": "LegSitUpperBare",
+            "x": "10",
+            "y": "21",
+            "views": [
+              {
+                "angle": "45",
+                "x": "9",
+                "y": "-28"
+              },
+              {
+                "angle": "135",
+                "col": "1",
+                "x": "-25",
+                "y": "-24"
+              },
+              {
+                "angle": "225",
+                "col": "2",
+                "x": "-25",
+                "y": "-31"
+              },
+              {
+                "angle": "315",
+                "col": "3",
+                "x": "2",
+                "y": "-35"
+              }
+            ]
+          }
+        ]
+      },
+      "LeftLegLower": {
+        "node": {
+          "id": "LeftLegLower",
+          "z": "0.125"
+        },
+        "layers": [
+          {
+            "id": "Sit",
+            "texture": "LegSitLower",
+            "x": "5",
+            "y": "24",
+            "views": [
+              {
+                "angle": "45",
+                "col": "1",
+                "x": "7",
+                "y": "-28",
+                "hm": "true"
+              },
+              {
+                "angle": "135",
+                "x": "-26",
+                "y": "-31",
+                "hm": "true"
+              },
+              {
+                "angle": "225",
+                "col": "3",
+                "x": "-18",
+                "y": "-38",
+                "hm": "true"
+              },
+              {
+                "angle": "315",
+                "col": "2",
+                "x": "9",
+                "y": "-34",
+                "hm": "true"
+              }
+            ]
+          },
+          {
+            "id": "SitBare",
+            "texture": "LegSitLowerBare",
+            "x": "5",
+            "y": "24",
+            "views": [
+              {
+                "angle": "45",
+                "col": "1",
+                "x": "7",
+                "y": "-28",
+                "hm": "true"
+              },
+              {
+                "angle": "135",
+                "x": "-26",
+                "y": "-31",
+                "hm": "true"
+              },
+              {
+                "angle": "225",
+                "col": "3",
+                "x": "-18",
+                "y": "-38",
+                "hm": "true"
+              },
+              {
+                "angle": "315",
+                "col": "2",
+                "x": "9",
+                "y": "-34",
+                "hm": "true"
+              }
+            ]
+          },
+          {
+            "id": "SitBareFoot",
+            "texture": "FootSitBare",
+            "x": "5",
+            "y": "24",
+            "views": [
+              {
+                "angle": "45",
+                "col": "1",
+                "x": "7",
+                "y": "-28",
+                "hm": "true"
+              },
+              {
+                "angle": "135",
+                "x": "-26",
+                "y": "-31",
+                "hm": "true"
+              },
+              {
+                "angle": "225",
+                "col": "3",
+                "x": "-18",
+                "y": "-38",
+                "hm": "true"
+              },
+              {
+                "angle": "315",
+                "col": "2",
+                "x": "9",
+                "y": "-34",
+                "hm": "true"
+              }
+            ]
+          }
+        ]
+      },
+      "RightLegLower": {
+        "node": {
+          "id": "RightLegLower",
+          "z": "-0.125"
+        },
+        "layers": [
+          {
+            "id": "Sit",
+            "texture": "LegSitLower",
+            "x": "10",
+            "y": "21",
+            "views": [
+              {
+                "angle": "45",
+                "x": "9",
+                "y": "-28"
+              },
+              {
+                "angle": "135",
+                "col": "1",
+                "x": "-25",
+                "y": "-24"
+              },
+              {
+                "angle": "225",
+                "col": "2",
+                "x": "-25",
+                "y": "-31"
+              },
+              {
+                "angle": "315",
+                "col": "3",
+                "x": "2",
+                "y": "-35"
+              }
+            ]
+          },
+          {
+            "id": "SitBare",
+            "texture": "LegSitLowerBare",
+            "x": "10",
+            "y": "21",
+            "views": [
+              {
+                "angle": "45",
+                "x": "9",
+                "y": "-28"
+              },
+              {
+                "angle": "135",
+                "col": "1",
+                "x": "-25",
+                "y": "-24"
+              },
+              {
+                "angle": "225",
+                "col": "2",
+                "x": "-25",
+                "y": "-31"
+              },
+              {
+                "angle": "315",
+                "col": "3",
+                "x": "2",
+                "y": "-35"
+              }
+            ]
+          },
+          {
+            "id": "SitBareFoot",
+            "texture": "FootSitBare",
+            "x": "10",
+            "y": "21",
+            "views": [
+              {
+                "angle": "45",
+                "x": "9",
+                "y": "-28"
+              },
+              {
+                "angle": "135",
+                "col": "1",
+                "x": "-25",
+                "y": "-24"
+              },
+              {
+                "angle": "225",
+                "col": "2",
+                "x": "-25",
+                "y": "-31"
+              },
+              {
+                "angle": "315",
+                "col": "3",
+                "x": "2",
+                "y": "-35"
+              }
+            ]
+          }
+        ]
+      },
+      "Shadow": {
+        "node": {
+          "id": "Shadow"
+        },
+        "layers": [
+          {
+            "id": "Shadow",
+            "texture": "Shadow",
+            "y": "20",
+            "views": []
+          }
+        ]
+      }
+    }
+  },
+  "copied_asset_count": 113,
+  "missing_assets": []
+}

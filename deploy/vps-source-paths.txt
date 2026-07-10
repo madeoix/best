@@ -1,0 +1,9 @@
+package.json
+package-lock.json
+svelte.config.js
+vite.config.js
+jsconfig.json
+src
+static
+deploy
+scripts

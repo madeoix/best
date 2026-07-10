@@ -1,0 +1,5491 @@
+{
+  "ok": true,
+  "contract": "smallverse-avatar-render-bundle/v1",
+  "avatar_id": "694195a7a02bd82876d3bcce",
+  "gender": "female",
+  "source": {
+    "selected_options": "body-render-manifest.json:selected_options",
+    "design": "avatars/designs/avatar_design.xml",
+    "asset_root": "/avatar-assets"
+  },
+  "selected_options": {
+    "CuteEyeShadowOptions": "CuteLightBrownShadow",
+    "TopColorOptions": "White",
+    "OuterColorOptions": "Brown",
+    "BottomColorOptions": "Black",
+    "BeltColorOptions": "White",
+    "NecklaceColorOptions": "Yellow",
+    "GenderOptions": "Female",
+    "JSTop": "JumpTshirt",
+    "JSBottom": "JumpPants",
+    "JSFeet": "NoShoe",
+    "BodySkin": "Arms,Legs,Torso",
+    "EyeShadowOptions": "CutevanillaShadow",
+    "LipstickOptions": "LipStickPalmy",
+    "FaceBOptions": "FaceCuteTwo",
+    "MouthOptions": "MouthUmphStick",
+    "FaceAOptions": "FaceThinOne",
+    "HighlightOptions": "HairColorFieryRed",
+    "NoseAOptions": "NoseStraightOne",
+    "NoseBOptions": "NoseButtonTwo",
+    "HairstyleOptions": "HairBerryTinted",
+    "DecalOptions": "Freckles,Rouge",
+    "FoundationOptions": "Sheen3",
+    "BlusherOptions": "80sBlusher",
+    "BlusherColorOptions": "BlusherCandy",
+    "EyeOptions": "EyesFairyReal",
+    "BrowOptions": "BrowsMedium",
+    "EyeColorOptions": "EyeColorLightBlue",
+    "HatColorOptions": "HatColorWhite",
+    "HairColorOptions": "HairColorFieryRed",
+    "EyebrowColorOptions": "EyebrowColorPeach",
+    "TintOptions": "HairTintPink",
+    "SkinColorOptions": "SkinColorPink"
+  },
+  "body": {
+    "manifest_url": "/avatar-renders/694195a7a02bd82876d3bcce/body-render-manifest.json",
+    "body_xml": "/avatar-assets/avatars/body/base/unisex/avatar.xml",
+    "frame_palette": "/avatar-assets/avatars/body/base/unisex/frame_palette.xml",
+    "selected_assets": {
+      "torso": "/avatar-assets/avatars/body/base/female/tshirt_torso.png",
+      "arms_idle": "/avatar-assets/items/base/consumables/clothing/shared/shr_short_arm_idle.png",
+      "arms_walk1": "/avatar-assets/items/base/consumables/clothing/shared/shr_short_arm_walk1.png",
+      "arms_walk2": "/avatar-assets/items/base/consumables/clothing/shared/shr_short_arm_walk2.png",
+      "arms_walk3": "/avatar-assets/items/base/consumables/clothing/shared/shr_short_arm_walk3.png",
+      "legs_idle": "/avatar-assets/avatars/body/base/unisex/skinny_leg_idle.png",
+      "legs_walk1": "/avatar-assets/avatars/body/base/unisex/skinny_leg_walk1.png",
+      "legs_walk2": "/avatar-assets/avatars/body/base/unisex/skinny_leg_walk2.png",
+      "legs_walk3": "/avatar-assets/avatars/body/base/unisex/skinny_leg_walk3.png",
+      "legs_walk4": "/avatar-assets/avatars/body/base/unisex/skinny_leg_walk4.png",
+      "feet_idle": "/avatar-assets/avatars/body/base/unisex/foot_idle.png"
+    }
+  },
+  "head": {
+    "meshes": [
+      {
+        "ref": "avatars/head/base/female/faces/f_f_02_cute.o3d",
+        "exists": true,
+        "url": "/avatar-assets/avatars/head/base/female/faces/f_f_02_cute.o3d",
+        "bytes": 83710,
+        "meshes": [
+          {
+            "name": "face_F_cute",
+            "vertex_count": 348,
+            "face_count": 658,
+            "uv_count": 348
+          }
+        ]
+      },
+      {
+        "ref": "avatars/head/base/female/faces/f_f_06_thin.o3d",
+        "exists": true,
+        "url": "/avatar-assets/avatars/head/base/female/faces/f_f_06_thin.o3d",
+        "bytes": 78045,
+        "meshes": [
+          {
+            "name": "face_F_thin",
+            "vertex_count": 348,
+            "face_count": 658,
+            "uv_count": 348
+          }
+        ]
+      },
+      {
+        "ref": "avatars/head/base/female/faces/nose_04_straight.o3d",
+        "exists": true,
+        "url": "/avatar-assets/avatars/head/base/female/faces/nose_04_straight.o3d",
+        "bytes": 78031,
+        "meshes": [
+          {
+            "name": "n_03_straight",
+            "vertex_count": 348,
+            "face_count": 658,
+            "uv_count": 348
+          }
+        ]
+      },
+      {
+        "ref": "avatars/head/base/female/hair/hair_berry.o3d",
+        "exists": true,
+        "url": "/avatar-assets/avatars/head/base/female/hair/hair_berry.o3d",
+        "bytes": 78716,
+        "meshes": [
+          {
+            "name": "fhair_berry_a",
+            "vertex_count": 177,
+            "face_count": 294,
+            "uv_count": 355
+          },
+          {
+            "name": "fhair_berry_b",
+            "vertex_count": 170,
+            "face_count": 220,
+            "uv_count": 209
+          }
+        ]
+      },
+      {
+        "ref": "avatars/head/base/female/hair/hair_nicolepony.o3d",
+        "exists": true,
+        "url": "/avatar-assets/avatars/head/base/female/hair/hair_nicolepony.o3d",
+        "bytes": 79306,
+        "meshes": [
+          {
+            "name": "fhair_nicolepony_b",
+            "vertex_count": 139,
+            "face_count": 189,
+            "uv_count": 158
+          },
+          {
+            "name": "fhair_nicolepony_a",
+            "vertex_count": 200,
+            "face_count": 347,
+            "uv_count": 381
+          }
+        ]
+      }
+    ],
+    "textures": [
+      {
+        "ref": "avatars/head/base/female/brow/b_medium.png",
+        "exists": true,
+        "url": "/avatar-assets/avatars/head/base/female/brow/b_medium.png",
+        "bytes": 1401
+      },
+      {
+        "ref": "avatars/head/base/female/eyes/eye_makeup1.png",
+        "exists": true,
+        "url": "/avatar-assets/avatars/head/base/female/eyes/eye_makeup1.png",
+        "bytes": 2860
+      },
+      {
+        "ref": "avatars/head/base/female/hair/ht_berry_shad.png",
+        "exists": true,
+        "url": "/avatar-assets/avatars/head/base/female/hair/ht_berry_shad.png",
+        "bytes": 925
+      },
+      {
+        "ref": "avatars/head/base/female/hair/ht_nicolepony_shad.png",
+        "exists": true,
+        "url": "/avatar-assets/avatars/head/base/female/hair/ht_nicolepony_shad.png",
+        "bytes": 714
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/f_mouth_anim05_base.png",
+        "exists": true,
+        "url": "/avatar-assets/avatars/head/base/female/mouth/f_mouth_anim05_base.png",
+        "bytes": 2005
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/f_mouth_anim05_teeth.png",
+        "exists": true,
+        "url": "/avatar-assets/avatars/head/base/female/mouth/f_mouth_anim05_teeth.png",
+        "bytes": 251
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/m_goofyhilite.png",
+        "exists": true,
+        "url": "/avatar-assets/avatars/head/base/female/mouth/m_goofyhilite.png",
+        "bytes": 460
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/m_smile.png",
+        "exists": true,
+        "url": "/avatar-assets/avatars/head/base/female/mouth/m_smile.png",
+        "bytes": 1883
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/m_smilehilite.png",
+        "exists": true,
+        "url": "/avatar-assets/avatars/head/base/female/mouth/m_smilehilite.png",
+        "bytes": 666
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/m_std_gloss.png",
+        "exists": true,
+        "url": "/avatar-assets/avatars/head/base/female/mouth/m_std_gloss.png",
+        "bytes": 2212
+      },
+      {
+        "ref": "avatars/head/base/female/skin/mu_80blusher.png",
+        "exists": true,
+        "url": "/avatar-assets/avatars/head/base/female/skin/mu_80blusher.png",
+        "bytes": 2061
+      },
+      {
+        "ref": "avatars/head/base/male/eyes/eye_normhilite.png",
+        "exists": true,
+        "url": "/avatar-assets/avatars/head/base/male/eyes/eye_normhilite.png",
+        "bytes": 195
+      },
+      {
+        "ref": "avatars/head/base/unisex/decals/d_freckles.png",
+        "exists": true,
+        "url": "/avatar-assets/avatars/head/base/unisex/decals/d_freckles.png",
+        "bytes": 772
+      },
+      {
+        "ref": "avatars/head/base/unisex/decals/d_redcheeks.png",
+        "exists": true,
+        "url": "/avatar-assets/avatars/head/base/unisex/decals/d_redcheeks.png",
+        "bytes": 456
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/h_base.png",
+        "exists": true,
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/h_base.png",
+        "bytes": 13731
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/h_hilite.png",
+        "exists": true,
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/h_hilite.png",
+        "bytes": 8455
+      },
+      {
+        "ref": "avatars/head/base/unisex/skin/s_colour_fem.png",
+        "exists": true,
+        "url": "/avatar-assets/avatars/head/base/unisex/skin/s_colour_fem.png",
+        "bytes": 11251
+      },
+      {
+        "ref": "avatars/head/base/unisex/skin/s_colour_hilite.png",
+        "exists": true,
+        "url": "/avatar-assets/avatars/head/base/unisex/skin/s_colour_hilite.png",
+        "bytes": 3788
+      },
+      {
+        "ref": "avatars/head/base/unisex/skin/s_elf_ears.png",
+        "exists": true,
+        "url": "/avatar-assets/avatars/head/base/unisex/skin/s_elf_ears.png",
+        "bytes": 804
+      },
+      {
+        "ref": "avatars/head/base/female/eyes/eye_fairybase.png",
+        "exists": true,
+        "url": "/avatar-assets/avatars/head/base/female/eyes/eye_fairybase.png",
+        "bytes": 2096
+      },
+      {
+        "ref": "avatars/head/base/unisex/eyes/eye_fantasyiris.png",
+        "exists": true,
+        "url": "/avatar-assets/avatars/head/base/unisex/eyes/eye_fantasyiris.png",
+        "bytes": 1390
+      }
+    ]
+  },
+  "xml_assets": [
+    {
+      "ref": "avatars/body/base/unisex/avatar.xml",
+      "exists": true,
+      "url": "/avatar-assets/avatars/body/base/unisex/avatar.xml",
+      "bytes": 418918
+    },
+    {
+      "ref": "avatars/body/base/unisex/frame_palette.xml",
+      "exists": true,
+      "url": "/avatar-assets/avatars/body/base/unisex/frame_palette.xml",
+      "bytes": 9999
+    }
+  ],
+  "body_textures": [
+    {
+      "ref": "avatars/body/base/unisex/shadow.png",
+      "exists": true,
+      "url": "/avatar-assets/avatars/body/base/unisex/shadow.png",
+      "bytes": 550
+    },
+    {
+      "ref": "avatars/body/base/female/pjs_torso_lying.png",
+      "exists": true,
+      "url": "/avatar-assets/avatars/body/base/female/pjs_torso_lying.png",
+      "bytes": 2417
+    },
+    {
+      "ref": "avatars/body/base/female/torso.png",
+      "exists": true,
+      "url": "/avatar-assets/avatars/body/base/female/torso.png",
+      "bytes": 4492
+    },
+    {
+      "ref": "avatars/body/base/female/torso_lying.png",
+      "exists": true,
+      "url": "/avatar-assets/avatars/body/base/female/torso_lying.png",
+      "bytes": 2732
+    },
+    {
+      "ref": "avatars/body/base/female/tshirt_torso.png",
+      "exists": true,
+      "url": "/avatar-assets/avatars/body/base/female/tshirt_torso.png",
+      "bytes": 4244
+    },
+    {
+      "ref": "avatars/body/base/unisex/arm_idle.png",
+      "exists": true,
+      "url": "/avatar-assets/avatars/body/base/unisex/arm_idle.png",
+      "bytes": 5217
+    },
+    {
+      "ref": "avatars/body/base/unisex/arm_raise.png",
+      "exists": true,
+      "url": "/avatar-assets/avatars/body/base/unisex/arm_raise.png",
+      "bytes": 3583
+    },
+    {
+      "ref": "avatars/body/base/unisex/arm_sit.png",
+      "exists": true,
+      "url": "/avatar-assets/avatars/body/base/unisex/arm_sit.png",
+      "bytes": 2977
+    },
+    {
+      "ref": "avatars/body/base/unisex/arm_throw.png",
+      "exists": true,
+      "url": "/avatar-assets/avatars/body/base/unisex/arm_throw.png",
+      "bytes": 3533
+    },
+    {
+      "ref": "avatars/body/base/unisex/arm_walk1.png",
+      "exists": true,
+      "url": "/avatar-assets/avatars/body/base/unisex/arm_walk1.png",
+      "bytes": 5424
+    },
+    {
+      "ref": "avatars/body/base/unisex/arm_walk2.png",
+      "exists": true,
+      "url": "/avatar-assets/avatars/body/base/unisex/arm_walk2.png",
+      "bytes": 5321
+    },
+    {
+      "ref": "avatars/body/base/unisex/arm_walk3.png",
+      "exists": true,
+      "url": "/avatar-assets/avatars/body/base/unisex/arm_walk3.png",
+      "bytes": 5270
+    },
+    {
+      "ref": "avatars/body/base/unisex/foot_idle.png",
+      "exists": true,
+      "url": "/avatar-assets/avatars/body/base/unisex/foot_idle.png",
+      "bytes": 2832
+    },
+    {
+      "ref": "avatars/body/base/unisex/foot_sit.png",
+      "exists": true,
+      "url": "/avatar-assets/avatars/body/base/unisex/foot_sit.png",
+      "bytes": 1841
+    },
+    {
+      "ref": "avatars/body/base/unisex/foot_walk1.png",
+      "exists": true,
+      "url": "/avatar-assets/avatars/body/base/unisex/foot_walk1.png",
+      "bytes": 2807
+    },
+    {
+      "ref": "avatars/body/base/unisex/foot_walk2.png",
+      "exists": true,
+      "url": "/avatar-assets/avatars/body/base/unisex/foot_walk2.png",
+      "bytes": 2901
+    },
+    {
+      "ref": "avatars/body/base/unisex/foot_walk3.png",
+      "exists": true,
+      "url": "/avatar-assets/avatars/body/base/unisex/foot_walk3.png",
+      "bytes": 2907
+    },
+    {
+      "ref": "avatars/body/base/unisex/foot_walk4.png",
+      "exists": true,
+      "url": "/avatar-assets/avatars/body/base/unisex/foot_walk4.png",
+      "bytes": 2903
+    },
+    {
+      "ref": "avatars/body/base/unisex/leg_idle.png",
+      "exists": true,
+      "url": "/avatar-assets/avatars/body/base/unisex/leg_idle.png",
+      "bytes": 6426
+    },
+    {
+      "ref": "avatars/body/base/unisex/leg_sit_lower.png",
+      "exists": true,
+      "url": "/avatar-assets/avatars/body/base/unisex/leg_sit_lower.png",
+      "bytes": 2815
+    },
+    {
+      "ref": "avatars/body/base/unisex/leg_sit_upper.png",
+      "exists": true,
+      "url": "/avatar-assets/avatars/body/base/unisex/leg_sit_upper.png",
+      "bytes": 2372
+    },
+    {
+      "ref": "avatars/body/base/unisex/leg_walk1.png",
+      "exists": true,
+      "url": "/avatar-assets/avatars/body/base/unisex/leg_walk1.png",
+      "bytes": 6703
+    },
+    {
+      "ref": "avatars/body/base/unisex/leg_walk2.png",
+      "exists": true,
+      "url": "/avatar-assets/avatars/body/base/unisex/leg_walk2.png",
+      "bytes": 6667
+    },
+    {
+      "ref": "avatars/body/base/unisex/leg_walk3.png",
+      "exists": true,
+      "url": "/avatar-assets/avatars/body/base/unisex/leg_walk3.png",
+      "bytes": 6695
+    },
+    {
+      "ref": "avatars/body/base/unisex/leg_walk4.png",
+      "exists": true,
+      "url": "/avatar-assets/avatars/body/base/unisex/leg_walk4.png",
+      "bytes": 6752
+    },
+    {
+      "ref": "avatars/body/base/unisex/raise_wave1.png",
+      "exists": true,
+      "url": "/avatar-assets/avatars/body/base/unisex/raise_wave1.png",
+      "bytes": 3104
+    },
+    {
+      "ref": "avatars/body/base/unisex/raise_wave2.png",
+      "exists": true,
+      "url": "/avatar-assets/avatars/body/base/unisex/raise_wave2.png",
+      "bytes": 3111
+    },
+    {
+      "ref": "avatars/body/base/unisex/skinny_leg_idle.png",
+      "exists": true,
+      "url": "/avatar-assets/avatars/body/base/unisex/skinny_leg_idle.png",
+      "bytes": 6116
+    },
+    {
+      "ref": "avatars/body/base/unisex/skinny_leg_walk1.png",
+      "exists": true,
+      "url": "/avatar-assets/avatars/body/base/unisex/skinny_leg_walk1.png",
+      "bytes": 6322
+    },
+    {
+      "ref": "avatars/body/base/unisex/skinny_leg_walk2.png",
+      "exists": true,
+      "url": "/avatar-assets/avatars/body/base/unisex/skinny_leg_walk2.png",
+      "bytes": 6324
+    },
+    {
+      "ref": "avatars/body/base/unisex/skinny_leg_walk3.png",
+      "exists": true,
+      "url": "/avatar-assets/avatars/body/base/unisex/skinny_leg_walk3.png",
+      "bytes": 6375
+    },
+    {
+      "ref": "avatars/body/base/unisex/skinny_leg_walk4.png",
+      "exists": true,
+      "url": "/avatar-assets/avatars/body/base/unisex/skinny_leg_walk4.png",
+      "bytes": 6422
+    },
+    {
+      "ref": "avatars/body/base/unisex/skinny_sit_lower.png",
+      "exists": true,
+      "url": "/avatar-assets/avatars/body/base/unisex/skinny_sit_lower.png",
+      "bytes": 2235
+    },
+    {
+      "ref": "avatars/body/base/unisex/skinny_sit_upper.png",
+      "exists": true,
+      "url": "/avatar-assets/avatars/body/base/unisex/skinny_sit_upper.png",
+      "bytes": 2677
+    },
+    {
+      "ref": "avatars/body/base/unisex/throw_hold.png",
+      "exists": true,
+      "url": "/avatar-assets/avatars/body/base/unisex/throw_hold.png",
+      "bytes": 2991
+    },
+    {
+      "ref": "avatars/body/base/unisex/throw_open.png",
+      "exists": true,
+      "url": "/avatar-assets/avatars/body/base/unisex/throw_open.png",
+      "bytes": 2848
+    },
+    {
+      "ref": "avatars/body/base/unisex/throw_point.png",
+      "exists": true,
+      "url": "/avatar-assets/avatars/body/base/unisex/throw_point.png",
+      "bytes": 2886
+    },
+    {
+      "ref": "avatars/body/base/unisex/throw_stop.png",
+      "exists": true,
+      "url": "/avatar-assets/avatars/body/base/unisex/throw_stop.png",
+      "bytes": 2961
+    },
+    {
+      "ref": "avatars/body/base/unisex/throw_throw.png",
+      "exists": true,
+      "url": "/avatar-assets/avatars/body/base/unisex/throw_throw.png",
+      "bytes": 2826
+    },
+    {
+      "ref": "avatars/body/base/unisex/throw_thumbs.png",
+      "exists": true,
+      "url": "/avatar-assets/avatars/body/base/unisex/throw_thumbs.png",
+      "bytes": 2837
+    },
+    {
+      "ref": "avatars/body/base/male/torso.png",
+      "exists": true,
+      "url": "/avatar-assets/avatars/body/base/male/torso.png",
+      "bytes": 4660
+    }
+  ],
+  "options": [
+    {
+      "option_id": "CuteEyeShadowOptions",
+      "selected_ids": [
+        "CuteLightBrownShadow"
+      ],
+      "hit_count": 1,
+      "render_assets": [],
+      "debug_refs": []
+    },
+    {
+      "option_id": "GenderOptions",
+      "selected_ids": [
+        "Female"
+      ],
+      "hit_count": 1,
+      "render_assets": [
+        {
+          "ref": "avatars/body/base/female/pjs_torso_lying.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/female/pjs_torso_lying.png",
+          "bytes": 2417
+        },
+        {
+          "ref": "avatars/body/base/female/torso.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/female/torso.png",
+          "bytes": 4492
+        },
+        {
+          "ref": "avatars/body/base/female/torso_lying.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/female/torso_lying.png",
+          "bytes": 2732
+        },
+        {
+          "ref": "avatars/body/base/female/tshirt_torso.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/female/tshirt_torso.png",
+          "bytes": 4244
+        },
+        {
+          "ref": "avatars/body/base/unisex/arm_idle.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/arm_idle.png",
+          "bytes": 5217
+        },
+        {
+          "ref": "avatars/body/base/unisex/arm_raise.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/arm_raise.png",
+          "bytes": 3583
+        },
+        {
+          "ref": "avatars/body/base/unisex/arm_sit.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/arm_sit.png",
+          "bytes": 2977
+        },
+        {
+          "ref": "avatars/body/base/unisex/arm_throw.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/arm_throw.png",
+          "bytes": 3533
+        },
+        {
+          "ref": "avatars/body/base/unisex/arm_walk1.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/arm_walk1.png",
+          "bytes": 5424
+        },
+        {
+          "ref": "avatars/body/base/unisex/arm_walk2.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/arm_walk2.png",
+          "bytes": 5321
+        },
+        {
+          "ref": "avatars/body/base/unisex/arm_walk3.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/arm_walk3.png",
+          "bytes": 5270
+        },
+        {
+          "ref": "avatars/body/base/unisex/foot_idle.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/foot_idle.png",
+          "bytes": 2832
+        },
+        {
+          "ref": "avatars/body/base/unisex/foot_sit.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/foot_sit.png",
+          "bytes": 1841
+        },
+        {
+          "ref": "avatars/body/base/unisex/foot_walk1.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/foot_walk1.png",
+          "bytes": 2807
+        },
+        {
+          "ref": "avatars/body/base/unisex/foot_walk2.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/foot_walk2.png",
+          "bytes": 2901
+        },
+        {
+          "ref": "avatars/body/base/unisex/foot_walk3.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/foot_walk3.png",
+          "bytes": 2907
+        },
+        {
+          "ref": "avatars/body/base/unisex/foot_walk4.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/foot_walk4.png",
+          "bytes": 2903
+        },
+        {
+          "ref": "avatars/body/base/unisex/leg_idle.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/leg_idle.png",
+          "bytes": 6426
+        },
+        {
+          "ref": "avatars/body/base/unisex/leg_sit_lower.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/leg_sit_lower.png",
+          "bytes": 2815
+        },
+        {
+          "ref": "avatars/body/base/unisex/leg_sit_upper.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/leg_sit_upper.png",
+          "bytes": 2372
+        },
+        {
+          "ref": "avatars/body/base/unisex/leg_walk1.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/leg_walk1.png",
+          "bytes": 6703
+        },
+        {
+          "ref": "avatars/body/base/unisex/leg_walk2.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/leg_walk2.png",
+          "bytes": 6667
+        },
+        {
+          "ref": "avatars/body/base/unisex/leg_walk3.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/leg_walk3.png",
+          "bytes": 6695
+        },
+        {
+          "ref": "avatars/body/base/unisex/leg_walk4.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/leg_walk4.png",
+          "bytes": 6752
+        },
+        {
+          "ref": "avatars/body/base/unisex/raise_wave1.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/raise_wave1.png",
+          "bytes": 3104
+        },
+        {
+          "ref": "avatars/body/base/unisex/raise_wave2.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/raise_wave2.png",
+          "bytes": 3111
+        },
+        {
+          "ref": "avatars/body/base/unisex/skinny_leg_idle.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/skinny_leg_idle.png",
+          "bytes": 6116
+        },
+        {
+          "ref": "avatars/body/base/unisex/skinny_leg_walk1.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/skinny_leg_walk1.png",
+          "bytes": 6322
+        },
+        {
+          "ref": "avatars/body/base/unisex/skinny_leg_walk2.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/skinny_leg_walk2.png",
+          "bytes": 6324
+        },
+        {
+          "ref": "avatars/body/base/unisex/skinny_leg_walk3.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/skinny_leg_walk3.png",
+          "bytes": 6375
+        },
+        {
+          "ref": "avatars/body/base/unisex/skinny_leg_walk4.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/skinny_leg_walk4.png",
+          "bytes": 6422
+        },
+        {
+          "ref": "avatars/body/base/unisex/skinny_sit_lower.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/skinny_sit_lower.png",
+          "bytes": 2235
+        },
+        {
+          "ref": "avatars/body/base/unisex/skinny_sit_upper.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/skinny_sit_upper.png",
+          "bytes": 2677
+        },
+        {
+          "ref": "avatars/body/base/unisex/throw_hold.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/throw_hold.png",
+          "bytes": 2991
+        },
+        {
+          "ref": "avatars/body/base/unisex/throw_open.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/throw_open.png",
+          "bytes": 2848
+        },
+        {
+          "ref": "avatars/body/base/unisex/throw_point.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/throw_point.png",
+          "bytes": 2886
+        },
+        {
+          "ref": "avatars/body/base/unisex/throw_stop.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/throw_stop.png",
+          "bytes": 2961
+        },
+        {
+          "ref": "avatars/body/base/unisex/throw_throw.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/throw_throw.png",
+          "bytes": 2826
+        },
+        {
+          "ref": "avatars/body/base/unisex/throw_thumbs.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/throw_thumbs.png",
+          "bytes": 2837
+        },
+        {
+          "ref": "avatars/head/base/female/brow/b_medium.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/head/base/female/brow/b_medium.png",
+          "bytes": 1401
+        },
+        {
+          "ref": "avatars/head/base/female/eyes/eye_makeup1.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/head/base/female/eyes/eye_makeup1.png",
+          "bytes": 2860
+        },
+        {
+          "ref": "avatars/head/base/female/faces/f_f_02_cute.o3d",
+          "exists": true,
+          "url": "/avatar-assets/avatars/head/base/female/faces/f_f_02_cute.o3d",
+          "bytes": 83710
+        },
+        {
+          "ref": "avatars/head/base/female/faces/f_f_06_thin.o3d",
+          "exists": true,
+          "url": "/avatar-assets/avatars/head/base/female/faces/f_f_06_thin.o3d",
+          "bytes": 78045
+        },
+        {
+          "ref": "avatars/head/base/female/faces/nose_04_straight.o3d",
+          "exists": true,
+          "url": "/avatar-assets/avatars/head/base/female/faces/nose_04_straight.o3d",
+          "bytes": 78031
+        },
+        {
+          "ref": "avatars/head/base/female/hair/hair_berry.o3d",
+          "exists": true,
+          "url": "/avatar-assets/avatars/head/base/female/hair/hair_berry.o3d",
+          "bytes": 78716
+        },
+        {
+          "ref": "avatars/head/base/female/hair/hair_nicolepony.o3d",
+          "exists": true,
+          "url": "/avatar-assets/avatars/head/base/female/hair/hair_nicolepony.o3d",
+          "bytes": 79306
+        },
+        {
+          "ref": "avatars/head/base/female/hair/ht_berry_shad.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/head/base/female/hair/ht_berry_shad.png",
+          "bytes": 925
+        },
+        {
+          "ref": "avatars/head/base/female/hair/ht_nicolepony_shad.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/head/base/female/hair/ht_nicolepony_shad.png",
+          "bytes": 714
+        },
+        {
+          "ref": "avatars/head/base/female/mouth/f_mouth_anim05_base.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/head/base/female/mouth/f_mouth_anim05_base.png",
+          "bytes": 2005
+        },
+        {
+          "ref": "avatars/head/base/female/mouth/f_mouth_anim05_teeth.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/head/base/female/mouth/f_mouth_anim05_teeth.png",
+          "bytes": 251
+        },
+        {
+          "ref": "avatars/head/base/female/mouth/m_goofyhilite.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/head/base/female/mouth/m_goofyhilite.png",
+          "bytes": 460
+        },
+        {
+          "ref": "avatars/head/base/female/mouth/m_smile.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/head/base/female/mouth/m_smile.png",
+          "bytes": 1883
+        },
+        {
+          "ref": "avatars/head/base/female/mouth/m_smilehilite.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/head/base/female/mouth/m_smilehilite.png",
+          "bytes": 666
+        },
+        {
+          "ref": "avatars/head/base/female/mouth/m_std_gloss.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/head/base/female/mouth/m_std_gloss.png",
+          "bytes": 2212
+        },
+        {
+          "ref": "avatars/head/base/female/skin/mu_80blusher.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/head/base/female/skin/mu_80blusher.png",
+          "bytes": 2061
+        },
+        {
+          "ref": "avatars/head/base/male/eyes/eye_normhilite.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/head/base/male/eyes/eye_normhilite.png",
+          "bytes": 195
+        },
+        {
+          "ref": "avatars/head/base/unisex/decals/d_freckles.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/head/base/unisex/decals/d_freckles.png",
+          "bytes": 772
+        },
+        {
+          "ref": "avatars/head/base/unisex/decals/d_redcheeks.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/head/base/unisex/decals/d_redcheeks.png",
+          "bytes": 456
+        },
+        {
+          "ref": "avatars/head/base/unisex/hair/h_base.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/head/base/unisex/hair/h_base.png",
+          "bytes": 13731
+        },
+        {
+          "ref": "avatars/head/base/unisex/hair/h_hilite.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/head/base/unisex/hair/h_hilite.png",
+          "bytes": 8455
+        },
+        {
+          "ref": "avatars/head/base/unisex/skin/s_colour_fem.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/head/base/unisex/skin/s_colour_fem.png",
+          "bytes": 11251
+        },
+        {
+          "ref": "avatars/head/base/unisex/skin/s_colour_hilite.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/head/base/unisex/skin/s_colour_hilite.png",
+          "bytes": 3788
+        },
+        {
+          "ref": "avatars/head/base/unisex/skin/s_elf_ears.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/head/base/unisex/skin/s_elf_ears.png",
+          "bytes": 804
+        },
+        {
+          "ref": "items/base/consumables/clothing/shared/shr_short_arm_idle.png",
+          "exists": true,
+          "url": "/avatar-assets/items/base/consumables/clothing/shared/shr_short_arm_idle.png",
+          "bytes": 1877
+        },
+        {
+          "ref": "items/base/consumables/clothing/shared/shr_short_arm_raise.png",
+          "exists": true,
+          "url": "/avatar-assets/items/base/consumables/clothing/shared/shr_short_arm_raise.png",
+          "bytes": 2429
+        },
+        {
+          "ref": "items/base/consumables/clothing/shared/shr_short_arm_sit.png",
+          "exists": true,
+          "url": "/avatar-assets/items/base/consumables/clothing/shared/shr_short_arm_sit.png",
+          "bytes": 1308
+        },
+        {
+          "ref": "items/base/consumables/clothing/shared/shr_short_arm_throw.png",
+          "exists": true,
+          "url": "/avatar-assets/items/base/consumables/clothing/shared/shr_short_arm_throw.png",
+          "bytes": 2422
+        },
+        {
+          "ref": "items/base/consumables/clothing/shared/shr_short_arm_walk1.png",
+          "exists": true,
+          "url": "/avatar-assets/items/base/consumables/clothing/shared/shr_short_arm_walk1.png",
+          "bytes": 2168
+        },
+        {
+          "ref": "items/base/consumables/clothing/shared/shr_short_arm_walk2.png",
+          "exists": true,
+          "url": "/avatar-assets/items/base/consumables/clothing/shared/shr_short_arm_walk2.png",
+          "bytes": 2176
+        },
+        {
+          "ref": "items/base/consumables/clothing/shared/shr_short_arm_walk3.png",
+          "exists": true,
+          "url": "/avatar-assets/items/base/consumables/clothing/shared/shr_short_arm_walk3.png",
+          "bytes": 2021
+        }
+      ],
+      "debug_refs": [
+        {
+          "raw": "$bf/pjs_torso_lying.png",
+          "expanded": "avatars/body/base/female/pjs_torso_lying.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bf/torso.png",
+          "expanded": "avatars/body/base/female/torso.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bf/torso_lying.png",
+          "expanded": "avatars/body/base/female/torso_lying.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bf/tshirt_torso.png",
+          "expanded": "avatars/body/base/female/tshirt_torso.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bm/icon_m_tshirt.png",
+          "expanded": "avatars/body/base/male/icon_m_tshirt.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$bu/arm_idle.png",
+          "expanded": "avatars/body/base/unisex/arm_idle.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/arm_raise.png",
+          "expanded": "avatars/body/base/unisex/arm_raise.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/arm_sit.png",
+          "expanded": "avatars/body/base/unisex/arm_sit.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/arm_throw.png",
+          "expanded": "avatars/body/base/unisex/arm_throw.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/arm_walk1.png",
+          "expanded": "avatars/body/base/unisex/arm_walk1.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/arm_walk2.png",
+          "expanded": "avatars/body/base/unisex/arm_walk2.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/arm_walk3.png",
+          "expanded": "avatars/body/base/unisex/arm_walk3.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/foot_idle.png",
+          "expanded": "avatars/body/base/unisex/foot_idle.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/foot_sit.png",
+          "expanded": "avatars/body/base/unisex/foot_sit.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/foot_walk1.png",
+          "expanded": "avatars/body/base/unisex/foot_walk1.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/foot_walk2.png",
+          "expanded": "avatars/body/base/unisex/foot_walk2.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/foot_walk3.png",
+          "expanded": "avatars/body/base/unisex/foot_walk3.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/foot_walk4.png",
+          "expanded": "avatars/body/base/unisex/foot_walk4.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/icon_shoe_foot.png",
+          "expanded": "avatars/body/base/unisex/icon_shoe_foot.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$bu/icon_skinny_trouser.png",
+          "expanded": "avatars/body/base/unisex/icon_skinny_trouser.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$bu/leg_idle.png",
+          "expanded": "avatars/body/base/unisex/leg_idle.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/leg_sit_lower.png",
+          "expanded": "avatars/body/base/unisex/leg_sit_lower.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/leg_sit_upper.png",
+          "expanded": "avatars/body/base/unisex/leg_sit_upper.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/leg_walk1.png",
+          "expanded": "avatars/body/base/unisex/leg_walk1.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/leg_walk2.png",
+          "expanded": "avatars/body/base/unisex/leg_walk2.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/leg_walk3.png",
+          "expanded": "avatars/body/base/unisex/leg_walk3.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/leg_walk4.png",
+          "expanded": "avatars/body/base/unisex/leg_walk4.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/raise_wave1.png",
+          "expanded": "avatars/body/base/unisex/raise_wave1.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/raise_wave2.png",
+          "expanded": "avatars/body/base/unisex/raise_wave2.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/skinny_leg_idle.png",
+          "expanded": "avatars/body/base/unisex/skinny_leg_idle.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/skinny_leg_walk1.png",
+          "expanded": "avatars/body/base/unisex/skinny_leg_walk1.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/skinny_leg_walk2.png",
+          "expanded": "avatars/body/base/unisex/skinny_leg_walk2.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/skinny_leg_walk3.png",
+          "expanded": "avatars/body/base/unisex/skinny_leg_walk3.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/skinny_leg_walk4.png",
+          "expanded": "avatars/body/base/unisex/skinny_leg_walk4.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/skinny_sit_lower.png",
+          "expanded": "avatars/body/base/unisex/skinny_sit_lower.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/skinny_sit_upper.png",
+          "expanded": "avatars/body/base/unisex/skinny_sit_upper.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/throw_hold.png",
+          "expanded": "avatars/body/base/unisex/throw_hold.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/throw_open.png",
+          "expanded": "avatars/body/base/unisex/throw_open.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/throw_point.png",
+          "expanded": "avatars/body/base/unisex/throw_point.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/throw_stop.png",
+          "expanded": "avatars/body/base/unisex/throw_stop.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/throw_throw.png",
+          "expanded": "avatars/body/base/unisex/throw_throw.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/throw_thumbs.png",
+          "expanded": "avatars/body/base/unisex/throw_thumbs.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/brow/b_medium.png",
+          "expanded": "avatars/head/base/female/brow/b_medium.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/brow/icon_eyebrows_medium.png",
+          "expanded": "avatars/head/base/female/brow/icon_eyebrows_medium.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/brow/icon_eyebrows_medium_down.png",
+          "expanded": "avatars/head/base/female/brow/icon_eyebrows_medium_down.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/brow/icon_eyebrows_medium_up.png",
+          "expanded": "avatars/head/base/female/brow/icon_eyebrows_medium_up.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/brow/icon_eyebrows_thin.png",
+          "expanded": "avatars/head/base/female/brow/icon_eyebrows_thin.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/brow/icon_eyebrows_thin_down.png",
+          "expanded": "avatars/head/base/female/brow/icon_eyebrows_thin_down.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/brow/icon_eyebrows_thin_up.png",
+          "expanded": "avatars/head/base/female/brow/icon_eyebrows_thin_up.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/decals/d_cheekbonehi.png",
+          "expanded": "avatars/head/base/female/decals/d_cheekbonehi.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/decals/d_cheekbonelow.png",
+          "expanded": "avatars/head/base/female/decals/d_cheekbonelow.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/decals/d_star.png",
+          "expanded": "avatars/head/base/female/decals/d_star.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/decals/d_star2.png",
+          "expanded": "avatars/head/base/female/decals/d_star2.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/decals/icon_fdecal_bumchin.png",
+          "expanded": "avatars/head/base/female/decals/icon_fdecal_bumchin.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/decals/icon_fdecal_cheekbone.png",
+          "expanded": "avatars/head/base/female/decals/icon_fdecal_cheekbone.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/decals/icon_fdecal_cheekline.png",
+          "expanded": "avatars/head/base/female/decals/icon_fdecal_cheekline.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/decals/icon_fdecal_crowsfeet.png",
+          "expanded": "avatars/head/base/female/decals/icon_fdecal_crowsfeet.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/decals/icon_fdecal_dimples.png",
+          "expanded": "avatars/head/base/female/decals/icon_fdecal_dimples.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/decals/icon_fdecal_earingdiamond.png",
+          "expanded": "avatars/head/base/female/decals/icon_fdecal_earingdiamond.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/decals/icon_fdecal_earingstud.png",
+          "expanded": "avatars/head/base/female/decals/icon_fdecal_earingstud.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/decals/icon_fdecal_freckles.png",
+          "expanded": "avatars/head/base/female/decals/icon_fdecal_freckles.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/decals/icon_fdecal_molecheek.png",
+          "expanded": "avatars/head/base/female/decals/icon_fdecal_molecheek.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/decals/icon_fdecal_molecheekhigh.png",
+          "expanded": "avatars/head/base/female/decals/icon_fdecal_molecheekhigh.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/decals/icon_fdecal_molelip.png",
+          "expanded": "avatars/head/base/female/decals/icon_fdecal_molelip.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/decals/icon_fdecal_rouge.png",
+          "expanded": "avatars/head/base/female/decals/icon_fdecal_rouge.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/decals/icon_fdecal_starglitter.png",
+          "expanded": "avatars/head/base/female/decals/icon_fdecal_starglitter.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/decals/icon_fdecal_studbottomlip.png",
+          "expanded": "avatars/head/base/female/decals/icon_fdecal_studbottomlip.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/decals/icon_fdecal_studeyebrow.png",
+          "expanded": "avatars/head/base/female/decals/icon_fdecal_studeyebrow.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/decals/icon_fdecal_studtoplip.png",
+          "expanded": "avatars/head/base/female/decals/icon_fdecal_studtoplip.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/decals/icon_foundation0.png",
+          "expanded": "avatars/head/base/female/decals/icon_foundation0.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/decals/icon_foundation1.png",
+          "expanded": "avatars/head/base/female/decals/icon_foundation1.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/decals/icon_foundation2.png",
+          "expanded": "avatars/head/base/female/decals/icon_foundation2.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/decals/icon_foundation3.png",
+          "expanded": "avatars/head/base/female/decals/icon_foundation3.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/decals/icon_mu_eighties.png",
+          "expanded": "avatars/head/base/female/decals/icon_mu_eighties.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/decals/icon_mu_heavy.png",
+          "expanded": "avatars/head/base/female/decals/icon_mu_heavy.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/decals/icon_mu_lite.png",
+          "expanded": "avatars/head/base/female/decals/icon_mu_lite.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/decals/icon_mu_none.png",
+          "expanded": "avatars/head/base/female/decals/icon_mu_none.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/decals/icon_mu_strike.png",
+          "expanded": "avatars/head/base/female/decals/icon_mu_strike.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/eyes/eye_animlarge_base.png",
+          "expanded": "avatars/head/base/female/eyes/eye_animlarge_base.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/eyes/eye_animlarge_iris.png",
+          "expanded": "avatars/head/base/female/eyes/eye_animlarge_iris.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/eyes/eye_animround_iris.png",
+          "expanded": "avatars/head/base/female/eyes/eye_animround_iris.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/eyes/eye_animsquare_base.png",
+          "expanded": "avatars/head/base/female/eyes/eye_animsquare_base.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/eyes/eye_makeup1.png",
+          "expanded": "avatars/head/base/female/eyes/eye_makeup1.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/eyes/eye_makeup2.png",
+          "expanded": "avatars/head/base/female/eyes/eye_makeup2.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/eyes/eye_normbase.png",
+          "expanded": "avatars/head/base/female/eyes/eye_normbase.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/eyes/eye_tribase.png",
+          "expanded": "avatars/head/base/female/eyes/eye_tribase.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/eyes/eye_trideep_base.png",
+          "expanded": "avatars/head/base/female/eyes/eye_trideep_base.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/eyes/eye_trideep_iris.png",
+          "expanded": "avatars/head/base/female/eyes/eye_trideep_iris.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/eyes/eye_triirirs.png",
+          "expanded": "avatars/head/base/female/eyes/eye_triirirs.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/eyes/icon_shadow_black.png",
+          "expanded": "avatars/head/base/female/eyes/icon_shadow_black.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/eyes/icon_shadow_greentea.png",
+          "expanded": "avatars/head/base/female/eyes/icon_shadow_greentea.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/eyes/icon_shadow_inca.png",
+          "expanded": "avatars/head/base/female/eyes/icon_shadow_inca.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/eyes/icon_shadow_litepurp.png",
+          "expanded": "avatars/head/base/female/eyes/icon_shadow_litepurp.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/eyes/icon_shadow_mauve.png",
+          "expanded": "avatars/head/base/female/eyes/icon_shadow_mauve.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/eyes/icon_shadow_oldgold.png",
+          "expanded": "avatars/head/base/female/eyes/icon_shadow_oldgold.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/eyes/icon_shadow_paladium.png",
+          "expanded": "avatars/head/base/female/eyes/icon_shadow_paladium.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/eyes/icon_shadow_santa.png",
+          "expanded": "avatars/head/base/female/eyes/icon_shadow_santa.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/eyes/icon_shadow_tangerine.png",
+          "expanded": "avatars/head/base/female/eyes/icon_shadow_tangerine.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/eyes/icon_shadow_teal.png",
+          "expanded": "avatars/head/base/female/eyes/icon_shadow_teal.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/eyes/icon_shadow_tirquoise.png",
+          "expanded": "avatars/head/base/female/eyes/icon_shadow_tirquoise.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/eyes/icon_shadow_vanilla.png",
+          "expanded": "avatars/head/base/female/eyes/icon_shadow_vanilla.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/eyes/icon_shadow_vintagesilver.png",
+          "expanded": "avatars/head/base/female/eyes/icon_shadow_vintagesilver.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/eyes/icons_feye_animlarge.png",
+          "expanded": "avatars/head/base/female/eyes/icons_feye_animlarge.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/eyes/icons_feye_animsquare.png",
+          "expanded": "avatars/head/base/female/eyes/icons_feye_animsquare.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/eyes/icons_feye_cute.png",
+          "expanded": "avatars/head/base/female/eyes/icons_feye_cute.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/eyes/icons_feye_heavy_makeup.png",
+          "expanded": "avatars/head/base/female/eyes/icons_feye_heavy_makeup.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/eyes/icons_feye_sultry.png",
+          "expanded": "avatars/head/base/female/eyes/icons_feye_sultry.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/eyes/icons_feye_thinny.png",
+          "expanded": "avatars/head/base/female/eyes/icons_feye_thinny.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/eyes/icons_feye_trideep.png",
+          "expanded": "avatars/head/base/female/eyes/icons_feye_trideep.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/faces/f_f_01_african.o3d",
+          "expanded": "avatars/head/base/female/faces/f_f_01_african.o3d",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/faces/f_f_02_cute.o3d",
+          "expanded": "avatars/head/base/female/faces/f_f_02_cute.o3d",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/faces/f_f_03_oval.o3d",
+          "expanded": "avatars/head/base/female/faces/f_f_03_oval.o3d",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/faces/f_f_04_square.o3d",
+          "expanded": "avatars/head/base/female/faces/f_f_04_square.o3d",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/faces/f_f_05_strong.o3d",
+          "expanded": "avatars/head/base/female/faces/f_f_05_strong.o3d",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/faces/f_f_06_thin.o3d",
+          "expanded": "avatars/head/base/female/faces/f_f_06_thin.o3d",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/faces/icon_cute.png",
+          "expanded": "avatars/head/base/female/faces/icon_cute.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/faces/icon_oval.png",
+          "expanded": "avatars/head/base/female/faces/icon_oval.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/faces/icon_square.png",
+          "expanded": "avatars/head/base/female/faces/icon_square.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/faces/icon_squat.png",
+          "expanded": "avatars/head/base/female/faces/icon_squat.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/faces/icon_strong.png",
+          "expanded": "avatars/head/base/female/faces/icon_strong.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/faces/icon_thin.png",
+          "expanded": "avatars/head/base/female/faces/icon_thin.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/faces/nose_01_wide.o3d",
+          "expanded": "avatars/head/base/female/faces/nose_01_wide.o3d",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/faces/nose_03_roman.o3d",
+          "expanded": "avatars/head/base/female/faces/nose_03_roman.o3d",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/faces/nose_04_straight.o3d",
+          "expanded": "avatars/head/base/female/faces/nose_04_straight.o3d",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/hair/hair_afrof.o3d",
+          "expanded": "avatars/head/base/female/hair/hair_afrof.o3d",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/hair/hair_amelie.o3d",
+          "expanded": "avatars/head/base/female/hair/hair_amelie.o3d",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/hair/hair_aniston.o3d",
+          "expanded": "avatars/head/base/female/hair/hair_aniston.o3d",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/hair/hair_berry.o3d",
+          "expanded": "avatars/head/base/female/hair/hair_berry.o3d",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/hair/hair_braids.o3d",
+          "expanded": "avatars/head/base/female/hair/hair_braids.o3d",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/hair/hair_britneynohat.o3d",
+          "expanded": "avatars/head/base/female/hair/hair_britneynohat.o3d",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/hair/hair_catrell.o3d",
+          "expanded": "avatars/head/base/female/hair/hair_catrell.o3d",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/hair/hair_curl2.o3d",
+          "expanded": "avatars/head/base/female/hair/hair_curl2.o3d",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/hair/hair_jhennifer.o3d",
+          "expanded": "avatars/head/base/female/hair/hair_jhennifer.o3d",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/hair/hair_jolie.o3d",
+          "expanded": "avatars/head/base/female/hair/hair_jolie.o3d",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/hair/hair_longwave.o3d",
+          "expanded": "avatars/head/base/female/hair/hair_longwave.o3d",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/hair/hair_loosbun.o3d",
+          "expanded": "avatars/head/base/female/hair/hair_loosbun.o3d",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/hair/hair_lucy.o3d",
+          "expanded": "avatars/head/base/female/hair/hair_lucy.o3d",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/hair/hair_med_curl.o3d",
+          "expanded": "avatars/head/base/female/hair/hair_med_curl.o3d",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/hair/hair_meenie.o3d",
+          "expanded": "avatars/head/base/female/hair/hair_meenie.o3d",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/hair/hair_mona.o3d",
+          "expanded": "avatars/head/base/female/hair/hair_mona.o3d",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/hair/hair_nicolepony.o3d",
+          "expanded": "avatars/head/base/female/hair/hair_nicolepony.o3d",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/hair/hair_short.o3d",
+          "expanded": "avatars/head/base/female/hair/hair_short.o3d",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/hair/hair_sidepony.o3d",
+          "expanded": "avatars/head/base/female/hair/hair_sidepony.o3d",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/hair/hair_updo.o3d",
+          "expanded": "avatars/head/base/female/hair/hair_updo.o3d",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/hair/hair_weatherbob.o3d",
+          "expanded": "avatars/head/base/female/hair/hair_weatherbob.o3d",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/hair/ht_afrof_shad.png",
+          "expanded": "avatars/head/base/female/hair/ht_afrof_shad.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/hair/ht_aniston_shad.png",
+          "expanded": "avatars/head/base/female/hair/ht_aniston_shad.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/hair/ht_berry_shad.png",
+          "expanded": "avatars/head/base/female/hair/ht_berry_shad.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/hair/ht_braids_shad.png",
+          "expanded": "avatars/head/base/female/hair/ht_braids_shad.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/hair/ht_britneynohat_shad.png",
+          "expanded": "avatars/head/base/female/hair/ht_britneynohat_shad.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/hair/ht_catrell_shad.png",
+          "expanded": "avatars/head/base/female/hair/ht_catrell_shad.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/hair/ht_curl2_shad.png",
+          "expanded": "avatars/head/base/female/hair/ht_curl2_shad.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/hair/ht_edzio_shad.png",
+          "expanded": "avatars/head/base/female/hair/ht_edzio_shad.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/hair/ht_jolie_shad.png",
+          "expanded": "avatars/head/base/female/hair/ht_jolie_shad.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/hair/ht_loosebun_shad.png",
+          "expanded": "avatars/head/base/female/hair/ht_loosebun_shad.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/hair/ht_lucy_shad.png",
+          "expanded": "avatars/head/base/female/hair/ht_lucy_shad.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/hair/ht_mona_shad.png",
+          "expanded": "avatars/head/base/female/hair/ht_mona_shad.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/hair/ht_nicolepony_shad.png",
+          "expanded": "avatars/head/base/female/hair/ht_nicolepony_shad.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/hair/ht_pony_shad.png",
+          "expanded": "avatars/head/base/female/hair/ht_pony_shad.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/hair/ht_short_shad.png",
+          "expanded": "avatars/head/base/female/hair/ht_short_shad.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/hair/ht_tiesh_shad.png",
+          "expanded": "avatars/head/base/female/hair/ht_tiesh_shad.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/hair/ht_updo_shad.png",
+          "expanded": "avatars/head/base/female/hair/ht_updo_shad.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/hair/ht_weatherbob_shad.png",
+          "expanded": "avatars/head/base/female/hair/ht_weatherbob_shad.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/hair/icon_hair_afrof.png",
+          "expanded": "avatars/head/base/female/hair/icon_hair_afrof.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/hair/icon_hair_amelie.png",
+          "expanded": "avatars/head/base/female/hair/icon_hair_amelie.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/hair/icon_hair_aniston.png",
+          "expanded": "avatars/head/base/female/hair/icon_hair_aniston.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/hair/icon_hair_berry.png",
+          "expanded": "avatars/head/base/female/hair/icon_hair_berry.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/hair/icon_hair_braids.png",
+          "expanded": "avatars/head/base/female/hair/icon_hair_braids.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/hair/icon_hair_britneynohat.png",
+          "expanded": "avatars/head/base/female/hair/icon_hair_britneynohat.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/hair/icon_hair_catrell.png",
+          "expanded": "avatars/head/base/female/hair/icon_hair_catrell.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/hair/icon_hair_curly2.png",
+          "expanded": "avatars/head/base/female/hair/icon_hair_curly2.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/hair/icon_hair_jhennifer.png",
+          "expanded": "avatars/head/base/female/hair/icon_hair_jhennifer.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/hair/icon_hair_jolie.png",
+          "expanded": "avatars/head/base/female/hair/icon_hair_jolie.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/hair/icon_hair_long_wave.png",
+          "expanded": "avatars/head/base/female/hair/icon_hair_long_wave.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/hair/icon_hair_loosebun.png",
+          "expanded": "avatars/head/base/female/hair/icon_hair_loosebun.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/hair/icon_hair_lucy.png",
+          "expanded": "avatars/head/base/female/hair/icon_hair_lucy.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/hair/icon_hair_med_curl.png",
+          "expanded": "avatars/head/base/female/hair/icon_hair_med_curl.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/hair/icon_hair_meenie.png",
+          "expanded": "avatars/head/base/female/hair/icon_hair_meenie.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/hair/icon_hair_mona.png",
+          "expanded": "avatars/head/base/female/hair/icon_hair_mona.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/hair/icon_hair_nicolepony.png",
+          "expanded": "avatars/head/base/female/hair/icon_hair_nicolepony.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/hair/icon_hair_pony.png",
+          "expanded": "avatars/head/base/female/hair/icon_hair_pony.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/hair/icon_hair_short.png",
+          "expanded": "avatars/head/base/female/hair/icon_hair_short.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/hair/icon_hair_slick_messy.png",
+          "expanded": "avatars/head/base/female/hair/icon_hair_slick_messy.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/hair/icon_hair_updo.png",
+          "expanded": "avatars/head/base/female/hair/icon_hair_updo.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/hair/icon_hair_weatherbob.png",
+          "expanded": "avatars/head/base/female/hair/icon_hair_weatherbob.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/mouth/f_mouth_anim01_base.png",
+          "expanded": "avatars/head/base/female/mouth/f_mouth_anim01_base.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/mouth/f_mouth_anim01_icon.png",
+          "expanded": "avatars/head/base/female/mouth/f_mouth_anim01_icon.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/mouth/f_mouth_anim02_base.png",
+          "expanded": "avatars/head/base/female/mouth/f_mouth_anim02_base.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/mouth/f_mouth_anim02_icon.png",
+          "expanded": "avatars/head/base/female/mouth/f_mouth_anim02_icon.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/mouth/f_mouth_anim03_base.png",
+          "expanded": "avatars/head/base/female/mouth/f_mouth_anim03_base.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/mouth/f_mouth_anim03_icon.png",
+          "expanded": "avatars/head/base/female/mouth/f_mouth_anim03_icon.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/mouth/f_mouth_anim04_base.png",
+          "expanded": "avatars/head/base/female/mouth/f_mouth_anim04_base.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/mouth/f_mouth_anim04_icon.png",
+          "expanded": "avatars/head/base/female/mouth/f_mouth_anim04_icon.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/mouth/f_mouth_anim05_base.png",
+          "expanded": "avatars/head/base/female/mouth/f_mouth_anim05_base.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/mouth/f_mouth_anim05_icon.png",
+          "expanded": "avatars/head/base/female/mouth/f_mouth_anim05_icon.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/mouth/f_mouth_anim05_teeth.png",
+          "expanded": "avatars/head/base/female/mouth/f_mouth_anim05_teeth.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/mouth/f_mouth_anim06_base.png",
+          "expanded": "avatars/head/base/female/mouth/f_mouth_anim06_base.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/mouth/f_mouth_anim06_icon.png",
+          "expanded": "avatars/head/base/female/mouth/f_mouth_anim06_icon.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/mouth/f_mouth_anim07_base.png",
+          "expanded": "avatars/head/base/female/mouth/f_mouth_anim07_base.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/mouth/f_mouth_anim07_icon.png",
+          "expanded": "avatars/head/base/female/mouth/f_mouth_anim07_icon.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/mouth/f_mouth_anim08_base.png",
+          "expanded": "avatars/head/base/female/mouth/f_mouth_anim08_base.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/mouth/f_mouth_anim08_icon.png",
+          "expanded": "avatars/head/base/female/mouth/f_mouth_anim08_icon.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/mouth/f_mouth_anim09_base.png",
+          "expanded": "avatars/head/base/female/mouth/f_mouth_anim09_base.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/mouth/f_mouth_anim09_icon.png",
+          "expanded": "avatars/head/base/female/mouth/f_mouth_anim09_icon.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/mouth/f_mouth_anim10_base.png",
+          "expanded": "avatars/head/base/female/mouth/f_mouth_anim10_base.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/mouth/f_mouth_anim10_icon.png",
+          "expanded": "avatars/head/base/female/mouth/f_mouth_anim10_icon.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/mouth/f_mouth_anim11_base.png",
+          "expanded": "avatars/head/base/female/mouth/f_mouth_anim11_base.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/mouth/f_mouth_anim11_icon.png",
+          "expanded": "avatars/head/base/female/mouth/f_mouth_anim11_icon.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/mouth/icon_lip_candy.png",
+          "expanded": "avatars/head/base/female/mouth/icon_lip_candy.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/mouth/icon_lip_fire.png",
+          "expanded": "avatars/head/base/female/mouth/icon_lip_fire.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/mouth/icon_lip_hot.png",
+          "expanded": "avatars/head/base/female/mouth/icon_lip_hot.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/mouth/icon_lip_ice.png",
+          "expanded": "avatars/head/base/female/mouth/icon_lip_ice.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/mouth/icon_lip_jade.png",
+          "expanded": "avatars/head/base/female/mouth/icon_lip_jade.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/mouth/icon_lip_magenta.png",
+          "expanded": "avatars/head/base/female/mouth/icon_lip_magenta.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/mouth/icon_lip_manson.png",
+          "expanded": "avatars/head/base/female/mouth/icon_lip_manson.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/mouth/icon_lip_marylin.png",
+          "expanded": "avatars/head/base/female/mouth/icon_lip_marylin.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/mouth/icon_lip_palm.png",
+          "expanded": "avatars/head/base/female/mouth/icon_lip_palm.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/mouth/icon_lip_pplum.png",
+          "expanded": "avatars/head/base/female/mouth/icon_lip_pplum.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/mouth/icon_lip_siren.png",
+          "expanded": "avatars/head/base/female/mouth/icon_lip_siren.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/mouth/icon_lip_turq.png",
+          "expanded": "avatars/head/base/female/mouth/icon_lip_turq.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/mouth/icon_lip_vanilla.png",
+          "expanded": "avatars/head/base/female/mouth/icon_lip_vanilla.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/mouth/icons_f_mouth_camp.png",
+          "expanded": "avatars/head/base/female/mouth/icons_f_mouth_camp.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/mouth/icons_f_mouth_fvamp.png",
+          "expanded": "avatars/head/base/female/mouth/icons_f_mouth_fvamp.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/mouth/icons_f_mouth_fvamp_blood.png",
+          "expanded": "avatars/head/base/female/mouth/icons_f_mouth_fvamp_blood.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/mouth/icons_f_mouth_glossy.png",
+          "expanded": "avatars/head/base/female/mouth/icons_f_mouth_glossy.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/mouth/icons_f_mouth_goofy.png",
+          "expanded": "avatars/head/base/female/mouth/icons_f_mouth_goofy.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/mouth/icons_f_mouth_lipstick.png",
+          "expanded": "avatars/head/base/female/mouth/icons_f_mouth_lipstick.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/mouth/icons_f_mouth_smile_thin.png",
+          "expanded": "avatars/head/base/female/mouth/icons_f_mouth_smile_thin.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/mouth/icons_f_mouth_standard.png",
+          "expanded": "avatars/head/base/female/mouth/icons_f_mouth_standard.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/mouth/icons_f_mouth_toothy_grin.png",
+          "expanded": "avatars/head/base/female/mouth/icons_f_mouth_toothy_grin.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/mouth/icons_f_mouth_wry.png",
+          "expanded": "avatars/head/base/female/mouth/icons_f_mouth_wry.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/mouth/icons_m_smirkpa.png",
+          "expanded": "avatars/head/base/female/mouth/icons_m_smirkpa.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/mouth/m_camp.png",
+          "expanded": "avatars/head/base/female/mouth/m_camp.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/mouth/m_camphilite.png",
+          "expanded": "avatars/head/base/female/mouth/m_camphilite.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/mouth/m_campteeth.png",
+          "expanded": "avatars/head/base/female/mouth/m_campteeth.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/mouth/m_fvamp.png",
+          "expanded": "avatars/head/base/female/mouth/m_fvamp.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/mouth/m_fvamp_blood.png",
+          "expanded": "avatars/head/base/female/mouth/m_fvamp_blood.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/mouth/m_fvamp_fangs.png",
+          "expanded": "avatars/head/base/female/mouth/m_fvamp_fangs.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/mouth/m_fvamp_hilite.png",
+          "expanded": "avatars/head/base/female/mouth/m_fvamp_hilite.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/mouth/m_goofy.png",
+          "expanded": "avatars/head/base/female/mouth/m_goofy.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/mouth/m_goofyhilite.png",
+          "expanded": "avatars/head/base/female/mouth/m_goofyhilite.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/mouth/m_goofyteeth.png",
+          "expanded": "avatars/head/base/female/mouth/m_goofyteeth.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/mouth/m_lipstick.png",
+          "expanded": "avatars/head/base/female/mouth/m_lipstick.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/mouth/m_lipstickhlite.png",
+          "expanded": "avatars/head/base/female/mouth/m_lipstickhlite.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/mouth/m_smile.png",
+          "expanded": "avatars/head/base/female/mouth/m_smile.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/mouth/m_smilehilite.png",
+          "expanded": "avatars/head/base/female/mouth/m_smilehilite.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/mouth/m_smirkpa.png",
+          "expanded": "avatars/head/base/female/mouth/m_smirkpa.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/mouth/m_smirkpahilite.png",
+          "expanded": "avatars/head/base/female/mouth/m_smirkpahilite.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/mouth/m_standard.png",
+          "expanded": "avatars/head/base/female/mouth/m_standard.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/mouth/m_std_gloss.png",
+          "expanded": "avatars/head/base/female/mouth/m_std_gloss.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/mouth/m_tooth.png",
+          "expanded": "avatars/head/base/female/mouth/m_tooth.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/mouth/m_toothmouth.png",
+          "expanded": "avatars/head/base/female/mouth/m_toothmouth.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/mouth/m_wry.png",
+          "expanded": "avatars/head/base/female/mouth/m_wry.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/mouth/m_wryhilite.png",
+          "expanded": "avatars/head/base/female/mouth/m_wryhilite.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/mouth/m_wryteeth.png",
+          "expanded": "avatars/head/base/female/mouth/m_wryteeth.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/props/gl_catseye.o3d",
+          "expanded": "avatars/head/base/female/props/gl_catseye.o3d",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/props/gl_catseye.png",
+          "expanded": "avatars/head/base/female/props/gl_catseye.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/props/gl_dg2.o3d",
+          "expanded": "avatars/head/base/female/props/gl_dg2.o3d",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/props/gl_dg2.png",
+          "expanded": "avatars/head/base/female/props/gl_dg2.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/props/gl_dior.o3d",
+          "expanded": "avatars/head/base/female/props/gl_dior.o3d",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/props/gl_dior.png",
+          "expanded": "avatars/head/base/female/props/gl_dior.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/props/gl_eighties.o3d",
+          "expanded": "avatars/head/base/female/props/gl_eighties.o3d",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/props/gl_eighties.png",
+          "expanded": "avatars/head/base/female/props/gl_eighties.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/props/gl_lennonf.o3d",
+          "expanded": "avatars/head/base/female/props/gl_lennonf.o3d",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/props/gl_surfyf.o3d",
+          "expanded": "avatars/head/base/female/props/gl_surfyf.o3d",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/props/gl_tiffany.o3d",
+          "expanded": "avatars/head/base/female/props/gl_tiffany.o3d",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/props/gl_tiffany.png",
+          "expanded": "avatars/head/base/female/props/gl_tiffany.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/props/icon_gl_80s_pink.png",
+          "expanded": "avatars/head/base/female/props/icon_gl_80s_pink.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/props/icon_gl_80s_yellow.png",
+          "expanded": "avatars/head/base/female/props/icon_gl_80s_yellow.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/props/icon_gl_catseye_red.png",
+          "expanded": "avatars/head/base/female/props/icon_gl_catseye_red.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/props/icon_gl_catseye_white.png",
+          "expanded": "avatars/head/base/female/props/icon_gl_catseye_white.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/props/icon_gl_dior_gold.png",
+          "expanded": "avatars/head/base/female/props/icon_gl_dior_gold.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/props/icon_gl_dior_pink.png",
+          "expanded": "avatars/head/base/female/props/icon_gl_dior_pink.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/props/icon_gl_tiffany.png",
+          "expanded": "avatars/head/base/female/props/icon_gl_tiffany.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/props/icon_gl_tiffany_black.png",
+          "expanded": "avatars/head/base/female/props/icon_gl_tiffany_black.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/props/icons_gl_dg2.png",
+          "expanded": "avatars/head/base/female/props/icons_gl_dg2.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/props/icons_gl_dg3.png",
+          "expanded": "avatars/head/base/female/props/icons_gl_dg3.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/props/icons_gl_lennonf.png",
+          "expanded": "avatars/head/base/female/props/icons_gl_lennonf.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/props/icons_gl_lennonf_dark.png",
+          "expanded": "avatars/head/base/female/props/icons_gl_lennonf_dark.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/props/icons_gl_surfyf_grey.png",
+          "expanded": "avatars/head/base/female/props/icons_gl_surfyf_grey.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/props/icons_gl_surfyf_red.png",
+          "expanded": "avatars/head/base/female/props/icons_gl_surfyf_red.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/props/icons_gl_surfyf_yellow.png",
+          "expanded": "avatars/head/base/female/props/icons_gl_surfyf_yellow.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/props/icons_gl_thickf.png",
+          "expanded": "avatars/head/base/female/props/icons_gl_thickf.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/props/icons_gl_thickpink.png",
+          "expanded": "avatars/head/base/female/props/icons_gl_thickpink.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/props/icons_gl_thickpurp.png",
+          "expanded": "avatars/head/base/female/props/icons_gl_thickpurp.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/props/icons_gl_thinblk.png",
+          "expanded": "avatars/head/base/female/props/icons_gl_thinblk.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/props/icons_gl_thinpink.png",
+          "expanded": "avatars/head/base/female/props/icons_gl_thinpink.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/props/icons_gl_thinpurp.png",
+          "expanded": "avatars/head/base/female/props/icons_gl_thinpurp.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/props/icons_gl_thinrndblk.png",
+          "expanded": "avatars/head/base/female/props/icons_gl_thinrndblk.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/props/icons_gl_thinrndpink.png",
+          "expanded": "avatars/head/base/female/props/icons_gl_thinrndpink.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/props/icons_gl_thinrndpurp.png",
+          "expanded": "avatars/head/base/female/props/icons_gl_thinrndpurp.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/skin/mu_80blusher.png",
+          "expanded": "avatars/head/base/female/skin/mu_80blusher.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/skin/mu_blusher2.png",
+          "expanded": "avatars/head/base/female/skin/mu_blusher2.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/skin/mu_blusherlite.png",
+          "expanded": "avatars/head/base/female/skin/mu_blusherlite.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/skin/mu_eyestrike.png",
+          "expanded": "avatars/head/base/female/skin/mu_eyestrike.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hm/brow/b_thick.png",
+          "expanded": "avatars/head/base/male/brow/b_thick.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hm/brow/icon_male_eyebrows_l-shaped.png",
+          "expanded": "avatars/head/base/male/brow/icon_male_eyebrows_l-shaped.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hm/brow/icon_male_eyebrows_l-shaped_down.png",
+          "expanded": "avatars/head/base/male/brow/icon_male_eyebrows_l-shaped_down.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hm/brow/icon_male_eyebrows_l-shaped_up.png",
+          "expanded": "avatars/head/base/male/brow/icon_male_eyebrows_l-shaped_up.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hm/brow/icon_male_eyebrows_mediumraise.png",
+          "expanded": "avatars/head/base/male/brow/icon_male_eyebrows_mediumraise.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hm/brow/icon_male_eyebrows_thick.png",
+          "expanded": "avatars/head/base/male/brow/icon_male_eyebrows_thick.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hm/brow/icon_male_eyebrows_thick_down.png",
+          "expanded": "avatars/head/base/male/brow/icon_male_eyebrows_thick_down.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hm/brow/icon_male_eyebrows_thick_up.png",
+          "expanded": "avatars/head/base/male/brow/icon_male_eyebrows_thick_up.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hm/brow/icon_male_eyebrows_thickraise.png",
+          "expanded": "avatars/head/base/male/brow/icon_male_eyebrows_thickraise.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hm/brow/icon_male_eyebrows_thinraise.png",
+          "expanded": "avatars/head/base/male/brow/icon_male_eyebrows_thinraise.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hm/brow/icon_male_eyebrows_tick.png",
+          "expanded": "avatars/head/base/male/brow/icon_male_eyebrows_tick.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hm/brow/m_thin.png",
+          "expanded": "avatars/head/base/male/brow/m_thin.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hm/eyes/eye_normhilite.png",
+          "expanded": "avatars/head/base/male/eyes/eye_normhilite.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hm/props/icons_gl_medium.png",
+          "expanded": "avatars/head/base/male/props/icons_gl_medium.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/brow/b_lshape.png",
+          "expanded": "avatars/head/base/unisex/brow/b_lshape.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/brow/eyebrows_anim01_base.png",
+          "expanded": "avatars/head/base/unisex/brow/eyebrows_anim01_base.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/brow/eyebrows_anim01_icon.png",
+          "expanded": "avatars/head/base/unisex/brow/eyebrows_anim01_icon.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/brow/eyebrows_anim02_base.png",
+          "expanded": "avatars/head/base/unisex/brow/eyebrows_anim02_base.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/brow/eyebrows_anim02_icon.png",
+          "expanded": "avatars/head/base/unisex/brow/eyebrows_anim02_icon.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/brow/eyebrows_anim03_base.png",
+          "expanded": "avatars/head/base/unisex/brow/eyebrows_anim03_base.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/brow/eyebrows_anim03_icon.png",
+          "expanded": "avatars/head/base/unisex/brow/eyebrows_anim03_icon.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/brow/eyebrows_anim04_base.png",
+          "expanded": "avatars/head/base/unisex/brow/eyebrows_anim04_base.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/brow/eyebrows_anim04_icon.png",
+          "expanded": "avatars/head/base/unisex/brow/eyebrows_anim04_icon.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/brow/eyebrows_anim05_base.png",
+          "expanded": "avatars/head/base/unisex/brow/eyebrows_anim05_base.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/brow/eyebrows_anim05_icon.png",
+          "expanded": "avatars/head/base/unisex/brow/eyebrows_anim05_icon.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/brow/eyebrows_anim06_base.png",
+          "expanded": "avatars/head/base/unisex/brow/eyebrows_anim06_base.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/brow/eyebrows_anim06_icon.png",
+          "expanded": "avatars/head/base/unisex/brow/eyebrows_anim06_icon.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/brow/eyebrows_anim07_base.png",
+          "expanded": "avatars/head/base/unisex/brow/eyebrows_anim07_base.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/brow/eyebrows_anim07_icon.png",
+          "expanded": "avatars/head/base/unisex/brow/eyebrows_anim07_icon.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/brow/eyebrows_anim08_base.png",
+          "expanded": "avatars/head/base/unisex/brow/eyebrows_anim08_base.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/brow/eyebrows_anim08_icon.png",
+          "expanded": "avatars/head/base/unisex/brow/eyebrows_anim08_icon.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/brow/eyebrows_anim09_base.png",
+          "expanded": "avatars/head/base/unisex/brow/eyebrows_anim09_base.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/brow/eyebrows_anim09_icon.png",
+          "expanded": "avatars/head/base/unisex/brow/eyebrows_anim09_icon.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/brow/eyebrows_anim10_base.png",
+          "expanded": "avatars/head/base/unisex/brow/eyebrows_anim10_base.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/brow/eyebrows_anim10_icon.png",
+          "expanded": "avatars/head/base/unisex/brow/eyebrows_anim10_icon.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/brow/tick.png",
+          "expanded": "avatars/head/base/unisex/brow/tick.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/decals/brow_long_line.png",
+          "expanded": "avatars/head/base/unisex/decals/brow_long_line.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/decals/brow_long_line_curve.png",
+          "expanded": "avatars/head/base/unisex/decals/brow_long_line_curve.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/decals/d_brow_frown.png",
+          "expanded": "avatars/head/base/unisex/decals/d_brow_frown.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/decals/d_bspot.png",
+          "expanded": "avatars/head/base/unisex/decals/d_bspot.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/decals/d_bumchin.png",
+          "expanded": "avatars/head/base/unisex/decals/d_bumchin.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/decals/d_cheekline.png",
+          "expanded": "avatars/head/base/unisex/decals/d_cheekline.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/decals/d_crows.png",
+          "expanded": "avatars/head/base/unisex/decals/d_crows.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/decals/d_diamondstud.png",
+          "expanded": "avatars/head/base/unisex/decals/d_diamondstud.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/decals/d_dimple.png",
+          "expanded": "avatars/head/base/unisex/decals/d_dimple.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/decals/d_freckles.png",
+          "expanded": "avatars/head/base/unisex/decals/d_freckles.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/decals/d_redcheeks.png",
+          "expanded": "avatars/head/base/unisex/decals/d_redcheeks.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/decals/d_stud.png",
+          "expanded": "avatars/head/base/unisex/decals/d_stud.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/decals/decal_cat_whiskers_base.png",
+          "expanded": "avatars/head/base/unisex/decals/decal_cat_whiskers_base.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/decals/decal_cat_whiskers_icon.png",
+          "expanded": "avatars/head/base/unisex/decals/decal_cat_whiskers_icon.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/decals/decal_eyeliner01_icon.png",
+          "expanded": "avatars/head/base/unisex/decals/decal_eyeliner01_icon.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/decals/decal_eyeliner02_icon.png",
+          "expanded": "avatars/head/base/unisex/decals/decal_eyeliner02_icon.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/decals/decal_eyeliner02_makeup.png",
+          "expanded": "avatars/head/base/unisex/decals/decal_eyeliner02_makeup.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/decals/decal_eyeliner03_icon.png",
+          "expanded": "avatars/head/base/unisex/decals/decal_eyeliner03_icon.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/decals/decal_eyeliner03_makeup.png",
+          "expanded": "avatars/head/base/unisex/decals/decal_eyeliner03_makeup.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/decals/decal_eyeliner_makeup.png",
+          "expanded": "avatars/head/base/unisex/decals/decal_eyeliner_makeup.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/decals/decal_eyepaint01_icon.png",
+          "expanded": "avatars/head/base/unisex/decals/decal_eyepaint01_icon.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/decals/decal_eyepaint01_makeup.png",
+          "expanded": "avatars/head/base/unisex/decals/decal_eyepaint01_makeup.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/decals/icon_brow_long_line.png",
+          "expanded": "avatars/head/base/unisex/decals/icon_brow_long_line.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/decals/icon_brow_long_line_curve.png",
+          "expanded": "avatars/head/base/unisex/decals/icon_brow_long_line_curve.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/decals/icon_d_brow_frown.png",
+          "expanded": "avatars/head/base/unisex/decals/icon_d_brow_frown.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/eyes/eye_normiris.png",
+          "expanded": "avatars/head/base/unisex/eyes/eye_normiris.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/faces/icon_nose_button.png",
+          "expanded": "avatars/head/base/unisex/faces/icon_nose_button.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/faces/icon_nose_flat.png",
+          "expanded": "avatars/head/base/unisex/faces/icon_nose_flat.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/faces/icon_nose_roman.png",
+          "expanded": "avatars/head/base/unisex/faces/icon_nose_roman.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/faces/icon_nose_square.png",
+          "expanded": "avatars/head/base/unisex/faces/icon_nose_square.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/gender/icon_gender_female.png",
+          "expanded": "avatars/head/base/unisex/gender/icon_gender_female.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/hair/h_base.png",
+          "expanded": "avatars/head/base/unisex/hair/h_base.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/hair/h_braids.png",
+          "expanded": "avatars/head/base/unisex/hair/h_braids.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/hair/h_hilite.png",
+          "expanded": "avatars/head/base/unisex/hair/h_hilite.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/hair/hair_afro.png",
+          "expanded": "avatars/head/base/unisex/hair/hair_afro.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/hair/icon_hair_color_aquamarine.png",
+          "expanded": "avatars/head/base/unisex/hair/icon_hair_color_aquamarine.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/hair/icon_hair_color_auburn.png",
+          "expanded": "avatars/head/base/unisex/hair/icon_hair_color_auburn.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/hair/icon_hair_color_blue_azure.png",
+          "expanded": "avatars/head/base/unisex/hair/icon_hair_color_blue_azure.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/hair/icon_hair_color_blue_turquoise.png",
+          "expanded": "avatars/head/base/unisex/hair/icon_hair_color_blue_turquoise.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/hair/icon_hair_color_brown.png",
+          "expanded": "avatars/head/base/unisex/hair/icon_hair_color_brown.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/hair/icon_hair_color_gray.png",
+          "expanded": "avatars/head/base/unisex/hair/icon_hair_color_gray.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/hair/icon_hair_color_green_light.png",
+          "expanded": "avatars/head/base/unisex/hair/icon_hair_color_green_light.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/hair/icon_hair_color_orange_ginger.png",
+          "expanded": "avatars/head/base/unisex/hair/icon_hair_color_orange_ginger.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/hair/icon_hair_color_orange_peach.png",
+          "expanded": "avatars/head/base/unisex/hair/icon_hair_color_orange_peach.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/hair/icon_hair_color_pink.png",
+          "expanded": "avatars/head/base/unisex/hair/icon_hair_color_pink.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/hair/icon_hair_color_pink_blush.png",
+          "expanded": "avatars/head/base/unisex/hair/icon_hair_color_pink_blush.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/hair/icon_hair_color_pink_petal.png",
+          "expanded": "avatars/head/base/unisex/hair/icon_hair_color_pink_petal.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/hair/icon_hair_color_pink_petunia.png",
+          "expanded": "avatars/head/base/unisex/hair/icon_hair_color_pink_petunia.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/hair/icon_hair_color_platinum.png",
+          "expanded": "avatars/head/base/unisex/hair/icon_hair_color_platinum.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/hair/icon_hair_color_purple.png",
+          "expanded": "avatars/head/base/unisex/hair/icon_hair_color_purple.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/hair/icon_hair_color_purple_plum.png",
+          "expanded": "avatars/head/base/unisex/hair/icon_hair_color_purple_plum.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/hair/icon_hair_color_purple_wistful.png",
+          "expanded": "avatars/head/base/unisex/hair/icon_hair_color_purple_wistful.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/hair/icon_hair_color_red.png",
+          "expanded": "avatars/head/base/unisex/hair/icon_hair_color_red.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/hair/icon_hair_color_sangria.png",
+          "expanded": "avatars/head/base/unisex/hair/icon_hair_color_sangria.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/hair/icon_tint_bleach.png",
+          "expanded": "avatars/head/base/unisex/hair/icon_tint_bleach.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/hair/icon_tint_blue.png",
+          "expanded": "avatars/head/base/unisex/hair/icon_tint_blue.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/hair/icon_tint_green.png",
+          "expanded": "avatars/head/base/unisex/hair/icon_tint_green.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/icon_colour/icon_black.png",
+          "expanded": "avatars/head/base/unisex/icon_colour/icon_black.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/icon_colour/icon_burgandy.png",
+          "expanded": "avatars/head/base/unisex/icon_colour/icon_burgandy.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/icon_colour/icon_cobalt.png",
+          "expanded": "avatars/head/base/unisex/icon_colour/icon_cobalt.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/icon_colour/icon_espresso.png",
+          "expanded": "avatars/head/base/unisex/icon_colour/icon_espresso.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/icon_colour/icon_latte.png",
+          "expanded": "avatars/head/base/unisex/icon_colour/icon_latte.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/icon_colour/icon_lilac.png",
+          "expanded": "avatars/head/base/unisex/icon_colour/icon_lilac.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/icon_colour/icon_mocha.png",
+          "expanded": "avatars/head/base/unisex/icon_colour/icon_mocha.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/icon_colour/icon_violet.png",
+          "expanded": "avatars/head/base/unisex/icon_colour/icon_violet.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/icon_colour/icon_yellow.png",
+          "expanded": "avatars/head/base/unisex/icon_colour/icon_yellow.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/props/gl_03_surfy.png",
+          "expanded": "avatars/head/base/unisex/props/gl_03_surfy.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/props/gl_16_basic.o3d",
+          "expanded": "avatars/head/base/unisex/props/gl_16_basic.o3d",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/props/gl_16_basicframe.png",
+          "expanded": "avatars/head/base/unisex/props/gl_16_basicframe.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/props/gl_17_thin.o3d",
+          "expanded": "avatars/head/base/unisex/props/gl_17_thin.o3d",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/props/gl_lennon.png",
+          "expanded": "avatars/head/base/unisex/props/gl_lennon.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/props/gl_medium.o3d",
+          "expanded": "avatars/head/base/unisex/props/gl_medium.o3d",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/props/gl_rayban.o3d",
+          "expanded": "avatars/head/base/unisex/props/gl_rayban.o3d",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/props/gl_thick.o3d",
+          "expanded": "avatars/head/base/unisex/props/gl_thick.o3d",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/props/icon_piercing.png",
+          "expanded": "avatars/head/base/unisex/props/icon_piercing.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/props/icons_gl_wayfairer.png",
+          "expanded": "avatars/head/base/unisex/props/icons_gl_wayfairer.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/props/piercing.png",
+          "expanded": "avatars/head/base/unisex/props/piercing.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/props/tint_black.png",
+          "expanded": "avatars/head/base/unisex/props/tint_black.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/props/tint_red.png",
+          "expanded": "avatars/head/base/unisex/props/tint_red.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/props/tint_yellow.png",
+          "expanded": "avatars/head/base/unisex/props/tint_yellow.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/skin/s_colour_fem.png",
+          "expanded": "avatars/head/base/unisex/skin/s_colour_fem.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/skin/s_colour_hilite.png",
+          "expanded": "avatars/head/base/unisex/skin/s_colour_hilite.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/skin/s_elf_ears.png",
+          "expanded": "avatars/head/base/unisex/skin/s_elf_ears.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "avatars/head/base/unisex/props/piercing.o3d",
+          "expanded": "avatars/head/base/unisex/props/piercing.o3d",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "items/base/consumables/clothing/shared/shr_short_arm_idle.png",
+          "expanded": "items/base/consumables/clothing/shared/shr_short_arm_idle.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "items/base/consumables/clothing/shared/shr_short_arm_raise.png",
+          "expanded": "items/base/consumables/clothing/shared/shr_short_arm_raise.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "items/base/consumables/clothing/shared/shr_short_arm_sit.png",
+          "expanded": "items/base/consumables/clothing/shared/shr_short_arm_sit.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "items/base/consumables/clothing/shared/shr_short_arm_throw.png",
+          "expanded": "items/base/consumables/clothing/shared/shr_short_arm_throw.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "items/base/consumables/clothing/shared/shr_short_arm_walk1.png",
+          "expanded": "items/base/consumables/clothing/shared/shr_short_arm_walk1.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "items/base/consumables/clothing/shared/shr_short_arm_walk2.png",
+          "expanded": "items/base/consumables/clothing/shared/shr_short_arm_walk2.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "items/base/consumables/clothing/shared/shr_short_arm_walk3.png",
+          "expanded": "items/base/consumables/clothing/shared/shr_short_arm_walk3.png",
+          "ui_icon": false,
+          "render_asset": true
+        }
+      ]
+    },
+    {
+      "option_id": "JSTop",
+      "selected_ids": [
+        "JumpTshirt"
+      ],
+      "hit_count": 2,
+      "render_assets": [
+        {
+          "ref": "items/base/consumables/clothing/shared/shr_short_arm_idle.png",
+          "exists": true,
+          "url": "/avatar-assets/items/base/consumables/clothing/shared/shr_short_arm_idle.png",
+          "bytes": 1877
+        },
+        {
+          "ref": "items/base/consumables/clothing/shared/shr_short_arm_raise.png",
+          "exists": true,
+          "url": "/avatar-assets/items/base/consumables/clothing/shared/shr_short_arm_raise.png",
+          "bytes": 2429
+        },
+        {
+          "ref": "items/base/consumables/clothing/shared/shr_short_arm_sit.png",
+          "exists": true,
+          "url": "/avatar-assets/items/base/consumables/clothing/shared/shr_short_arm_sit.png",
+          "bytes": 1308
+        },
+        {
+          "ref": "items/base/consumables/clothing/shared/shr_short_arm_throw.png",
+          "exists": true,
+          "url": "/avatar-assets/items/base/consumables/clothing/shared/shr_short_arm_throw.png",
+          "bytes": 2422
+        },
+        {
+          "ref": "items/base/consumables/clothing/shared/shr_short_arm_walk1.png",
+          "exists": true,
+          "url": "/avatar-assets/items/base/consumables/clothing/shared/shr_short_arm_walk1.png",
+          "bytes": 2168
+        },
+        {
+          "ref": "items/base/consumables/clothing/shared/shr_short_arm_walk2.png",
+          "exists": true,
+          "url": "/avatar-assets/items/base/consumables/clothing/shared/shr_short_arm_walk2.png",
+          "bytes": 2176
+        },
+        {
+          "ref": "items/base/consumables/clothing/shared/shr_short_arm_walk3.png",
+          "exists": true,
+          "url": "/avatar-assets/items/base/consumables/clothing/shared/shr_short_arm_walk3.png",
+          "bytes": 2021
+        },
+        {
+          "ref": "avatars/body/base/female/tshirt_torso.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/female/tshirt_torso.png",
+          "bytes": 4244
+        },
+        {
+          "ref": "items/base/consumables/clothing/shared/shr_short_arm_idle.png",
+          "exists": true,
+          "url": "/avatar-assets/items/base/consumables/clothing/shared/shr_short_arm_idle.png",
+          "bytes": 1877
+        },
+        {
+          "ref": "items/base/consumables/clothing/shared/shr_short_arm_raise.png",
+          "exists": true,
+          "url": "/avatar-assets/items/base/consumables/clothing/shared/shr_short_arm_raise.png",
+          "bytes": 2429
+        },
+        {
+          "ref": "items/base/consumables/clothing/shared/shr_short_arm_sit.png",
+          "exists": true,
+          "url": "/avatar-assets/items/base/consumables/clothing/shared/shr_short_arm_sit.png",
+          "bytes": 1308
+        },
+        {
+          "ref": "items/base/consumables/clothing/shared/shr_short_arm_throw.png",
+          "exists": true,
+          "url": "/avatar-assets/items/base/consumables/clothing/shared/shr_short_arm_throw.png",
+          "bytes": 2422
+        },
+        {
+          "ref": "items/base/consumables/clothing/shared/shr_short_arm_walk1.png",
+          "exists": true,
+          "url": "/avatar-assets/items/base/consumables/clothing/shared/shr_short_arm_walk1.png",
+          "bytes": 2168
+        },
+        {
+          "ref": "items/base/consumables/clothing/shared/shr_short_arm_walk2.png",
+          "exists": true,
+          "url": "/avatar-assets/items/base/consumables/clothing/shared/shr_short_arm_walk2.png",
+          "bytes": 2176
+        },
+        {
+          "ref": "items/base/consumables/clothing/shared/shr_short_arm_walk3.png",
+          "exists": true,
+          "url": "/avatar-assets/items/base/consumables/clothing/shared/shr_short_arm_walk3.png",
+          "bytes": 2021
+        }
+      ],
+      "debug_refs": [
+        {
+          "raw": "$bm/icon_m_tshirt.png",
+          "expanded": "avatars/body/base/male/icon_m_tshirt.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$bm/tshirt_torso.png",
+          "expanded": "avatars/body/base/male/tshirt_torso.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "items/base/consumables/clothing/shared/shr_short_arm_idle.png",
+          "expanded": "items/base/consumables/clothing/shared/shr_short_arm_idle.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "items/base/consumables/clothing/shared/shr_short_arm_raise.png",
+          "expanded": "items/base/consumables/clothing/shared/shr_short_arm_raise.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "items/base/consumables/clothing/shared/shr_short_arm_sit.png",
+          "expanded": "items/base/consumables/clothing/shared/shr_short_arm_sit.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "items/base/consumables/clothing/shared/shr_short_arm_throw.png",
+          "expanded": "items/base/consumables/clothing/shared/shr_short_arm_throw.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "items/base/consumables/clothing/shared/shr_short_arm_walk1.png",
+          "expanded": "items/base/consumables/clothing/shared/shr_short_arm_walk1.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "items/base/consumables/clothing/shared/shr_short_arm_walk2.png",
+          "expanded": "items/base/consumables/clothing/shared/shr_short_arm_walk2.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "items/base/consumables/clothing/shared/shr_short_arm_walk3.png",
+          "expanded": "items/base/consumables/clothing/shared/shr_short_arm_walk3.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bf/tshirt_torso.png",
+          "expanded": "avatars/body/base/female/tshirt_torso.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bm/icon_m_tshirt.png",
+          "expanded": "avatars/body/base/male/icon_m_tshirt.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "items/base/consumables/clothing/shared/shr_short_arm_idle.png",
+          "expanded": "items/base/consumables/clothing/shared/shr_short_arm_idle.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "items/base/consumables/clothing/shared/shr_short_arm_raise.png",
+          "expanded": "items/base/consumables/clothing/shared/shr_short_arm_raise.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "items/base/consumables/clothing/shared/shr_short_arm_sit.png",
+          "expanded": "items/base/consumables/clothing/shared/shr_short_arm_sit.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "items/base/consumables/clothing/shared/shr_short_arm_throw.png",
+          "expanded": "items/base/consumables/clothing/shared/shr_short_arm_throw.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "items/base/consumables/clothing/shared/shr_short_arm_walk1.png",
+          "expanded": "items/base/consumables/clothing/shared/shr_short_arm_walk1.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "items/base/consumables/clothing/shared/shr_short_arm_walk2.png",
+          "expanded": "items/base/consumables/clothing/shared/shr_short_arm_walk2.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "items/base/consumables/clothing/shared/shr_short_arm_walk3.png",
+          "expanded": "items/base/consumables/clothing/shared/shr_short_arm_walk3.png",
+          "ui_icon": false,
+          "render_asset": true
+        }
+      ]
+    },
+    {
+      "option_id": "JSBottom",
+      "selected_ids": [
+        "JumpPants"
+      ],
+      "hit_count": 2,
+      "render_assets": [
+        {
+          "ref": "avatars/body/base/unisex/skinny_leg_idle.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/skinny_leg_idle.png",
+          "bytes": 6116
+        },
+        {
+          "ref": "avatars/body/base/unisex/skinny_leg_walk1.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/skinny_leg_walk1.png",
+          "bytes": 6322
+        },
+        {
+          "ref": "avatars/body/base/unisex/skinny_leg_walk2.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/skinny_leg_walk2.png",
+          "bytes": 6324
+        },
+        {
+          "ref": "avatars/body/base/unisex/skinny_leg_walk3.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/skinny_leg_walk3.png",
+          "bytes": 6375
+        },
+        {
+          "ref": "avatars/body/base/unisex/skinny_leg_walk4.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/skinny_leg_walk4.png",
+          "bytes": 6422
+        },
+        {
+          "ref": "avatars/body/base/unisex/skinny_sit_lower.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/skinny_sit_lower.png",
+          "bytes": 2235
+        },
+        {
+          "ref": "avatars/body/base/unisex/skinny_sit_upper.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/skinny_sit_upper.png",
+          "bytes": 2677
+        },
+        {
+          "ref": "avatars/body/base/unisex/skinny_leg_idle.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/skinny_leg_idle.png",
+          "bytes": 6116
+        },
+        {
+          "ref": "avatars/body/base/unisex/skinny_leg_walk1.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/skinny_leg_walk1.png",
+          "bytes": 6322
+        },
+        {
+          "ref": "avatars/body/base/unisex/skinny_leg_walk2.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/skinny_leg_walk2.png",
+          "bytes": 6324
+        },
+        {
+          "ref": "avatars/body/base/unisex/skinny_leg_walk3.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/skinny_leg_walk3.png",
+          "bytes": 6375
+        },
+        {
+          "ref": "avatars/body/base/unisex/skinny_leg_walk4.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/skinny_leg_walk4.png",
+          "bytes": 6422
+        },
+        {
+          "ref": "avatars/body/base/unisex/skinny_sit_lower.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/skinny_sit_lower.png",
+          "bytes": 2235
+        },
+        {
+          "ref": "avatars/body/base/unisex/skinny_sit_upper.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/skinny_sit_upper.png",
+          "bytes": 2677
+        }
+      ],
+      "debug_refs": [
+        {
+          "raw": "$bu/icon_skinny_trouser.png",
+          "expanded": "avatars/body/base/unisex/icon_skinny_trouser.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$bu/skinny_leg_idle.png",
+          "expanded": "avatars/body/base/unisex/skinny_leg_idle.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/skinny_leg_walk1.png",
+          "expanded": "avatars/body/base/unisex/skinny_leg_walk1.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/skinny_leg_walk2.png",
+          "expanded": "avatars/body/base/unisex/skinny_leg_walk2.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/skinny_leg_walk3.png",
+          "expanded": "avatars/body/base/unisex/skinny_leg_walk3.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/skinny_leg_walk4.png",
+          "expanded": "avatars/body/base/unisex/skinny_leg_walk4.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/skinny_sit_lower.png",
+          "expanded": "avatars/body/base/unisex/skinny_sit_lower.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/skinny_sit_upper.png",
+          "expanded": "avatars/body/base/unisex/skinny_sit_upper.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/icon_skinny_trouser.png",
+          "expanded": "avatars/body/base/unisex/icon_skinny_trouser.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$bu/skinny_leg_idle.png",
+          "expanded": "avatars/body/base/unisex/skinny_leg_idle.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/skinny_leg_walk1.png",
+          "expanded": "avatars/body/base/unisex/skinny_leg_walk1.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/skinny_leg_walk2.png",
+          "expanded": "avatars/body/base/unisex/skinny_leg_walk2.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/skinny_leg_walk3.png",
+          "expanded": "avatars/body/base/unisex/skinny_leg_walk3.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/skinny_leg_walk4.png",
+          "expanded": "avatars/body/base/unisex/skinny_leg_walk4.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/skinny_sit_lower.png",
+          "expanded": "avatars/body/base/unisex/skinny_sit_lower.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/skinny_sit_upper.png",
+          "expanded": "avatars/body/base/unisex/skinny_sit_upper.png",
+          "ui_icon": false,
+          "render_asset": true
+        }
+      ]
+    },
+    {
+      "option_id": "JSFeet",
+      "selected_ids": [
+        "NoShoe"
+      ],
+      "hit_count": 2,
+      "render_assets": [
+        {
+          "ref": "avatars/body/base/unisex/foot_idle.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/foot_idle.png",
+          "bytes": 2832
+        },
+        {
+          "ref": "avatars/body/base/unisex/foot_sit.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/foot_sit.png",
+          "bytes": 1841
+        },
+        {
+          "ref": "avatars/body/base/unisex/foot_walk1.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/foot_walk1.png",
+          "bytes": 2807
+        },
+        {
+          "ref": "avatars/body/base/unisex/foot_walk2.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/foot_walk2.png",
+          "bytes": 2901
+        },
+        {
+          "ref": "avatars/body/base/unisex/foot_walk3.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/foot_walk3.png",
+          "bytes": 2907
+        },
+        {
+          "ref": "avatars/body/base/unisex/foot_walk4.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/foot_walk4.png",
+          "bytes": 2903
+        },
+        {
+          "ref": "avatars/body/base/unisex/foot_idle.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/foot_idle.png",
+          "bytes": 2832
+        },
+        {
+          "ref": "avatars/body/base/unisex/foot_sit.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/foot_sit.png",
+          "bytes": 1841
+        },
+        {
+          "ref": "avatars/body/base/unisex/foot_walk1.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/foot_walk1.png",
+          "bytes": 2807
+        },
+        {
+          "ref": "avatars/body/base/unisex/foot_walk2.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/foot_walk2.png",
+          "bytes": 2901
+        },
+        {
+          "ref": "avatars/body/base/unisex/foot_walk3.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/foot_walk3.png",
+          "bytes": 2907
+        },
+        {
+          "ref": "avatars/body/base/unisex/foot_walk4.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/foot_walk4.png",
+          "bytes": 2903
+        }
+      ],
+      "debug_refs": [
+        {
+          "raw": "$bu/foot_idle.png",
+          "expanded": "avatars/body/base/unisex/foot_idle.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/foot_sit.png",
+          "expanded": "avatars/body/base/unisex/foot_sit.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/foot_walk1.png",
+          "expanded": "avatars/body/base/unisex/foot_walk1.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/foot_walk2.png",
+          "expanded": "avatars/body/base/unisex/foot_walk2.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/foot_walk3.png",
+          "expanded": "avatars/body/base/unisex/foot_walk3.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/foot_walk4.png",
+          "expanded": "avatars/body/base/unisex/foot_walk4.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/icon_shoe_foot.png",
+          "expanded": "avatars/body/base/unisex/icon_shoe_foot.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$bu/foot_idle.png",
+          "expanded": "avatars/body/base/unisex/foot_idle.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/foot_sit.png",
+          "expanded": "avatars/body/base/unisex/foot_sit.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/foot_walk1.png",
+          "expanded": "avatars/body/base/unisex/foot_walk1.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/foot_walk2.png",
+          "expanded": "avatars/body/base/unisex/foot_walk2.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/foot_walk3.png",
+          "expanded": "avatars/body/base/unisex/foot_walk3.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/foot_walk4.png",
+          "expanded": "avatars/body/base/unisex/foot_walk4.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/icon_shoe_foot.png",
+          "expanded": "avatars/body/base/unisex/icon_shoe_foot.png",
+          "ui_icon": true,
+          "render_asset": false
+        }
+      ]
+    },
+    {
+      "option_id": "BodySkin",
+      "selected_ids": [
+        "Arms",
+        "Legs",
+        "Torso"
+      ],
+      "hit_count": 6,
+      "render_assets": [
+        {
+          "ref": "avatars/body/base/unisex/arm_idle.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/arm_idle.png",
+          "bytes": 5217
+        },
+        {
+          "ref": "avatars/body/base/unisex/arm_raise.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/arm_raise.png",
+          "bytes": 3583
+        },
+        {
+          "ref": "avatars/body/base/unisex/arm_sit.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/arm_sit.png",
+          "bytes": 2977
+        },
+        {
+          "ref": "avatars/body/base/unisex/arm_throw.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/arm_throw.png",
+          "bytes": 3533
+        },
+        {
+          "ref": "avatars/body/base/unisex/arm_walk1.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/arm_walk1.png",
+          "bytes": 5424
+        },
+        {
+          "ref": "avatars/body/base/unisex/arm_walk2.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/arm_walk2.png",
+          "bytes": 5321
+        },
+        {
+          "ref": "avatars/body/base/unisex/arm_walk3.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/arm_walk3.png",
+          "bytes": 5270
+        },
+        {
+          "ref": "avatars/body/base/unisex/raise_wave1.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/raise_wave1.png",
+          "bytes": 3104
+        },
+        {
+          "ref": "avatars/body/base/unisex/raise_wave2.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/raise_wave2.png",
+          "bytes": 3111
+        },
+        {
+          "ref": "avatars/body/base/unisex/throw_hold.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/throw_hold.png",
+          "bytes": 2991
+        },
+        {
+          "ref": "avatars/body/base/unisex/throw_open.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/throw_open.png",
+          "bytes": 2848
+        },
+        {
+          "ref": "avatars/body/base/unisex/throw_point.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/throw_point.png",
+          "bytes": 2886
+        },
+        {
+          "ref": "avatars/body/base/unisex/throw_stop.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/throw_stop.png",
+          "bytes": 2961
+        },
+        {
+          "ref": "avatars/body/base/unisex/throw_throw.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/throw_throw.png",
+          "bytes": 2826
+        },
+        {
+          "ref": "avatars/body/base/unisex/throw_thumbs.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/throw_thumbs.png",
+          "bytes": 2837
+        },
+        {
+          "ref": "avatars/body/base/unisex/leg_idle.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/leg_idle.png",
+          "bytes": 6426
+        },
+        {
+          "ref": "avatars/body/base/unisex/leg_sit_lower.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/leg_sit_lower.png",
+          "bytes": 2815
+        },
+        {
+          "ref": "avatars/body/base/unisex/leg_sit_upper.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/leg_sit_upper.png",
+          "bytes": 2372
+        },
+        {
+          "ref": "avatars/body/base/unisex/leg_walk1.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/leg_walk1.png",
+          "bytes": 6703
+        },
+        {
+          "ref": "avatars/body/base/unisex/leg_walk2.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/leg_walk2.png",
+          "bytes": 6667
+        },
+        {
+          "ref": "avatars/body/base/unisex/leg_walk3.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/leg_walk3.png",
+          "bytes": 6695
+        },
+        {
+          "ref": "avatars/body/base/unisex/leg_walk4.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/leg_walk4.png",
+          "bytes": 6752
+        },
+        {
+          "ref": "avatars/body/base/male/torso.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/male/torso.png",
+          "bytes": 4660
+        },
+        {
+          "ref": "avatars/body/base/unisex/arm_idle.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/arm_idle.png",
+          "bytes": 5217
+        },
+        {
+          "ref": "avatars/body/base/unisex/arm_raise.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/arm_raise.png",
+          "bytes": 3583
+        },
+        {
+          "ref": "avatars/body/base/unisex/arm_sit.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/arm_sit.png",
+          "bytes": 2977
+        },
+        {
+          "ref": "avatars/body/base/unisex/arm_throw.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/arm_throw.png",
+          "bytes": 3533
+        },
+        {
+          "ref": "avatars/body/base/unisex/arm_walk1.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/arm_walk1.png",
+          "bytes": 5424
+        },
+        {
+          "ref": "avatars/body/base/unisex/arm_walk2.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/arm_walk2.png",
+          "bytes": 5321
+        },
+        {
+          "ref": "avatars/body/base/unisex/arm_walk3.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/arm_walk3.png",
+          "bytes": 5270
+        },
+        {
+          "ref": "avatars/body/base/unisex/raise_wave1.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/raise_wave1.png",
+          "bytes": 3104
+        },
+        {
+          "ref": "avatars/body/base/unisex/raise_wave2.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/raise_wave2.png",
+          "bytes": 3111
+        },
+        {
+          "ref": "avatars/body/base/unisex/throw_hold.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/throw_hold.png",
+          "bytes": 2991
+        },
+        {
+          "ref": "avatars/body/base/unisex/throw_open.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/throw_open.png",
+          "bytes": 2848
+        },
+        {
+          "ref": "avatars/body/base/unisex/throw_point.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/throw_point.png",
+          "bytes": 2886
+        },
+        {
+          "ref": "avatars/body/base/unisex/throw_stop.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/throw_stop.png",
+          "bytes": 2961
+        },
+        {
+          "ref": "avatars/body/base/unisex/throw_throw.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/throw_throw.png",
+          "bytes": 2826
+        },
+        {
+          "ref": "avatars/body/base/unisex/throw_thumbs.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/throw_thumbs.png",
+          "bytes": 2837
+        },
+        {
+          "ref": "avatars/body/base/unisex/leg_idle.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/leg_idle.png",
+          "bytes": 6426
+        },
+        {
+          "ref": "avatars/body/base/unisex/leg_sit_lower.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/leg_sit_lower.png",
+          "bytes": 2815
+        },
+        {
+          "ref": "avatars/body/base/unisex/leg_sit_upper.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/leg_sit_upper.png",
+          "bytes": 2372
+        },
+        {
+          "ref": "avatars/body/base/unisex/leg_walk1.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/leg_walk1.png",
+          "bytes": 6703
+        },
+        {
+          "ref": "avatars/body/base/unisex/leg_walk2.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/leg_walk2.png",
+          "bytes": 6667
+        },
+        {
+          "ref": "avatars/body/base/unisex/leg_walk3.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/leg_walk3.png",
+          "bytes": 6695
+        },
+        {
+          "ref": "avatars/body/base/unisex/leg_walk4.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/unisex/leg_walk4.png",
+          "bytes": 6752
+        },
+        {
+          "ref": "avatars/body/base/female/pjs_torso_lying.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/female/pjs_torso_lying.png",
+          "bytes": 2417
+        },
+        {
+          "ref": "avatars/body/base/female/torso.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/female/torso.png",
+          "bytes": 4492
+        },
+        {
+          "ref": "avatars/body/base/female/torso_lying.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/body/base/female/torso_lying.png",
+          "bytes": 2732
+        }
+      ],
+      "debug_refs": [
+        {
+          "raw": "$bu/arm_idle.png",
+          "expanded": "avatars/body/base/unisex/arm_idle.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/arm_raise.png",
+          "expanded": "avatars/body/base/unisex/arm_raise.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/arm_sit.png",
+          "expanded": "avatars/body/base/unisex/arm_sit.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/arm_throw.png",
+          "expanded": "avatars/body/base/unisex/arm_throw.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/arm_walk1.png",
+          "expanded": "avatars/body/base/unisex/arm_walk1.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/arm_walk2.png",
+          "expanded": "avatars/body/base/unisex/arm_walk2.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/arm_walk3.png",
+          "expanded": "avatars/body/base/unisex/arm_walk3.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/raise_wave1.png",
+          "expanded": "avatars/body/base/unisex/raise_wave1.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/raise_wave2.png",
+          "expanded": "avatars/body/base/unisex/raise_wave2.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/throw_hold.png",
+          "expanded": "avatars/body/base/unisex/throw_hold.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/throw_open.png",
+          "expanded": "avatars/body/base/unisex/throw_open.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/throw_point.png",
+          "expanded": "avatars/body/base/unisex/throw_point.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/throw_stop.png",
+          "expanded": "avatars/body/base/unisex/throw_stop.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/throw_throw.png",
+          "expanded": "avatars/body/base/unisex/throw_throw.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/throw_thumbs.png",
+          "expanded": "avatars/body/base/unisex/throw_thumbs.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/leg_idle.png",
+          "expanded": "avatars/body/base/unisex/leg_idle.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/leg_sit_lower.png",
+          "expanded": "avatars/body/base/unisex/leg_sit_lower.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/leg_sit_upper.png",
+          "expanded": "avatars/body/base/unisex/leg_sit_upper.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/leg_walk1.png",
+          "expanded": "avatars/body/base/unisex/leg_walk1.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/leg_walk2.png",
+          "expanded": "avatars/body/base/unisex/leg_walk2.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/leg_walk3.png",
+          "expanded": "avatars/body/base/unisex/leg_walk3.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/leg_walk4.png",
+          "expanded": "avatars/body/base/unisex/leg_walk4.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bm/pjs_torso_lying.png",
+          "expanded": "avatars/body/base/male/pjs_torso_lying.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bm/torso.png",
+          "expanded": "avatars/body/base/male/torso.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bm/torso_lying.png",
+          "expanded": "avatars/body/base/male/torso_lying.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/arm_idle.png",
+          "expanded": "avatars/body/base/unisex/arm_idle.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/arm_raise.png",
+          "expanded": "avatars/body/base/unisex/arm_raise.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/arm_sit.png",
+          "expanded": "avatars/body/base/unisex/arm_sit.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/arm_throw.png",
+          "expanded": "avatars/body/base/unisex/arm_throw.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/arm_walk1.png",
+          "expanded": "avatars/body/base/unisex/arm_walk1.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/arm_walk2.png",
+          "expanded": "avatars/body/base/unisex/arm_walk2.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/arm_walk3.png",
+          "expanded": "avatars/body/base/unisex/arm_walk3.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/raise_wave1.png",
+          "expanded": "avatars/body/base/unisex/raise_wave1.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/raise_wave2.png",
+          "expanded": "avatars/body/base/unisex/raise_wave2.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/throw_hold.png",
+          "expanded": "avatars/body/base/unisex/throw_hold.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/throw_open.png",
+          "expanded": "avatars/body/base/unisex/throw_open.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/throw_point.png",
+          "expanded": "avatars/body/base/unisex/throw_point.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/throw_stop.png",
+          "expanded": "avatars/body/base/unisex/throw_stop.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/throw_throw.png",
+          "expanded": "avatars/body/base/unisex/throw_throw.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/throw_thumbs.png",
+          "expanded": "avatars/body/base/unisex/throw_thumbs.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/leg_idle.png",
+          "expanded": "avatars/body/base/unisex/leg_idle.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/leg_sit_lower.png",
+          "expanded": "avatars/body/base/unisex/leg_sit_lower.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/leg_sit_upper.png",
+          "expanded": "avatars/body/base/unisex/leg_sit_upper.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/leg_walk1.png",
+          "expanded": "avatars/body/base/unisex/leg_walk1.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/leg_walk2.png",
+          "expanded": "avatars/body/base/unisex/leg_walk2.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/leg_walk3.png",
+          "expanded": "avatars/body/base/unisex/leg_walk3.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bu/leg_walk4.png",
+          "expanded": "avatars/body/base/unisex/leg_walk4.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bf/pjs_torso_lying.png",
+          "expanded": "avatars/body/base/female/pjs_torso_lying.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bf/torso.png",
+          "expanded": "avatars/body/base/female/torso.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$bf/torso_lying.png",
+          "expanded": "avatars/body/base/female/torso_lying.png",
+          "ui_icon": false,
+          "render_asset": true
+        }
+      ]
+    },
+    {
+      "option_id": "EyeShadowOptions",
+      "selected_ids": [
+        "CutevanillaShadow"
+      ],
+      "hit_count": 1,
+      "render_assets": [],
+      "debug_refs": [
+        {
+          "raw": "$hf/eyes/icon_shadow_vanilla.png",
+          "expanded": "avatars/head/base/female/eyes/icon_shadow_vanilla.png",
+          "ui_icon": true,
+          "render_asset": false
+        }
+      ]
+    },
+    {
+      "option_id": "LipstickOptions",
+      "selected_ids": [
+        "LipStickPalmy"
+      ],
+      "hit_count": 1,
+      "render_assets": [],
+      "debug_refs": [
+        {
+          "raw": "$hf/mouth/icon_lip_palm.png",
+          "expanded": "avatars/head/base/female/mouth/icon_lip_palm.png",
+          "ui_icon": true,
+          "render_asset": false
+        }
+      ]
+    },
+    {
+      "option_id": "FaceBOptions",
+      "selected_ids": [
+        "FaceCuteTwo"
+      ],
+      "hit_count": 1,
+      "render_assets": [
+        {
+          "ref": "avatars/head/base/female/faces/f_f_02_cute.o3d",
+          "exists": true,
+          "url": "/avatar-assets/avatars/head/base/female/faces/f_f_02_cute.o3d",
+          "bytes": 83710
+        }
+      ],
+      "debug_refs": [
+        {
+          "raw": "$hf/faces/f_f_02_cute.o3d",
+          "expanded": "avatars/head/base/female/faces/f_f_02_cute.o3d",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/faces/icon_cute.png",
+          "expanded": "avatars/head/base/female/faces/icon_cute.png",
+          "ui_icon": true,
+          "render_asset": false
+        }
+      ]
+    },
+    {
+      "option_id": "MouthOptions",
+      "selected_ids": [
+        "MouthUmphStick"
+      ],
+      "hit_count": 1,
+      "render_assets": [
+        {
+          "ref": "avatars/head/base/female/mouth/f_mouth_anim05_base.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/head/base/female/mouth/f_mouth_anim05_base.png",
+          "bytes": 2005
+        },
+        {
+          "ref": "avatars/head/base/female/mouth/f_mouth_anim05_teeth.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/head/base/female/mouth/f_mouth_anim05_teeth.png",
+          "bytes": 251
+        },
+        {
+          "ref": "avatars/head/base/female/mouth/m_goofyhilite.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/head/base/female/mouth/m_goofyhilite.png",
+          "bytes": 460
+        }
+      ],
+      "debug_refs": [
+        {
+          "raw": "$hf/mouth/f_mouth_anim05_base.png",
+          "expanded": "avatars/head/base/female/mouth/f_mouth_anim05_base.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/mouth/f_mouth_anim05_icon.png",
+          "expanded": "avatars/head/base/female/mouth/f_mouth_anim05_icon.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/mouth/f_mouth_anim05_teeth.png",
+          "expanded": "avatars/head/base/female/mouth/f_mouth_anim05_teeth.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/mouth/m_goofyhilite.png",
+          "expanded": "avatars/head/base/female/mouth/m_goofyhilite.png",
+          "ui_icon": false,
+          "render_asset": true
+        }
+      ]
+    },
+    {
+      "option_id": "FaceAOptions",
+      "selected_ids": [
+        "FaceThinOne"
+      ],
+      "hit_count": 1,
+      "render_assets": [
+        {
+          "ref": "avatars/head/base/female/faces/f_f_06_thin.o3d",
+          "exists": true,
+          "url": "/avatar-assets/avatars/head/base/female/faces/f_f_06_thin.o3d",
+          "bytes": 78045
+        }
+      ],
+      "debug_refs": [
+        {
+          "raw": "$hf/faces/f_f_06_thin.o3d",
+          "expanded": "avatars/head/base/female/faces/f_f_06_thin.o3d",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/faces/icon_thin.png",
+          "expanded": "avatars/head/base/female/faces/icon_thin.png",
+          "ui_icon": true,
+          "render_asset": false
+        }
+      ]
+    },
+    {
+      "option_id": "HighlightOptions",
+      "selected_ids": [
+        "HairColorFieryRed"
+      ],
+      "hit_count": 1,
+      "render_assets": [],
+      "debug_refs": [
+        {
+          "raw": "$hu/icon_colour/icon_burgandy.png",
+          "expanded": "avatars/head/base/unisex/icon_colour/icon_burgandy.png",
+          "ui_icon": true,
+          "render_asset": false
+        }
+      ]
+    },
+    {
+      "option_id": "NoseAOptions",
+      "selected_ids": [
+        "NoseStraightOne"
+      ],
+      "hit_count": 2,
+      "render_assets": [
+        {
+          "ref": "avatars/head/base/female/faces/nose_04_straight.o3d",
+          "exists": true,
+          "url": "/avatar-assets/avatars/head/base/female/faces/nose_04_straight.o3d",
+          "bytes": 78031
+        }
+      ],
+      "debug_refs": [
+        {
+          "raw": "$hm/faces/n_04_straight.o3d",
+          "expanded": "avatars/head/base/male/faces/n_04_straight.o3d",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/faces/icon_nose_square.png",
+          "expanded": "avatars/head/base/unisex/faces/icon_nose_square.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/faces/nose_04_straight.o3d",
+          "expanded": "avatars/head/base/female/faces/nose_04_straight.o3d",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/faces/icon_nose_square.png",
+          "expanded": "avatars/head/base/unisex/faces/icon_nose_square.png",
+          "ui_icon": true,
+          "render_asset": false
+        }
+      ]
+    },
+    {
+      "option_id": "NoseBOptions",
+      "selected_ids": [
+        "NoseButtonTwo"
+      ],
+      "hit_count": 2,
+      "render_assets": [
+        {
+          "ref": "avatars/head/base/female/faces/f_f_02_cute.o3d",
+          "exists": true,
+          "url": "/avatar-assets/avatars/head/base/female/faces/f_f_02_cute.o3d",
+          "bytes": 83710
+        }
+      ],
+      "debug_refs": [
+        {
+          "raw": "$hm/faces/f_anime.o3d",
+          "expanded": "avatars/head/base/male/faces/f_anime.o3d",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/faces/icon_nose_button.png",
+          "expanded": "avatars/head/base/unisex/faces/icon_nose_button.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/faces/f_f_02_cute.o3d",
+          "expanded": "avatars/head/base/female/faces/f_f_02_cute.o3d",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/faces/icon_nose_button.png",
+          "expanded": "avatars/head/base/unisex/faces/icon_nose_button.png",
+          "ui_icon": true,
+          "render_asset": false
+        }
+      ]
+    },
+    {
+      "option_id": "HairstyleOptions",
+      "selected_ids": [
+        "HairBerryTinted"
+      ],
+      "hit_count": 1,
+      "render_assets": [
+        {
+          "ref": "avatars/head/base/female/hair/hair_berry.o3d",
+          "exists": true,
+          "url": "/avatar-assets/avatars/head/base/female/hair/hair_berry.o3d",
+          "bytes": 78716
+        },
+        {
+          "ref": "avatars/head/base/female/hair/ht_berry_shad.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/head/base/female/hair/ht_berry_shad.png",
+          "bytes": 925
+        },
+        {
+          "ref": "avatars/head/base/unisex/hair/h_base.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/head/base/unisex/hair/h_base.png",
+          "bytes": 13731
+        },
+        {
+          "ref": "avatars/head/base/unisex/hair/h_hilite.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/head/base/unisex/hair/h_hilite.png",
+          "bytes": 8455
+        }
+      ],
+      "debug_refs": [
+        {
+          "raw": "$hf/hair/hair_berry.o3d",
+          "expanded": "avatars/head/base/female/hair/hair_berry.o3d",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/hair/ht_berry_shad.png",
+          "expanded": "avatars/head/base/female/hair/ht_berry_shad.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/hair/icon_hair_berry.png",
+          "expanded": "avatars/head/base/female/hair/icon_hair_berry.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/hair/h_base.png",
+          "expanded": "avatars/head/base/unisex/hair/h_base.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/hair/h_hilite.png",
+          "expanded": "avatars/head/base/unisex/hair/h_hilite.png",
+          "ui_icon": false,
+          "render_asset": true
+        }
+      ]
+    },
+    {
+      "option_id": "DecalOptions",
+      "selected_ids": [
+        "Freckles",
+        "Rouge"
+      ],
+      "hit_count": 4,
+      "render_assets": [
+        {
+          "ref": "avatars/head/base/unisex/decals/d_freckles.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/head/base/unisex/decals/d_freckles.png",
+          "bytes": 772
+        },
+        {
+          "ref": "avatars/head/base/unisex/decals/d_redcheeks.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/head/base/unisex/decals/d_redcheeks.png",
+          "bytes": 456
+        },
+        {
+          "ref": "avatars/head/base/unisex/decals/d_freckles.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/head/base/unisex/decals/d_freckles.png",
+          "bytes": 772
+        },
+        {
+          "ref": "avatars/head/base/unisex/decals/d_redcheeks.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/head/base/unisex/decals/d_redcheeks.png",
+          "bytes": 456
+        }
+      ],
+      "debug_refs": [
+        {
+          "raw": "$hm/decals/icon_mdecal_cheekfreckles.png",
+          "expanded": "avatars/head/base/male/decals/icon_mdecal_cheekfreckles.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/decals/d_freckles.png",
+          "expanded": "avatars/head/base/unisex/decals/d_freckles.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hm/decals/icon_mdecal_rouge.png",
+          "expanded": "avatars/head/base/male/decals/icon_mdecal_rouge.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/decals/d_redcheeks.png",
+          "expanded": "avatars/head/base/unisex/decals/d_redcheeks.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/decals/icon_fdecal_freckles.png",
+          "expanded": "avatars/head/base/female/decals/icon_fdecal_freckles.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/decals/d_freckles.png",
+          "expanded": "avatars/head/base/unisex/decals/d_freckles.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/decals/icon_fdecal_rouge.png",
+          "expanded": "avatars/head/base/female/decals/icon_fdecal_rouge.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/decals/d_redcheeks.png",
+          "expanded": "avatars/head/base/unisex/decals/d_redcheeks.png",
+          "ui_icon": false,
+          "render_asset": true
+        }
+      ]
+    },
+    {
+      "option_id": "FoundationOptions",
+      "selected_ids": [
+        "Sheen3"
+      ],
+      "hit_count": 1,
+      "render_assets": [
+        {
+          "ref": "avatars/head/base/unisex/skin/s_colour_hilite.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/head/base/unisex/skin/s_colour_hilite.png",
+          "bytes": 3788
+        }
+      ],
+      "debug_refs": [
+        {
+          "raw": "$hf/decals/icon_foundation3.png",
+          "expanded": "avatars/head/base/female/decals/icon_foundation3.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hu/skin/s_colour_hilite.png",
+          "expanded": "avatars/head/base/unisex/skin/s_colour_hilite.png",
+          "ui_icon": false,
+          "render_asset": true
+        }
+      ]
+    },
+    {
+      "option_id": "BlusherOptions",
+      "selected_ids": [
+        "80sBlusher"
+      ],
+      "hit_count": 1,
+      "render_assets": [
+        {
+          "ref": "avatars/head/base/female/skin/mu_80blusher.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/head/base/female/skin/mu_80blusher.png",
+          "bytes": 2061
+        }
+      ],
+      "debug_refs": [
+        {
+          "raw": "$hf/decals/icon_mu_eighties.png",
+          "expanded": "avatars/head/base/female/decals/icon_mu_eighties.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/skin/mu_80blusher.png",
+          "expanded": "avatars/head/base/female/skin/mu_80blusher.png",
+          "ui_icon": false,
+          "render_asset": true
+        }
+      ]
+    },
+    {
+      "option_id": "BlusherColorOptions",
+      "selected_ids": [
+        "BlusherCandy"
+      ],
+      "hit_count": 1,
+      "render_assets": [],
+      "debug_refs": [
+        {
+          "raw": "$hf/mouth/icon_lip_candy.png",
+          "expanded": "avatars/head/base/female/mouth/icon_lip_candy.png",
+          "ui_icon": true,
+          "render_asset": false
+        }
+      ]
+    },
+    {
+      "option_id": "EyeOptions",
+      "selected_ids": [
+        "EyesFairyReal"
+      ],
+      "hit_count": 1,
+      "render_assets": [
+        {
+          "ref": "avatars/head/base/female/eyes/eye_fairybase.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/head/base/female/eyes/eye_fairybase.png",
+          "bytes": 2096
+        },
+        {
+          "ref": "avatars/head/base/female/eyes/eye_makeup1.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/head/base/female/eyes/eye_makeup1.png",
+          "bytes": 2860
+        },
+        {
+          "ref": "avatars/head/base/male/eyes/eye_normhilite.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/head/base/male/eyes/eye_normhilite.png",
+          "bytes": 195
+        },
+        {
+          "ref": "avatars/head/base/unisex/eyes/eye_fantasyiris.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/head/base/unisex/eyes/eye_fantasyiris.png",
+          "bytes": 1390
+        }
+      ],
+      "debug_refs": [
+        {
+          "raw": "$hf/eyes/eye_fairybase.png",
+          "expanded": "avatars/head/base/female/eyes/eye_fairybase.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/eyes/eye_makeup1.png",
+          "expanded": "avatars/head/base/female/eyes/eye_makeup1.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/eyes/icons_fairy.png",
+          "expanded": "avatars/head/base/female/eyes/icons_fairy.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hm/eyes/eye_normhilite.png",
+          "expanded": "avatars/head/base/male/eyes/eye_normhilite.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hu/eyes/eye_fantasyiris.png",
+          "expanded": "avatars/head/base/unisex/eyes/eye_fantasyiris.png",
+          "ui_icon": false,
+          "render_asset": true
+        }
+      ]
+    },
+    {
+      "option_id": "BrowOptions",
+      "selected_ids": [
+        "BrowsMedium"
+      ],
+      "hit_count": 2,
+      "render_assets": [
+        {
+          "ref": "avatars/head/base/female/brow/b_medium.png",
+          "exists": true,
+          "url": "/avatar-assets/avatars/head/base/female/brow/b_medium.png",
+          "bytes": 1401
+        }
+      ],
+      "debug_refs": [
+        {
+          "raw": "$hm/brow/b_medium.png",
+          "expanded": "avatars/head/base/male/brow/b_medium.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hm/brow/icon_male_eyebrows_medium.png",
+          "expanded": "avatars/head/base/male/brow/icon_male_eyebrows_medium.png",
+          "ui_icon": true,
+          "render_asset": false
+        },
+        {
+          "raw": "$hf/brow/b_medium.png",
+          "expanded": "avatars/head/base/female/brow/b_medium.png",
+          "ui_icon": false,
+          "render_asset": true
+        },
+        {
+          "raw": "$hf/brow/icon_eyebrows_medium.png",
+          "expanded": "avatars/head/base/female/brow/icon_eyebrows_medium.png",
+          "ui_icon": true,
+          "render_asset": false
+        }
+      ]
+    },
+    {
+      "option_id": "EyeColorOptions",
+      "selected_ids": [
+        "EyeColorLightBlue"
+      ],
+      "hit_count": 1,
+      "render_assets": [],
+      "debug_refs": [
+        {
+          "raw": "$hu/eyes/icon_eye_col_darkblue.png",
+          "expanded": "avatars/head/base/unisex/eyes/icon_eye_col_darkblue.png",
+          "ui_icon": true,
+          "render_asset": false
+        }
+      ]
+    },
+    {
+      "option_id": "HairColorOptions",
+      "selected_ids": [
+        "HairColorFieryRed"
+      ],
+      "hit_count": 1,
+      "render_assets": [],
+      "debug_refs": [
+        {
+          "raw": "$hu/icon_colour/icon_burgandy.png",
+          "expanded": "avatars/head/base/unisex/icon_colour/icon_burgandy.png",
+          "ui_icon": true,
+          "render_asset": false
+        }
+      ]
+    },
+    {
+      "option_id": "EyebrowColorOptions",
+      "selected_ids": [
+        "EyebrowColorPeach"
+      ],
+      "hit_count": 1,
+      "render_assets": [],
+      "debug_refs": [
+        {
+          "raw": "$hu/hair/icon_hair_color_orange_peach.png",
+          "expanded": "avatars/head/base/unisex/hair/icon_hair_color_orange_peach.png",
+          "ui_icon": true,
+          "render_asset": false
+        }
+      ]
+    },
+    {
+      "option_id": "TintOptions",
+      "selected_ids": [
+        "HairTintPink"
+      ],
+      "hit_count": 1,
+      "render_assets": [],
+      "debug_refs": [
+        {
+          "raw": "$hu/hair/icon_hair_color_pink.png",
+          "expanded": "avatars/head/base/unisex/hair/icon_hair_color_pink.png",
+          "ui_icon": true,
+          "render_asset": false
+        }
+      ]
+    },
+    {
+      "option_id": "SkinColorOptions",
+      "selected_ids": [
+        "SkinColorPink"
+      ],
+      "hit_count": 1,
+      "render_assets": [],
+      "debug_refs": [
+        {
+          "raw": "$hu/skin/icon_skin_pink.png",
+          "expanded": "avatars/head/base/unisex/skin/icon_skin_pink.png",
+          "ui_icon": true,
+          "render_asset": false
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "copied_asset_count": 76,
+    "missing_asset_count": 150,
+    "option_count": 26,
+    "head_mesh_count": 5,
+    "head_texture_count": 21,
+    "body_texture_count": 41
+  },
+  "missing_assets": [
+    "avatars/body/base/male/pjs_torso_lying.png",
+    "avatars/body/base/male/torso_lying.png",
+    "avatars/body/base/male/tshirt_torso.png",
+    "avatars/head/base/female/decals/d_cheekbonehi.png",
+    "avatars/head/base/female/decals/d_cheekbonelow.png",
+    "avatars/head/base/female/decals/d_star.png",
+    "avatars/head/base/female/decals/d_star2.png",
+    "avatars/head/base/female/eyes/eye_animlarge_base.png",
+    "avatars/head/base/female/eyes/eye_animlarge_iris.png",
+    "avatars/head/base/female/eyes/eye_animround_iris.png",
+    "avatars/head/base/female/eyes/eye_animsquare_base.png",
+    "avatars/head/base/female/eyes/eye_makeup2.png",
+    "avatars/head/base/female/eyes/eye_normbase.png",
+    "avatars/head/base/female/eyes/eye_tribase.png",
+    "avatars/head/base/female/eyes/eye_trideep_base.png",
+    "avatars/head/base/female/eyes/eye_trideep_iris.png",
+    "avatars/head/base/female/eyes/eye_triirirs.png",
+    "avatars/head/base/female/faces/f_f_01_african.o3d",
+    "avatars/head/base/female/faces/f_f_03_oval.o3d",
+    "avatars/head/base/female/faces/f_f_04_square.o3d",
+    "avatars/head/base/female/faces/f_f_05_strong.o3d",
+    "avatars/head/base/female/faces/nose_01_wide.o3d",
+    "avatars/head/base/female/faces/nose_03_roman.o3d",
+    "avatars/head/base/female/hair/hair_afrof.o3d",
+    "avatars/head/base/female/hair/hair_amelie.o3d",
+    "avatars/head/base/female/hair/hair_aniston.o3d",
+    "avatars/head/base/female/hair/hair_braids.o3d",
+    "avatars/head/base/female/hair/hair_britneynohat.o3d",
+    "avatars/head/base/female/hair/hair_catrell.o3d",
+    "avatars/head/base/female/hair/hair_curl2.o3d",
+    "avatars/head/base/female/hair/hair_jhennifer.o3d",
+    "avatars/head/base/female/hair/hair_jolie.o3d",
+    "avatars/head/base/female/hair/hair_longwave.o3d",
+    "avatars/head/base/female/hair/hair_loosbun.o3d",
+    "avatars/head/base/female/hair/hair_lucy.o3d",
+    "avatars/head/base/female/hair/hair_med_curl.o3d",
+    "avatars/head/base/female/hair/hair_meenie.o3d",
+    "avatars/head/base/female/hair/hair_mona.o3d",
+    "avatars/head/base/female/hair/hair_short.o3d",
+    "avatars/head/base/female/hair/hair_sidepony.o3d",
+    "avatars/head/base/female/hair/hair_updo.o3d",
+    "avatars/head/base/female/hair/hair_weatherbob.o3d",
+    "avatars/head/base/female/hair/ht_afrof_shad.png",
+    "avatars/head/base/female/hair/ht_aniston_shad.png",
+    "avatars/head/base/female/hair/ht_braids_shad.png",
+    "avatars/head/base/female/hair/ht_britneynohat_shad.png",
+    "avatars/head/base/female/hair/ht_catrell_shad.png",
+    "avatars/head/base/female/hair/ht_curl2_shad.png",
+    "avatars/head/base/female/hair/ht_edzio_shad.png",
+    "avatars/head/base/female/hair/ht_jolie_shad.png",
+    "avatars/head/base/female/hair/ht_loosebun_shad.png",
+    "avatars/head/base/female/hair/ht_lucy_shad.png",
+    "avatars/head/base/female/hair/ht_mona_shad.png",
+    "avatars/head/base/female/hair/ht_pony_shad.png",
+    "avatars/head/base/female/hair/ht_short_shad.png",
+    "avatars/head/base/female/hair/ht_tiesh_shad.png",
+    "avatars/head/base/female/hair/ht_updo_shad.png",
+    "avatars/head/base/female/hair/ht_weatherbob_shad.png",
+    "avatars/head/base/female/mouth/f_mouth_anim01_base.png",
+    "avatars/head/base/female/mouth/f_mouth_anim02_base.png",
+    "avatars/head/base/female/mouth/f_mouth_anim03_base.png",
+    "avatars/head/base/female/mouth/f_mouth_anim04_base.png",
+    "avatars/head/base/female/mouth/f_mouth_anim06_base.png",
+    "avatars/head/base/female/mouth/f_mouth_anim07_base.png",
+    "avatars/head/base/female/mouth/f_mouth_anim08_base.png",
+    "avatars/head/base/female/mouth/f_mouth_anim09_base.png",
+    "avatars/head/base/female/mouth/f_mouth_anim10_base.png",
+    "avatars/head/base/female/mouth/f_mouth_anim11_base.png",
+    "avatars/head/base/female/mouth/m_camp.png",
+    "avatars/head/base/female/mouth/m_camphilite.png",
+    "avatars/head/base/female/mouth/m_campteeth.png",
+    "avatars/head/base/female/mouth/m_fvamp.png",
+    "avatars/head/base/female/mouth/m_fvamp_blood.png",
+    "avatars/head/base/female/mouth/m_fvamp_fangs.png",
+    "avatars/head/base/female/mouth/m_fvamp_hilite.png",
+    "avatars/head/base/female/mouth/m_goofy.png",
+    "avatars/head/base/female/mouth/m_goofyteeth.png",
+    "avatars/head/base/female/mouth/m_lipstick.png",
+    "avatars/head/base/female/mouth/m_lipstickhlite.png",
+    "avatars/head/base/female/mouth/m_smirkpa.png",
+    "avatars/head/base/female/mouth/m_smirkpahilite.png",
+    "avatars/head/base/female/mouth/m_standard.png",
+    "avatars/head/base/female/mouth/m_tooth.png",
+    "avatars/head/base/female/mouth/m_toothmouth.png",
+    "avatars/head/base/female/mouth/m_wry.png",
+    "avatars/head/base/female/mouth/m_wryhilite.png",
+    "avatars/head/base/female/mouth/m_wryteeth.png",
+    "avatars/head/base/female/props/gl_catseye.o3d",
+    "avatars/head/base/female/props/gl_catseye.png",
+    "avatars/head/base/female/props/gl_dg2.o3d",
+    "avatars/head/base/female/props/gl_dg2.png",
+    "avatars/head/base/female/props/gl_dior.o3d",
+    "avatars/head/base/female/props/gl_dior.png",
+    "avatars/head/base/female/props/gl_eighties.o3d",
+    "avatars/head/base/female/props/gl_eighties.png",
+    "avatars/head/base/female/props/gl_lennonf.o3d",
+    "avatars/head/base/female/props/gl_surfyf.o3d",
+    "avatars/head/base/female/props/gl_tiffany.o3d",
+    "avatars/head/base/female/props/gl_tiffany.png",
+    "avatars/head/base/female/skin/mu_blusher2.png",
+    "avatars/head/base/female/skin/mu_blusherlite.png",
+    "avatars/head/base/female/skin/mu_eyestrike.png",
+    "avatars/head/base/male/brow/b_medium.png",
+    "avatars/head/base/male/brow/b_thick.png",
+    "avatars/head/base/male/brow/m_thin.png",
+    "avatars/head/base/male/faces/f_anime.o3d",
+    "avatars/head/base/male/faces/n_04_straight.o3d",
+    "avatars/head/base/unisex/brow/b_lshape.png",
+    "avatars/head/base/unisex/brow/eyebrows_anim01_base.png",
+    "avatars/head/base/unisex/brow/eyebrows_anim02_base.png",
+    "avatars/head/base/unisex/brow/eyebrows_anim03_base.png",
+    "avatars/head/base/unisex/brow/eyebrows_anim04_base.png",
+    "avatars/head/base/unisex/brow/eyebrows_anim05_base.png",
+    "avatars/head/base/unisex/brow/eyebrows_anim06_base.png",
+    "avatars/head/base/unisex/brow/eyebrows_anim07_base.png",
+    "avatars/head/base/unisex/brow/eyebrows_anim08_base.png",
+    "avatars/head/base/unisex/brow/eyebrows_anim09_base.png",
+    "avatars/head/base/unisex/brow/eyebrows_anim10_base.png",
+    "avatars/head/base/unisex/brow/tick.png",
+    "avatars/head/base/unisex/decals/brow_long_line.png",
+    "avatars/head/base/unisex/decals/brow_long_line_curve.png",
+    "avatars/head/base/unisex/decals/d_brow_frown.png",
+    "avatars/head/base/unisex/decals/d_bspot.png",
+    "avatars/head/base/unisex/decals/d_bumchin.png",
+    "avatars/head/base/unisex/decals/d_cheekline.png",
+    "avatars/head/base/unisex/decals/d_crows.png",
+    "avatars/head/base/unisex/decals/d_diamondstud.png",
+    "avatars/head/base/unisex/decals/d_dimple.png",
+    "avatars/head/base/unisex/decals/d_stud.png",
+    "avatars/head/base/unisex/decals/decal_cat_whiskers_base.png",
+    "avatars/head/base/unisex/decals/decal_eyeliner02_makeup.png",
+    "avatars/head/base/unisex/decals/decal_eyeliner03_makeup.png",
+    "avatars/head/base/unisex/decals/decal_eyeliner_makeup.png",
+    "avatars/head/base/unisex/decals/decal_eyepaint01_makeup.png",
+    "avatars/head/base/unisex/eyes/eye_normiris.png",
+    "avatars/head/base/unisex/hair/h_braids.png",
+    "avatars/head/base/unisex/hair/hair_afro.png",
+    "avatars/head/base/unisex/props/gl_03_surfy.png",
+    "avatars/head/base/unisex/props/gl_16_basic.o3d",
+    "avatars/head/base/unisex/props/gl_16_basicframe.png",
+    "avatars/head/base/unisex/props/gl_17_thin.o3d",
+    "avatars/head/base/unisex/props/gl_lennon.png",
+    "avatars/head/base/unisex/props/gl_medium.o3d",
+    "avatars/head/base/unisex/props/gl_rayban.o3d",
+    "avatars/head/base/unisex/props/gl_thick.o3d",
+    "avatars/head/base/unisex/props/piercing.o3d",
+    "avatars/head/base/unisex/props/piercing.png",
+    "avatars/head/base/unisex/props/tint_black.png",
+    "avatars/head/base/unisex/props/tint_red.png",
+    "avatars/head/base/unisex/props/tint_yellow.png"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "ok": true,
+  "contract": "smallverse-avatar-render-packet/v1",
+  "strategy": "flash-rendered-golden-output-with-resolved-manifest",
+  "note": "Use Flash-rendered PNGs as authoritative render output while compositor is rebuilt incrementally.",
+  "outputs": {
+    "preview_348x194": "/tmp/saveAvatar-render-packet/saveAvatar-carved-0.png",
+    "snapshot_128x256": "/tmp/saveAvatar-render-packet/saveAvatar-carved-1.png",
+    "thumb_100x100": "/tmp/saveAvatar-render-packet/saveAvatar-carved-2.png",
+    "config_xml": "/tmp/saveAvatar-render-packet/avatar-config-decoded.txt",
+    "manifest": "/tmp/saveAvatar-render-packet/avatar-render-manifest.json",
+    "resolved_layers": "/tmp/saveAvatar-render-packet/resolved-avatar-render-layers.json"
+  },
+  "render_modes": {
+    "profile_full_body": "/tmp/saveAvatar-render-packet/saveAvatar-carved-1.png",
+    "profile_preview": "/tmp/saveAvatar-render-packet/saveAvatar-carved-0.png",
+    "profile_thumb": "/tmp/saveAvatar-render-packet/saveAvatar-carved-2.png"
+  },
+  "next_real_renderer_work": [
+    "Use resolved layers for explain/debug UI.",
+    "Use Flash PNG as canonical avatar image.",
+    "Capture multiple saveAvatar snapshots at different rotation/dance frames for spin.",
+    "Only then replace Flash-rendered PNGs with compositor output."
+  ]
+}

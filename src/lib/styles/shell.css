@@ -1,0 +1,359 @@
+.app-chrome {
+  position: relative;
+  z-index: 2;
+  height: var(--chrome-height);
+  display: grid;
+  grid-template-columns: 180px 1fr auto;
+  align-items: center;
+  gap: 24px;
+  padding: 0 28px;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+  background: rgba(3,4,5,.72);
+  backdrop-filter: blur(24px);
+}
+
+.wordmark {
+  border: 0;
+  background: transparent;
+  color: white;
+  text-align: left;
+  padding: 0;
+}
+
+.wordmark span,
+.module-header p,
+.record-hero p,
+.context-plane p {
+  display: block;
+  color: var(--cyan);
+  font-size: 10px;
+  font-weight: 950;
+  letter-spacing: .30em;
+  text-transform: uppercase;
+}
+
+.wordmark b {
+  display: block;
+  margin-top: 3px;
+  font-size: 13px;
+  letter-spacing: -.02em;
+}
+
+.mode-rail {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  min-width: 0;
+}
+
+.mode-rail button {
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: rgba(255,255,255,.48);
+  padding: 8px 12px;
+  font-size: 13px;
+  font-weight: 750;
+}
+
+.mode-rail button:hover,
+.mode-rail button.active {
+  color: white;
+  background: rgba(255,255,255,.085);
+}
+
+.session-strip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.session-strip div {
+  text-align: right;
+  margin-right: 8px;
+}
+
+.session-strip b {
+  display: block;
+  font-size: 12px;
+}
+
+.session-strip span {
+  display: block;
+  color: rgba(255,255,255,.43);
+  font-size: 11px;
+}
+
+.session-strip button,
+.session-strip select,
+.tool-actions button,
+.text-action {
+  border: 1px solid rgba(255,255,255,.14);
+  border-radius: 999px;
+  background: rgba(255,255,255,.045);
+  color: white;
+  padding: 7px 11px;
+  font-size: 12px;
+}
+
+.session-strip option {
+  background: #101113;
+}
+
+.toast {
+  position: fixed;
+  z-index: 10;
+  right: 24px;
+  top: 78px;
+  max-width: 420px;
+  padding: 12px 14px;
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(3,4,5,.88);
+  backdrop-filter: blur(22px);
+  color: rgba(255,255,255,.72);
+  font-size: 12px;
+}
+
+/* Tailwind-plus-ish session dropdown */
+
+.session-menu {
+  position: relative;
+  z-index: 20;
+}
+
+.session-trigger {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr) auto;
+  gap: 9px;
+  align-items: center;
+  min-width: 178px;
+  height: 38px;
+  padding: 0 9px;
+  border: 1px solid rgba(255, 255, 255, 0.115);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.035);
+  color: rgba(255, 255, 255, 0.82);
+  text-align: left;
+}
+
+.session-trigger > span,
+.session-dropdown header > span {
+  width: 24px;
+  height: 24px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background:
+    radial-gradient(circle at 50% 20%, rgba(255, 255, 255, 0.22), transparent 52%),
+    rgba(255, 255, 255, 0.07);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.session-trigger div,
+.session-dropdown header div {
+  min-width: 0;
+  display: grid;
+  gap: 1px;
+}
+
+.session-trigger b,
+.session-dropdown header b {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.session-trigger small,
+.session-dropdown header small {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.42);
+}
+
+.session-trigger em {
+  font-style: normal;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.38);
+}
+
+.session-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  width: 260px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.065), rgba(255, 255, 255, 0.032)),
+    rgba(8, 11, 15, 0.98);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.55);
+}
+
+.session-dropdown header {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr);
+  gap: 10px;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.085);
+}
+
+.session-dropdown-group {
+  display: grid;
+  padding: 7px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.075);
+}
+
+.session-dropdown-group:last-child {
+  border-bottom: 0;
+}
+
+.session-dropdown-group p {
+  margin: 5px 6px 7px;
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.32);
+}
+
+.session-dropdown-group button {
+  min-height: 32px;
+  padding: 0 8px;
+  border: 0;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.72);
+  text-align: left;
+  font-size: 12px;
+}
+
+.session-dropdown-group button:hover {
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.session-muted {
+  padding: 8px 6px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.34);
+}
+
+/* shadcn session dropdown skin */
+
+.session-menu {
+  position: relative;
+  z-index: 40;
+}
+
+.session-trigger {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr) auto;
+  gap: 9px;
+  align-items: center;
+  min-width: 190px;
+  height: 38px;
+  padding: 0 10px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.035);
+  color: rgba(255, 255, 255, 0.86);
+  text-align: left;
+  cursor: pointer;
+}
+
+.session-trigger:hover {
+  background: rgba(255, 255, 255, 0.055);
+}
+
+.session-avatar {
+  width: 24px;
+  height: 24px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background:
+    radial-gradient(circle at 50% 22%, rgba(255, 255, 255, 0.22), transparent 52%),
+    rgba(255, 255, 255, 0.075);
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 11px;
+  font-weight: 750;
+}
+
+.session-trigger-copy {
+  min-width: 0;
+  display: grid;
+  gap: 1px;
+}
+
+.session-trigger-copy b {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 11px;
+  line-height: 1.1;
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.session-trigger-copy small {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 10px;
+  line-height: 1.1;
+  color: rgba(255, 255, 255, 0.42);
+}
+
+.session-caret {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.38);
+}
+
+.beacon-session-dropdown {
+  width: 270px;
+  border-color: rgba(255, 255, 255, 0.12);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.035)),
+    rgba(8, 11, 15, 0.98);
+  color: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.58);
+}
+
+.session-dropdown-header {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr);
+  gap: 10px;
+  align-items: center;
+  padding: 8px 7px 9px;
+}
+
+.session-dropdown-header div {
+  min-width: 0;
+  display: grid;
+  gap: 2px;
+}
+
+.session-dropdown-header b {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.session-dropdown-header small {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.43);
+}
+
+.session-dropdown-empty {
+  padding: 7px 8px 9px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.34);
+}

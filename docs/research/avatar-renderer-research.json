@@ -1,0 +1,29 @@
+{
+  "ok": true,
+  "purpose": "SmallVerse avatar renderer research index",
+  "core_hypothesis": {
+    "mvp": "Use live thumb/head/snapshot URLs as fallback renders.",
+    "real_renderer": "Reconstruct avatar from Flash AvatarDesign XML/options/body/head/clothing assets.",
+    "pipeline": [
+      "discover avatar design/options service calls",
+      "capture live avatar design AMF/XML",
+      "build render manifest",
+      "resolve XML asset layers",
+      "canvas/SVG/PNG compositor",
+      "interactive angle/pose renderer if angle frames exist"
+    ]
+  },
+  "important_known_classes": {
+    "AvatarDesign": "loads base design and bodyUrl; default bodyUrl appears to be avatars/body/base/unisex/avatar.xml",
+    "AvatarOption": "maps compact paths like $bm/$bf/$bu/$hm/$hf/$hu to avatar body/head paths",
+    "AvatarDesignContext": "wires headView/bodyView and selected options",
+    "AvatarBodyView": "has renderBodySnapshot(width,height,x,y,scaleX,scaleY,angle)",
+    "AvatarHeadView": "has renderHeadTexture and appears to render 4x2 head directions",
+    "DummyAvatarView": "renders DummyAvatar into BitmapData",
+    "AvatarService": "saveAvatar/saveAvatarSnapshot upload PNG bytes generated from Flash renderer"
+  },
+  "actionscript_files": {},
+  "service_calls": {},
+  "render_signal_files": [],
+  "xml_or_asset_refs": {}
+}

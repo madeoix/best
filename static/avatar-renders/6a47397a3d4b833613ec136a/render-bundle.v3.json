@@ -1,0 +1,4037 @@
+{
+  "ok": true,
+  "contract": "smallverse-avatar-render-bundle/v3",
+  "avatar_id": "6a47397a3d4b833613ec136a",
+  "gender": "female",
+  "source_config_xml": "static/avatar-oracles/6a47397a3d4b833613ec136a/config.xml",
+  "oracle": {
+    "avatar_id": "6a47397a3d4b833613ec136a",
+    "name": "Miivfohg Iximso",
+    "source": "captured avatar.saveAvatar request",
+    "config_url": "/avatar-oracles/6a47397a3d4b833613ec136a/config.xml",
+    "summary_url": "/avatar-oracles/6a47397a3d4b833613ec136a/config-summary.json",
+    "flash_full_body_url": "/avatar-oracles/6a47397a3d4b833613ec136a/flash-full-body.png",
+    "flash_preview_url": "/avatar-oracles/6a47397a3d4b833613ec136a/flash-preview.png",
+    "flash_thumb_url": "/avatar-oracles/6a47397a3d4b833613ec136a/flash-thumb.png",
+    "flash_full_body_size": [
+      128,
+      256
+    ],
+    "flash_preview_size": [
+      348,
+      194
+    ],
+    "flash_thumb_size": [
+      100,
+      100
+    ]
+  },
+  "selected_options": {
+    "CuteEyeShadowOptions": "CuteLightBrownShadow",
+    "Bot00": "",
+    "Bot01": "",
+    "Bot02": "",
+    "Bot03": "",
+    "Bot05": "",
+    "Top00": "",
+    "Top01": "",
+    "Top02": "",
+    "Top03": "",
+    "Top04": "",
+    "Top05": "",
+    "Top06": "",
+    "Top07": "",
+    "Top08": "",
+    "Top09": "",
+    "ConSuit": "",
+    "Suits": "",
+    "TopColorOptions": "White",
+    "OuterColorOptions": "Brown",
+    "BottomColorOptions": "Black",
+    "BeltColorOptions": "White",
+    "NecklaceColorOptions": "Yellow",
+    "GenderOptions": "Female",
+    "JSTop": "JumpTshirt",
+    "JSBottom": "JumpPants",
+    "JSFeet": "NoShoe",
+    "BodySkin": "Arms,Legs,Torso",
+    "EyeShadowOptions": "CutevanillaShadow",
+    "LipstickOptions": "LipStickMarylin",
+    "FaceBOptions": "FaceCuteTwo",
+    "MouthOptions": "MouthToothyStick",
+    "FaceAOptions": "FaceThinOne",
+    "HighlightOptions": "HairColorFieryRed",
+    "NoseAOptions": "NoseStraightOne",
+    "NoseBOptions": "NoseButtonTwo",
+    "GlassesOptions": "GlassesSurfyGrey",
+    "HairstyleOptions": "HairFBehindEarsTinted",
+    "DecalOptions": "",
+    "FoundationOptions": "Sheen3",
+    "BlusherOptions": "80sBlusher",
+    "BlusherColorOptions": "BlusherMarylin",
+    "EyeOptions": "EyesHeavymakeupReal",
+    "BrowOptions": "Anim07",
+    "EyeColorOptions": "EyeColorBrown",
+    "HatColorOptions": "HatColorWhite",
+    "HairColorOptions": "HairColorBlack",
+    "EyebrowColorOptions": "EyebrowColorBlack",
+    "TintOptions": "HairTintLight",
+    "SkinColorOptions": "SkinColorTan"
+  },
+  "weights": {
+    "FaceCuteTwo": 0.87,
+    "FaceThinOne": 0.13,
+    "NoseStraightOne": 0.42,
+    "NoseButtonTwo": 0.58
+  },
+  "transforms": {
+    "MouthTransform": {
+      "id": "MouthTransform",
+      "sx": "1.2",
+      "sy": "1.2"
+    },
+    "LeftEyeTransform": {
+      "id": "LeftEyeTransform",
+      "tx": "6.559139784946236",
+      "r": "2.736559139784946",
+      "sx": "1.0193548387096774",
+      "sy": "1.0193548387096774"
+    },
+    "RightEyeTransform": {
+      "id": "RightEyeTransform",
+      "tx": "-6.559139784946236",
+      "r": "-2.736559139784946",
+      "sx": "1.0193548387096774",
+      "sy": "1.0193548387096774"
+    }
+  },
+  "dances": [
+    {
+      "id": "Dance 1",
+      "frames": [
+        {
+          "r": "0",
+          "d": "5",
+          "h": "Forward",
+          "a": "Relaxed",
+          "l": "Relaxed"
+        },
+        {
+          "r": "45",
+          "d": "5",
+          "h": "HalfLeft",
+          "a": "Walk3",
+          "l": "Walk1"
+        },
+        {
+          "r": "0",
+          "d": "5",
+          "h": "HalfRight",
+          "a": "Relaxed",
+          "l": "Walk3"
+        },
+        {
+          "r": "315",
+          "d": "5",
+          "h": "HalfRight",
+          "a": "Walk1",
+          "l": "Walk4"
+        },
+        {
+          "r": "225",
+          "d": "3",
+          "h": "HalfRight",
+          "a": "Walk1",
+          "l": "Walk4"
+        },
+        {
+          "r": "180",
+          "d": "3",
+          "h": "HalfRight",
+          "a": "Walk2",
+          "l": "Walk4"
+        },
+        {
+          "r": "135",
+          "d": "3",
+          "h": "HalfRight",
+          "a": "Walk3",
+          "l": "Walk4"
+        },
+        {
+          "r": "90",
+          "d": "3",
+          "h": "HalfRight",
+          "a": "Walk1",
+          "l": "Walk4"
+        },
+        {
+          "r": "45",
+          "d": "3",
+          "h": "HalfRight",
+          "a": "Walk2",
+          "l": "Walk4"
+        }
+      ]
+    },
+    {
+      "id": "Dance 2",
+      "frames": [
+        {
+          "r": "0",
+          "d": "5",
+          "h": "Forward",
+          "a": "Relaxed",
+          "l": "Relaxed"
+        },
+        {
+          "r": "45",
+          "d": "5",
+          "h": "HalfLeft",
+          "a": "Walk3",
+          "l": "Walk1"
+        },
+        {
+          "r": "0",
+          "d": "5",
+          "h": "HalfRight",
+          "a": "Relaxed",
+          "l": "Walk3"
+        },
+        {
+          "r": "315",
+          "d": "5",
+          "h": "HalfRight",
+          "a": "Walk1",
+          "l": "Walk4"
+        },
+        {
+          "r": "225",
+          "d": "3",
+          "h": "HalfRight",
+          "a": "Walk1",
+          "l": "Walk4"
+        },
+        {
+          "r": "180",
+          "d": "3",
+          "h": "HalfRight",
+          "a": "Walk2",
+          "l": "Walk4"
+        },
+        {
+          "r": "135",
+          "d": "3",
+          "h": "HalfRight",
+          "a": "Walk3",
+          "l": "Walk4"
+        },
+        {
+          "r": "90",
+          "d": "3",
+          "h": "HalfRight",
+          "a": "Walk1",
+          "l": "Walk4"
+        },
+        {
+          "r": "45",
+          "d": "3",
+          "h": "HalfRight",
+          "a": "Walk2",
+          "l": "Walk4"
+        }
+      ]
+    },
+    {
+      "id": "Dance 3",
+      "frames": [
+        {
+          "r": "0",
+          "d": "5",
+          "h": "Forward",
+          "a": "Relaxed",
+          "l": "Relaxed"
+        },
+        {
+          "r": "45",
+          "d": "5",
+          "h": "HalfLeft",
+          "a": "Walk3",
+          "l": "Walk1"
+        },
+        {
+          "r": "0",
+          "d": "5",
+          "h": "HalfRight",
+          "a": "Relaxed",
+          "l": "Walk3"
+        },
+        {
+          "r": "315",
+          "d": "5",
+          "h": "HalfRight",
+          "a": "Walk1",
+          "l": "Walk4"
+        },
+        {
+          "r": "225",
+          "d": "3",
+          "h": "HalfRight",
+          "a": "Walk1",
+          "l": "Walk4"
+        },
+        {
+          "r": "180",
+          "d": "3",
+          "h": "HalfRight",
+          "a": "Walk2",
+          "l": "Walk4"
+        },
+        {
+          "r": "135",
+          "d": "3",
+          "h": "HalfRight",
+          "a": "Walk3",
+          "l": "Walk4"
+        },
+        {
+          "r": "90",
+          "d": "3",
+          "h": "HalfRight",
+          "a": "Walk1",
+          "l": "Walk4"
+        },
+        {
+          "r": "45",
+          "d": "3",
+          "h": "HalfRight",
+          "a": "Walk2",
+          "l": "Walk4"
+        }
+      ]
+    }
+  ],
+  "selected_assets_by_option": {
+    "JSTop": [
+      {
+        "ref": "avatars/body/base/male/tshirt_torso.png",
+        "url": "/avatar-assets/avatars/body/base/male/tshirt_torso.png",
+        "exists": true,
+        "bytes": 4100
+      }
+    ],
+    "JSBottom": [
+      {
+        "ref": "avatars/body/base/unisex/skinny_leg_idle.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/skinny_leg_idle.png",
+        "exists": true,
+        "bytes": 6116
+      },
+      {
+        "ref": "avatars/body/base/unisex/skinny_leg_walk1.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/skinny_leg_walk1.png",
+        "exists": true,
+        "bytes": 6322
+      },
+      {
+        "ref": "avatars/body/base/unisex/skinny_leg_walk2.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/skinny_leg_walk2.png",
+        "exists": true,
+        "bytes": 6324
+      },
+      {
+        "ref": "avatars/body/base/unisex/skinny_leg_walk3.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/skinny_leg_walk3.png",
+        "exists": true,
+        "bytes": 6375
+      },
+      {
+        "ref": "avatars/body/base/unisex/skinny_leg_walk4.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/skinny_leg_walk4.png",
+        "exists": true,
+        "bytes": 6422
+      },
+      {
+        "ref": "avatars/body/base/unisex/skinny_sit_lower.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/skinny_sit_lower.png",
+        "exists": true,
+        "bytes": 2235
+      },
+      {
+        "ref": "avatars/body/base/unisex/skinny_sit_upper.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/skinny_sit_upper.png",
+        "exists": true,
+        "bytes": 2677
+      }
+    ],
+    "JSFeet": [
+      {
+        "ref": "avatars/body/base/unisex/foot_idle.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/foot_idle.png",
+        "exists": true,
+        "bytes": 2832
+      },
+      {
+        "ref": "avatars/body/base/unisex/foot_sit.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/foot_sit.png",
+        "exists": true,
+        "bytes": 1841
+      },
+      {
+        "ref": "avatars/body/base/unisex/foot_walk1.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/foot_walk1.png",
+        "exists": true,
+        "bytes": 2807
+      },
+      {
+        "ref": "avatars/body/base/unisex/foot_walk2.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/foot_walk2.png",
+        "exists": true,
+        "bytes": 2901
+      },
+      {
+        "ref": "avatars/body/base/unisex/foot_walk3.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/foot_walk3.png",
+        "exists": true,
+        "bytes": 2907
+      },
+      {
+        "ref": "avatars/body/base/unisex/foot_walk4.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/foot_walk4.png",
+        "exists": true,
+        "bytes": 2903
+      }
+    ],
+    "BodySkin": [
+      {
+        "ref": "avatars/body/base/male/pjs_torso_lying.png",
+        "url": "/avatar-assets/avatars/body/base/male/pjs_torso_lying.png",
+        "exists": true,
+        "bytes": 2493
+      },
+      {
+        "ref": "avatars/body/base/male/torso.png",
+        "url": "/avatar-assets/avatars/body/base/male/torso.png",
+        "exists": true,
+        "bytes": 4660
+      },
+      {
+        "ref": "avatars/body/base/male/torso_lying.png",
+        "url": "/avatar-assets/avatars/body/base/male/torso_lying.png",
+        "exists": true,
+        "bytes": 2730
+      },
+      {
+        "ref": "avatars/body/base/unisex/arm_idle.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/arm_idle.png",
+        "exists": true,
+        "bytes": 5217
+      },
+      {
+        "ref": "avatars/body/base/unisex/arm_raise.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/arm_raise.png",
+        "exists": true,
+        "bytes": 3583
+      },
+      {
+        "ref": "avatars/body/base/unisex/arm_sit.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/arm_sit.png",
+        "exists": true,
+        "bytes": 2977
+      },
+      {
+        "ref": "avatars/body/base/unisex/arm_throw.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/arm_throw.png",
+        "exists": true,
+        "bytes": 3533
+      },
+      {
+        "ref": "avatars/body/base/unisex/arm_walk1.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/arm_walk1.png",
+        "exists": true,
+        "bytes": 5424
+      },
+      {
+        "ref": "avatars/body/base/male/pjs_torso_lying.png",
+        "url": "/avatar-assets/avatars/body/base/male/pjs_torso_lying.png",
+        "exists": true,
+        "bytes": 2493
+      },
+      {
+        "ref": "avatars/body/base/male/torso.png",
+        "url": "/avatar-assets/avatars/body/base/male/torso.png",
+        "exists": true,
+        "bytes": 4660
+      },
+      {
+        "ref": "avatars/body/base/male/torso_lying.png",
+        "url": "/avatar-assets/avatars/body/base/male/torso_lying.png",
+        "exists": true,
+        "bytes": 2730
+      },
+      {
+        "ref": "avatars/body/base/unisex/arm_idle.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/arm_idle.png",
+        "exists": true,
+        "bytes": 5217
+      },
+      {
+        "ref": "avatars/body/base/unisex/arm_raise.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/arm_raise.png",
+        "exists": true,
+        "bytes": 3583
+      },
+      {
+        "ref": "avatars/body/base/unisex/arm_sit.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/arm_sit.png",
+        "exists": true,
+        "bytes": 2977
+      },
+      {
+        "ref": "avatars/body/base/unisex/arm_throw.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/arm_throw.png",
+        "exists": true,
+        "bytes": 3533
+      },
+      {
+        "ref": "avatars/body/base/unisex/arm_walk1.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/arm_walk1.png",
+        "exists": true,
+        "bytes": 5424
+      },
+      {
+        "ref": "avatars/body/base/male/pjs_torso_lying.png",
+        "url": "/avatar-assets/avatars/body/base/male/pjs_torso_lying.png",
+        "exists": true,
+        "bytes": 2493
+      },
+      {
+        "ref": "avatars/body/base/male/torso.png",
+        "url": "/avatar-assets/avatars/body/base/male/torso.png",
+        "exists": true,
+        "bytes": 4660
+      },
+      {
+        "ref": "avatars/body/base/male/torso_lying.png",
+        "url": "/avatar-assets/avatars/body/base/male/torso_lying.png",
+        "exists": true,
+        "bytes": 2730
+      },
+      {
+        "ref": "avatars/body/base/unisex/arm_idle.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/arm_idle.png",
+        "exists": true,
+        "bytes": 5217
+      },
+      {
+        "ref": "avatars/body/base/unisex/arm_raise.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/arm_raise.png",
+        "exists": true,
+        "bytes": 3583
+      },
+      {
+        "ref": "avatars/body/base/unisex/arm_sit.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/arm_sit.png",
+        "exists": true,
+        "bytes": 2977
+      },
+      {
+        "ref": "avatars/body/base/unisex/arm_throw.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/arm_throw.png",
+        "exists": true,
+        "bytes": 3533
+      },
+      {
+        "ref": "avatars/body/base/unisex/arm_walk1.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/arm_walk1.png",
+        "exists": true,
+        "bytes": 5424
+      }
+    ],
+    "EyeShadowOptions": [
+      {
+        "ref": "avatars/head/base/female/eyes/icon_shadow_black.png",
+        "url": "/avatar-assets/avatars/head/base/female/eyes/icon_shadow_black.png",
+        "exists": true,
+        "bytes": 360
+      },
+      {
+        "ref": "avatars/head/base/female/eyes/icon_shadow_greentea.png",
+        "url": "/avatar-assets/avatars/head/base/female/eyes/icon_shadow_greentea.png",
+        "exists": true,
+        "bytes": 536
+      },
+      {
+        "ref": "avatars/head/base/female/eyes/icon_shadow_inca.png",
+        "url": "/avatar-assets/avatars/head/base/female/eyes/icon_shadow_inca.png",
+        "exists": true,
+        "bytes": 581
+      },
+      {
+        "ref": "avatars/head/base/female/eyes/icon_shadow_litepurp.png",
+        "url": "/avatar-assets/avatars/head/base/female/eyes/icon_shadow_litepurp.png",
+        "exists": true,
+        "bytes": 575
+      },
+      {
+        "ref": "avatars/head/base/female/eyes/icon_shadow_mauve.png",
+        "url": "/avatar-assets/avatars/head/base/female/eyes/icon_shadow_mauve.png",
+        "exists": true,
+        "bytes": 534
+      },
+      {
+        "ref": "avatars/head/base/female/eyes/icon_shadow_oldgold.png",
+        "url": "/avatar-assets/avatars/head/base/female/eyes/icon_shadow_oldgold.png",
+        "exists": true,
+        "bytes": 571
+      },
+      {
+        "ref": "avatars/head/base/female/eyes/icon_shadow_paladium.png",
+        "url": "/avatar-assets/avatars/head/base/female/eyes/icon_shadow_paladium.png",
+        "exists": true,
+        "bytes": 554
+      },
+      {
+        "ref": "avatars/head/base/female/eyes/icon_shadow_santa.png",
+        "url": "/avatar-assets/avatars/head/base/female/eyes/icon_shadow_santa.png",
+        "exists": true,
+        "bytes": 558
+      },
+      {
+        "ref": "avatars/head/base/female/eyes/icon_shadow_tangerine.png",
+        "url": "/avatar-assets/avatars/head/base/female/eyes/icon_shadow_tangerine.png",
+        "exists": true,
+        "bytes": 564
+      },
+      {
+        "ref": "avatars/head/base/female/eyes/icon_shadow_teal.png",
+        "url": "/avatar-assets/avatars/head/base/female/eyes/icon_shadow_teal.png",
+        "exists": true,
+        "bytes": 511
+      },
+      {
+        "ref": "avatars/head/base/female/eyes/icon_shadow_tirquoise.png",
+        "url": "/avatar-assets/avatars/head/base/female/eyes/icon_shadow_tirquoise.png",
+        "exists": true,
+        "bytes": 556
+      },
+      {
+        "ref": "avatars/head/base/female/eyes/icon_shadow_vanilla.png",
+        "url": "/avatar-assets/avatars/head/base/female/eyes/icon_shadow_vanilla.png",
+        "exists": true,
+        "bytes": 484
+      },
+      {
+        "ref": "avatars/head/base/female/eyes/icon_shadow_vintagesilver.png",
+        "url": "/avatar-assets/avatars/head/base/female/eyes/icon_shadow_vintagesilver.png",
+        "exists": true,
+        "bytes": 527
+      },
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_burgandy.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_burgandy.png",
+        "exists": true,
+        "bytes": 532
+      },
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_cobalt.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_cobalt.png",
+        "exists": true,
+        "bytes": 480
+      },
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_espresso.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_espresso.png",
+        "exists": true,
+        "bytes": 482
+      },
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_latte.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_latte.png",
+        "exists": true,
+        "bytes": 564
+      },
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_lilac.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_lilac.png",
+        "exists": true,
+        "bytes": 560
+      },
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_mocha.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_mocha.png",
+        "exists": true,
+        "bytes": 492
+      },
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_violet.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_violet.png",
+        "exists": true,
+        "bytes": 476
+      }
+    ],
+    "LipstickOptions": [
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_candy.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_candy.png",
+        "exists": true,
+        "bytes": 546
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_fire.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_fire.png",
+        "exists": true,
+        "bytes": 550
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_hot.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_hot.png",
+        "exists": true,
+        "bytes": 553
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_ice.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_ice.png",
+        "exists": true,
+        "bytes": 574
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_jade.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_jade.png",
+        "exists": true,
+        "bytes": 542
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_magenta.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_magenta.png",
+        "exists": true,
+        "bytes": 528
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_manson.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_manson.png",
+        "exists": true,
+        "bytes": 492
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_marylin.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_marylin.png",
+        "exists": true,
+        "bytes": 520
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_palm.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_palm.png",
+        "exists": true,
+        "bytes": 563
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_pplum.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_pplum.png",
+        "exists": true,
+        "bytes": 542
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_siren.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_siren.png",
+        "exists": true,
+        "bytes": 531
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_turq.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_turq.png",
+        "exists": true,
+        "bytes": 573
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_vanilla.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_vanilla.png",
+        "exists": true,
+        "bytes": 543
+      },
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_burgandy.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_burgandy.png",
+        "exists": true,
+        "bytes": 532
+      },
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_cobalt.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_cobalt.png",
+        "exists": true,
+        "bytes": 480
+      },
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_espresso.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_espresso.png",
+        "exists": true,
+        "bytes": 482
+      },
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_latte.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_latte.png",
+        "exists": true,
+        "bytes": 564
+      },
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_lilac.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_lilac.png",
+        "exists": true,
+        "bytes": 560
+      },
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_mocha.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_mocha.png",
+        "exists": true,
+        "bytes": 492
+      },
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_violet.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_violet.png",
+        "exists": true,
+        "bytes": 476
+      }
+    ],
+    "FaceBOptions": [
+      {
+        "ref": "avatars/head/base/female/faces/f_f_02_cute.o3d",
+        "url": "/avatar-assets/avatars/head/base/female/faces/f_f_02_cute.o3d",
+        "exists": true,
+        "bytes": 83710
+      }
+    ],
+    "MouthOptions": [
+      {
+        "ref": "avatars/head/base/female/mouth/m_tooth.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/m_tooth.png",
+        "exists": true,
+        "bytes": 2237
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/m_toothhilite.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/m_toothhilite.png",
+        "exists": true,
+        "bytes": 928
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/m_toothmouth.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/m_toothmouth.png",
+        "exists": true,
+        "bytes": 1487
+      },
+      {
+        "ref": "avatars/head/base/male/mouth/m_angry_teeth.png",
+        "url": "/avatar-assets/avatars/head/base/male/mouth/m_angry_teeth.png",
+        "exists": true,
+        "bytes": 1760
+      },
+      {
+        "ref": "avatars/head/base/male/mouth/m_cheekyteeth.png",
+        "url": "/avatar-assets/avatars/head/base/male/mouth/m_cheekyteeth.png",
+        "exists": true,
+        "bytes": 1423
+      },
+      {
+        "ref": "avatars/head/base/male/mouth/m_freedyteeth.png",
+        "url": "/avatar-assets/avatars/head/base/male/mouth/m_freedyteeth.png",
+        "exists": true,
+        "bytes": 1633
+      },
+      {
+        "ref": "avatars/head/base/male/mouth/m_gawpteeth.png",
+        "url": "/avatar-assets/avatars/head/base/male/mouth/m_gawpteeth.png",
+        "exists": true,
+        "bytes": 1427
+      },
+      {
+        "ref": "avatars/head/base/male/mouth/m_lipupteeth.png",
+        "url": "/avatar-assets/avatars/head/base/male/mouth/m_lipupteeth.png",
+        "exists": true,
+        "bytes": 1487
+      },
+      {
+        "ref": "avatars/head/base/male/mouth/m_mouth_anim05_teeth.png",
+        "url": "/avatar-assets/avatars/head/base/male/mouth/m_mouth_anim05_teeth.png",
+        "exists": true,
+        "bytes": 242
+      },
+      {
+        "ref": "avatars/head/base/male/mouth/m_mouth_pirate_teeth.png",
+        "url": "/avatar-assets/avatars/head/base/male/mouth/m_mouth_pirate_teeth.png",
+        "exists": true,
+        "bytes": 1759
+      },
+      {
+        "ref": "avatars/head/base/male/mouth/m_smile_teeth.png",
+        "url": "/avatar-assets/avatars/head/base/male/mouth/m_smile_teeth.png",
+        "exists": true,
+        "bytes": 1297
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/f_mouth_anim06_base.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/f_mouth_anim06_base.png",
+        "exists": true,
+        "bytes": 2205
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/f_mouth_anim06_icon.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/f_mouth_anim06_icon.png",
+        "exists": true,
+        "bytes": 1383
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/f_mouth_anim07_base.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/f_mouth_anim07_base.png",
+        "exists": true,
+        "bytes": 1231
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/f_mouth_anim07_icon.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/f_mouth_anim07_icon.png",
+        "exists": true,
+        "bytes": 906
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/f_mouth_anim08_base.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/f_mouth_anim08_base.png",
+        "exists": true,
+        "bytes": 2630
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/f_mouth_anim08_icon.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/f_mouth_anim08_icon.png",
+        "exists": true,
+        "bytes": 1716
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/f_mouth_anim09_base.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/f_mouth_anim09_base.png",
+        "exists": true,
+        "bytes": 2255
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/f_mouth_anim09_icon.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/f_mouth_anim09_icon.png",
+        "exists": true,
+        "bytes": 1249
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/f_mouth_anim10_base.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/f_mouth_anim10_base.png",
+        "exists": true,
+        "bytes": 1371
+      }
+    ],
+    "FaceAOptions": [
+      {
+        "ref": "avatars/head/base/female/faces/f_f_06_thin.o3d",
+        "url": "/avatar-assets/avatars/head/base/female/faces/f_f_06_thin.o3d",
+        "exists": true,
+        "bytes": 78045
+      }
+    ],
+    "HighlightOptions": [
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_vanilla.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_vanilla.png",
+        "exists": true,
+        "bytes": 543
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_aquamarine.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_aquamarine.png",
+        "exists": true,
+        "bytes": 392
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_auburn.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_auburn.png",
+        "exists": true,
+        "bytes": 493
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_blue_azure.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_blue_azure.png",
+        "exists": true,
+        "bytes": 388
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_blue_turquoise.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_blue_turquoise.png",
+        "exists": true,
+        "bytes": 363
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_brown.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_brown.png",
+        "exists": true,
+        "bytes": 486
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_gray.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_gray.png",
+        "exists": true,
+        "bytes": 603
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_green_light.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_green_light.png",
+        "exists": true,
+        "bytes": 375
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_orange_ginger.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_orange_ginger.png",
+        "exists": true,
+        "bytes": 377
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_orange_peach.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_orange_peach.png",
+        "exists": true,
+        "bytes": 376
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_pink.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_pink.png",
+        "exists": true,
+        "bytes": 385
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_pink_blush.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_pink_blush.png",
+        "exists": true,
+        "bytes": 371
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_pink_petal.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_pink_petal.png",
+        "exists": true,
+        "bytes": 355
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_pink_petunia.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_pink_petunia.png",
+        "exists": true,
+        "bytes": 386
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_platinum.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_platinum.png",
+        "exists": true,
+        "bytes": 650
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_purple.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_purple.png",
+        "exists": true,
+        "bytes": 544
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_purple_plum.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_purple_plum.png",
+        "exists": true,
+        "bytes": 392
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_purple_wistful.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_purple_wistful.png",
+        "exists": true,
+        "bytes": 378
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_red.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_red.png",
+        "exists": true,
+        "bytes": 341
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_sangria.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_sangria.png",
+        "exists": true,
+        "bytes": 388
+      }
+    ],
+    "NoseAOptions": [
+      {
+        "ref": "avatars/head/base/female/faces/nose_04_straight.o3d",
+        "url": "/avatar-assets/avatars/head/base/female/faces/nose_04_straight.o3d",
+        "exists": true,
+        "bytes": 78031
+      }
+    ],
+    "NoseBOptions": [
+      {
+        "ref": "avatars/head/base/male/faces/f_anime.o3d",
+        "url": "/avatar-assets/avatars/head/base/male/faces/f_anime.o3d",
+        "exists": true,
+        "bytes": 86237
+      }
+    ],
+    "GlassesOptions": [
+      {
+        "ref": "avatars/head/base/female/props/gl_surfyf.o3d",
+        "url": "/avatar-assets/avatars/head/base/female/props/gl_surfyf.o3d",
+        "exists": true,
+        "bytes": 65113
+      },
+      {
+        "ref": "avatars/head/base/female/props/icons_gl_surfyf_grey.png",
+        "url": "/avatar-assets/avatars/head/base/female/props/icons_gl_surfyf_grey.png",
+        "exists": true,
+        "bytes": 861
+      },
+      {
+        "ref": "avatars/head/base/unisex/props/gl_03_surfy.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/props/gl_03_surfy.png",
+        "exists": true,
+        "bytes": 1714
+      }
+    ],
+    "HairstyleOptions": [
+      {
+        "ref": "avatars/head/base/female/hair/hair_fteenvamp.o3d",
+        "url": "/avatar-assets/avatars/head/base/female/hair/hair_fteenvamp.o3d",
+        "exists": true,
+        "bytes": 89228
+      },
+      {
+        "ref": "avatars/head/base/female/hair/ht_fteenvamp_shad.png",
+        "url": "/avatar-assets/avatars/head/base/female/hair/ht_fteenvamp_shad.png",
+        "exists": true,
+        "bytes": 884
+      },
+      {
+        "ref": "avatars/head/base/female/hair/icon_hair_fteenvamp.png",
+        "url": "/avatar-assets/avatars/head/base/female/hair/icon_hair_fteenvamp.png",
+        "exists": true,
+        "bytes": 2133
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/h_base.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/h_base.png",
+        "exists": true,
+        "bytes": 13731
+      }
+    ],
+    "FoundationOptions": [
+      {
+        "ref": "avatars/head/base/female/decals/icon_foundation0.png",
+        "url": "/avatar-assets/avatars/head/base/female/decals/icon_foundation0.png",
+        "exists": true,
+        "bytes": 2183
+      },
+      {
+        "ref": "avatars/head/base/female/decals/icon_foundation1.png",
+        "url": "/avatar-assets/avatars/head/base/female/decals/icon_foundation1.png",
+        "exists": true,
+        "bytes": 2121
+      },
+      {
+        "ref": "avatars/head/base/female/decals/icon_foundation2.png",
+        "url": "/avatar-assets/avatars/head/base/female/decals/icon_foundation2.png",
+        "exists": true,
+        "bytes": 2109
+      },
+      {
+        "ref": "avatars/head/base/female/decals/icon_foundation3.png",
+        "url": "/avatar-assets/avatars/head/base/female/decals/icon_foundation3.png",
+        "exists": true,
+        "bytes": 2140
+      },
+      {
+        "ref": "avatars/head/base/unisex/skin/s_colour_hilite.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/skin/s_colour_hilite.png",
+        "exists": true,
+        "bytes": 3788
+      }
+    ],
+    "BlusherOptions": [
+      {
+        "ref": "avatars/head/base/female/decals/icon_mu_eighties.png",
+        "url": "/avatar-assets/avatars/head/base/female/decals/icon_mu_eighties.png",
+        "exists": true,
+        "bytes": 2144
+      },
+      {
+        "ref": "avatars/head/base/female/decals/icon_mu_heavy.png",
+        "url": "/avatar-assets/avatars/head/base/female/decals/icon_mu_heavy.png",
+        "exists": true,
+        "bytes": 2160
+      },
+      {
+        "ref": "avatars/head/base/female/decals/icon_mu_lite.png",
+        "url": "/avatar-assets/avatars/head/base/female/decals/icon_mu_lite.png",
+        "exists": true,
+        "bytes": 2281
+      },
+      {
+        "ref": "avatars/head/base/female/decals/icon_mu_none.png",
+        "url": "/avatar-assets/avatars/head/base/female/decals/icon_mu_none.png",
+        "exists": true,
+        "bytes": 2269
+      },
+      {
+        "ref": "avatars/head/base/female/decals/icon_mu_strike.png",
+        "url": "/avatar-assets/avatars/head/base/female/decals/icon_mu_strike.png",
+        "exists": true,
+        "bytes": 2173
+      },
+      {
+        "ref": "avatars/head/base/female/skin/mu_80blusher.png",
+        "url": "/avatar-assets/avatars/head/base/female/skin/mu_80blusher.png",
+        "exists": true,
+        "bytes": 2061
+      },
+      {
+        "ref": "avatars/head/base/female/skin/mu_blusher2.png",
+        "url": "/avatar-assets/avatars/head/base/female/skin/mu_blusher2.png",
+        "exists": true,
+        "bytes": 1313
+      },
+      {
+        "ref": "avatars/head/base/female/skin/mu_blusherlite.png",
+        "url": "/avatar-assets/avatars/head/base/female/skin/mu_blusherlite.png",
+        "exists": true,
+        "bytes": 552
+      },
+      {
+        "ref": "avatars/head/base/female/skin/mu_eyestrike.png",
+        "url": "/avatar-assets/avatars/head/base/female/skin/mu_eyestrike.png",
+        "exists": true,
+        "bytes": 1168
+      }
+    ],
+    "BlusherColorOptions": [
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_candy.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_candy.png",
+        "exists": true,
+        "bytes": 546
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_fire.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_fire.png",
+        "exists": true,
+        "bytes": 550
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_hot.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_hot.png",
+        "exists": true,
+        "bytes": 553
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_ice.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_ice.png",
+        "exists": true,
+        "bytes": 574
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_jade.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_jade.png",
+        "exists": true,
+        "bytes": 542
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_magenta.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_magenta.png",
+        "exists": true,
+        "bytes": 528
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_manson.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_manson.png",
+        "exists": true,
+        "bytes": 492
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_marylin.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_marylin.png",
+        "exists": true,
+        "bytes": 520
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_palm.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_palm.png",
+        "exists": true,
+        "bytes": 563
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_pplum.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_pplum.png",
+        "exists": true,
+        "bytes": 542
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_siren.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_siren.png",
+        "exists": true,
+        "bytes": 531
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_turq.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_turq.png",
+        "exists": true,
+        "bytes": 573
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_vanilla.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_vanilla.png",
+        "exists": true,
+        "bytes": 543
+      },
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_burgandy.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_burgandy.png",
+        "exists": true,
+        "bytes": 532
+      },
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_cobalt.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_cobalt.png",
+        "exists": true,
+        "bytes": 480
+      },
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_espresso.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_espresso.png",
+        "exists": true,
+        "bytes": 482
+      },
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_latte.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_latte.png",
+        "exists": true,
+        "bytes": 564
+      },
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_lilac.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_lilac.png",
+        "exists": true,
+        "bytes": 560
+      },
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_mocha.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_mocha.png",
+        "exists": true,
+        "bytes": 492
+      },
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_violet.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_violet.png",
+        "exists": true,
+        "bytes": 476
+      }
+    ],
+    "EyeOptions": [
+      {
+        "ref": "avatars/head/base/female/eyes/eye_animlarge_iris.png",
+        "url": "/avatar-assets/avatars/head/base/female/eyes/eye_animlarge_iris.png",
+        "exists": true,
+        "bytes": 1847
+      },
+      {
+        "ref": "avatars/head/base/female/eyes/eye_animround_iris.png",
+        "url": "/avatar-assets/avatars/head/base/female/eyes/eye_animround_iris.png",
+        "exists": true,
+        "bytes": 1816
+      },
+      {
+        "ref": "avatars/head/base/female/eyes/eye_closeset_iris.png",
+        "url": "/avatar-assets/avatars/head/base/female/eyes/eye_closeset_iris.png",
+        "exists": true,
+        "bytes": 1364
+      },
+      {
+        "ref": "avatars/head/base/female/eyes/eye_makeup1.png",
+        "url": "/avatar-assets/avatars/head/base/female/eyes/eye_makeup1.png",
+        "exists": true,
+        "bytes": 2860
+      },
+      {
+        "ref": "avatars/head/base/female/eyes/eye_makeup2.png",
+        "url": "/avatar-assets/avatars/head/base/female/eyes/eye_makeup2.png",
+        "exists": true,
+        "bytes": 2411
+      },
+      {
+        "ref": "avatars/head/base/female/eyes/eye_normbase.png",
+        "url": "/avatar-assets/avatars/head/base/female/eyes/eye_normbase.png",
+        "exists": true,
+        "bytes": 2482
+      },
+      {
+        "ref": "avatars/head/base/female/eyes/eye_trideep_iris.png",
+        "url": "/avatar-assets/avatars/head/base/female/eyes/eye_trideep_iris.png",
+        "exists": true,
+        "bytes": 908
+      },
+      {
+        "ref": "avatars/head/base/female/eyes/icons_feye_heavy_makeup.png",
+        "url": "/avatar-assets/avatars/head/base/female/eyes/icons_feye_heavy_makeup.png",
+        "exists": true,
+        "bytes": 2527
+      },
+      {
+        "ref": "avatars/head/base/male/eyes/eye_evilbase.png",
+        "url": "/avatar-assets/avatars/head/base/male/eyes/eye_evilbase.png",
+        "exists": true,
+        "bytes": 2876
+      },
+      {
+        "ref": "avatars/head/base/male/eyes/eye_halfbase.png",
+        "url": "/avatar-assets/avatars/head/base/male/eyes/eye_halfbase.png",
+        "exists": true,
+        "bytes": 2531
+      },
+      {
+        "ref": "avatars/head/base/male/eyes/eye_herobase.png",
+        "url": "/avatar-assets/avatars/head/base/male/eyes/eye_herobase.png",
+        "exists": true,
+        "bytes": 2364
+      },
+      {
+        "ref": "avatars/head/base/male/eyes/eye_m_animlarge_base.png",
+        "url": "/avatar-assets/avatars/head/base/male/eyes/eye_m_animlarge_base.png",
+        "exists": true,
+        "bytes": 2052
+      },
+      {
+        "ref": "avatars/head/base/male/eyes/eye_m_animround_base.png",
+        "url": "/avatar-assets/avatars/head/base/male/eyes/eye_m_animround_base.png",
+        "exists": true,
+        "bytes": 1686
+      },
+      {
+        "ref": "avatars/head/base/male/eyes/eye_m_animsquare_base.png",
+        "url": "/avatar-assets/avatars/head/base/male/eyes/eye_m_animsquare_base.png",
+        "exists": true,
+        "bytes": 1986
+      },
+      {
+        "ref": "avatars/head/base/male/eyes/eye_m_closeset_base.png",
+        "url": "/avatar-assets/avatars/head/base/male/eyes/eye_m_closeset_base.png",
+        "exists": true,
+        "bytes": 2737
+      },
+      {
+        "ref": "avatars/head/base/male/eyes/eye_m_liner_base.png",
+        "url": "/avatar-assets/avatars/head/base/male/eyes/eye_m_liner_base.png",
+        "exists": true,
+        "bytes": 2090
+      },
+      {
+        "ref": "avatars/head/base/male/eyes/eye_m_realsquint.png",
+        "url": "/avatar-assets/avatars/head/base/male/eyes/eye_m_realsquint.png",
+        "exists": true,
+        "bytes": 2338
+      },
+      {
+        "ref": "avatars/head/base/male/eyes/eye_m_realsquintiris.png",
+        "url": "/avatar-assets/avatars/head/base/male/eyes/eye_m_realsquintiris.png",
+        "exists": true,
+        "bytes": 674
+      },
+      {
+        "ref": "avatars/head/base/male/eyes/eye_m_trideep_base.png",
+        "url": "/avatar-assets/avatars/head/base/male/eyes/eye_m_trideep_base.png",
+        "exists": true,
+        "bytes": 1934
+      },
+      {
+        "ref": "avatars/head/base/male/eyes/eye_melfbase.png",
+        "url": "/avatar-assets/avatars/head/base/male/eyes/eye_melfbase.png",
+        "exists": true,
+        "bytes": 2322
+      }
+    ],
+    "BrowOptions": [
+      {
+        "ref": "avatars/head/base/unisex/brow/eyebrows_anim07_base.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/brow/eyebrows_anim07_base.png",
+        "exists": true,
+        "bytes": 876
+      },
+      {
+        "ref": "avatars/head/base/male/brow/b_medium.png",
+        "url": "/avatar-assets/avatars/head/base/male/brow/b_medium.png",
+        "exists": true,
+        "bytes": 1440
+      },
+      {
+        "ref": "avatars/head/base/male/brow/b_thick.png",
+        "url": "/avatar-assets/avatars/head/base/male/brow/b_thick.png",
+        "exists": true,
+        "bytes": 1518
+      },
+      {
+        "ref": "avatars/head/base/male/brow/icon_male_eyebrows_l-shaped.png",
+        "url": "/avatar-assets/avatars/head/base/male/brow/icon_male_eyebrows_l-shaped.png",
+        "exists": true,
+        "bytes": 594
+      },
+      {
+        "ref": "avatars/head/base/male/brow/icon_male_eyebrows_l-shaped_down.png",
+        "url": "/avatar-assets/avatars/head/base/male/brow/icon_male_eyebrows_l-shaped_down.png",
+        "exists": true,
+        "bytes": 690
+      },
+      {
+        "ref": "avatars/head/base/male/brow/icon_male_eyebrows_l-shaped_up.png",
+        "url": "/avatar-assets/avatars/head/base/male/brow/icon_male_eyebrows_l-shaped_up.png",
+        "exists": true,
+        "bytes": 535
+      },
+      {
+        "ref": "avatars/head/base/male/brow/icon_male_eyebrows_medium.png",
+        "url": "/avatar-assets/avatars/head/base/male/brow/icon_male_eyebrows_medium.png",
+        "exists": true,
+        "bytes": 490
+      },
+      {
+        "ref": "avatars/head/base/male/brow/icon_male_eyebrows_medium_down.png",
+        "url": "/avatar-assets/avatars/head/base/male/brow/icon_male_eyebrows_medium_down.png",
+        "exists": true,
+        "bytes": 495
+      },
+      {
+        "ref": "avatars/head/base/male/brow/icon_male_eyebrows_mediumraise.png",
+        "url": "/avatar-assets/avatars/head/base/male/brow/icon_male_eyebrows_mediumraise.png",
+        "exists": true,
+        "bytes": 528
+      },
+      {
+        "ref": "avatars/head/base/male/brow/icon_male_eyebrows_mono.png",
+        "url": "/avatar-assets/avatars/head/base/male/brow/icon_male_eyebrows_mono.png",
+        "exists": true,
+        "bytes": 568
+      },
+      {
+        "ref": "avatars/head/base/male/brow/icon_male_eyebrows_thick.png",
+        "url": "/avatar-assets/avatars/head/base/male/brow/icon_male_eyebrows_thick.png",
+        "exists": true,
+        "bytes": 675
+      },
+      {
+        "ref": "avatars/head/base/male/brow/icon_male_eyebrows_thick_down.png",
+        "url": "/avatar-assets/avatars/head/base/male/brow/icon_male_eyebrows_thick_down.png",
+        "exists": true,
+        "bytes": 663
+      },
+      {
+        "ref": "avatars/head/base/male/brow/icon_male_eyebrows_thick_up.png",
+        "url": "/avatar-assets/avatars/head/base/male/brow/icon_male_eyebrows_thick_up.png",
+        "exists": true,
+        "bytes": 638
+      },
+      {
+        "ref": "avatars/head/base/male/brow/icon_male_eyebrows_thickraise.png",
+        "url": "/avatar-assets/avatars/head/base/male/brow/icon_male_eyebrows_thickraise.png",
+        "exists": true,
+        "bytes": 776
+      },
+      {
+        "ref": "avatars/head/base/male/brow/icon_male_eyebrows_thin.png",
+        "url": "/avatar-assets/avatars/head/base/male/brow/icon_male_eyebrows_thin.png",
+        "exists": true,
+        "bytes": 435
+      },
+      {
+        "ref": "avatars/head/base/male/brow/icon_male_eyebrows_thin_down.png",
+        "url": "/avatar-assets/avatars/head/base/male/brow/icon_male_eyebrows_thin_down.png",
+        "exists": true,
+        "bytes": 509
+      },
+      {
+        "ref": "avatars/head/base/male/brow/icon_male_eyebrows_thin_up.png",
+        "url": "/avatar-assets/avatars/head/base/male/brow/icon_male_eyebrows_thin_up.png",
+        "exists": true,
+        "bytes": 468
+      },
+      {
+        "ref": "avatars/head/base/male/brow/icon_male_eyebrows_thinraise.png",
+        "url": "/avatar-assets/avatars/head/base/male/brow/icon_male_eyebrows_thinraise.png",
+        "exists": true,
+        "bytes": 664
+      },
+      {
+        "ref": "avatars/head/base/male/brow/icon_male_eyebrows_tick.png",
+        "url": "/avatar-assets/avatars/head/base/male/brow/icon_male_eyebrows_tick.png",
+        "exists": true,
+        "bytes": 803
+      },
+      {
+        "ref": "avatars/head/base/male/brow/m_thin.png",
+        "url": "/avatar-assets/avatars/head/base/male/brow/m_thin.png",
+        "exists": true,
+        "bytes": 1235
+      }
+    ],
+    "EyeColorOptions": [
+      {
+        "ref": "avatars/head/base/unisex/eyes/icon_eye_col_albino.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/eyes/icon_eye_col_albino.png",
+        "exists": true,
+        "bytes": 1396
+      },
+      {
+        "ref": "avatars/head/base/unisex/eyes/icon_eye_col_amber.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/eyes/icon_eye_col_amber.png",
+        "exists": true,
+        "bytes": 1370
+      },
+      {
+        "ref": "avatars/head/base/unisex/eyes/icon_eye_col_black.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/eyes/icon_eye_col_black.png",
+        "exists": true,
+        "bytes": 888
+      },
+      {
+        "ref": "avatars/head/base/unisex/eyes/icon_eye_col_blue.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/eyes/icon_eye_col_blue.png",
+        "exists": true,
+        "bytes": 1203
+      },
+      {
+        "ref": "avatars/head/base/unisex/eyes/icon_eye_col_brown.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/eyes/icon_eye_col_brown.png",
+        "exists": true,
+        "bytes": 1232
+      },
+      {
+        "ref": "avatars/head/base/unisex/eyes/icon_eye_col_darkblue.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/eyes/icon_eye_col_darkblue.png",
+        "exists": true,
+        "bytes": 1466
+      },
+      {
+        "ref": "avatars/head/base/unisex/eyes/icon_eye_col_emerald.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/eyes/icon_eye_col_emerald.png",
+        "exists": true,
+        "bytes": 1324
+      },
+      {
+        "ref": "avatars/head/base/unisex/eyes/icon_eye_col_gray.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/eyes/icon_eye_col_gray.png",
+        "exists": true,
+        "bytes": 1231
+      },
+      {
+        "ref": "avatars/head/base/unisex/eyes/icon_eye_col_green.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/eyes/icon_eye_col_green.png",
+        "exists": true,
+        "bytes": 1297
+      },
+      {
+        "ref": "avatars/head/base/unisex/eyes/icon_eye_col_hazel.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/eyes/icon_eye_col_hazel.png",
+        "exists": true,
+        "bytes": 1301
+      },
+      {
+        "ref": "avatars/head/base/unisex/eyes/icon_eye_col_orange.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/eyes/icon_eye_col_orange.png",
+        "exists": true,
+        "bytes": 1465
+      },
+      {
+        "ref": "avatars/head/base/unisex/eyes/icon_eye_col_red.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/eyes/icon_eye_col_red.png",
+        "exists": true,
+        "bytes": 1433
+      },
+      {
+        "ref": "avatars/head/base/unisex/eyes/icon_eye_col_violet.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/eyes/icon_eye_col_violet.png",
+        "exists": true,
+        "bytes": 1309
+      },
+      {
+        "ref": "avatars/head/base/unisex/eyes/icon_eye_col_yellow.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/eyes/icon_eye_col_yellow.png",
+        "exists": true,
+        "bytes": 1566
+      }
+    ],
+    "HairColorOptions": [
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_vanilla.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_vanilla.png",
+        "exists": true,
+        "bytes": 543
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_aquamarine.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_aquamarine.png",
+        "exists": true,
+        "bytes": 392
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_auburn.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_auburn.png",
+        "exists": true,
+        "bytes": 493
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_blonde.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_blonde.png",
+        "exists": true,
+        "bytes": 606
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_blue.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_blue.png",
+        "exists": true,
+        "bytes": 667
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_blue_azure.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_blue_azure.png",
+        "exists": true,
+        "bytes": 388
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_blue_turquoise.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_blue_turquoise.png",
+        "exists": true,
+        "bytes": 363
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_brown.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_brown.png",
+        "exists": true,
+        "bytes": 486
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_golden.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_golden.png",
+        "exists": true,
+        "bytes": 440
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_gray.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_gray.png",
+        "exists": true,
+        "bytes": 603
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_gray_sash.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_gray_sash.png",
+        "exists": true,
+        "bytes": 370
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_green.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_green.png",
+        "exists": true,
+        "bytes": 552
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_green_light.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_green_light.png",
+        "exists": true,
+        "bytes": 375
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_orange_ginger.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_orange_ginger.png",
+        "exists": true,
+        "bytes": 377
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_orange_peach.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_orange_peach.png",
+        "exists": true,
+        "bytes": 376
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_orange_strawberry.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_orange_strawberry.png",
+        "exists": true,
+        "bytes": 381
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_pink.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_pink.png",
+        "exists": true,
+        "bytes": 385
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_pink_blush.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_pink_blush.png",
+        "exists": true,
+        "bytes": 371
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_pink_petal.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_pink_petal.png",
+        "exists": true,
+        "bytes": 355
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_pink_petunia.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_pink_petunia.png",
+        "exists": true,
+        "bytes": 386
+      }
+    ],
+    "TintOptions": [
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_vanilla.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_vanilla.png",
+        "exists": true,
+        "bytes": 543
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_aquamarine.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_aquamarine.png",
+        "exists": true,
+        "bytes": 392
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_auburn.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_auburn.png",
+        "exists": true,
+        "bytes": 493
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_blue_azure.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_blue_azure.png",
+        "exists": true,
+        "bytes": 388
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_blue_turquoise.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_blue_turquoise.png",
+        "exists": true,
+        "bytes": 363
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_brown.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_brown.png",
+        "exists": true,
+        "bytes": 486
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_gray.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_gray.png",
+        "exists": true,
+        "bytes": 603
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_green_light.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_green_light.png",
+        "exists": true,
+        "bytes": 375
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_orange_ginger.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_orange_ginger.png",
+        "exists": true,
+        "bytes": 377
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_orange_peach.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_orange_peach.png",
+        "exists": true,
+        "bytes": 376
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_pink.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_pink.png",
+        "exists": true,
+        "bytes": 385
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_pink_blush.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_pink_blush.png",
+        "exists": true,
+        "bytes": 371
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_pink_petal.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_pink_petal.png",
+        "exists": true,
+        "bytes": 355
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_pink_petunia.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_pink_petunia.png",
+        "exists": true,
+        "bytes": 386
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_platinum.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_platinum.png",
+        "exists": true,
+        "bytes": 650
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_purple.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_purple.png",
+        "exists": true,
+        "bytes": 544
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_purple_plum.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_purple_plum.png",
+        "exists": true,
+        "bytes": 392
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_purple_wistful.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_purple_wistful.png",
+        "exists": true,
+        "bytes": 378
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_red.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_red.png",
+        "exists": true,
+        "bytes": 341
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_sangria.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_sangria.png",
+        "exists": true,
+        "bytes": 388
+      }
+    ],
+    "SkinColorOptions": [
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_espresso.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_espresso.png",
+        "exists": true,
+        "bytes": 482
+      },
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_latte.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_latte.png",
+        "exists": true,
+        "bytes": 564
+      },
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_mocha.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_mocha.png",
+        "exists": true,
+        "bytes": 492
+      },
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_white.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_white.png",
+        "exists": true,
+        "bytes": 577
+      },
+      {
+        "ref": "avatars/head/base/unisex/skin/icon_skin_avatarier.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/skin/icon_skin_avatarier.png",
+        "exists": true,
+        "bytes": 542
+      },
+      {
+        "ref": "avatars/head/base/unisex/skin/icon_skin_avatary.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/skin/icon_skin_avatary.png",
+        "exists": true,
+        "bytes": 604
+      },
+      {
+        "ref": "avatars/head/base/unisex/skin/icon_skin_berry.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/skin/icon_skin_berry.png",
+        "exists": true,
+        "bytes": 635
+      },
+      {
+        "ref": "avatars/head/base/unisex/skin/icon_skin_candy.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/skin/icon_skin_candy.png",
+        "exists": true,
+        "bytes": 613
+      },
+      {
+        "ref": "avatars/head/base/unisex/skin/icon_skin_ceil.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/skin/icon_skin_ceil.png",
+        "exists": true,
+        "bytes": 374
+      },
+      {
+        "ref": "avatars/head/base/unisex/skin/icon_skin_copper.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/skin/icon_skin_copper.png",
+        "exists": true,
+        "bytes": 594
+      },
+      {
+        "ref": "avatars/head/base/unisex/skin/icon_skin_dark.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/skin/icon_skin_dark.png",
+        "exists": true,
+        "bytes": 413
+      },
+      {
+        "ref": "avatars/head/base/unisex/skin/icon_skin_devil.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/skin/icon_skin_devil.png",
+        "exists": true,
+        "bytes": 618
+      },
+      {
+        "ref": "avatars/head/base/unisex/skin/icon_skin_ebony.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/skin/icon_skin_ebony.png",
+        "exists": true,
+        "bytes": 467
+      },
+      {
+        "ref": "avatars/head/base/unisex/skin/icon_skin_eggshell.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/skin/icon_skin_eggshell.png",
+        "exists": true,
+        "bytes": 561
+      },
+      {
+        "ref": "avatars/head/base/unisex/skin/icon_skin_emerald.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/skin/icon_skin_emerald.png",
+        "exists": true,
+        "bytes": 367
+      },
+      {
+        "ref": "avatars/head/base/unisex/skin/icon_skin_faketan.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/skin/icon_skin_faketan.png",
+        "exists": true,
+        "bytes": 545
+      },
+      {
+        "ref": "avatars/head/base/unisex/skin/icon_skin_gold.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/skin/icon_skin_gold.png",
+        "exists": true,
+        "bytes": 530
+      },
+      {
+        "ref": "avatars/head/base/unisex/skin/icon_skin_golden.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/skin/icon_skin_golden.png",
+        "exists": true,
+        "bytes": 569
+      },
+      {
+        "ref": "avatars/head/base/unisex/skin/icon_skin_iron.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/skin/icon_skin_iron.png",
+        "exists": true,
+        "bytes": 544
+      },
+      {
+        "ref": "avatars/head/base/unisex/skin/icon_skin_leaf.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/skin/icon_skin_leaf.png",
+        "exists": true,
+        "bytes": 601
+      }
+    ]
+  },
+  "head": {
+    "meshes": [
+      {
+        "ref": "avatars/head/base/female/faces/f_f_02_cute.o3d",
+        "url": "/avatar-assets/avatars/head/base/female/faces/f_f_02_cute.o3d",
+        "exists": true,
+        "bytes": 83710,
+        "meshes": [
+          {
+            "name": "face_F_cute",
+            "vertex_count": 348,
+            "face_count": 658,
+            "uv_count": 348
+          }
+        ],
+        "option_id": "FaceBOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/faces/f_f_06_thin.o3d",
+        "url": "/avatar-assets/avatars/head/base/female/faces/f_f_06_thin.o3d",
+        "exists": true,
+        "bytes": 78045,
+        "meshes": [
+          {
+            "name": "face_F_thin",
+            "vertex_count": 348,
+            "face_count": 658,
+            "uv_count": 348
+          }
+        ],
+        "option_id": "FaceAOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/faces/nose_04_straight.o3d",
+        "url": "/avatar-assets/avatars/head/base/female/faces/nose_04_straight.o3d",
+        "exists": true,
+        "bytes": 78031,
+        "meshes": [
+          {
+            "name": "n_03_straight",
+            "vertex_count": 348,
+            "face_count": 658,
+            "uv_count": 348
+          }
+        ],
+        "option_id": "NoseAOptions"
+      },
+      {
+        "ref": "avatars/head/base/male/faces/f_anime.o3d",
+        "url": "/avatar-assets/avatars/head/base/male/faces/f_anime.o3d",
+        "exists": true,
+        "bytes": 86237,
+        "meshes": [
+          {
+            "name": "face_M_anime",
+            "vertex_count": 362,
+            "face_count": 676,
+            "uv_count": 362
+          }
+        ],
+        "option_id": "NoseBOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/props/gl_surfyf.o3d",
+        "url": "/avatar-assets/avatars/head/base/female/props/gl_surfyf.o3d",
+        "exists": true,
+        "bytes": 65113,
+        "meshes": [
+          {
+            "name": "gl_surfy",
+            "vertex_count": 224,
+            "face_count": 440,
+            "uv_count": 506
+          }
+        ],
+        "option_id": "GlassesOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/hair/hair_fteenvamp.o3d",
+        "url": "/avatar-assets/avatars/head/base/female/hair/hair_fteenvamp.o3d",
+        "exists": true,
+        "bytes": 89228,
+        "meshes": [
+          {
+            "name": "fhair_vamp_b",
+            "vertex_count": 138,
+            "face_count": 166,
+            "uv_count": 158
+          },
+          {
+            "name": "fhair_vamp_a",
+            "vertex_count": 240,
+            "face_count": 426,
+            "uv_count": 470
+          }
+        ],
+        "option_id": "HairstyleOptions"
+      }
+    ],
+    "textures": [
+      {
+        "ref": "avatars/head/base/female/eyes/icon_shadow_black.png",
+        "url": "/avatar-assets/avatars/head/base/female/eyes/icon_shadow_black.png",
+        "exists": true,
+        "bytes": 360,
+        "option_id": "EyeShadowOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/eyes/icon_shadow_greentea.png",
+        "url": "/avatar-assets/avatars/head/base/female/eyes/icon_shadow_greentea.png",
+        "exists": true,
+        "bytes": 536,
+        "option_id": "EyeShadowOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/eyes/icon_shadow_inca.png",
+        "url": "/avatar-assets/avatars/head/base/female/eyes/icon_shadow_inca.png",
+        "exists": true,
+        "bytes": 581,
+        "option_id": "EyeShadowOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/eyes/icon_shadow_litepurp.png",
+        "url": "/avatar-assets/avatars/head/base/female/eyes/icon_shadow_litepurp.png",
+        "exists": true,
+        "bytes": 575,
+        "option_id": "EyeShadowOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/eyes/icon_shadow_mauve.png",
+        "url": "/avatar-assets/avatars/head/base/female/eyes/icon_shadow_mauve.png",
+        "exists": true,
+        "bytes": 534,
+        "option_id": "EyeShadowOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/eyes/icon_shadow_oldgold.png",
+        "url": "/avatar-assets/avatars/head/base/female/eyes/icon_shadow_oldgold.png",
+        "exists": true,
+        "bytes": 571,
+        "option_id": "EyeShadowOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/eyes/icon_shadow_paladium.png",
+        "url": "/avatar-assets/avatars/head/base/female/eyes/icon_shadow_paladium.png",
+        "exists": true,
+        "bytes": 554,
+        "option_id": "EyeShadowOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/eyes/icon_shadow_santa.png",
+        "url": "/avatar-assets/avatars/head/base/female/eyes/icon_shadow_santa.png",
+        "exists": true,
+        "bytes": 558,
+        "option_id": "EyeShadowOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/eyes/icon_shadow_tangerine.png",
+        "url": "/avatar-assets/avatars/head/base/female/eyes/icon_shadow_tangerine.png",
+        "exists": true,
+        "bytes": 564,
+        "option_id": "EyeShadowOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/eyes/icon_shadow_teal.png",
+        "url": "/avatar-assets/avatars/head/base/female/eyes/icon_shadow_teal.png",
+        "exists": true,
+        "bytes": 511,
+        "option_id": "EyeShadowOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/eyes/icon_shadow_tirquoise.png",
+        "url": "/avatar-assets/avatars/head/base/female/eyes/icon_shadow_tirquoise.png",
+        "exists": true,
+        "bytes": 556,
+        "option_id": "EyeShadowOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/eyes/icon_shadow_vanilla.png",
+        "url": "/avatar-assets/avatars/head/base/female/eyes/icon_shadow_vanilla.png",
+        "exists": true,
+        "bytes": 484,
+        "option_id": "EyeShadowOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/eyes/icon_shadow_vintagesilver.png",
+        "url": "/avatar-assets/avatars/head/base/female/eyes/icon_shadow_vintagesilver.png",
+        "exists": true,
+        "bytes": 527,
+        "option_id": "EyeShadowOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_burgandy.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_burgandy.png",
+        "exists": true,
+        "bytes": 532,
+        "option_id": "EyeShadowOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_cobalt.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_cobalt.png",
+        "exists": true,
+        "bytes": 480,
+        "option_id": "EyeShadowOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_espresso.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_espresso.png",
+        "exists": true,
+        "bytes": 482,
+        "option_id": "EyeShadowOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_latte.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_latte.png",
+        "exists": true,
+        "bytes": 564,
+        "option_id": "EyeShadowOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_lilac.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_lilac.png",
+        "exists": true,
+        "bytes": 560,
+        "option_id": "EyeShadowOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_mocha.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_mocha.png",
+        "exists": true,
+        "bytes": 492,
+        "option_id": "EyeShadowOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_violet.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_violet.png",
+        "exists": true,
+        "bytes": 476,
+        "option_id": "EyeShadowOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_candy.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_candy.png",
+        "exists": true,
+        "bytes": 546,
+        "option_id": "LipstickOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_fire.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_fire.png",
+        "exists": true,
+        "bytes": 550,
+        "option_id": "LipstickOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_hot.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_hot.png",
+        "exists": true,
+        "bytes": 553,
+        "option_id": "LipstickOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_ice.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_ice.png",
+        "exists": true,
+        "bytes": 574,
+        "option_id": "LipstickOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_jade.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_jade.png",
+        "exists": true,
+        "bytes": 542,
+        "option_id": "LipstickOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_magenta.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_magenta.png",
+        "exists": true,
+        "bytes": 528,
+        "option_id": "LipstickOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_manson.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_manson.png",
+        "exists": true,
+        "bytes": 492,
+        "option_id": "LipstickOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_marylin.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_marylin.png",
+        "exists": true,
+        "bytes": 520,
+        "option_id": "LipstickOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_palm.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_palm.png",
+        "exists": true,
+        "bytes": 563,
+        "option_id": "LipstickOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_pplum.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_pplum.png",
+        "exists": true,
+        "bytes": 542,
+        "option_id": "LipstickOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_siren.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_siren.png",
+        "exists": true,
+        "bytes": 531,
+        "option_id": "LipstickOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_turq.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_turq.png",
+        "exists": true,
+        "bytes": 573,
+        "option_id": "LipstickOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_vanilla.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_vanilla.png",
+        "exists": true,
+        "bytes": 543,
+        "option_id": "LipstickOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_burgandy.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_burgandy.png",
+        "exists": true,
+        "bytes": 532,
+        "option_id": "LipstickOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_cobalt.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_cobalt.png",
+        "exists": true,
+        "bytes": 480,
+        "option_id": "LipstickOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_espresso.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_espresso.png",
+        "exists": true,
+        "bytes": 482,
+        "option_id": "LipstickOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_latte.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_latte.png",
+        "exists": true,
+        "bytes": 564,
+        "option_id": "LipstickOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_lilac.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_lilac.png",
+        "exists": true,
+        "bytes": 560,
+        "option_id": "LipstickOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_mocha.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_mocha.png",
+        "exists": true,
+        "bytes": 492,
+        "option_id": "LipstickOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_violet.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_violet.png",
+        "exists": true,
+        "bytes": 476,
+        "option_id": "LipstickOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/m_tooth.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/m_tooth.png",
+        "exists": true,
+        "bytes": 2237,
+        "option_id": "MouthOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/m_toothhilite.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/m_toothhilite.png",
+        "exists": true,
+        "bytes": 928,
+        "option_id": "MouthOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/m_toothmouth.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/m_toothmouth.png",
+        "exists": true,
+        "bytes": 1487,
+        "option_id": "MouthOptions"
+      },
+      {
+        "ref": "avatars/head/base/male/mouth/m_angry_teeth.png",
+        "url": "/avatar-assets/avatars/head/base/male/mouth/m_angry_teeth.png",
+        "exists": true,
+        "bytes": 1760,
+        "option_id": "MouthOptions"
+      },
+      {
+        "ref": "avatars/head/base/male/mouth/m_cheekyteeth.png",
+        "url": "/avatar-assets/avatars/head/base/male/mouth/m_cheekyteeth.png",
+        "exists": true,
+        "bytes": 1423,
+        "option_id": "MouthOptions"
+      },
+      {
+        "ref": "avatars/head/base/male/mouth/m_freedyteeth.png",
+        "url": "/avatar-assets/avatars/head/base/male/mouth/m_freedyteeth.png",
+        "exists": true,
+        "bytes": 1633,
+        "option_id": "MouthOptions"
+      },
+      {
+        "ref": "avatars/head/base/male/mouth/m_gawpteeth.png",
+        "url": "/avatar-assets/avatars/head/base/male/mouth/m_gawpteeth.png",
+        "exists": true,
+        "bytes": 1427,
+        "option_id": "MouthOptions"
+      },
+      {
+        "ref": "avatars/head/base/male/mouth/m_lipupteeth.png",
+        "url": "/avatar-assets/avatars/head/base/male/mouth/m_lipupteeth.png",
+        "exists": true,
+        "bytes": 1487,
+        "option_id": "MouthOptions"
+      },
+      {
+        "ref": "avatars/head/base/male/mouth/m_mouth_anim05_teeth.png",
+        "url": "/avatar-assets/avatars/head/base/male/mouth/m_mouth_anim05_teeth.png",
+        "exists": true,
+        "bytes": 242,
+        "option_id": "MouthOptions"
+      },
+      {
+        "ref": "avatars/head/base/male/mouth/m_mouth_pirate_teeth.png",
+        "url": "/avatar-assets/avatars/head/base/male/mouth/m_mouth_pirate_teeth.png",
+        "exists": true,
+        "bytes": 1759,
+        "option_id": "MouthOptions"
+      },
+      {
+        "ref": "avatars/head/base/male/mouth/m_smile_teeth.png",
+        "url": "/avatar-assets/avatars/head/base/male/mouth/m_smile_teeth.png",
+        "exists": true,
+        "bytes": 1297,
+        "option_id": "MouthOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/f_mouth_anim06_base.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/f_mouth_anim06_base.png",
+        "exists": true,
+        "bytes": 2205,
+        "option_id": "MouthOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/f_mouth_anim06_icon.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/f_mouth_anim06_icon.png",
+        "exists": true,
+        "bytes": 1383,
+        "option_id": "MouthOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/f_mouth_anim07_base.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/f_mouth_anim07_base.png",
+        "exists": true,
+        "bytes": 1231,
+        "option_id": "MouthOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/f_mouth_anim07_icon.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/f_mouth_anim07_icon.png",
+        "exists": true,
+        "bytes": 906,
+        "option_id": "MouthOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/f_mouth_anim08_base.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/f_mouth_anim08_base.png",
+        "exists": true,
+        "bytes": 2630,
+        "option_id": "MouthOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/f_mouth_anim08_icon.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/f_mouth_anim08_icon.png",
+        "exists": true,
+        "bytes": 1716,
+        "option_id": "MouthOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/f_mouth_anim09_base.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/f_mouth_anim09_base.png",
+        "exists": true,
+        "bytes": 2255,
+        "option_id": "MouthOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/f_mouth_anim09_icon.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/f_mouth_anim09_icon.png",
+        "exists": true,
+        "bytes": 1249,
+        "option_id": "MouthOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/f_mouth_anim10_base.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/f_mouth_anim10_base.png",
+        "exists": true,
+        "bytes": 1371,
+        "option_id": "MouthOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_vanilla.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_vanilla.png",
+        "exists": true,
+        "bytes": 543,
+        "option_id": "HighlightOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_aquamarine.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_aquamarine.png",
+        "exists": true,
+        "bytes": 392,
+        "option_id": "HighlightOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_auburn.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_auburn.png",
+        "exists": true,
+        "bytes": 493,
+        "option_id": "HighlightOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_blue_azure.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_blue_azure.png",
+        "exists": true,
+        "bytes": 388,
+        "option_id": "HighlightOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_blue_turquoise.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_blue_turquoise.png",
+        "exists": true,
+        "bytes": 363,
+        "option_id": "HighlightOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_brown.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_brown.png",
+        "exists": true,
+        "bytes": 486,
+        "option_id": "HighlightOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_gray.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_gray.png",
+        "exists": true,
+        "bytes": 603,
+        "option_id": "HighlightOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_green_light.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_green_light.png",
+        "exists": true,
+        "bytes": 375,
+        "option_id": "HighlightOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_orange_ginger.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_orange_ginger.png",
+        "exists": true,
+        "bytes": 377,
+        "option_id": "HighlightOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_orange_peach.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_orange_peach.png",
+        "exists": true,
+        "bytes": 376,
+        "option_id": "HighlightOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_pink.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_pink.png",
+        "exists": true,
+        "bytes": 385,
+        "option_id": "HighlightOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_pink_blush.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_pink_blush.png",
+        "exists": true,
+        "bytes": 371,
+        "option_id": "HighlightOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_pink_petal.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_pink_petal.png",
+        "exists": true,
+        "bytes": 355,
+        "option_id": "HighlightOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_pink_petunia.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_pink_petunia.png",
+        "exists": true,
+        "bytes": 386,
+        "option_id": "HighlightOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_platinum.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_platinum.png",
+        "exists": true,
+        "bytes": 650,
+        "option_id": "HighlightOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_purple.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_purple.png",
+        "exists": true,
+        "bytes": 544,
+        "option_id": "HighlightOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_purple_plum.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_purple_plum.png",
+        "exists": true,
+        "bytes": 392,
+        "option_id": "HighlightOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_purple_wistful.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_purple_wistful.png",
+        "exists": true,
+        "bytes": 378,
+        "option_id": "HighlightOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_red.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_red.png",
+        "exists": true,
+        "bytes": 341,
+        "option_id": "HighlightOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_sangria.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_sangria.png",
+        "exists": true,
+        "bytes": 388,
+        "option_id": "HighlightOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/props/icons_gl_surfyf_grey.png",
+        "url": "/avatar-assets/avatars/head/base/female/props/icons_gl_surfyf_grey.png",
+        "exists": true,
+        "bytes": 861,
+        "option_id": "GlassesOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/props/gl_03_surfy.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/props/gl_03_surfy.png",
+        "exists": true,
+        "bytes": 1714,
+        "option_id": "GlassesOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/hair/ht_fteenvamp_shad.png",
+        "url": "/avatar-assets/avatars/head/base/female/hair/ht_fteenvamp_shad.png",
+        "exists": true,
+        "bytes": 884,
+        "option_id": "HairstyleOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/hair/icon_hair_fteenvamp.png",
+        "url": "/avatar-assets/avatars/head/base/female/hair/icon_hair_fteenvamp.png",
+        "exists": true,
+        "bytes": 2133,
+        "option_id": "HairstyleOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/h_base.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/h_base.png",
+        "exists": true,
+        "bytes": 13731,
+        "option_id": "HairstyleOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/decals/icon_foundation0.png",
+        "url": "/avatar-assets/avatars/head/base/female/decals/icon_foundation0.png",
+        "exists": true,
+        "bytes": 2183,
+        "option_id": "FoundationOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/decals/icon_foundation1.png",
+        "url": "/avatar-assets/avatars/head/base/female/decals/icon_foundation1.png",
+        "exists": true,
+        "bytes": 2121,
+        "option_id": "FoundationOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/decals/icon_foundation2.png",
+        "url": "/avatar-assets/avatars/head/base/female/decals/icon_foundation2.png",
+        "exists": true,
+        "bytes": 2109,
+        "option_id": "FoundationOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/decals/icon_foundation3.png",
+        "url": "/avatar-assets/avatars/head/base/female/decals/icon_foundation3.png",
+        "exists": true,
+        "bytes": 2140,
+        "option_id": "FoundationOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/skin/s_colour_hilite.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/skin/s_colour_hilite.png",
+        "exists": true,
+        "bytes": 3788,
+        "option_id": "FoundationOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/decals/icon_mu_eighties.png",
+        "url": "/avatar-assets/avatars/head/base/female/decals/icon_mu_eighties.png",
+        "exists": true,
+        "bytes": 2144,
+        "option_id": "BlusherOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/decals/icon_mu_heavy.png",
+        "url": "/avatar-assets/avatars/head/base/female/decals/icon_mu_heavy.png",
+        "exists": true,
+        "bytes": 2160,
+        "option_id": "BlusherOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/decals/icon_mu_lite.png",
+        "url": "/avatar-assets/avatars/head/base/female/decals/icon_mu_lite.png",
+        "exists": true,
+        "bytes": 2281,
+        "option_id": "BlusherOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/decals/icon_mu_none.png",
+        "url": "/avatar-assets/avatars/head/base/female/decals/icon_mu_none.png",
+        "exists": true,
+        "bytes": 2269,
+        "option_id": "BlusherOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/decals/icon_mu_strike.png",
+        "url": "/avatar-assets/avatars/head/base/female/decals/icon_mu_strike.png",
+        "exists": true,
+        "bytes": 2173,
+        "option_id": "BlusherOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/skin/mu_80blusher.png",
+        "url": "/avatar-assets/avatars/head/base/female/skin/mu_80blusher.png",
+        "exists": true,
+        "bytes": 2061,
+        "option_id": "BlusherOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/skin/mu_blusher2.png",
+        "url": "/avatar-assets/avatars/head/base/female/skin/mu_blusher2.png",
+        "exists": true,
+        "bytes": 1313,
+        "option_id": "BlusherOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/skin/mu_blusherlite.png",
+        "url": "/avatar-assets/avatars/head/base/female/skin/mu_blusherlite.png",
+        "exists": true,
+        "bytes": 552,
+        "option_id": "BlusherOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/skin/mu_eyestrike.png",
+        "url": "/avatar-assets/avatars/head/base/female/skin/mu_eyestrike.png",
+        "exists": true,
+        "bytes": 1168,
+        "option_id": "BlusherOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_candy.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_candy.png",
+        "exists": true,
+        "bytes": 546,
+        "option_id": "BlusherColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_fire.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_fire.png",
+        "exists": true,
+        "bytes": 550,
+        "option_id": "BlusherColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_hot.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_hot.png",
+        "exists": true,
+        "bytes": 553,
+        "option_id": "BlusherColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_ice.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_ice.png",
+        "exists": true,
+        "bytes": 574,
+        "option_id": "BlusherColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_jade.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_jade.png",
+        "exists": true,
+        "bytes": 542,
+        "option_id": "BlusherColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_magenta.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_magenta.png",
+        "exists": true,
+        "bytes": 528,
+        "option_id": "BlusherColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_manson.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_manson.png",
+        "exists": true,
+        "bytes": 492,
+        "option_id": "BlusherColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_marylin.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_marylin.png",
+        "exists": true,
+        "bytes": 520,
+        "option_id": "BlusherColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_palm.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_palm.png",
+        "exists": true,
+        "bytes": 563,
+        "option_id": "BlusherColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_pplum.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_pplum.png",
+        "exists": true,
+        "bytes": 542,
+        "option_id": "BlusherColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_siren.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_siren.png",
+        "exists": true,
+        "bytes": 531,
+        "option_id": "BlusherColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_turq.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_turq.png",
+        "exists": true,
+        "bytes": 573,
+        "option_id": "BlusherColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_vanilla.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_vanilla.png",
+        "exists": true,
+        "bytes": 543,
+        "option_id": "BlusherColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_burgandy.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_burgandy.png",
+        "exists": true,
+        "bytes": 532,
+        "option_id": "BlusherColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_cobalt.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_cobalt.png",
+        "exists": true,
+        "bytes": 480,
+        "option_id": "BlusherColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_espresso.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_espresso.png",
+        "exists": true,
+        "bytes": 482,
+        "option_id": "BlusherColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_latte.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_latte.png",
+        "exists": true,
+        "bytes": 564,
+        "option_id": "BlusherColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_lilac.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_lilac.png",
+        "exists": true,
+        "bytes": 560,
+        "option_id": "BlusherColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_mocha.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_mocha.png",
+        "exists": true,
+        "bytes": 492,
+        "option_id": "BlusherColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_violet.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_violet.png",
+        "exists": true,
+        "bytes": 476,
+        "option_id": "BlusherColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/eyes/eye_animlarge_iris.png",
+        "url": "/avatar-assets/avatars/head/base/female/eyes/eye_animlarge_iris.png",
+        "exists": true,
+        "bytes": 1847,
+        "option_id": "EyeOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/eyes/eye_animround_iris.png",
+        "url": "/avatar-assets/avatars/head/base/female/eyes/eye_animround_iris.png",
+        "exists": true,
+        "bytes": 1816,
+        "option_id": "EyeOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/eyes/eye_closeset_iris.png",
+        "url": "/avatar-assets/avatars/head/base/female/eyes/eye_closeset_iris.png",
+        "exists": true,
+        "bytes": 1364,
+        "option_id": "EyeOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/eyes/eye_makeup1.png",
+        "url": "/avatar-assets/avatars/head/base/female/eyes/eye_makeup1.png",
+        "exists": true,
+        "bytes": 2860,
+        "option_id": "EyeOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/eyes/eye_makeup2.png",
+        "url": "/avatar-assets/avatars/head/base/female/eyes/eye_makeup2.png",
+        "exists": true,
+        "bytes": 2411,
+        "option_id": "EyeOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/eyes/eye_normbase.png",
+        "url": "/avatar-assets/avatars/head/base/female/eyes/eye_normbase.png",
+        "exists": true,
+        "bytes": 2482,
+        "option_id": "EyeOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/eyes/eye_trideep_iris.png",
+        "url": "/avatar-assets/avatars/head/base/female/eyes/eye_trideep_iris.png",
+        "exists": true,
+        "bytes": 908,
+        "option_id": "EyeOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/eyes/icons_feye_heavy_makeup.png",
+        "url": "/avatar-assets/avatars/head/base/female/eyes/icons_feye_heavy_makeup.png",
+        "exists": true,
+        "bytes": 2527,
+        "option_id": "EyeOptions"
+      },
+      {
+        "ref": "avatars/head/base/male/eyes/eye_evilbase.png",
+        "url": "/avatar-assets/avatars/head/base/male/eyes/eye_evilbase.png",
+        "exists": true,
+        "bytes": 2876,
+        "option_id": "EyeOptions"
+      },
+      {
+        "ref": "avatars/head/base/male/eyes/eye_halfbase.png",
+        "url": "/avatar-assets/avatars/head/base/male/eyes/eye_halfbase.png",
+        "exists": true,
+        "bytes": 2531,
+        "option_id": "EyeOptions"
+      },
+      {
+        "ref": "avatars/head/base/male/eyes/eye_herobase.png",
+        "url": "/avatar-assets/avatars/head/base/male/eyes/eye_herobase.png",
+        "exists": true,
+        "bytes": 2364,
+        "option_id": "EyeOptions"
+      },
+      {
+        "ref": "avatars/head/base/male/eyes/eye_m_animlarge_base.png",
+        "url": "/avatar-assets/avatars/head/base/male/eyes/eye_m_animlarge_base.png",
+        "exists": true,
+        "bytes": 2052,
+        "option_id": "EyeOptions"
+      },
+      {
+        "ref": "avatars/head/base/male/eyes/eye_m_animround_base.png",
+        "url": "/avatar-assets/avatars/head/base/male/eyes/eye_m_animround_base.png",
+        "exists": true,
+        "bytes": 1686,
+        "option_id": "EyeOptions"
+      },
+      {
+        "ref": "avatars/head/base/male/eyes/eye_m_animsquare_base.png",
+        "url": "/avatar-assets/avatars/head/base/male/eyes/eye_m_animsquare_base.png",
+        "exists": true,
+        "bytes": 1986,
+        "option_id": "EyeOptions"
+      },
+      {
+        "ref": "avatars/head/base/male/eyes/eye_m_closeset_base.png",
+        "url": "/avatar-assets/avatars/head/base/male/eyes/eye_m_closeset_base.png",
+        "exists": true,
+        "bytes": 2737,
+        "option_id": "EyeOptions"
+      },
+      {
+        "ref": "avatars/head/base/male/eyes/eye_m_liner_base.png",
+        "url": "/avatar-assets/avatars/head/base/male/eyes/eye_m_liner_base.png",
+        "exists": true,
+        "bytes": 2090,
+        "option_id": "EyeOptions"
+      },
+      {
+        "ref": "avatars/head/base/male/eyes/eye_m_realsquint.png",
+        "url": "/avatar-assets/avatars/head/base/male/eyes/eye_m_realsquint.png",
+        "exists": true,
+        "bytes": 2338,
+        "option_id": "EyeOptions"
+      },
+      {
+        "ref": "avatars/head/base/male/eyes/eye_m_realsquintiris.png",
+        "url": "/avatar-assets/avatars/head/base/male/eyes/eye_m_realsquintiris.png",
+        "exists": true,
+        "bytes": 674,
+        "option_id": "EyeOptions"
+      },
+      {
+        "ref": "avatars/head/base/male/eyes/eye_m_trideep_base.png",
+        "url": "/avatar-assets/avatars/head/base/male/eyes/eye_m_trideep_base.png",
+        "exists": true,
+        "bytes": 1934,
+        "option_id": "EyeOptions"
+      },
+      {
+        "ref": "avatars/head/base/male/eyes/eye_melfbase.png",
+        "url": "/avatar-assets/avatars/head/base/male/eyes/eye_melfbase.png",
+        "exists": true,
+        "bytes": 2322,
+        "option_id": "EyeOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/brow/eyebrows_anim07_base.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/brow/eyebrows_anim07_base.png",
+        "exists": true,
+        "bytes": 876,
+        "option_id": "BrowOptions"
+      },
+      {
+        "ref": "avatars/head/base/male/brow/b_medium.png",
+        "url": "/avatar-assets/avatars/head/base/male/brow/b_medium.png",
+        "exists": true,
+        "bytes": 1440,
+        "option_id": "BrowOptions"
+      },
+      {
+        "ref": "avatars/head/base/male/brow/b_thick.png",
+        "url": "/avatar-assets/avatars/head/base/male/brow/b_thick.png",
+        "exists": true,
+        "bytes": 1518,
+        "option_id": "BrowOptions"
+      },
+      {
+        "ref": "avatars/head/base/male/brow/icon_male_eyebrows_l-shaped.png",
+        "url": "/avatar-assets/avatars/head/base/male/brow/icon_male_eyebrows_l-shaped.png",
+        "exists": true,
+        "bytes": 594,
+        "option_id": "BrowOptions"
+      },
+      {
+        "ref": "avatars/head/base/male/brow/icon_male_eyebrows_l-shaped_down.png",
+        "url": "/avatar-assets/avatars/head/base/male/brow/icon_male_eyebrows_l-shaped_down.png",
+        "exists": true,
+        "bytes": 690,
+        "option_id": "BrowOptions"
+      },
+      {
+        "ref": "avatars/head/base/male/brow/icon_male_eyebrows_l-shaped_up.png",
+        "url": "/avatar-assets/avatars/head/base/male/brow/icon_male_eyebrows_l-shaped_up.png",
+        "exists": true,
+        "bytes": 535,
+        "option_id": "BrowOptions"
+      },
+      {
+        "ref": "avatars/head/base/male/brow/icon_male_eyebrows_medium.png",
+        "url": "/avatar-assets/avatars/head/base/male/brow/icon_male_eyebrows_medium.png",
+        "exists": true,
+        "bytes": 490,
+        "option_id": "BrowOptions"
+      },
+      {
+        "ref": "avatars/head/base/male/brow/icon_male_eyebrows_medium_down.png",
+        "url": "/avatar-assets/avatars/head/base/male/brow/icon_male_eyebrows_medium_down.png",
+        "exists": true,
+        "bytes": 495,
+        "option_id": "BrowOptions"
+      },
+      {
+        "ref": "avatars/head/base/male/brow/icon_male_eyebrows_mediumraise.png",
+        "url": "/avatar-assets/avatars/head/base/male/brow/icon_male_eyebrows_mediumraise.png",
+        "exists": true,
+        "bytes": 528,
+        "option_id": "BrowOptions"
+      },
+      {
+        "ref": "avatars/head/base/male/brow/icon_male_eyebrows_mono.png",
+        "url": "/avatar-assets/avatars/head/base/male/brow/icon_male_eyebrows_mono.png",
+        "exists": true,
+        "bytes": 568,
+        "option_id": "BrowOptions"
+      },
+      {
+        "ref": "avatars/head/base/male/brow/icon_male_eyebrows_thick.png",
+        "url": "/avatar-assets/avatars/head/base/male/brow/icon_male_eyebrows_thick.png",
+        "exists": true,
+        "bytes": 675,
+        "option_id": "BrowOptions"
+      },
+      {
+        "ref": "avatars/head/base/male/brow/icon_male_eyebrows_thick_down.png",
+        "url": "/avatar-assets/avatars/head/base/male/brow/icon_male_eyebrows_thick_down.png",
+        "exists": true,
+        "bytes": 663,
+        "option_id": "BrowOptions"
+      },
+      {
+        "ref": "avatars/head/base/male/brow/icon_male_eyebrows_thick_up.png",
+        "url": "/avatar-assets/avatars/head/base/male/brow/icon_male_eyebrows_thick_up.png",
+        "exists": true,
+        "bytes": 638,
+        "option_id": "BrowOptions"
+      },
+      {
+        "ref": "avatars/head/base/male/brow/icon_male_eyebrows_thickraise.png",
+        "url": "/avatar-assets/avatars/head/base/male/brow/icon_male_eyebrows_thickraise.png",
+        "exists": true,
+        "bytes": 776,
+        "option_id": "BrowOptions"
+      },
+      {
+        "ref": "avatars/head/base/male/brow/icon_male_eyebrows_thin.png",
+        "url": "/avatar-assets/avatars/head/base/male/brow/icon_male_eyebrows_thin.png",
+        "exists": true,
+        "bytes": 435,
+        "option_id": "BrowOptions"
+      },
+      {
+        "ref": "avatars/head/base/male/brow/icon_male_eyebrows_thin_down.png",
+        "url": "/avatar-assets/avatars/head/base/male/brow/icon_male_eyebrows_thin_down.png",
+        "exists": true,
+        "bytes": 509,
+        "option_id": "BrowOptions"
+      },
+      {
+        "ref": "avatars/head/base/male/brow/icon_male_eyebrows_thin_up.png",
+        "url": "/avatar-assets/avatars/head/base/male/brow/icon_male_eyebrows_thin_up.png",
+        "exists": true,
+        "bytes": 468,
+        "option_id": "BrowOptions"
+      },
+      {
+        "ref": "avatars/head/base/male/brow/icon_male_eyebrows_thinraise.png",
+        "url": "/avatar-assets/avatars/head/base/male/brow/icon_male_eyebrows_thinraise.png",
+        "exists": true,
+        "bytes": 664,
+        "option_id": "BrowOptions"
+      },
+      {
+        "ref": "avatars/head/base/male/brow/icon_male_eyebrows_tick.png",
+        "url": "/avatar-assets/avatars/head/base/male/brow/icon_male_eyebrows_tick.png",
+        "exists": true,
+        "bytes": 803,
+        "option_id": "BrowOptions"
+      },
+      {
+        "ref": "avatars/head/base/male/brow/m_thin.png",
+        "url": "/avatar-assets/avatars/head/base/male/brow/m_thin.png",
+        "exists": true,
+        "bytes": 1235,
+        "option_id": "BrowOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/eyes/icon_eye_col_albino.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/eyes/icon_eye_col_albino.png",
+        "exists": true,
+        "bytes": 1396,
+        "option_id": "EyeColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/eyes/icon_eye_col_amber.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/eyes/icon_eye_col_amber.png",
+        "exists": true,
+        "bytes": 1370,
+        "option_id": "EyeColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/eyes/icon_eye_col_black.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/eyes/icon_eye_col_black.png",
+        "exists": true,
+        "bytes": 888,
+        "option_id": "EyeColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/eyes/icon_eye_col_blue.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/eyes/icon_eye_col_blue.png",
+        "exists": true,
+        "bytes": 1203,
+        "option_id": "EyeColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/eyes/icon_eye_col_brown.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/eyes/icon_eye_col_brown.png",
+        "exists": true,
+        "bytes": 1232,
+        "option_id": "EyeColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/eyes/icon_eye_col_darkblue.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/eyes/icon_eye_col_darkblue.png",
+        "exists": true,
+        "bytes": 1466,
+        "option_id": "EyeColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/eyes/icon_eye_col_emerald.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/eyes/icon_eye_col_emerald.png",
+        "exists": true,
+        "bytes": 1324,
+        "option_id": "EyeColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/eyes/icon_eye_col_gray.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/eyes/icon_eye_col_gray.png",
+        "exists": true,
+        "bytes": 1231,
+        "option_id": "EyeColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/eyes/icon_eye_col_green.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/eyes/icon_eye_col_green.png",
+        "exists": true,
+        "bytes": 1297,
+        "option_id": "EyeColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/eyes/icon_eye_col_hazel.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/eyes/icon_eye_col_hazel.png",
+        "exists": true,
+        "bytes": 1301,
+        "option_id": "EyeColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/eyes/icon_eye_col_orange.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/eyes/icon_eye_col_orange.png",
+        "exists": true,
+        "bytes": 1465,
+        "option_id": "EyeColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/eyes/icon_eye_col_red.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/eyes/icon_eye_col_red.png",
+        "exists": true,
+        "bytes": 1433,
+        "option_id": "EyeColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/eyes/icon_eye_col_violet.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/eyes/icon_eye_col_violet.png",
+        "exists": true,
+        "bytes": 1309,
+        "option_id": "EyeColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/eyes/icon_eye_col_yellow.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/eyes/icon_eye_col_yellow.png",
+        "exists": true,
+        "bytes": 1566,
+        "option_id": "EyeColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_vanilla.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_vanilla.png",
+        "exists": true,
+        "bytes": 543,
+        "option_id": "HairColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_aquamarine.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_aquamarine.png",
+        "exists": true,
+        "bytes": 392,
+        "option_id": "HairColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_auburn.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_auburn.png",
+        "exists": true,
+        "bytes": 493,
+        "option_id": "HairColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_blonde.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_blonde.png",
+        "exists": true,
+        "bytes": 606,
+        "option_id": "HairColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_blue.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_blue.png",
+        "exists": true,
+        "bytes": 667,
+        "option_id": "HairColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_blue_azure.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_blue_azure.png",
+        "exists": true,
+        "bytes": 388,
+        "option_id": "HairColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_blue_turquoise.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_blue_turquoise.png",
+        "exists": true,
+        "bytes": 363,
+        "option_id": "HairColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_brown.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_brown.png",
+        "exists": true,
+        "bytes": 486,
+        "option_id": "HairColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_golden.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_golden.png",
+        "exists": true,
+        "bytes": 440,
+        "option_id": "HairColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_gray.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_gray.png",
+        "exists": true,
+        "bytes": 603,
+        "option_id": "HairColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_gray_sash.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_gray_sash.png",
+        "exists": true,
+        "bytes": 370,
+        "option_id": "HairColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_green.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_green.png",
+        "exists": true,
+        "bytes": 552,
+        "option_id": "HairColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_green_light.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_green_light.png",
+        "exists": true,
+        "bytes": 375,
+        "option_id": "HairColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_orange_ginger.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_orange_ginger.png",
+        "exists": true,
+        "bytes": 377,
+        "option_id": "HairColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_orange_peach.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_orange_peach.png",
+        "exists": true,
+        "bytes": 376,
+        "option_id": "HairColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_orange_strawberry.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_orange_strawberry.png",
+        "exists": true,
+        "bytes": 381,
+        "option_id": "HairColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_pink.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_pink.png",
+        "exists": true,
+        "bytes": 385,
+        "option_id": "HairColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_pink_blush.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_pink_blush.png",
+        "exists": true,
+        "bytes": 371,
+        "option_id": "HairColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_pink_petal.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_pink_petal.png",
+        "exists": true,
+        "bytes": 355,
+        "option_id": "HairColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_pink_petunia.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_pink_petunia.png",
+        "exists": true,
+        "bytes": 386,
+        "option_id": "HairColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/female/mouth/icon_lip_vanilla.png",
+        "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_vanilla.png",
+        "exists": true,
+        "bytes": 543,
+        "option_id": "TintOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_aquamarine.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_aquamarine.png",
+        "exists": true,
+        "bytes": 392,
+        "option_id": "TintOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_auburn.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_auburn.png",
+        "exists": true,
+        "bytes": 493,
+        "option_id": "TintOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_blue_azure.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_blue_azure.png",
+        "exists": true,
+        "bytes": 388,
+        "option_id": "TintOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_blue_turquoise.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_blue_turquoise.png",
+        "exists": true,
+        "bytes": 363,
+        "option_id": "TintOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_brown.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_brown.png",
+        "exists": true,
+        "bytes": 486,
+        "option_id": "TintOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_gray.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_gray.png",
+        "exists": true,
+        "bytes": 603,
+        "option_id": "TintOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_green_light.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_green_light.png",
+        "exists": true,
+        "bytes": 375,
+        "option_id": "TintOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_orange_ginger.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_orange_ginger.png",
+        "exists": true,
+        "bytes": 377,
+        "option_id": "TintOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_orange_peach.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_orange_peach.png",
+        "exists": true,
+        "bytes": 376,
+        "option_id": "TintOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_pink.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_pink.png",
+        "exists": true,
+        "bytes": 385,
+        "option_id": "TintOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_pink_blush.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_pink_blush.png",
+        "exists": true,
+        "bytes": 371,
+        "option_id": "TintOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_pink_petal.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_pink_petal.png",
+        "exists": true,
+        "bytes": 355,
+        "option_id": "TintOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_pink_petunia.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_pink_petunia.png",
+        "exists": true,
+        "bytes": 386,
+        "option_id": "TintOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_platinum.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_platinum.png",
+        "exists": true,
+        "bytes": 650,
+        "option_id": "TintOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_purple.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_purple.png",
+        "exists": true,
+        "bytes": 544,
+        "option_id": "TintOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_purple_plum.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_purple_plum.png",
+        "exists": true,
+        "bytes": 392,
+        "option_id": "TintOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_purple_wistful.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_purple_wistful.png",
+        "exists": true,
+        "bytes": 378,
+        "option_id": "TintOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_red.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_red.png",
+        "exists": true,
+        "bytes": 341,
+        "option_id": "TintOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_sangria.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_sangria.png",
+        "exists": true,
+        "bytes": 388,
+        "option_id": "TintOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_espresso.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_espresso.png",
+        "exists": true,
+        "bytes": 482,
+        "option_id": "SkinColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_latte.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_latte.png",
+        "exists": true,
+        "bytes": 564,
+        "option_id": "SkinColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_mocha.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_mocha.png",
+        "exists": true,
+        "bytes": 492,
+        "option_id": "SkinColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_white.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_white.png",
+        "exists": true,
+        "bytes": 577,
+        "option_id": "SkinColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/skin/icon_skin_avatarier.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/skin/icon_skin_avatarier.png",
+        "exists": true,
+        "bytes": 542,
+        "option_id": "SkinColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/skin/icon_skin_avatary.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/skin/icon_skin_avatary.png",
+        "exists": true,
+        "bytes": 604,
+        "option_id": "SkinColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/skin/icon_skin_berry.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/skin/icon_skin_berry.png",
+        "exists": true,
+        "bytes": 635,
+        "option_id": "SkinColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/skin/icon_skin_candy.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/skin/icon_skin_candy.png",
+        "exists": true,
+        "bytes": 613,
+        "option_id": "SkinColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/skin/icon_skin_ceil.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/skin/icon_skin_ceil.png",
+        "exists": true,
+        "bytes": 374,
+        "option_id": "SkinColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/skin/icon_skin_copper.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/skin/icon_skin_copper.png",
+        "exists": true,
+        "bytes": 594,
+        "option_id": "SkinColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/skin/icon_skin_dark.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/skin/icon_skin_dark.png",
+        "exists": true,
+        "bytes": 413,
+        "option_id": "SkinColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/skin/icon_skin_devil.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/skin/icon_skin_devil.png",
+        "exists": true,
+        "bytes": 618,
+        "option_id": "SkinColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/skin/icon_skin_ebony.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/skin/icon_skin_ebony.png",
+        "exists": true,
+        "bytes": 467,
+        "option_id": "SkinColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/skin/icon_skin_eggshell.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/skin/icon_skin_eggshell.png",
+        "exists": true,
+        "bytes": 561,
+        "option_id": "SkinColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/skin/icon_skin_emerald.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/skin/icon_skin_emerald.png",
+        "exists": true,
+        "bytes": 367,
+        "option_id": "SkinColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/skin/icon_skin_faketan.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/skin/icon_skin_faketan.png",
+        "exists": true,
+        "bytes": 545,
+        "option_id": "SkinColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/skin/icon_skin_gold.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/skin/icon_skin_gold.png",
+        "exists": true,
+        "bytes": 530,
+        "option_id": "SkinColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/skin/icon_skin_golden.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/skin/icon_skin_golden.png",
+        "exists": true,
+        "bytes": 569,
+        "option_id": "SkinColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/skin/icon_skin_iron.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/skin/icon_skin_iron.png",
+        "exists": true,
+        "bytes": 544,
+        "option_id": "SkinColorOptions"
+      },
+      {
+        "ref": "avatars/head/base/unisex/skin/icon_skin_leaf.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/skin/icon_skin_leaf.png",
+        "exists": true,
+        "bytes": 601,
+        "option_id": "SkinColorOptions"
+      }
+    ]
+  },
+  "body": {
+    "textures": [
+      {
+        "ref": "avatars/body/base/male/tshirt_torso.png",
+        "url": "/avatar-assets/avatars/body/base/male/tshirt_torso.png",
+        "exists": true,
+        "bytes": 4100,
+        "option_id": "JSTop"
+      },
+      {
+        "ref": "avatars/body/base/unisex/skinny_leg_idle.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/skinny_leg_idle.png",
+        "exists": true,
+        "bytes": 6116,
+        "option_id": "JSBottom"
+      },
+      {
+        "ref": "avatars/body/base/unisex/skinny_leg_walk1.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/skinny_leg_walk1.png",
+        "exists": true,
+        "bytes": 6322,
+        "option_id": "JSBottom"
+      },
+      {
+        "ref": "avatars/body/base/unisex/skinny_leg_walk2.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/skinny_leg_walk2.png",
+        "exists": true,
+        "bytes": 6324,
+        "option_id": "JSBottom"
+      },
+      {
+        "ref": "avatars/body/base/unisex/skinny_leg_walk3.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/skinny_leg_walk3.png",
+        "exists": true,
+        "bytes": 6375,
+        "option_id": "JSBottom"
+      },
+      {
+        "ref": "avatars/body/base/unisex/skinny_leg_walk4.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/skinny_leg_walk4.png",
+        "exists": true,
+        "bytes": 6422,
+        "option_id": "JSBottom"
+      },
+      {
+        "ref": "avatars/body/base/unisex/skinny_sit_lower.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/skinny_sit_lower.png",
+        "exists": true,
+        "bytes": 2235,
+        "option_id": "JSBottom"
+      },
+      {
+        "ref": "avatars/body/base/unisex/skinny_sit_upper.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/skinny_sit_upper.png",
+        "exists": true,
+        "bytes": 2677,
+        "option_id": "JSBottom"
+      },
+      {
+        "ref": "avatars/body/base/unisex/foot_idle.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/foot_idle.png",
+        "exists": true,
+        "bytes": 2832,
+        "option_id": "JSFeet"
+      },
+      {
+        "ref": "avatars/body/base/unisex/foot_sit.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/foot_sit.png",
+        "exists": true,
+        "bytes": 1841,
+        "option_id": "JSFeet"
+      },
+      {
+        "ref": "avatars/body/base/unisex/foot_walk1.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/foot_walk1.png",
+        "exists": true,
+        "bytes": 2807,
+        "option_id": "JSFeet"
+      },
+      {
+        "ref": "avatars/body/base/unisex/foot_walk2.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/foot_walk2.png",
+        "exists": true,
+        "bytes": 2901,
+        "option_id": "JSFeet"
+      },
+      {
+        "ref": "avatars/body/base/unisex/foot_walk3.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/foot_walk3.png",
+        "exists": true,
+        "bytes": 2907,
+        "option_id": "JSFeet"
+      },
+      {
+        "ref": "avatars/body/base/unisex/foot_walk4.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/foot_walk4.png",
+        "exists": true,
+        "bytes": 2903,
+        "option_id": "JSFeet"
+      },
+      {
+        "ref": "avatars/body/base/male/pjs_torso_lying.png",
+        "url": "/avatar-assets/avatars/body/base/male/pjs_torso_lying.png",
+        "exists": true,
+        "bytes": 2493,
+        "option_id": "BodySkin"
+      },
+      {
+        "ref": "avatars/body/base/male/torso.png",
+        "url": "/avatar-assets/avatars/body/base/male/torso.png",
+        "exists": true,
+        "bytes": 4660,
+        "option_id": "BodySkin"
+      },
+      {
+        "ref": "avatars/body/base/male/torso_lying.png",
+        "url": "/avatar-assets/avatars/body/base/male/torso_lying.png",
+        "exists": true,
+        "bytes": 2730,
+        "option_id": "BodySkin"
+      },
+      {
+        "ref": "avatars/body/base/unisex/arm_idle.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/arm_idle.png",
+        "exists": true,
+        "bytes": 5217,
+        "option_id": "BodySkin"
+      },
+      {
+        "ref": "avatars/body/base/unisex/arm_raise.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/arm_raise.png",
+        "exists": true,
+        "bytes": 3583,
+        "option_id": "BodySkin"
+      },
+      {
+        "ref": "avatars/body/base/unisex/arm_sit.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/arm_sit.png",
+        "exists": true,
+        "bytes": 2977,
+        "option_id": "BodySkin"
+      },
+      {
+        "ref": "avatars/body/base/unisex/arm_throw.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/arm_throw.png",
+        "exists": true,
+        "bytes": 3533,
+        "option_id": "BodySkin"
+      },
+      {
+        "ref": "avatars/body/base/unisex/arm_walk1.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/arm_walk1.png",
+        "exists": true,
+        "bytes": 5424,
+        "option_id": "BodySkin"
+      },
+      {
+        "ref": "avatars/body/base/male/pjs_torso_lying.png",
+        "url": "/avatar-assets/avatars/body/base/male/pjs_torso_lying.png",
+        "exists": true,
+        "bytes": 2493,
+        "option_id": "BodySkin"
+      },
+      {
+        "ref": "avatars/body/base/male/torso.png",
+        "url": "/avatar-assets/avatars/body/base/male/torso.png",
+        "exists": true,
+        "bytes": 4660,
+        "option_id": "BodySkin"
+      },
+      {
+        "ref": "avatars/body/base/male/torso_lying.png",
+        "url": "/avatar-assets/avatars/body/base/male/torso_lying.png",
+        "exists": true,
+        "bytes": 2730,
+        "option_id": "BodySkin"
+      },
+      {
+        "ref": "avatars/body/base/unisex/arm_idle.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/arm_idle.png",
+        "exists": true,
+        "bytes": 5217,
+        "option_id": "BodySkin"
+      },
+      {
+        "ref": "avatars/body/base/unisex/arm_raise.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/arm_raise.png",
+        "exists": true,
+        "bytes": 3583,
+        "option_id": "BodySkin"
+      },
+      {
+        "ref": "avatars/body/base/unisex/arm_sit.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/arm_sit.png",
+        "exists": true,
+        "bytes": 2977,
+        "option_id": "BodySkin"
+      },
+      {
+        "ref": "avatars/body/base/unisex/arm_throw.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/arm_throw.png",
+        "exists": true,
+        "bytes": 3533,
+        "option_id": "BodySkin"
+      },
+      {
+        "ref": "avatars/body/base/unisex/arm_walk1.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/arm_walk1.png",
+        "exists": true,
+        "bytes": 5424,
+        "option_id": "BodySkin"
+      },
+      {
+        "ref": "avatars/body/base/male/pjs_torso_lying.png",
+        "url": "/avatar-assets/avatars/body/base/male/pjs_torso_lying.png",
+        "exists": true,
+        "bytes": 2493,
+        "option_id": "BodySkin"
+      },
+      {
+        "ref": "avatars/body/base/male/torso.png",
+        "url": "/avatar-assets/avatars/body/base/male/torso.png",
+        "exists": true,
+        "bytes": 4660,
+        "option_id": "BodySkin"
+      },
+      {
+        "ref": "avatars/body/base/male/torso_lying.png",
+        "url": "/avatar-assets/avatars/body/base/male/torso_lying.png",
+        "exists": true,
+        "bytes": 2730,
+        "option_id": "BodySkin"
+      },
+      {
+        "ref": "avatars/body/base/unisex/arm_idle.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/arm_idle.png",
+        "exists": true,
+        "bytes": 5217,
+        "option_id": "BodySkin"
+      },
+      {
+        "ref": "avatars/body/base/unisex/arm_raise.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/arm_raise.png",
+        "exists": true,
+        "bytes": 3583,
+        "option_id": "BodySkin"
+      },
+      {
+        "ref": "avatars/body/base/unisex/arm_sit.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/arm_sit.png",
+        "exists": true,
+        "bytes": 2977,
+        "option_id": "BodySkin"
+      },
+      {
+        "ref": "avatars/body/base/unisex/arm_throw.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/arm_throw.png",
+        "exists": true,
+        "bytes": 3533,
+        "option_id": "BodySkin"
+      },
+      {
+        "ref": "avatars/body/base/unisex/arm_walk1.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/arm_walk1.png",
+        "exists": true,
+        "bytes": 5424,
+        "option_id": "BodySkin"
+      }
+    ]
+  },
+  "stats": {
+    "selected_option_count": 50,
+    "asset_group_count": 23,
+    "copied_asset_count": 196,
+    "missing_asset_count": 0,
+    "head_mesh_count": 6,
+    "head_texture_count": 233,
+    "body_texture_count": 38
+  },
+  "missing_assets": []
+}

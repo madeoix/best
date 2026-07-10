@@ -1,0 +1,83 @@
+@media (max-width: 1000px) {
+  .app-chrome {
+    height: auto;
+    min-height: 62px;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 14px 18px;
+  }
+
+  .mode-rail {
+    overflow-x: auto;
+    padding-bottom: 4px;
+  }
+
+  .session-strip {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .session-strip div {
+    text-align: left;
+  }
+
+  .module {
+    min-height: calc(100vh - 130px);
+    padding: 34px 22px 80px;
+  }
+
+  .module-header {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .module-context {
+    text-align: left;
+  }
+
+  .split-body {
+    grid-template-columns: 1fr;
+  }
+
+  .context-plane {
+    position: static;
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid rgba(255,255,255,.09);
+    padding-top: 22px;
+  }
+
+  .module-header h1,
+  .record-hero h1 {
+    font-size: 58px;
+  }
+
+  .module-command {
+    grid-template-columns: 1fr;
+  }
+
+  .module-command button {
+    display: none;
+  }
+
+  .atlas-index button {
+    grid-template-columns: 42px minmax(0, 1fr) 90px;
+  }
+
+  .atlas-stat:nth-last-child(-n + 2) {
+    display: none;
+  }
+
+  .metric-ledger {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .event-stream div {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .spin-layout {
+    grid-template-columns: 1fr;
+  }
+}

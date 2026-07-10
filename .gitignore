@@ -1,0 +1,77 @@
+# Dependencies
+node_modules/
+
+# SvelteKit / Vite output
+.svelte-kit/
+build/
+dist/
+coverage/
+
+# Environment secrets
+.env*
+!.env.example
+!.env.*.example
+
+# Logs and caches
+*.log
+*.pid
+.cache/
+.DS_Store
+__pycache__/
+*.py[cod]
+
+# Rust / Tauri generated output
+src-tauri/target/
+src-tauri/gen/
+
+# Historical local scratch copies
+*.before-*
+*.bak
+*.bak.*
+*.bak-*
+*.broken.*
+*.backup_*
+
+# Local reverse-engineering data and backups
+.renderer-backups/
+recovered-swfs/
+tools/ffdec/
+
+# Generated deployments
+releases/
+
+# Local scratch and generated files
+*.before-*
+*.bak
+*.bak.*
+*.bak-*
+*.broken.*
+*.backup_*
+__pycache__/
+*.py[cod]
+src-tauri/target/
+src-tauri/gen/
+
+# Local scratch and generated files
+*.before-*
+*.bak
+*.bak.*
+*.bak-*
+*.broken.*
+*.backup_*
+__pycache__/
+*.py[cod]
+src-tauri/target/
+src-tauri/gen/
+
+# Local scratch and generated files
+*.before-*
+*.bak
+*.bak.*
+*.bak-*
+*.broken.*
+*.backup_*
+__pycache__/
+*.py[cod]
+src-tauri/target/
+src-tauri/gen/

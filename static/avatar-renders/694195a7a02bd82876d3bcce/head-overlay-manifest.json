@@ -1,0 +1,152 @@
+{
+  "ok": true,
+  "contract": "smallverse-avatar-head-overlay-manifest/v1",
+  "avatar_id": "694195a7a02bd82876d3bcce",
+  "strategy": "project_2d_face_assets_over_o3d_head_until_uv_texture_mapping",
+  "overlays": [
+    {
+      "option_id": "EyeShadowOptions",
+      "selected_id": "CutevanillaShadow",
+      "ref": "avatars/head/base/female/eyes/icon_shadow_vanilla.png",
+      "url": "/avatar-assets/avatars/head/base/female/eyes/icon_shadow_vanilla.png",
+      "exists": false
+    },
+    {
+      "option_id": "LipstickOptions",
+      "selected_id": "LipStickPalmy",
+      "ref": "avatars/head/base/female/mouth/icon_lip_palm.png",
+      "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_palm.png",
+      "exists": true
+    },
+    {
+      "option_id": "HighlightOptions",
+      "selected_id": "HairColorFieryRed",
+      "ref": "avatars/head/base/unisex/icon_colour/icon_burgandy.png",
+      "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_burgandy.png",
+      "exists": true
+    },
+    {
+      "option_id": "DecalOptions",
+      "selected_id": "Freckles",
+      "ref": "avatars/head/base/male/decals/icon_mdecal_cheekfreckles.png",
+      "url": "/avatar-assets/avatars/head/base/male/decals/icon_mdecal_cheekfreckles.png",
+      "exists": false
+    },
+    {
+      "option_id": "DecalOptions",
+      "selected_id": "Freckles",
+      "ref": "avatars/head/base/unisex/decals/d_freckles.png",
+      "url": "/avatar-assets/avatars/head/base/unisex/decals/d_freckles.png",
+      "exists": true
+    },
+    {
+      "option_id": "DecalOptions",
+      "selected_id": "Rouge",
+      "ref": "avatars/head/base/male/decals/icon_mdecal_rouge.png",
+      "url": "/avatar-assets/avatars/head/base/male/decals/icon_mdecal_rouge.png",
+      "exists": false
+    },
+    {
+      "option_id": "DecalOptions",
+      "selected_id": "Rouge",
+      "ref": "avatars/head/base/unisex/decals/d_redcheeks.png",
+      "url": "/avatar-assets/avatars/head/base/unisex/decals/d_redcheeks.png",
+      "exists": true
+    },
+    {
+      "option_id": "FoundationOptions",
+      "selected_id": "Sheen3",
+      "ref": "avatars/head/base/female/decals/icon_foundation3.png",
+      "url": "/avatar-assets/avatars/head/base/female/decals/icon_foundation3.png",
+      "exists": false
+    },
+    {
+      "option_id": "FoundationOptions",
+      "selected_id": "Sheen3",
+      "ref": "avatars/head/base/unisex/skin/s_colour_hilite.png",
+      "url": "/avatar-assets/avatars/head/base/unisex/skin/s_colour_hilite.png",
+      "exists": true
+    },
+    {
+      "option_id": "BlusherOptions",
+      "selected_id": "80sBlusher",
+      "ref": "avatars/head/base/female/decals/icon_mu_eighties.png",
+      "url": "/avatar-assets/avatars/head/base/female/decals/icon_mu_eighties.png",
+      "exists": false
+    },
+    {
+      "option_id": "BlusherOptions",
+      "selected_id": "80sBlusher",
+      "ref": "avatars/head/base/female/skin/mu_80blusher.png",
+      "url": "/avatar-assets/avatars/head/base/female/skin/mu_80blusher.png",
+      "exists": true
+    },
+    {
+      "option_id": "BlusherColorOptions",
+      "selected_id": "BlusherCandy",
+      "ref": "avatars/head/base/female/mouth/icon_lip_candy.png",
+      "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_candy.png",
+      "exists": false
+    },
+    {
+      "option_id": "BrowOptions",
+      "selected_id": "BrowsMedium",
+      "ref": "avatars/head/base/male/brow/icon_male_eyebrows_medium.png",
+      "url": "/avatar-assets/avatars/head/base/male/brow/icon_male_eyebrows_medium.png",
+      "exists": false
+    },
+    {
+      "option_id": "BrowOptions",
+      "selected_id": "BrowsMedium",
+      "ref": "avatars/head/base/female/brow/b_medium.png",
+      "url": "/avatar-assets/avatars/head/base/female/brow/b_medium.png",
+      "exists": true
+    },
+    {
+      "option_id": "EyeColorOptions",
+      "selected_id": "EyeColorLightBlue",
+      "ref": "avatars/head/base/unisex/eyes/icon_eye_col_darkblue.png",
+      "url": "/avatar-assets/avatars/head/base/unisex/eyes/icon_eye_col_darkblue.png",
+      "exists": false
+    },
+    {
+      "option_id": "HairColorOptions",
+      "selected_id": "HairColorFieryRed",
+      "ref": "avatars/head/base/unisex/icon_colour/icon_burgandy.png",
+      "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_burgandy.png",
+      "exists": true
+    },
+    {
+      "option_id": "EyebrowColorOptions",
+      "selected_id": "EyebrowColorPeach",
+      "ref": "avatars/head/base/unisex/hair/icon_hair_color_orange_peach.png",
+      "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_orange_peach.png",
+      "exists": true
+    },
+    {
+      "option_id": "TintOptions",
+      "selected_id": "HairTintPink",
+      "ref": "avatars/head/base/unisex/hair/icon_hair_color_pink.png",
+      "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_pink.png",
+      "exists": true
+    },
+    {
+      "option_id": "SkinColorOptions",
+      "selected_id": "SkinColorPink",
+      "ref": "avatars/head/base/unisex/skin/icon_skin_pink.png",
+      "url": "/avatar-assets/avatars/head/base/unisex/skin/icon_skin_pink.png",
+      "exists": true
+    }
+  ],
+  "copied_count": 10,
+  "missing": [
+    "avatars/head/base/female/decals/icon_foundation3.png",
+    "avatars/head/base/female/decals/icon_mu_eighties.png",
+    "avatars/head/base/female/eyes/icon_shadow_vanilla.png",
+    "avatars/head/base/female/mouth/icon_lip_candy.png",
+    "avatars/head/base/male/brow/icon_male_eyebrows_medium.png",
+    "avatars/head/base/male/decals/icon_mdecal_cheekfreckles.png",
+    "avatars/head/base/male/decals/icon_mdecal_rouge.png",
+    "avatars/head/base/unisex/eyes/icon_eye_col_darkblue.png"
+  ]
+}

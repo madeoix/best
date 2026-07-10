@@ -1,0 +1,62 @@
+:root {
+  --bg: #030405;
+  --text: #f7f7f4;
+  --muted: rgba(255,255,255,.48);
+  --faint: rgba(255,255,255,.28);
+  --line: rgba(255,255,255,.09);
+  --line-strong: rgba(255,255,255,.14);
+
+  --cyan: #73f7ff;
+  --purple: #c084fc;
+  --amber: #f59e0b;
+  --blue: #60a5fa;
+  --danger: #fca5a5;
+
+  --chrome-height: 62px;
+  --page-x: clamp(28px, 5vw, 78px);
+}
+
+.beacon {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+.ambient {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 20% 18%, rgba(97, 244, 255, .12), transparent 32%),
+    radial-gradient(circle at 78% 12%, rgba(168, 85, 247, .11), transparent 34%),
+    linear-gradient(140deg, #071012, #030405 58%, #050507);
+}
+
+.mode-spin .ambient {
+  background:
+    radial-gradient(circle at 22% 18%, rgba(192, 132, 252, .22), transparent 34%),
+    radial-gradient(circle at 78% 14%, rgba(255, 255, 255, .06), transparent 32%),
+    linear-gradient(140deg, #13081d, #030405 60%, #08030d);
+}
+
+.mode-gateway .ambient {
+  background:
+    radial-gradient(circle at 22% 18%, rgba(245, 158, 11, .20), transparent 34%),
+    linear-gradient(140deg, #170f03, #030405 60%, #080602);
+}
+
+.mode-explorer .ambient {
+  background:
+    radial-gradient(circle at 22% 18%, rgba(96, 165, 250, .18), transparent 34%),
+    linear-gradient(140deg, #06101f, #030405 60%, #030712);
+}
+
+.muted {
+  color: rgba(255,255,255,.45);
+  font-size: 13px;
+}
+
+.danger {
+  color: var(--danger);
+}

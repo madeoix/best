@@ -1,0 +1,16 @@
+.tool-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 32px;
+}
+
+pre {
+  max-width: 1100px;
+  min-height: 320px;
+  margin-top: 24px;
+  padding: 22px;
+  overflow: auto;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(0,0,0,.32);
+  white-space: pre-wrap;
+}

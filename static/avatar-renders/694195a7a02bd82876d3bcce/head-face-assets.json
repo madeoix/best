@@ -1,0 +1,43 @@
+{
+  "ok": true,
+  "contract": "smallverse-avatar-head-face-assets/v1",
+  "avatar_id": "694195a7a02bd82876d3bcce",
+  "assets": {
+    "eye_base": {
+      "ref": "avatars/head/base/female/eyes/eye_fairybase.png",
+      "url": "/avatar-assets/avatars/head/base/female/eyes/eye_fairybase.png",
+      "bytes": 2096
+    },
+    "eye_iris": {
+      "ref": "avatars/head/base/unisex/eyes/eye_fantasyiris.png",
+      "url": "/avatar-assets/avatars/head/base/unisex/eyes/eye_fantasyiris.png",
+      "bytes": 1390
+    },
+    "brow": {
+      "ref": "avatars/head/base/female/brow/b_medium.png",
+      "url": "/avatar-assets/avatars/head/base/female/brow/b_medium.png",
+      "bytes": 1401
+    },
+    "mouth_lip": {
+      "ref": "avatars/head/base/female/mouth/icon_lip_palm.png",
+      "url": "/avatar-assets/avatars/head/base/female/mouth/icon_lip_palm.png",
+      "bytes": 563
+    },
+    "freckles": {
+      "ref": "avatars/head/base/unisex/decals/d_freckles.png",
+      "url": "/avatar-assets/avatars/head/base/unisex/decals/d_freckles.png",
+      "bytes": 772
+    },
+    "rouge": {
+      "ref": "avatars/head/base/unisex/decals/d_redcheeks.png",
+      "url": "/avatar-assets/avatars/head/base/unisex/decals/d_redcheeks.png",
+      "bytes": 456
+    },
+    "blusher": {
+      "ref": "avatars/head/base/female/skin/mu_80blusher.png",
+      "url": "/avatar-assets/avatars/head/base/female/skin/mu_80blusher.png",
+      "bytes": 2061
+    }
+  },
+  "missing": []
+}

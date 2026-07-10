@@ -1,0 +1,363 @@
+<palette>
+
+	<!-- Sections define combinations of nodes and frames. -->	
+	<sections>
+
+		<section id="HeadForward" node="Head" frame="0"/>
+		<section id="HeadWalk1" node="Head" frame="1"/>
+		<section id="HeadWalk2" node="Head" frame="2"/>
+		<section id="HeadHalfLeft" node="Head" frame="0" angle="315"/>
+		<section id="HeadFullLeft" node="Head" frame="0" angle="270"/>
+		<section id="HeadHalfRight" node="Head" frame="0" angle="45"/>
+		<section id="HeadFullRight" node="Head" frame="0" angle="90"/>
+
+		<section id="Torso" node="Torso" frame="0"/>
+
+		<section id="LeftArmIdle" node="LeftArm" frame="0"/>
+		<section id="LeftArmWalk1" node="LeftArm" frame="1"/>
+		<section id="LeftArmWalk2" node="LeftArm" frame="2"/>
+		<section id="LeftArmWalk3" node="LeftArm" frame="3"/>
+		<section id="LeftArmSit" node="LeftArm" frame="4"/>
+    <section id="LeftArmRaise" node="LeftArm" frame="6"/>
+    <section id="LeftArmGrab" node="LeftArm" frame="8"/>
+    <section id="LeftArmThumbs" node="LeftArm" frame="9"/>
+    <section id="LeftArmStop" node="LeftArm" frame="10"/>
+    <section id="LeftArmPoint" node="LeftArm" frame="11"/>
+
+		<section id="RightArmIdle" node="RightArm" frame="0"/>
+		<section id="RightArmWalk1" node="RightArm" frame="1"/>
+		<section id="RightArmWalk2" node="RightArm" frame="2"/>
+		<section id="RightArmWalk3" node="RightArm" frame="3"/>
+		<section id="RightArmSit" node="RightArm" frame="4"/>
+    <section id="RightArmRaise" node="RightArm" frame="6"/>
+    <section id="RightArmGrab" node="RightArm" frame="8"/>
+    <section id="RightArmThumbs" node="RightArm" frame="9"/>
+    <section id="RightArmStop" node="RightArm" frame="10"/>
+    <section id="RightArmPoint" node="RightArm" frame="11"/>
+
+		<section id="LeftLegIdle" node="LeftLegWhole" frame="0"/>
+    <section id="LeftLegWalk1" node="LeftLegWhole" frame="1"/>
+    <section id="LeftLegWalk2" node="LeftLegWhole" frame="2"/>
+    <section id="LeftLegWalk3" node="LeftLegWhole" frame="3"/>
+    <section id="LeftLegWalk4" node="LeftLegWhole" frame="4"/>
+
+		<section id="RightLegIdle" node="RightLegWhole" frame="0"/>
+    <section id="RightLegWalk1" node="RightLegWhole" frame="1"/>
+    <section id="RightLegWalk2" node="RightLegWhole" frame="2"/>
+    <section id="RightLegWalk3" node="RightLegWhole" frame="3"/>
+    <section id="RightLegWalk4" node="RightLegWhole" frame="4"/>
+
+		<section id="LeftLegUpperSit" node="LeftLegUpper" frame="0"/>
+		<section id="LeftLegLowerSit" node="LeftLegLower" frame="0"/>
+
+		<section id="RightLegUpperSit" node="RightLegUpper" frame="0"/>
+		<section id="RightLegLowerSit" node="RightLegLower" frame="0"/>
+
+		<section id="Shadow" node="Shadow" frame="0"/>
+
+	</sections>
+
+		
+	<!-- Head frames. -->	
+	<frames id="h" name="Head">
+
+		<frame id="Forward" name="Head Forward">	
+			<sectionref id="HeadForward"/>
+		</frame>
+
+		<frame id="Walk1" name="Head Walk 1">	
+			<sectionref id="HeadWalk1"/>
+		</frame>
+
+		<frame id="Walk2" name="Head Walk 2">	
+			<sectionref id="HeadWalk2"/>
+		</frame>
+
+		<frame id="HalfLeft" name="Head Half Left">	
+			<sectionref id="HeadHalfLeft"/>
+		</frame>
+
+		<frame id="FullLeft" name="Head Full Left">	
+			<sectionref id="HeadFullLeft"/>
+		</frame>
+
+		<frame id="HalfRight" name="Head Half Right">	
+			<sectionref id="HeadHalfRight"/>
+		</frame>
+
+		<frame id="FullRight" name="Head Full Right">	
+			<sectionref id="HeadFullRight"/>
+		</frame>
+
+	</frames>
+
+	
+	
+	<!-- Arms frames. -->
+	<frames id="a" name="Arms">
+
+		<frame id="Relaxed" name="Relaxed">
+			<sectionref id="Torso"/>
+			<sectionref id="LeftArmIdle"/>
+			<sectionref id="RightArmIdle"/>
+		</frame>
+
+		<frame id="LeftSnap" name="Left Snap" snap="90">
+			<sectionref id="Torso"/>
+			<sectionref id="LeftArmSit"/>
+			<sectionref id="RightArmIdle"/>
+		</frame>
+
+		<frame id="RightSnap" name="Right Snap" snap="90">
+			<sectionref id="Torso"/>
+			<sectionref id="LeftArmIdle"/>
+			<sectionref id="RightArmSit"/>
+		</frame>
+
+    <frame id="LeftArmRaise" name="Left Raise">
+      <sectionref id="Torso"/>
+      <sectionref id="LeftArmRaise"/>
+      <sectionref id="RightArmIdle"/>
+    </frame>
+
+    <frame id="RightArmRaise" name="Right Raise">
+      <sectionref id="Torso"/>
+      <sectionref id="LeftArmIdle"/>
+      <sectionref id="RightArmRaise"/>
+    </frame>
+
+    <frame id="ArmRaise" name="Arm Raise">
+      <sectionref id="Torso"/>
+      <sectionref id="LeftArmRaise"/>
+      <sectionref id="RightArmRaise"/>
+    </frame>
+
+    <frame id="LeftArmPoint" name="Left Point">
+      <sectionref id="Torso"/>
+      <sectionref id="LeftArmPoint"/>
+      <sectionref id="RightArmIdle"/>
+    </frame>
+
+    <frame id="RightArmPoint" name="Right Point">
+      <sectionref id="Torso"/>
+      <sectionref id="LeftArmIdle"/>
+      <sectionref id="RightArmPoint"/>
+    </frame>
+
+    <frame id="DoublePoint" name="Double Point">
+      <sectionref id="Torso"/>
+      <sectionref id="LeftArmPoint"/>
+      <sectionref id="RightArmPoint"/>
+    </frame>
+
+		<frame id="Clap" name="Clap" snap="90">
+			<sectionref id="Torso"/>
+			<sectionref id="LeftArmSit"/>
+			<sectionref id="RightArmSit"/>
+		</frame>
+
+		<frame id="Walk1" name="Walk 1">
+			<sectionref id="Torso"/>
+			<sectionref id="LeftArmWalk3"/>
+			<sectionref id="RightArmWalk1"/>
+		</frame>
+
+		<frame id="Walk2" name="Walk 2">
+			<sectionref id="Torso"/>
+			<sectionref id="LeftArmWalk2"/>
+			<sectionref id="RightArmWalk2"/>
+		</frame>
+
+		<frame id="Walk3" name="Walk 3">
+			<sectionref id="Torso"/>
+			<sectionref id="LeftArmWalk1"/>
+			<sectionref id="RightArmWalk3"/>
+		</frame>
+
+
+		<frame id="LeftSwing1" name="Left Swing 1">
+			<sectionref id="Torso"/>
+			<sectionref id="LeftArmWalk1"/>
+			<sectionref id="RightArmIdle"/>
+		</frame>
+
+		<frame id="LeftSwing2" name="Left Swing 2">
+			<sectionref id="Torso"/>
+			<sectionref id="LeftArmWalk2"/>
+			<sectionref id="RightArmIdle"/>
+		</frame>
+
+		<frame id="LeftSwing3" name="Left Swing 3">
+			<sectionref id="Torso"/>
+			<sectionref id="LeftArmWalk3"/>
+			<sectionref id="RightArmIdle"/>
+		</frame>
+
+
+		<frame id="RightSwing1" name="Right Swing 1">
+			<sectionref id="Torso"/>
+			<sectionref id="LeftArmIdle"/>
+			<sectionref id="RightArmWalk1"/>
+		</frame>
+
+		<frame id="RightSwing2" name="Right Swing 2">
+			<sectionref id="Torso"/>
+			<sectionref id="LeftArmIdle"/>
+			<sectionref id="RightArmWalk2"/>
+		</frame>
+
+		<frame id="RightSwing3" name="Right Swing 3">
+			<sectionref id="Torso"/>
+			<sectionref id="LeftArmIdle"/>
+			<sectionref id="RightArmWalk3"/>
+		</frame>
+
+
+		<frame id="Swing1" name="Swing 1">
+			<sectionref id="Torso"/>
+			<sectionref id="LeftArmWalk1"/>
+			<sectionref id="RightArmWalk1"/>
+		</frame>
+
+		<frame id="Swing2" name="Swing 2">
+			<sectionref id="Torso"/>
+			<sectionref id="LeftArmWalk2"/>
+			<sectionref id="RightArmWalk2"/>
+		</frame>
+
+		<frame id="Swing3" name="Swing 3">
+			<sectionref id="Torso"/>
+			<sectionref id="LeftArmWalk3"/>
+			<sectionref id="RightArmWalk3"/>
+		</frame>
+
+	</frames>
+
+
+	
+	<!-- Legs frames. -->	
+	<frames id="l" name="Legs">
+
+		<frame id="Relaxed" name="Relaxed">
+			<sectionref id="LeftLegIdle"/>
+			<sectionref id="RightLegIdle"/>
+			<sectionref id="Shadow"/>
+		</frame>
+
+		<frame id="LeftRaise" name="Left Raise" snap="90">
+			<sectionref id="LeftLegUpperSit"/>
+			<sectionref id="LeftLegLowerSit"/>
+			<sectionref id="RightLegIdle"/>
+			<sectionref id="Shadow"/>
+		</frame>
+
+		<frame id="RightRaise" name="Right Raise" snap="90">
+			<sectionref id="RightLegUpperSit"/>
+			<sectionref id="RightLegLowerSit"/>
+			<sectionref id="LeftLegIdle"/>
+			<sectionref id="Shadow"/>
+		</frame>
+
+		<frame id="Walk1" name="Walk 1">
+			<sectionref id="LeftLegWalk1"/>
+			<sectionref id="RightLegWalk3"/>
+			<sectionref id="Shadow"/>
+		</frame>
+
+		<frame id="Walk2" name="Walk 2">
+			<sectionref id="LeftLegWalk2"/>
+			<sectionref id="RightLegWalk4"/>
+			<sectionref id="Shadow"/>
+		</frame>
+
+		<frame id="Walk3" name="Walk 3">
+			<sectionref id="LeftLegWalk3"/>
+			<sectionref id="RightLegWalk1"/>
+			<sectionref id="Shadow"/>
+		</frame>
+
+		<frame id="Walk4" name="Walk 4">
+			<sectionref id="LeftLegWalk4"/>
+			<sectionref id="RightLegWalk2"/>
+			<sectionref id="Shadow"/>
+		</frame>
+
+
+		<frame id="LeftSwing1" name="Left Swing 1">
+			<sectionref id="LeftLegWalk1"/>
+			<sectionref id="RightLegIdle"/>
+			<sectionref id="Shadow"/>
+		</frame>
+
+		<frame id="LeftSwing2" name="Left Swing 2">
+			<sectionref id="LeftLegWalk2"/>
+			<sectionref id="RightLegIdle"/>
+			<sectionref id="Shadow"/>
+		</frame>
+
+		<frame id="LeftSwing3" name="Left Swing 3">
+			<sectionref id="LeftLegWalk3"/>
+			<sectionref id="RightLegIdle"/>
+			<sectionref id="Shadow"/>
+		</frame>
+
+
+		<frame id="LeftSwing4" name="Left Swing 4">
+			<sectionref id="LeftLegWalk4"/>
+			<sectionref id="RightLegIdle"/>
+			<sectionref id="Shadow"/>
+		</frame>
+
+
+		<frame id="RightSwing1" name="Right Swing 1">
+			<sectionref id="LeftLegIdle"/>
+			<sectionref id="RightLegWalk1"/>
+			<sectionref id="Shadow"/>
+		</frame>
+
+		<frame id="RightSwing2" name="Right Swing 2">
+			<sectionref id="LeftLegIdle"/>
+			<sectionref id="RightLegWalk2"/>
+			<sectionref id="Shadow"/>
+		</frame>
+
+		<frame id="RightSwing3" name="Right Swing 3">
+			<sectionref id="LeftLegIdle"/>
+			<sectionref id="RightLegWalk3"/>
+			<sectionref id="Shadow"/>
+		</frame>
+
+		<frame id="RightSwing4" name="Right Swing 4">
+			<sectionref id="LeftLegIdle"/>
+			<sectionref id="RightLegWalk4"/>
+			<sectionref id="Shadow"/>
+		</frame>
+
+
+		<frame id="Swing1" name="Swing 1">
+			<sectionref id="LeftLegWalk1"/>
+			<sectionref id="RightLegWalk1"/>
+			<sectionref id="Shadow"/>
+		</frame>
+
+		<frame id="Swing2" name="Swing 2">
+			<sectionref id="LeftLegWalk2"/>
+			<sectionref id="RightLegWalk2"/>
+			<sectionref id="Shadow"/>
+		</frame>
+
+		<frame id="Swing3" name="Swing 3">
+			<sectionref id="LeftLegWalk3"/>
+			<sectionref id="RightLegWalk3"/>
+			<sectionref id="Shadow"/>
+		</frame>
+
+		<frame id="Swing4" name="Swing 4">
+			<sectionref id="LeftLegWalk4"/>
+			<sectionref id="RightLegWalk4"/>
+			<sectionref id="Shadow"/>
+		</frame>
+
+	</frames>
+	
+</palette>	

@@ -1,0 +1,398 @@
+{
+  "avatar_id": "6a47397a3d4b833613ec136a",
+  "source": "SmallVerse Flash gateway capture oracle",
+  "latest_snapshot": "/avatar-oracles/6a47397a3d4b833613ec136a/flash-saveAvatarSnapshot.png",
+  "latest_full_body": "/avatar-oracles/6a47397a3d4b833613ec136a/flash-full-body.png",
+  "latest_thumb": "/avatar-oracles/6a47397a3d4b833613ec136a/flash-thumb.png",
+  "latest_preview": "/avatar-oracles/6a47397a3d4b833613ec136a/flash-preview.png",
+  "snapshots": [
+    {
+      "avatar_id": "6a47397a3d4b833613ec136a",
+      "source": "captured avatar.saveAvatarSnapshot request",
+      "capture_file": "gateway-request-1783705035819-3850.json",
+      "target": "avatar.saveAvatarSnapshot",
+      "png": "/avatar-oracles/6a47397a3d4b833613ec136a/flash-saveAvatarSnapshot-gateway-request-1783705035819-3850.png",
+      "latest_png": "/avatar-oracles/6a47397a3d4b833613ec136a/flash-saveAvatarSnapshot.png",
+      "bytes": 14398
+    },
+    {
+      "avatar_id": "6a47397a3d4b833613ec136a",
+      "source": "captured avatar.saveAvatarSnapshot request",
+      "capture_file": "gateway-request-1783705035817-3850.json",
+      "target": "avatar.saveAvatarSnapshot",
+      "png": "/avatar-oracles/6a47397a3d4b833613ec136a/flash-saveAvatarSnapshot-gateway-request-1783705035817-3850.png",
+      "latest_png": "/avatar-oracles/6a47397a3d4b833613ec136a/flash-saveAvatarSnapshot.png",
+      "bytes": 14398
+    }
+  ],
+  "saveAvatar": [
+    {
+      "avatar_id": "6a47397a3d4b833613ec136a",
+      "capture_file": "gateway-request-1783689431829-3353.json",
+      "target": "avatar.saveAvatar",
+      "name": "Miivfohg Iximso",
+      "renders": [],
+      "config": "/avatar-oracles/6a47397a3d4b833613ec136a/config.xml"
+    },
+    {
+      "avatar_id": "6a47397a3d4b833613ec136a",
+      "capture_file": "gateway-request-1783689431825-3353.json",
+      "target": "avatar.saveAvatar",
+      "name": "Miivfohg Iximso",
+      "renders": [
+        {
+          "kind": "preview",
+          "png": "/avatar-oracles/6a47397a3d4b833613ec136a/flash-preview.png",
+          "bytes": 52219
+        },
+        {
+          "kind": "full_body",
+          "png": "/avatar-oracles/6a47397a3d4b833613ec136a/flash-full-body.png",
+          "bytes": 14452
+        },
+        {
+          "kind": "thumb",
+          "png": "/avatar-oracles/6a47397a3d4b833613ec136a/flash-thumb.png",
+          "bytes": 7928
+        }
+      ],
+      "config": "/avatar-oracles/6a47397a3d4b833613ec136a/config.xml"
+    },
+    {
+      "avatar_id": "6a47397a3d4b833613ec136a",
+      "capture_file": "gateway-request-1783689035639-3283.json",
+      "target": "avatar.saveAvatar",
+      "name": "Miivfohg Iximso",
+      "renders": [],
+      "config": "/avatar-oracles/6a47397a3d4b833613ec136a/config.xml"
+    },
+    {
+      "avatar_id": "6a47397a3d4b833613ec136a",
+      "capture_file": "gateway-request-1783689035636-3283.json",
+      "target": "avatar.saveAvatar",
+      "name": "Miivfohg Iximso",
+      "renders": [
+        {
+          "kind": "preview",
+          "png": "/avatar-oracles/6a47397a3d4b833613ec136a/flash-preview.png",
+          "bytes": 52413
+        },
+        {
+          "kind": "full_body",
+          "png": "/avatar-oracles/6a47397a3d4b833613ec136a/flash-full-body.png",
+          "bytes": 14549
+        },
+        {
+          "kind": "thumb",
+          "png": "/avatar-oracles/6a47397a3d4b833613ec136a/flash-thumb.png",
+          "bytes": 8007
+        }
+      ],
+      "config": "/avatar-oracles/6a47397a3d4b833613ec136a/config.xml"
+    },
+    {
+      "avatar_id": "6a47397a3d4b833613ec136a",
+      "capture_file": "gateway-request-1783688971156-3278.json",
+      "target": "avatar.saveAvatar",
+      "name": "Miivfohg Iximso",
+      "renders": [],
+      "config": "/avatar-oracles/6a47397a3d4b833613ec136a/config.xml"
+    },
+    {
+      "avatar_id": "6a47397a3d4b833613ec136a",
+      "capture_file": "gateway-request-1783688971150-3278.json",
+      "target": "avatar.saveAvatar",
+      "name": "Miivfohg Iximso",
+      "renders": [
+        {
+          "kind": "preview",
+          "png": "/avatar-oracles/6a47397a3d4b833613ec136a/flash-preview.png",
+          "bytes": 52382
+        },
+        {
+          "kind": "full_body",
+          "png": "/avatar-oracles/6a47397a3d4b833613ec136a/flash-full-body.png",
+          "bytes": 14549
+        },
+        {
+          "kind": "thumb",
+          "png": "/avatar-oracles/6a47397a3d4b833613ec136a/flash-thumb.png",
+          "bytes": 8003
+        }
+      ],
+      "config": "/avatar-oracles/6a47397a3d4b833613ec136a/config.xml"
+    },
+    {
+      "avatar_id": "6a47397a3d4b833613ec136a",
+      "capture_file": "gateway-request-1783688962343-3231.json",
+      "target": "avatar.saveAvatar",
+      "name": "Miivfohg Iximso",
+      "renders": [],
+      "config": "/avatar-oracles/6a47397a3d4b833613ec136a/config.xml"
+    },
+    {
+      "avatar_id": "6a47397a3d4b833613ec136a",
+      "capture_file": "gateway-request-1783688962339-3231.json",
+      "target": "avatar.saveAvatar",
+      "name": "Miivfohg Iximso",
+      "renders": [
+        {
+          "kind": "preview",
+          "png": "/avatar-oracles/6a47397a3d4b833613ec136a/flash-preview.png",
+          "bytes": 48604
+        },
+        {
+          "kind": "full_body",
+          "png": "/avatar-oracles/6a47397a3d4b833613ec136a/flash-full-body.png",
+          "bytes": 14375
+        },
+        {
+          "kind": "thumb",
+          "png": "/avatar-oracles/6a47397a3d4b833613ec136a/flash-thumb.png",
+          "bytes": 7895
+        }
+      ],
+      "config": "/avatar-oracles/6a47397a3d4b833613ec136a/config.xml"
+    },
+    {
+      "avatar_id": "6a47397a3d4b833613ec136a",
+      "capture_file": "gateway-request-1783688950622-3214.json",
+      "target": "avatar.saveAvatar",
+      "name": "Miivfohg Iximso",
+      "renders": [],
+      "config": "/avatar-oracles/6a47397a3d4b833613ec136a/config.xml"
+    },
+    {
+      "avatar_id": "6a47397a3d4b833613ec136a",
+      "capture_file": "gateway-request-1783688950618-3214.json",
+      "target": "avatar.saveAvatar",
+      "name": "Miivfohg Iximso",
+      "renders": [
+        {
+          "kind": "preview",
+          "png": "/avatar-oracles/6a47397a3d4b833613ec136a/flash-preview.png",
+          "bytes": 52413
+        },
+        {
+          "kind": "full_body",
+          "png": "/avatar-oracles/6a47397a3d4b833613ec136a/flash-full-body.png",
+          "bytes": 14549
+        },
+        {
+          "kind": "thumb",
+          "png": "/avatar-oracles/6a47397a3d4b833613ec136a/flash-thumb.png",
+          "bytes": 8007
+        }
+      ],
+      "config": "/avatar-oracles/6a47397a3d4b833613ec136a/config.xml"
+    },
+    {
+      "avatar_id": "6a47397a3d4b833613ec136a",
+      "capture_file": "gateway-request-1783688894534-3208.json",
+      "target": "avatar.saveAvatar",
+      "name": "Miivfohg Iximso",
+      "renders": [],
+      "config": "/avatar-oracles/6a47397a3d4b833613ec136a/config.xml"
+    },
+    {
+      "avatar_id": "6a47397a3d4b833613ec136a",
+      "capture_file": "gateway-request-1783688894530-3208.json",
+      "target": "avatar.saveAvatar",
+      "name": "Miivfohg Iximso",
+      "renders": [
+        {
+          "kind": "preview",
+          "png": "/avatar-oracles/6a47397a3d4b833613ec136a/flash-preview.png",
+          "bytes": 52419
+        },
+        {
+          "kind": "full_body",
+          "png": "/avatar-oracles/6a47397a3d4b833613ec136a/flash-full-body.png",
+          "bytes": 14548
+        },
+        {
+          "kind": "thumb",
+          "png": "/avatar-oracles/6a47397a3d4b833613ec136a/flash-thumb.png",
+          "bytes": 8013
+        }
+      ],
+      "config": "/avatar-oracles/6a47397a3d4b833613ec136a/config.xml"
+    },
+    {
+      "avatar_id": "6a47397a3d4b833613ec136a",
+      "capture_file": "gateway-request-1783688886570-3202.json",
+      "target": "avatar.saveAvatar",
+      "name": "Miivfohg Iximso",
+      "renders": [],
+      "config": "/avatar-oracles/6a47397a3d4b833613ec136a/config.xml"
+    },
+    {
+      "avatar_id": "6a47397a3d4b833613ec136a",
+      "capture_file": "gateway-request-1783688886566-3202.json",
+      "target": "avatar.saveAvatar",
+      "name": "Miivfohg Iximso",
+      "renders": [],
+      "config": "/avatar-oracles/6a47397a3d4b833613ec136a/config.xml"
+    },
+    {
+      "avatar_id": "6a47397a3d4b833613ec136a",
+      "capture_file": "gateway-request-1783688792986-2783.json",
+      "target": "avatar.saveAvatar",
+      "name": "Miivfohg Iximso",
+      "renders": [],
+      "config": "/avatar-oracles/6a47397a3d4b833613ec136a/config.xml"
+    },
+    {
+      "avatar_id": "6a47397a3d4b833613ec136a",
+      "capture_file": "gateway-request-1783688792983-2783.json",
+      "target": "avatar.saveAvatar",
+      "name": "Miivfohg Iximso",
+      "renders": [
+        {
+          "kind": "preview",
+          "png": "/avatar-oracles/6a47397a3d4b833613ec136a/flash-preview.png",
+          "bytes": 52395
+        },
+        {
+          "kind": "full_body",
+          "png": "/avatar-oracles/6a47397a3d4b833613ec136a/flash-full-body.png",
+          "bytes": 14567
+        },
+        {
+          "kind": "thumb",
+          "png": "/avatar-oracles/6a47397a3d4b833613ec136a/flash-thumb.png",
+          "bytes": 7997
+        }
+      ],
+      "config": "/avatar-oracles/6a47397a3d4b833613ec136a/config.xml"
+    },
+    {
+      "avatar_id": "6a47397a3d4b833613ec136a",
+      "capture_file": "gateway-request-1783659118988-1688.json",
+      "target": "avatar.saveAvatar",
+      "name": "Miivfohg Iximso",
+      "renders": [],
+      "config": "/avatar-oracles/6a47397a3d4b833613ec136a/config.xml"
+    },
+    {
+      "avatar_id": "6a47397a3d4b833613ec136a",
+      "capture_file": "gateway-request-1783659118985-1688.json",
+      "target": "avatar.saveAvatar",
+      "name": "Miivfohg Iximso",
+      "renders": [
+        {
+          "kind": "preview",
+          "png": "/avatar-oracles/6a47397a3d4b833613ec136a/flash-preview.png",
+          "bytes": 52367
+        },
+        {
+          "kind": "full_body",
+          "png": "/avatar-oracles/6a47397a3d4b833613ec136a/flash-full-body.png",
+          "bytes": 14566
+        },
+        {
+          "kind": "thumb",
+          "png": "/avatar-oracles/6a47397a3d4b833613ec136a/flash-thumb.png",
+          "bytes": 7998
+        }
+      ],
+      "config": "/avatar-oracles/6a47397a3d4b833613ec136a/config.xml"
+    },
+    {
+      "avatar_id": "6a47397a3d4b833613ec136a",
+      "capture_file": "gateway-request-1783652629535-589.json",
+      "target": "avatar.saveAvatar",
+      "name": "Miivfohg Iximso",
+      "renders": [
+        {
+          "kind": "preview",
+          "png": "/avatar-oracles/6a47397a3d4b833613ec136a/flash-preview.png",
+          "bytes": 57881
+        },
+        {
+          "kind": "full_body",
+          "png": "/avatar-oracles/6a47397a3d4b833613ec136a/flash-full-body.png",
+          "bytes": 14667
+        },
+        {
+          "kind": "thumb",
+          "png": "/avatar-oracles/6a47397a3d4b833613ec136a/flash-thumb.png",
+          "bytes": 8048
+        }
+      ],
+      "config": "/avatar-oracles/6a47397a3d4b833613ec136a/config.xml"
+    },
+    {
+      "avatar_id": "6a47397a3d4b833613ec136a",
+      "capture_file": "gateway-request-1783652629530-589.json",
+      "target": "avatar.saveAvatar",
+      "name": "Miivfohg Iximso",
+      "renders": [
+        {
+          "kind": "preview",
+          "png": "/avatar-oracles/6a47397a3d4b833613ec136a/flash-preview.png",
+          "bytes": 57881
+        },
+        {
+          "kind": "full_body",
+          "png": "/avatar-oracles/6a47397a3d4b833613ec136a/flash-full-body.png",
+          "bytes": 14667
+        },
+        {
+          "kind": "thumb",
+          "png": "/avatar-oracles/6a47397a3d4b833613ec136a/flash-thumb.png",
+          "bytes": 8048
+        }
+      ],
+      "config": "/avatar-oracles/6a47397a3d4b833613ec136a/config.xml"
+    },
+    {
+      "avatar_id": "6a47397a3d4b833613ec136a",
+      "capture_file": "gateway-request-1783651083960-786.json",
+      "target": "avatar.saveAvatar",
+      "name": "Miivfohg Iximso",
+      "renders": [
+        {
+          "kind": "preview",
+          "png": "/avatar-oracles/6a47397a3d4b833613ec136a/flash-preview.png",
+          "bytes": 51424
+        },
+        {
+          "kind": "full_body",
+          "png": "/avatar-oracles/6a47397a3d4b833613ec136a/flash-full-body.png",
+          "bytes": 14241
+        },
+        {
+          "kind": "thumb",
+          "png": "/avatar-oracles/6a47397a3d4b833613ec136a/flash-thumb.png",
+          "bytes": 7577
+        }
+      ],
+      "config": "/avatar-oracles/6a47397a3d4b833613ec136a/config.xml"
+    },
+    {
+      "avatar_id": "6a47397a3d4b833613ec136a",
+      "capture_file": "gateway-request-1783651083953-786.json",
+      "target": "avatar.saveAvatar",
+      "name": "Miivfohg Iximso",
+      "renders": [
+        {
+          "kind": "preview",
+          "png": "/avatar-oracles/6a47397a3d4b833613ec136a/flash-preview.png",
+          "bytes": 51424
+        },
+        {
+          "kind": "full_body",
+          "png": "/avatar-oracles/6a47397a3d4b833613ec136a/flash-full-body.png",
+          "bytes": 14241
+        },
+        {
+          "kind": "thumb",
+          "png": "/avatar-oracles/6a47397a3d4b833613ec136a/flash-thumb.png",
+          "bytes": 7577
+        }
+      ],
+      "config": "/avatar-oracles/6a47397a3d4b833613ec136a/config.xml"
+    }
+  ]
+}

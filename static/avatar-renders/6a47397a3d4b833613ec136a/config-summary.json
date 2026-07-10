@@ -1,0 +1,289 @@
+{
+  "avatar_id": "6a47397a3d4b833613ec136a",
+  "gender": "female",
+  "selected_options": {
+    "CuteEyeShadowOptions": "CuteLightBrownShadow",
+    "Bot00": "",
+    "Bot01": "",
+    "Bot02": "",
+    "Bot03": "",
+    "Bot05": "",
+    "Top00": "",
+    "Top01": "",
+    "Top02": "",
+    "Top03": "",
+    "Top04": "",
+    "Top05": "",
+    "Top06": "",
+    "Top07": "",
+    "Top08": "",
+    "Top09": "",
+    "ConSuit": "",
+    "Suits": "",
+    "TopColorOptions": "White",
+    "OuterColorOptions": "Brown",
+    "BottomColorOptions": "Black",
+    "BeltColorOptions": "White",
+    "NecklaceColorOptions": "Yellow",
+    "GenderOptions": "Female",
+    "JSTop": "JumpTshirt",
+    "JSBottom": "JumpPants",
+    "JSFeet": "NoShoe",
+    "BodySkin": "Arms,Legs,Torso",
+    "EyeShadowOptions": "CutevanillaShadow",
+    "LipstickOptions": "LipStickMarylin",
+    "FaceBOptions": "FaceCuteTwo",
+    "MouthOptions": "MouthToothyStick",
+    "FaceAOptions": "FaceThinOne",
+    "HighlightOptions": "HairColorFieryRed",
+    "NoseAOptions": "NoseStraightOne",
+    "NoseBOptions": "NoseButtonTwo",
+    "GlassesOptions": "GlassesSurfyGrey",
+    "HairstyleOptions": "HairFBehindEarsTinted",
+    "DecalOptions": "",
+    "FoundationOptions": "Sheen3",
+    "BlusherOptions": "80sBlusher",
+    "BlusherColorOptions": "BlusherMarylin",
+    "EyeOptions": "EyesHeavymakeupReal",
+    "BrowOptions": "Anim07",
+    "EyeColorOptions": "EyeColorBrown",
+    "HatColorOptions": "HatColorWhite",
+    "HairColorOptions": "HairColorBlack",
+    "EyebrowColorOptions": "EyebrowColorBlack",
+    "TintOptions": "HairTintLight",
+    "SkinColorOptions": "SkinColorTan"
+  },
+  "weights": {
+    "FaceCuteTwo": 0.87,
+    "FaceThinOne": 0.13,
+    "NoseStraightOne": 0.42,
+    "NoseButtonTwo": 0.58
+  },
+  "transforms": {
+    "MouthTransform": {
+      "id": "MouthTransform",
+      "sx": "1.2",
+      "sy": "1.2"
+    },
+    "LeftEyeTransform": {
+      "id": "LeftEyeTransform",
+      "tx": "6.559139784946236",
+      "r": "2.736559139784946",
+      "sx": "1.0193548387096774",
+      "sy": "1.0193548387096774"
+    },
+    "RightEyeTransform": {
+      "id": "RightEyeTransform",
+      "tx": "-6.559139784946236",
+      "r": "-2.736559139784946",
+      "sx": "1.0193548387096774",
+      "sy": "1.0193548387096774"
+    }
+  },
+  "dances": [
+    {
+      "id": "Dance 1",
+      "frames": [
+        {
+          "r": "0",
+          "d": "5",
+          "h": "Forward",
+          "a": "Relaxed",
+          "l": "Relaxed"
+        },
+        {
+          "r": "45",
+          "d": "5",
+          "h": "HalfLeft",
+          "a": "Walk3",
+          "l": "Walk1"
+        },
+        {
+          "r": "0",
+          "d": "5",
+          "h": "HalfRight",
+          "a": "Relaxed",
+          "l": "Walk3"
+        },
+        {
+          "r": "315",
+          "d": "5",
+          "h": "HalfRight",
+          "a": "Walk1",
+          "l": "Walk4"
+        },
+        {
+          "r": "225",
+          "d": "3",
+          "h": "HalfRight",
+          "a": "Walk1",
+          "l": "Walk4"
+        },
+        {
+          "r": "180",
+          "d": "3",
+          "h": "HalfRight",
+          "a": "Walk2",
+          "l": "Walk4"
+        },
+        {
+          "r": "135",
+          "d": "3",
+          "h": "HalfRight",
+          "a": "Walk3",
+          "l": "Walk4"
+        },
+        {
+          "r": "90",
+          "d": "3",
+          "h": "HalfRight",
+          "a": "Walk1",
+          "l": "Walk4"
+        },
+        {
+          "r": "45",
+          "d": "3",
+          "h": "HalfRight",
+          "a": "Walk2",
+          "l": "Walk4"
+        }
+      ]
+    },
+    {
+      "id": "Dance 2",
+      "frames": [
+        {
+          "r": "0",
+          "d": "5",
+          "h": "Forward",
+          "a": "Relaxed",
+          "l": "Relaxed"
+        },
+        {
+          "r": "45",
+          "d": "5",
+          "h": "HalfLeft",
+          "a": "Walk3",
+          "l": "Walk1"
+        },
+        {
+          "r": "0",
+          "d": "5",
+          "h": "HalfRight",
+          "a": "Relaxed",
+          "l": "Walk3"
+        },
+        {
+          "r": "315",
+          "d": "5",
+          "h": "HalfRight",
+          "a": "Walk1",
+          "l": "Walk4"
+        },
+        {
+          "r": "225",
+          "d": "3",
+          "h": "HalfRight",
+          "a": "Walk1",
+          "l": "Walk4"
+        },
+        {
+          "r": "180",
+          "d": "3",
+          "h": "HalfRight",
+          "a": "Walk2",
+          "l": "Walk4"
+        },
+        {
+          "r": "135",
+          "d": "3",
+          "h": "HalfRight",
+          "a": "Walk3",
+          "l": "Walk4"
+        },
+        {
+          "r": "90",
+          "d": "3",
+          "h": "HalfRight",
+          "a": "Walk1",
+          "l": "Walk4"
+        },
+        {
+          "r": "45",
+          "d": "3",
+          "h": "HalfRight",
+          "a": "Walk2",
+          "l": "Walk4"
+        }
+      ]
+    },
+    {
+      "id": "Dance 3",
+      "frames": [
+        {
+          "r": "0",
+          "d": "5",
+          "h": "Forward",
+          "a": "Relaxed",
+          "l": "Relaxed"
+        },
+        {
+          "r": "45",
+          "d": "5",
+          "h": "HalfLeft",
+          "a": "Walk3",
+          "l": "Walk1"
+        },
+        {
+          "r": "0",
+          "d": "5",
+          "h": "HalfRight",
+          "a": "Relaxed",
+          "l": "Walk3"
+        },
+        {
+          "r": "315",
+          "d": "5",
+          "h": "HalfRight",
+          "a": "Walk1",
+          "l": "Walk4"
+        },
+        {
+          "r": "225",
+          "d": "3",
+          "h": "HalfRight",
+          "a": "Walk1",
+          "l": "Walk4"
+        },
+        {
+          "r": "180",
+          "d": "3",
+          "h": "HalfRight",
+          "a": "Walk2",
+          "l": "Walk4"
+        },
+        {
+          "r": "135",
+          "d": "3",
+          "h": "HalfRight",
+          "a": "Walk3",
+          "l": "Walk4"
+        },
+        {
+          "r": "90",
+          "d": "3",
+          "h": "HalfRight",
+          "a": "Walk1",
+          "l": "Walk4"
+        },
+        {
+          "r": "45",
+          "d": "3",
+          "h": "HalfRight",
+          "a": "Walk2",
+          "l": "Walk4"
+        }
+      ]
+    }
+  ]
+}
