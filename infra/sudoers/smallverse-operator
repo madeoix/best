@@ -1,0 +1,7 @@
+Cmnd_Alias SMALLVERSE_SERVICE_CONTROL = \
+  /usr/bin/systemctl show smallverse-explorer.service *, \
+  /usr/bin/systemctl show smallverse-admin.service *, \
+  /usr/bin/systemctl restart smallverse-explorer.service, \
+  /usr/bin/systemctl restart smallverse-admin.service
+
+smallverse-operator ALL=(root) NOPASSWD: SMALLVERSE_SERVICE_CONTROL

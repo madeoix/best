@@ -1,6 +1,7 @@
 <script>
   import { page } from '$app/stores';
   import SmallverseAvatarOracleImage from '$lib/components/avatar/SmallverseAvatarOracleImage.svelte';
+  import { publicRequestJson } from '$lib/runtime/apiClient.js';
 
   let profile = null;
   let error = '';
@@ -14,11 +15,12 @@
     error = '';
 
     try {
-      const res = await fetch(`/api/beacon/avatar/profile?avatar_id=${encodeURIComponent(id)}`);
-      const data = await res.json();
+      const data = await publicRequestJson(
+        `/api/beacon/avatar/profile?avatar_id=${encodeURIComponent(id)}`
+      );
 
-      if (!res.ok || data?.ok === false) {
-        throw new Error(data?.error || `HTTP ${res.status}`);
+      if (data?.ok === false) {
+        throw new Error(data?.error || 'Avatar profile unavailable');
       }
 
       profile = data;

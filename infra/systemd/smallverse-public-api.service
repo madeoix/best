@@ -1,0 +1,31 @@
+[Unit]
+Description=Smallverse public read API
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=smallverse
+Group=smallverse
+WorkingDirectory=/srv/smallverse/current
+EnvironmentFile=/etc/smallverse/public-api.env
+ExecStart=/usr/bin/node apps/api/dist/entrypoints/public.js
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=30
+KillSignal=SIGTERM
+
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadOnlyPaths=/opt/smallverse/workspace
+ReadOnlyPaths=/opt/smallverse/automation-workspace
+ReadOnlyPaths=/var/www/smallverse
+ReadWritePaths=/srv/smallverse/shared
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+LockPersonality=true
+MemoryDenyWriteExecute=true
+
+[Install]
+WantedBy=multi-user.target

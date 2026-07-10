@@ -9,7 +9,20 @@
     "preview": "vite preview",
     "prepare": "svelte-kit sync || echo ''",
     "avatar:import-renders": "/tmp/sv-amf-venv/bin/python tools/import_avatar_snapshot_captures.py",
-    "avatar:watch-renders": "/tmp/sv-amf-venv/bin/python tools/watch_avatar_render_captures.py"
+    "avatar:watch-renders": "/tmp/sv-amf-venv/bin/python tools/watch_avatar_render_captures.py",
+    "dev:web": "vite dev",
+    "dev:api": "npm run dev -w @smallverse/api",
+    "dev:operator": "npm run dev:operator -w @smallverse/api",
+    "build:web": "vite build",
+    "build:contracts": "npm run build -w @smallverse/contracts",
+    "build:database": "npm run build -w @smallverse/database",
+    "build:api": "npm run build:contracts && npm run build:database && npm run build -w @smallverse/api",
+    "build:all": "npm run build:web && npm run build:api",
+    "test:api": "npm run build:contracts && npm run build:database && npm run test -w @smallverse/api",
+    "test": "npm run check:boundaries && npm run test:api && node --test tests/*.test.mjs",
+    "check:boundaries": "node scripts/check-runtime-boundaries.mjs",
+    "db:migrate": "npm run migrate -w @smallverse/database",
+    "release:package": "npm run build:all && node scripts/package-release.mjs"
   },
   "devDependencies": {
     "@fontsource-variable/inter": "^5.2.8",
@@ -36,5 +49,9 @@
     "@lucide/svelte": "^1.23.0",
     "framer-motion": "^12.42.2",
     "three": "^0.185.1"
-  }
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
 }

@@ -6,6 +6,7 @@ node_modules/
 build/
 dist/
 coverage/
+*.tsbuildinfo
 
 # Environment secrets
 .env*
@@ -37,41 +38,5 @@ src-tauri/gen/
 recovered-swfs/
 tools/ffdec/
 
-# Generated deployments
+# Generated deployment archives
 releases/
-
-# Local scratch and generated files
-*.before-*
-*.bak
-*.bak.*
-*.bak-*
-*.broken.*
-*.backup_*
-__pycache__/
-*.py[cod]
-src-tauri/target/
-src-tauri/gen/
-
-# Local scratch and generated files
-*.before-*
-*.bak
-*.bak.*
-*.bak-*
-*.broken.*
-*.backup_*
-__pycache__/
-*.py[cod]
-src-tauri/target/
-src-tauri/gen/
-
-# Local scratch and generated files
-*.before-*
-*.bak
-*.bak.*
-*.bak-*
-*.broken.*
-*.backup_*
-__pycache__/
-*.py[cod]
-src-tauri/target/
-src-tauri/gen/

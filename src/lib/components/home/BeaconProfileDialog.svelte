@@ -1,4 +1,5 @@
 <script>
+  import { publicApiUrl } from '$lib/runtime/apiClient.js';
   import SmallverseIcon from '$lib/components/common/SmallverseIcon.svelte';
   import { getItemProfile } from '$lib/beacon/api.js';
   import { fmtNumber } from '$lib/beacon/format.js';
@@ -121,7 +122,7 @@
     const label = encodeURIComponent(ownerName(owner).slice(0, 2).toUpperCase());
     const status = encodeURIComponent(owner?.avatar_portrait_status || 'missing');
 
-    return `/api/beacon/avatar/badge?label=${label}&status=${status}`;
+    return publicApiUrl(`/api/beacon/avatar/badge?label=${label}&status=${status}`);
   }
 
   function ownerPortraitRank(owner) {

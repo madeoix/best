@@ -1,42 +1,57 @@
-# sv
+# Smallverse Lab
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Smallverse Lab is a consumer-facing preservation and exploration interface for
+SmallWorlds data, spaces, items, avatars, prices, and captured evidence.
 
-## Creating a project
+## Runtime layout
 
-If you're seeing this, you've probably already done this step. Congrats!
+```text
+SvelteKit static SPA
+├── public API client
+├── operator API client
+└── browser avatar renderer
 
-```sh
-# create a new project
-npx sv create my-app
+Fastify runtime
+├── public read API
+├── VPN-only operator API
+└── preservation worker
+
+Existing VPS preservation system
+└── /opt/smallverse
 ```
 
-To recreate this project with the same configuration:
+The existing Python system remains active while API routes are migrated. See
+`docs/architecture/runtime-boundaries.md`.
 
-```sh
-# recreate this project
-npx sv@0.16.2 create --template minimal --no-types --install npm smallverse-lab
+## Development
+
+```bash
+npm install
+npm run dev:web
+npm run dev:api
 ```
 
-## Developing
+Public API development defaults to `127.0.0.1:8780`.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## Verification
 
-```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+```bash
+npm test
+npm run build:all
 ```
 
-## Building
+## Local PostgreSQL and object storage
 
-To create a production version of your app:
-
-```sh
-npm run build
+```bash
+docker compose -f infra/compose.dev.yml up -d
+export DATABASE_URL='postgresql://smallverse:smallverse-development-only@127.0.0.1:5432/smallverse'
+npm run db:migrate
 ```
 
-You can preview the production build with `npm run preview`.
+## Production packaging
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+```bash
+npm run release:package
+```
+
+This creates a checksummed archive under `releases/`.

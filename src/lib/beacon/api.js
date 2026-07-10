@@ -1,31 +1,21 @@
-async function requestJson(url, options) {
-  const res = await fetch(url, options);
-  const data = await res.json().catch(() => null);
-
-  if (!data) {
-    return {
-      ok: false,
-      error: `Invalid JSON from ${url}`
-    };
-  }
-
-  return data;
-}
+import {
+  operatorRequestJson,
+  publicRequestJson
+} from '$lib/runtime/apiClient.js';
 
 export function getSessions() {
-  return requestJson('/api/beacon/sessions');
+  return operatorRequestJson('/api/beacon/sessions');
 }
 
 export function sessionAction(action, payload = {}) {
-  return requestJson('/api/beacon/sessions', {
+  return operatorRequestJson('/api/beacon/sessions', {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ action, ...payload })
   });
 }
 
 export function getObservatoryStatus() {
-  return requestJson('/api/beacon/observatory/status');
+  return publicRequestJson('/api/beacon/observatory/status');
 }
 
 export function searchObservatory(query = '', limit = 60) {
@@ -34,7 +24,7 @@ export function searchObservatory(query = '', limit = 60) {
     limit: String(limit)
   });
 
-  return requestJson(`/api/beacon/observatory/search?${qs}`);
+  return publicRequestJson(`/api/beacon/observatory/search?${qs}`);
 }
 
 export function getObservatoryItem(sourceXml) {
@@ -42,22 +32,19 @@ export function getObservatoryItem(sourceXml) {
     source_xml: sourceXml
   });
 
-  return requestJson(`/api/beacon/observatory/item?${qs}`);
+  return publicRequestJson(`/api/beacon/observatory/item?${qs}`);
 }
 
 export function getSpinPrices() {
-  return requestJson('/api/beacon/spin/prices');
+  return publicRequestJson('/api/beacon/spin/prices');
 }
 
 export function runBeaconAction(action) {
-  return requestJson('/api/beacon/action', {
+  return operatorRequestJson('/api/beacon/action', {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ action })
   });
 }
-
-
 
 // Item profiles carry live identity enrichment. Do not client-cache them while
 // owner/avatar identity is changing, and do not let batch prefetch poison the
@@ -82,14 +69,16 @@ export async function getItemProfile(sourceXml) {
     _: String(Date.now())
   });
 
-  const request = requestJson(`/api/beacon/item/profile?${params.toString()}`)
+  const request = publicRequestJson(
+    `/api/beacon/item/profile?${params.toString()}`
+  )
     .then((payload) => {
       itemProfilePending.delete(key);
       return payload;
     })
-    .catch((err) => {
+    .catch((error) => {
       itemProfilePending.delete(key);
-      throw err;
+      throw error;
     });
 
   itemProfilePending.set(key, request);
@@ -106,8 +95,7 @@ export async function getItemProfilesBatch(items = [], limit = 8) {
   for (const item of items) {
     const sourceXml = item?.source_xml;
 
-    if (!sourceXml) continue;
-    if (sourceXmls.includes(sourceXml)) continue;
+    if (!sourceXml || sourceXmls.includes(sourceXml)) continue;
 
     sourceXmls.push(sourceXml);
 
@@ -124,20 +112,13 @@ export async function getItemProfilesBatch(items = [], limit = 8) {
     params.append('source_xml', sourceXml);
   }
 
-  // Fetch is kept for future warmup, but result is not written into the
-  // single-profile cache. The single-profile route performs source_xml
-  // normalization and owner identity enrichment.
-  return requestJson(`/api/beacon/item/profiles?${params.toString()}&_=${Date.now()}`);
+  return publicRequestJson(
+    `/api/beacon/item/profiles?${params.toString()}&_=${Date.now()}`
+  );
 }
 
-export async function getBeaconWorld() {
-  const res = await fetch('/api/beacon/world');
-
-  if (!res.ok) {
-    throw new Error(`Beacon world failed (${res.status})`);
-  }
-
-  return res.json();
+export function getBeaconWorld() {
+  return publicRequestJson('/api/beacon/world');
 }
 
 export async function getSpaceProfile(spaceId) {
@@ -147,11 +128,7 @@ export async function getSpaceProfile(spaceId) {
     throw new Error('Missing space id');
   }
 
-  const res = await fetch(`/api/beacon/space/profile?space_id=${encodeURIComponent(id)}`);
-
-  if (!res.ok) {
-    throw new Error(`Space profile failed (${res.status})`);
-  }
-
-  return res.json();
+  return publicRequestJson(
+    `/api/beacon/space/profile?space_id=${encodeURIComponent(id)}`
+  );
 }
