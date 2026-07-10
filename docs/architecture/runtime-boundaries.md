@@ -1,12 +1,9 @@
 # Smallverse runtime boundaries
 
-This document describes the first implementation boundary. It is intentionally
-compatible with the current application while the legacy SvelteKit endpoint
-implementations are migrated.
+This document describes the implemented runtime split. The SvelteKit
+application is a static SPA; server behavior belongs in separate processes.
 
 ## Public web
-
-The SvelteKit application remains a static SPA.
 
 Browser code may call APIs only through:
 
@@ -21,9 +18,8 @@ VITE_SMALLVERSE_PUBLIC_API_BASE
 VITE_SMALLVERSE_OPERATOR_API_BASE
 ```
 
-An empty value preserves same-origin development behavior. Production must set
-the public base or proxy `/api/` to the public API. Operator features must point
-to the Tailscale-only operator listener.
+An empty base preserves same-origin proxying. Production should proxy `/api/`
+to the public API and expose the operator base only on the VPN.
 
 ## Public API
 
@@ -39,18 +35,26 @@ Default listener:
 127.0.0.1:8780
 ```
 
-This process is read-only. The first migrated compatibility routes are:
+The process is read-only. It may read explicit preservation exports and
+PostgreSQL health, but it may not execute commands, SSH, read credentials, or
+control services.
+
+Implemented compatibility routes:
 
 ```text
 GET /api/beacon/world
 GET /api/beacon/observatory/status
 GET /api/beacon/observatory/search
-GET /api/v1/search
-GET /api/v1/health
+GET /api/beacon/observatory/item
+GET /api/beacon/item/profile
+GET /api/beacon/item/profiles
+GET /api/beacon/avatar/profile
+GET /api/beacon/avatar/badge
+GET /api/beacon/space/profile
+GET /api/beacon/spin/prices
 ```
 
-They read the preserved exports directly from `/opt/smallverse` on the VPS.
-They do not SSH back into the same machine.
+Versioned routes are documented in `endpoint-migration.md`.
 
 ## Operator API
 
@@ -60,14 +64,10 @@ Entry point:
 apps/api/src/entrypoints/operator.ts
 ```
 
-The production example binds to the current Tailscale address:
-
-```text
-100.118.39.6:8781
-```
+Production should bind it to the Tailscale address, not a public interface.
 
 Every non-health route requires a bearer token. Service operations use an
-allowlist and a narrow sudoers rule. No arbitrary shell command route exists.
+allowlist and a narrow sudoers rule. No arbitrary command route exists.
 
 ## Worker
 
@@ -77,34 +77,50 @@ Entry point:
 apps/api/src/entrypoints/worker.ts
 ```
 
-The worker is deliberately inert until real job handlers are registered. It
-requires PostgreSQL and provides the process boundary without pretending that
-the current Python ingestion system has already been replaced.
+The worker owns future ingestion, indexing, rendering, and integrity jobs. It
+requires PostgreSQL and is intentionally separate from request handling.
 
-## Existing Python preservation system
+## Existing preservation system
 
 `/opt/smallverse` remains the active preservation source during migration.
 
-Current facts from the VPS inventory:
+Known VPS facts:
 
-- Ubuntu 24.04.
-- Nginx 1.24.
-- Tailscale is active.
-- `smallverse-explorer.service` exists but is failed.
-- `smallverse-admin.service` exists but is inactive.
-- `observatory.sqlite` is approximately 7.5 GB.
-- `/opt/smallverse` is approximately 22 GB.
-- no PostgreSQL server is currently installed.
-- Node.js is 18.19.1 and must be upgraded before Fastify 5 is deployed.
+- Ubuntu 24.04;
+- Nginx 1.24;
+- Tailscale active;
+- legacy Smallverse services exist but are not healthy;
+- the Observatory SQLite database is large and irreplaceable;
+- Node.js must be upgraded before the new Fastify runtime is deployed.
 
-No migration step may delete or rewrite this data in place.
+No migration step may rewrite preserved data in place.
 
-## Migration rule
+## Local integration
 
-For each old `src/routes/api/**/+server.js` route:
+The supported local flow is:
 
-1. Add a public or operator implementation in `apps/api`.
-2. Add an API test.
-3. Point the browser caller through the runtime client.
-4. Run the current web build and API tests.
-5. Remove the SvelteKit endpoint only after the replacement is deployed.
+```text
+Docker PostgreSQL and MinIO
+        ↓
+database migrations
+        ↓
+safe JSON export sync from casa
+        ↓
+public API + operator API + worker
+        ↓
+SvelteKit SPA
+        ↓
+runtime smoke test
+```
+
+See `docs/operations/local-runtime.md`.
+
+## Enforcement
+
+`scripts/check-runtime-boundaries.mjs` fails when:
+
+- browser components bypass the central API client;
+- migrated public SvelteKit server routes reappear;
+- public API modules import process execution;
+- public API modules contain SSH behavior;
+- API base configuration leaks outside the runtime client.

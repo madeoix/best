@@ -65,6 +65,80 @@ for (const filename of await walk(sourceRoot)) {
   }
 }
 
+
+const migratedSvelteEndpoints = [
+  'src/routes/api/beacon/world/+server.js',
+  'src/routes/api/beacon/observatory/status/+server.js',
+  'src/routes/api/beacon/observatory/search/+server.js',
+  'src/routes/api/beacon/observatory/item/+server.js',
+  'src/routes/api/beacon/item/profile/+server.js',
+  'src/routes/api/beacon/item/profiles/+server.js',
+  'src/routes/api/beacon/avatar/profile/+server.js',
+  'src/routes/api/beacon/avatar/badge/+server.js',
+  'src/routes/api/beacon/space/profile/+server.js',
+  'src/routes/api/beacon/spin/prices/+server.js'
+];
+
+for (const relative of migratedSvelteEndpoints) {
+  try {
+    await readFile(path.join(root, relative), 'utf8');
+    violations.push(
+      `${relative}: migrated public endpoints must live only in apps/api`
+    );
+  } catch {
+    // Expected: the static SPA no longer owns this server route.
+  }
+}
+
+const publicApiFiles = [
+  path.join(root, 'apps', 'api', 'src', 'public-app.ts'),
+  path.join(
+    root,
+    'apps',
+    'api',
+    'src',
+    'modules',
+    'legacy',
+    'data-store.ts'
+  ),
+  path.join(
+    root,
+    'apps',
+    'api',
+    'src',
+    'modules',
+    'legacy',
+    'profile-builders.ts'
+  ),
+  path.join(
+    root,
+    'apps',
+    'api',
+    'src',
+    'modules',
+    'legacy',
+    'public-routes.ts'
+  )
+];
+
+for (const filename of publicApiFiles) {
+  const text = await readFile(filename, 'utf8');
+
+  if (
+    /node:child_process|from ['"]child_process['"]|\bexecFile\b|\bspawn\b/.test(text)
+  ) {
+    violations.push(
+      `${path.relative(root, filename)}: public API may not execute processes`
+    );
+  }
+
+  if (/\bssh\b|ClearAllForwardings/.test(text)) {
+    violations.push(
+      `${path.relative(root, filename)}: public API may not SSH to preservation hosts`
+    );
+  }
+}
+
 if (violations.length) {
   console.error('Runtime-boundary violations:');
   for (const violation of violations) {

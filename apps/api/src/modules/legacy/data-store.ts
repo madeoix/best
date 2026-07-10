@@ -1,6 +1,15 @@
 import { readFile, stat } from 'node:fs/promises';
 import path from 'node:path';
 import { HttpError } from '../../lib/errors.js';
+import {
+  buildAvatarProfile,
+  buildItemProfile,
+  buildObservatoryItem,
+  buildSpaceProfile,
+  extractSpinPrices,
+  findCachedItemProfile,
+  record
+} from './profile-builders.js';
 
 export interface LegacyDataStoreOptions {
   workspaceRoot: string;
@@ -10,6 +19,11 @@ export interface LegacyDataStoreOptions {
 interface CacheEntry {
   expiresAt: number;
   value: unknown;
+}
+
+interface ReadResult<T> {
+  filename: string;
+  value: T;
 }
 
 export class LegacyDataStore {
@@ -63,6 +77,45 @@ export class LegacyDataStore {
     return value;
   }
 
+  async #readOptionalJson<T>(
+    candidates: string[],
+    ttlMs = 15_000
+  ): Promise<ReadResult<T> | null> {
+    for (const candidate of candidates) {
+      try {
+        await stat(candidate);
+        return {
+          filename: candidate,
+          value: await this.#readJson<T>(candidate, ttlMs)
+        };
+      } catch (error) {
+        if (error instanceof HttpError) throw error;
+      }
+    }
+
+    return null;
+  }
+
+  async #firstExisting(candidates: string[]): Promise<string> {
+    for (const candidate of candidates) {
+      try {
+        await stat(candidate);
+        return candidate;
+      } catch {
+        // Try the next explicit export location.
+      }
+    }
+
+    throw new HttpError(
+      503,
+      'LEGACY_DATA_UNAVAILABLE',
+      'No preserved data export was found.',
+      {
+        files: candidates.map((candidate) => path.basename(candidate))
+      }
+    );
+  }
+
   worldPath(): string {
     return path.join(this.#workspaceRoot, 'beacon-world-index.json');
   }
@@ -74,22 +127,37 @@ export class LegacyDataStore {
     ];
   }
 
-  async #firstExisting(candidates: string[]): Promise<string> {
-    for (const candidate of candidates) {
-      try {
-        await stat(candidate);
-        return candidate;
-      } catch {
-        // Try the next preserved source.
-      }
-    }
+  itemProfileCandidates(): string[] {
+    return [
+      path.join(this.#workspaceRoot, 'beacon-item-profiles.json'),
+      path.join(this.#automationRoot, 'beacon-item-profiles.json')
+    ];
+  }
 
-    throw new HttpError(
-      503,
-      'LEGACY_DATA_UNAVAILABLE',
-      'No preserved Observatory export was found.',
-      { candidates }
-    );
+  avatarIndexCandidates(): string[] {
+    return [
+      path.join(this.#workspaceRoot, 'avatar-url-index.json'),
+      path.join(this.#automationRoot, 'avatar-url-index.json')
+    ];
+  }
+
+  spinPriceCandidates(): string[] {
+    return [
+      path.join(this.#workspaceRoot, 'beacon-spin-prices.json'),
+      path.join(this.#workspaceRoot, 'spin-prices.json'),
+      path.join(this.#workspaceRoot, 'spintowin-prices.json'),
+      path.join(
+        this.#workspaceRoot,
+        'spintowin-actions',
+        'last-spin-prices.json'
+      ),
+      path.join(
+        this.#workspaceRoot,
+        'spintowin-actions',
+        'spin-prices.json'
+      ),
+      path.join(this.#automationRoot, 'beacon-spin-prices.json')
+    ];
   }
 
   async getWorld(): Promise<Record<string, unknown>> {
@@ -105,6 +173,15 @@ export class LegacyDataStore {
     );
 
     return this.#readJson<Record<string, unknown>>(filename, 30_000);
+  }
+
+  async getAvatarIndex(): Promise<Record<string, unknown> | null> {
+    const result = await this.#readOptionalJson<Record<string, unknown>>(
+      this.avatarIndexCandidates(),
+      60_000
+    );
+
+    return result?.value ?? null;
   }
 
   async getObservatoryStatus() {
@@ -276,6 +353,155 @@ export class LegacyDataStore {
           : typeof data.updated_at === 'string'
             ? data.updated_at
             : null
+    };
+  }
+
+  async getObservatoryItem(sourceXml: string) {
+    return buildObservatoryItem(
+      await this.getObservatory(),
+      sourceXml
+    );
+  }
+
+  async getItemProfile(sourceXml: string) {
+    const cached = await this.#readOptionalJson<Record<string, unknown>>(
+      this.itemProfileCandidates(),
+      30_000
+    );
+    const cachedProfile = cached
+      ? findCachedItemProfile(cached.value, sourceXml)
+      : null;
+
+    if (cachedProfile) return cachedProfile;
+
+    const [observatory, world, avatarIndex] = await Promise.all([
+      this.getObservatory(),
+      this.getWorld(),
+      this.getAvatarIndex()
+    ]);
+
+    return buildItemProfile(
+      observatory,
+      world,
+      avatarIndex,
+      sourceXml
+    );
+  }
+
+  async getItemProfiles(sourceXmls: string[]) {
+    const unique = [...new Set(sourceXmls)].slice(0, 20);
+    const cached = await this.#readOptionalJson<Record<string, unknown>>(
+      this.itemProfileCandidates(),
+      30_000
+    );
+    const [observatory, world, avatarIndex] = await Promise.all([
+      this.getObservatory(),
+      this.getWorld(),
+      this.getAvatarIndex()
+    ]);
+
+    const entries = unique.map((sourceXml) => {
+      const cachedProfile = cached
+        ? findCachedItemProfile(cached.value, sourceXml)
+        : null;
+      const profile =
+        cachedProfile ??
+        buildItemProfile(
+          observatory,
+          world,
+          avatarIndex,
+          sourceXml
+        );
+
+      return [sourceXml, profile] as const;
+    });
+
+    return {
+      ok: true,
+      source: 'smallverse-public-api.item-profile-batch/v2',
+      profiles: Object.fromEntries(
+        entries.filter(([, profile]) => profile.ok !== false)
+      )
+    };
+  }
+
+  async getAvatarProfile(requestedAvatarId: string) {
+    const [observatory, world, avatarIndex] = await Promise.all([
+      this.getObservatory(),
+      this.getWorld(),
+      this.getAvatarIndex()
+    ]);
+
+    return buildAvatarProfile(
+      observatory,
+      world,
+      avatarIndex,
+      requestedAvatarId
+    );
+  }
+
+  async getSpaceProfile(requestedSpaceId: string) {
+    const [observatory, world, avatarIndex] = await Promise.all([
+      this.getObservatory(),
+      this.getWorld(),
+      this.getAvatarIndex()
+    ]);
+
+    return buildSpaceProfile(
+      observatory,
+      world,
+      avatarIndex,
+      requestedSpaceId
+    );
+  }
+
+  async getSpinPrices() {
+    const result = await this.#readOptionalJson<unknown>(
+      this.spinPriceCandidates(),
+      30_000
+    );
+
+    if (!result) {
+      return {
+        ok: false,
+        source: 'preserved-spin-price-snapshot',
+        generated_at: null,
+        prices: [],
+        error:
+          'No preserved spin-price snapshot is available. Live Gateway probing is operator-only.',
+        raw_available: false
+      };
+    }
+
+    const raw = record(result.value);
+    const prices = extractSpinPrices(result.value);
+
+    return {
+      ok: prices.length > 0,
+      source:
+        typeof raw?.source === 'string'
+          ? raw.source
+          : 'preserved-spin-price-snapshot',
+      generated_at:
+        typeof raw?.generated_at === 'string'
+          ? raw.generated_at
+          : typeof raw?.updated_at === 'string'
+            ? raw.updated_at
+            : null,
+      prices,
+      http_status:
+        typeof raw?.http_status === 'number'
+          ? raw.http_status
+          : null,
+      response_bytes:
+        typeof raw?.response_bytes === 'number'
+          ? raw.response_bytes
+          : null,
+      error:
+        prices.length > 0
+          ? null
+          : 'The preserved snapshot did not contain recognizable spin prices.',
+      raw_available: true
     };
   }
 }

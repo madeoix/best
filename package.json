@@ -13,6 +13,14 @@
     "dev:web": "vite dev",
     "dev:api": "npm run dev -w @smallverse/api",
     "dev:operator": "npm run dev:operator -w @smallverse/api",
+    "dev:worker": "npm run dev:worker -w @smallverse/api",
+    "dev:runtime": "node scripts/dev-runtime.mjs",
+    "dev:all": "node scripts/dev-runtime.mjs --web",
+    "infra:up": "node scripts/dev-infra.mjs up",
+    "infra:down": "node scripts/dev-infra.mjs down",
+    "infra:logs": "node scripts/dev-infra.mjs logs",
+    "sync:exports": "bash scripts/sync-preserved-exports.sh",
+    "smoke:runtime": "node scripts/smoke-runtime.mjs",
     "build:web": "vite build",
     "build:contracts": "npm run build -w @smallverse/contracts",
     "build:database": "npm run build -w @smallverse/database",
@@ -22,7 +30,8 @@
     "test": "npm run check:boundaries && npm run test:api && node --test tests/*.test.mjs",
     "check:boundaries": "node scripts/check-runtime-boundaries.mjs",
     "db:migrate": "npm run migrate -w @smallverse/database",
-    "release:package": "npm run build:all && node scripts/package-release.mjs"
+    "release:package": "npm run build:all && node scripts/package-release.mjs",
+    "db:verify": "node scripts/run-db-verify.mjs"
   },
   "devDependencies": {
     "@fontsource-variable/inter": "^5.2.8",

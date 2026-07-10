@@ -15,7 +15,7 @@ async function fixture() {
     workspaceRoot: '/tmp',
     automationRoot: '/tmp',
     publicDirectory: '/tmp',
-    allowedOrigins: [],
+    allowedOrigins: ['http://127.0.0.1:5173'],
     host: '127.0.0.1',
     port: 0,
     operatorToken: 'test-operator-token-that-is-long-enough',
@@ -68,4 +68,22 @@ describe('operator API', () => {
       'smallverse-operator-api'
     );
   });
+  it('allows the configured private UI origin', async () => {
+    const app = await fixture();
+    const response = await app.inject({
+      method: 'GET',
+      url: '/_service',
+      headers: {
+        origin: 'http://127.0.0.1:5173',
+        authorization:
+          'Bearer test-operator-token-that-is-long-enough'
+      }
+    });
+
+    expect(response.statusCode).toBe(200);
+    expect(response.headers['access-control-allow-origin']).toBe(
+      'http://127.0.0.1:5173'
+    );
+  });
+
 });

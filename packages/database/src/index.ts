@@ -1,4 +1,4 @@
-import { CamelCasePlugin, Kysely, PostgresDialect } from 'kysely';
+import { CamelCasePlugin, Kysely, PostgresDialect, sql } from 'kysely';
 import pg from 'pg';
 import type { DatabaseSchema } from './types.js';
 
@@ -23,4 +23,11 @@ export function createDatabase(options: DatabaseOptions): Kysely<DatabaseSchema>
     dialect: new PostgresDialect({ pool }),
     plugins: [new CamelCasePlugin()]
   });
+}
+
+
+export async function pingDatabase(
+  database: Kysely<DatabaseSchema>
+): Promise<void> {
+  await sql`select 1`.execute(database);
 }

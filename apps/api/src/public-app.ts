@@ -3,6 +3,7 @@ import rateLimit from '@fastify/rate-limit';
 import type { FastifyInstance } from 'fastify';
 import type { PublicApiConfig } from './config.js';
 import { createBaseApp } from './lib/app-base.js';
+import { registerOptionalDatabase } from './lib/database-health.js';
 import { registerHealthRoutes } from './modules/health/routes.js';
 import { LegacyDataStore } from './modules/legacy/data-store.js';
 import { registerLegacyPublicRoutes } from './modules/legacy/public-routes.js';
@@ -35,21 +36,28 @@ export async function createPublicApp(
     workspaceRoot: config.workspaceRoot,
     automationRoot: config.automationRoot
   });
+  const database = registerOptionalDatabase(
+    app,
+    config.databaseUrl,
+    'smallverse-public-api'
+  );
 
   await registerHealthRoutes(app, {
     serviceName: 'smallverse-public-api',
     version: config.serviceVersion,
     dependencies: async () => {
+      let observatory: 'ok' | 'unavailable' = 'ok';
+
       try {
         await store.getObservatoryStatus();
-        return {
-          observatory: 'ok'
-        };
       } catch {
-        return {
-          observatory: 'unavailable'
-        };
+        observatory = 'unavailable';
       }
+
+      return {
+        observatory,
+        database: await database.status()
+      };
     }
   });
 

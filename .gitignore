@@ -40,3 +40,6 @@ tools/ffdec/
 
 # Generated deployment archives
 releases/
+
+# Synced local preservation read models
+.local-data/

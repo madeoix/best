@@ -16,36 +16,57 @@ Fastify runtime
 ├── VPN-only operator API
 └── preservation worker
 
-Existing VPS preservation system
+PostgreSQL
+└── canonical metadata and jobs
+
+Existing preservation system
 └── /opt/smallverse
 ```
 
-The existing Python system remains active while API routes are migrated. See
-`docs/architecture/runtime-boundaries.md`.
+The existing Python preservation system remains active while data is imported
+into PostgreSQL. Public requests no longer SSH into that system.
 
-## Development
+## Install and verify
 
 ```bash
 npm install
-npm run dev:web
-npm run dev:api
-```
-
-Public API development defaults to `127.0.0.1:8780`.
-
-## Verification
-
-```bash
 npm test
 npm run build:all
 ```
 
-## Local PostgreSQL and object storage
+## Local integrated runtime
 
 ```bash
-docker compose -f infra/compose.dev.yml up -d
+npm run infra:up
+
 export DATABASE_URL='postgresql://smallverse:smallverse-development-only@127.0.0.1:5432/smallverse'
-npm run db:migrate
+npm run db:verify
+
+npm run sync:exports
+npm run dev:all
+```
+
+In a second terminal:
+
+```bash
+npm run smoke:runtime
+```
+
+Detailed instructions:
+
+```text
+docs/operations/local-runtime.md
+```
+
+## Public read model
+
+The public API reads only allowlisted preservation exports while PostgreSQL
+ingestion is built. Item, avatar, space, Observatory, and cached spin-price
+routes are implemented in `apps/api`.
+
+```text
+docs/architecture/public-read-model.md
+docs/architecture/endpoint-migration.md
 ```
 
 ## Production packaging
@@ -55,3 +76,7 @@ npm run release:package
 ```
 
 This creates a checksummed archive under `releases/`.
+
+Do not deploy the Fastify services to the current VPS until its Node runtime,
+service accounts, environment files, database, and reverse-proxy routes have
+been prepared.
