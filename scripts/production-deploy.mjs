@@ -170,6 +170,16 @@ function execute(command, args, options = {}) {
   });
 }
 
+function verifyInstalledRelease(root) {
+  execute('/usr/bin/node', [
+    path.join(root, 'scripts/verify-installed-release.mjs'),
+    root
+  ], {
+    cwd: root,
+    env: { ...process.env, SMALLVERSE_NPM_BIN: '/usr/bin/npm' }
+  });
+}
+
 async function exists(filename) {
   try {
     await lstat(filename);
@@ -436,7 +446,7 @@ async function install(options) {
     if (installed.commit !== commit) {
       throw new Error(`Existing target has a different release commit: ${target}`);
     }
-    await verifyRelease(target, path.resolve('scripts/verify-production-release.mjs'));
+    verifyInstalledRelease(target);
     return { applied: true, noOp: true, plan, message: 'identical release already installed' };
   }
 
@@ -488,13 +498,7 @@ async function install(options) {
       timeout: 10 * 60_000,
       env: { ...process.env, NODE_ENV: 'production' }
     });
-    execute('/usr/bin/node', [
-      path.join(root, 'scripts/verify-installed-release.mjs'),
-      root
-    ], {
-      cwd: root,
-      env: { ...process.env, SMALLVERSE_NPM_BIN: '/usr/bin/npm' }
-    });
+    verifyInstalledRelease(root);
     execute('chown', ['-R', 'root:root', root]);
     execute('chmod', ['-R', 'u=rwX,go=rX', root]);
     await rename(root, target);
@@ -580,7 +584,7 @@ async function switchRelease(options) {
   if (!options.apply) return { applied: false, plan };
   requireRoot();
   requireConfirmation(options, expected);
-  await verifyRelease(release, path.join(release, 'scripts/verify-production-release.mjs'));
+  verifyInstalledRelease(release);
   await validateEnvironmentSet(commit);
 
   try {
@@ -868,10 +872,7 @@ async function finalize(options) {
   if (!options.apply) return { applied: false, plan };
   requireRoot();
   requireConfirmation(options, expected);
-  await verifyRelease(
-    current,
-    path.join(current, 'scripts/verify-production-release.mjs')
-  );
+  verifyInstalledRelease(current);
   await validateEnvironmentSet(metadata.commit);
   execute('nginx', ['-t']);
   await httpCheck('http://127.0.0.1:8780/api/v1/health');

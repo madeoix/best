@@ -331,6 +331,19 @@ test('production deployment mutations are explicit and preservation-safe', () =>
   assert.match(source, /automatic|restore/i);
 });
 
+test('deployment verifies installed trees with the installed-release verifier', () => {
+  const source = readFileSync('scripts/production-deploy.mjs', 'utf8');
+
+  assert.match(source, /function verifyInstalledRelease\(root\)/);
+  assert.match(source, /verifyInstalledRelease\(target\)/);
+  assert.match(source, /verifyInstalledRelease\(root\)/);
+  assert.match(source, /verifyInstalledRelease\(release\)/);
+  assert.match(source, /verifyInstalledRelease\(current\)/);
+  assert.doesNotMatch(source, /verifyRelease\(target,/);
+  assert.doesNotMatch(source, /verifyRelease\(release,/);
+  assert.doesNotMatch(source, /verifyRelease\(\s*current,/);
+});
+
 test('release lifecycle publishes only after production install verification', () => {
   const source = readFileSync('scripts/verify-release-lifecycle.mjs', 'utf8');
 
