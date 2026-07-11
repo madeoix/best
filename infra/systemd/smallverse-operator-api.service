@@ -2,6 +2,8 @@
 Description=Smallverse VPN-only operator API
 After=network-online.target tailscaled.service
 Wants=network-online.target
+StartLimitIntervalSec=60
+StartLimitBurst=5
 Requires=tailscaled.service
 ConditionPathExists=/srv/smallverse/current/apps/api/dist/entrypoints/operator.js
 ConditionPathExists=/etc/smallverse/operator-api.env
@@ -18,6 +20,7 @@ RestartSec=5
 TimeoutStopSec=30
 KillSignal=SIGTERM
 UMask=0077
+SyslogIdentifier=smallverse-operator-api
 
 # The process is unprivileged. NoNewPrivileges remains false only because the
 # fixed service/action allowlist invokes the exact sudo commands declared in
@@ -36,7 +39,7 @@ RestrictSUIDSGID=true
 ReadOnlyPaths=-/opt/smallverse/workspace
 ReadOnlyPaths=-/opt/smallverse/automation-workspace
 ReadOnlyPaths=-/var/www/smallverse
-ReadWritePaths=-/srv/smallverse/shared
+ReadWritePaths=-/srv/smallverse/shared/operator
 ReadWritePaths=-/opt/smallverse/probe-lab-connect
 RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
 SystemCallArchitectures=native

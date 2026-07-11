@@ -2,6 +2,8 @@
 Description=Smallverse public read API
 After=network-online.target
 Wants=network-online.target
+StartLimitIntervalSec=60
+StartLimitBurst=5
 ConditionPathExists=/srv/smallverse/current/apps/api/dist/entrypoints/public.js
 ConditionPathExists=/etc/smallverse/public-api.env
 
@@ -17,6 +19,7 @@ RestartSec=5
 TimeoutStopSec=30
 KillSignal=SIGTERM
 UMask=0077
+SyslogIdentifier=smallverse-public-api
 
 NoNewPrivileges=true
 PrivateTmp=true

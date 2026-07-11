@@ -1,47 +1,57 @@
 # Production rollout gates
 
-This document is the ordered production plan for Smallverse Lab. It is not a
-single deployment command. Complete and review each gate separately.
+This is the ordered path from a clean repository to a reversible file-backed
+Beacon deployment. Stop for review between gates. A successful command is not
+permission to continue automatically.
 
-## Invariants
+## Permanent invariants
 
-These rules apply to every stage:
+- `/opt/smallverse` remains authoritative and is never changed by these tools.
+- Existing SQLite databases and preservation exports remain read-only.
+- Releases are immutable under `/srv/smallverse/releases/<full-commit>`.
+- `/srv/smallverse/current` is the only application release switch.
+- Public API binds only to loopback.
+- Operator API binds only to loopback or a confirmed Tailscale address.
+- Operator routes are never proxied by public Nginx.
+- Worker remains stopped, disabled, and blocked by environment configuration.
+- No gate deletes a source database, export, prior release, backup, or legacy
+  service.
+- PostgreSQL and ingestion are later gates and do not block the initial
+  file-backed runtime.
 
-- `/opt/smallverse` remains the authoritative preservation system.
-- Existing SQLite databases and preserved exports are opened read-only.
-- Releases are installed under `/srv/smallverse/releases/<commit>`.
-- `/srv/smallverse/current` is the only release switch.
-- The existing Nginx public site and `receipt-viewer` site are not changed
-  during inventory, foundation, or shadow verification.
-- The public API binds only to loopback.
-- The operator API binds only to a confirmed Tailscale address or loopback.
-- The worker stays disabled until ingestion handlers and reconciliation have
-  been implemented and separately approved.
-- No stage deletes a prior release, source export, SQLite database, service, or
-  backup.
+## Gate 0 — certify the repository release
 
-## Gate 0: clean source checkpoint
+Requirements:
 
-Before production work:
-
-```bash
-npm ci
-npm test
-npm run build:all
-npm run test:desktop
-
-git status --short
-git rev-parse HEAD
+```text
+Node 24.x
+npm 11.18.0
+clean Git worktree
 ```
 
-The worktree must be clean. Record the full Git commit and create a source
-archive with its SHA-256.
+Run:
 
-## Gate 1: read-only VPS inventory
+```bash
+node --version
+npm --version
+git status --short
+npm run release:lifecycle
+```
 
-Run the audit from a checked-out or exported copy of this repository on the
-VPS. The audit reads metadata and service state. It does not install packages,
-change services, read environment-file contents, or alter preservation data.
+The lifecycle verifies a fresh Git archive, clean lockfile installation, tests,
+builds, dependency policy, packaging, checksums, and a production-only install.
+The resulting files are written under ignored `releases/`:
+
+```text
+releases/smallverse-<12-char-commit>.tar.gz
+releases/smallverse-<12-char-commit>.tar.gz.sha256
+```
+
+Do not transfer an archive if certification fails or the worktree was dirty.
+
+## Gate 1 — read-only VPS inventory
+
+Transfer only enough source to run the audit, then:
 
 ```bash
 node scripts/production-audit.mjs \
@@ -52,73 +62,70 @@ node scripts/evaluate-production-audit.mjs \
   --stage inventory
 ```
 
-Database hashing is optional because a multi-gigabyte SQLite file can take a
-long time to read:
-
-```bash
-node scripts/production-audit.mjs \
-  --hash-preservation \
-  --output "$HOME/smallverse-production-audit-with-hashes.json"
-```
-
-Review the report before approving foundation changes. Confirm at minimum:
+This gate changes nothing except the requested private report file. Review:
 
 - OS and architecture;
-- Node/npm versions;
-- free disk and memory;
-- Tailscale IPv4;
-- Nginx enabled sites and config-test result;
-- PostgreSQL presence and readiness;
-- existing Smallverse services and timers;
+- Node/npm presence and exact paths;
+- disk and memory;
+- Tailscale address;
+- Nginx sites and `nginx -t`;
+- current Smallverse services/timers;
+- listener conflicts;
 - `/opt/smallverse` and Observatory database locations;
-- `/srv/smallverse` and `/etc/smallverse` state;
-- occupied listener ports.
+- deployment path conflicts;
+- PostgreSQL state as information only.
 
-## Gate 2: backup and recovery proof
+Stop and discuss every blocker or unexpected fact before Gate 2.
 
-This is a separately approved, write-capable maintenance step.
+## Gate 2 — backup and recovery proof
 
+This is separately approved maintenance, not automated by the repository.
 Before installing anything:
 
-1. Create a provider snapshot or an independent backup of `/opt/smallverse`.
-2. Create a read-only copy or database-safe backup of each authoritative SQLite
-   database.
-3. Record SHA-256 values for the backup artifacts.
-4. Open the copied database with a read-only SQLite connection and run an
-   integrity check.
-5. Record the existing Nginx configuration and enabled-site symlinks.
-6. Record enabled and active systemd units and timers.
+1. create a provider snapshot or independent backup of `/opt/smallverse`;
+2. create a database-safe read-only copy of every authoritative SQLite file;
+3. record SHA-256 values;
+4. open the copies read-only and perform integrity checks;
+5. record Nginx available/enabled configuration and symlinks;
+6. record enabled and active systemd units and timers.
 
-A backup is not accepted merely because a file exists. Its checksum and
-readability must be verified.
+A backup is accepted only after checksum and readability verification.
 
-## Gate 3: production foundation
+## Gate 3 — prerequisite and foundation preparation
 
-Do not place files over `/opt/smallverse`.
-
-Prepare:
+The audit determines what, if anything, is missing. Package installation is
+manual and separately reviewed. Required for the file-backed runtime:
 
 ```text
-/srv/smallverse/releases
-/srv/smallverse/shared
-/etc/smallverse
+/usr/bin/node  -> Node 24.x
+/usr/bin/npm   -> npm 11.18.0
+Nginx
+Tailscale with a confirmed IPv4 address
+systemd-analyze, visudo, getent, useradd
 ```
 
-Create dedicated non-login service accounts:
+PostgreSQL is not required yet.
 
-```text
-smallverse-public
-smallverse-operator
-smallverse-worker
+Preview the tracked foundation operation:
+
+```bash
+sudo /usr/bin/node scripts/production-deploy.mjs foundation \
+  --audit "$HOME/smallverse-production-audit.json"
 ```
 
-Install Node 24.x, PostgreSQL, Nginx, and Tailscale prerequisites. Create
-separate PostgreSQL roles for migration ownership, public reads, operator audit
-access, and worker writes. PostgreSQL begins empty; it is not a replacement for
-SQLite at this gate.
+After reviewing the plan:
 
-Copy environment templates from `infra/env/`, replace every placeholder, and
-install the real files as root-owned mode `0600`:
+```bash
+sudo /usr/bin/node scripts/production-deploy.mjs foundation \
+  --audit "$HOME/smallverse-production-audit.json" \
+  --apply --confirm FOUNDATION
+```
+
+This creates only dedicated accounts and safe directories.
+
+## Gate 4 — private production environment
+
+Create these from the tracked examples:
 
 ```text
 /etc/smallverse/public-api.env
@@ -126,13 +133,24 @@ install the real files as root-owned mode `0600`:
 /etc/smallverse/worker.env
 ```
 
-Keep this value unchanged:
+Install as `root:root` mode `0600`. Set all three
+`SMALLVERSE_VERSION` values to the full release commit. Keep:
 
 ```text
 SMALLVERSE_WORKER_ENABLED=false
 ```
 
-Re-run the audit and evaluate the foundation gate:
+Database URLs may remain absent for the initial file-backed runtime.
+
+Validate without printing values:
+
+```bash
+sudo /usr/bin/node scripts/validate-production-env.mjs \
+  --dir /etc/smallverse \
+  --commit <full-release-commit>
+```
+
+Re-run the audit and require the foundation stage to pass:
 
 ```bash
 node scripts/production-audit.mjs \
@@ -143,134 +161,176 @@ node scripts/evaluate-production-audit.mjs \
   --stage foundation
 ```
 
-Do not proceed with blockers.
+PostgreSQL may appear as a warning. Other blockers stop the rollout.
 
-## Gate 4: build and verify an immutable release
+## Gate 5 — transfer and install the immutable release
 
-Build on Node 24 from a clean Git worktree:
-
-```bash
-npm ci
-npm test
-npm run build:all
-npm run release:package
-```
-
-When packaging an exported source tree without `.git`, provide the verified
-commit explicitly:
-
-```bash
-SMALLVERSE_RELEASE_COMMIT=<verified-git-sha> \
-  npm run release:package
-```
-
-The packager:
-
-- includes static web output and all three API entrypoints;
-- includes workspace package manifests required by `npm ci --omit=dev`;
-- includes migrations and production operations files;
-- writes `RELEASE.json`;
-- writes and verifies `MANIFEST.sha256`;
-- rejects unsafe or incomplete release contents;
-- verifies the directory and final archive before publishing its outer hash.
-
-Verify again after transfer to the VPS:
+Transfer both certified files. Verify the outer checksum before using the
+control surface:
 
 ```bash
 sha256sum -c smallverse-<commit>.tar.gz.sha256
-node scripts/verify-production-release.mjs \
-  smallverse-<commit>.tar.gz
 ```
 
-Extract into a new commit-named directory. Never extract over `current` or a
-prior release. Run `npm ci --omit=dev --ignore-scripts` inside that immutable
-release before switching the symlink.
-
-## Gate 5: install services without public cutover
-
-Install the systemd units from `infra/systemd/` and validate them before
-starting anything. The units enforce these boundaries:
-
-- public API: `smallverse-public`, loopback, read-only preservation paths;
-- operator API: `smallverse-operator`, Tailscale/loopback, exact sudo allowlist;
-- worker: `smallverse-worker`, read-only preservation paths, disabled by env.
-
-Start only the public and operator APIs. Do not enable or start the worker.
-Directly verify:
+Preview:
 
 ```bash
-curl -fsS http://127.0.0.1:8780/api/v1/health
-curl -fsS http://<tailscale-ip>:8781/ops/v1/health
+sudo /usr/bin/node scripts/production-deploy.mjs install \
+  --release ./smallverse-<commit>.tar.gz \
+  --checksum ./smallverse-<commit>.tar.gz.sha256
 ```
 
-## Gate 6: loopback-only Nginx shadow
+The dry run prints the exact `INSTALL:<sha-prefix>` confirmation. Repeat with
+`--apply --confirm ...` only after review. Installation verifies the archive,
+performs a production-only lockfile install with lifecycle scripts disabled,
+verifies runtime dependencies, and creates a root-owned immutable release. It
+does not switch `current` or start services.
 
-Render `infra/nginx/smallverse-lab.shadow.conf.template`. It listens only on
-`127.0.0.1:8088` and therefore cannot take public traffic.
+## Gate 6 — install runtime policy without starting it
 
-Validate Nginx, reload it, and test locally:
+Preview:
 
 ```bash
-curl -fsS http://127.0.0.1:8088/
-SMALLVERSE_PUBLIC_API_BASE=http://127.0.0.1:8088 \
-  node scripts/smoke-production.mjs
+sudo /usr/bin/node scripts/production-deploy.mjs units \
+  --commit <full-release-commit>
 ```
 
-Operator smoke checks are optional and read-only:
+Then repeat with the reported `UNITS:<commit-prefix>` confirmation. This
+validates and installs systemd units and the narrow sudoers file, then runs
+`daemon-reload`. It starts and enables nothing.
+
+## Gate 7 — select release and start private APIs
+
+Preview:
 
 ```bash
-SMALLVERSE_OPERATOR_TOKEN='<token-from-secure-shell-env>' \
-  node scripts/smoke-production.mjs \
-  --public-base http://127.0.0.1:8088 \
-  --with-operator \
-  --operator-base http://<tailscale-ip>:8781
+sudo /usr/bin/node scripts/production-deploy.mjs switch \
+  --commit <full-release-commit>
 ```
 
-The smoke script never calls restart, session import, or other mutation routes.
+Then repeat with the reported `SWITCH:<commit-prefix>` confirmation. The switch
+is atomic. Only public and operator APIs restart. Direct health checks run
+automatically, and failure restores the previous release or stops the new
+services when no prior release exists.
 
-Re-run the audit with `--stage shadow`. The worker being active is a blocker.
-
-## Gate 7: PostgreSQL migration verification
-
-Run migrations only against the new PostgreSQL database, using the migration
-owner role. Then verify table availability using a non-source database:
+Inspect the selected release and service state:
 
 ```bash
-DATABASE_URL='<migration-owner-url>' npm run db:migrate
-DATABASE_URL='<verification-url>' node scripts/verify-postgres.mjs
+sudo /usr/bin/node scripts/production-deploy.mjs status
 ```
 
-This gate does not import Observatory data and does not change public reads.
+## Gate 8 — loopback-only Nginx shadow
 
-## Gate 8: ingestion implementation and comparison
+Preview and then apply only after review:
 
-This is a later code batch. The importer must be idempotent, transactional,
-checkpointed, append-oriented, source-traceable, and quarantine malformed
-records. It reads preserved exports and SQLite without mutation.
+```bash
+sudo /usr/bin/node scripts/production-deploy.mjs shadow --enable
 
-Public reads remain file-backed while PostgreSQL results are compared privately.
-No endpoint changes authority until differences are explained and approved.
+sudo /usr/bin/node scripts/production-deploy.mjs shadow --enable \
+  --apply --confirm SHADOW:ENABLE
+```
 
-## Gate 9: public cutover
+The tracked site listens only on `127.0.0.1:8088`. Nginx is snapshotted,
+validated, reloaded, and subjected to static plus API smoke checks. Failure
+restores the prior Nginx state.
 
-Public cutover is separate from deployment and ingestion. Before approval:
+Run a fresh audit and require `--stage shadow` to pass:
 
-- shadow smoke checks pass;
-- file and PostgreSQL comparisons pass;
-- the previous public Nginx config is backed up;
-- the prior release symlink target is recorded;
-- rollback commands are prepared and tested syntactically.
+```bash
+node scripts/production-audit.mjs \
+  --output "$HOME/smallverse-production-shadow.json"
 
-Cut over only the intended `/api/` route and static site. Never expose the
-operator listener.
+node scripts/evaluate-production-audit.mjs \
+  "$HOME/smallverse-production-shadow.json" \
+  --stage shadow
+```
 
-## Rollback rule
+Confirm the worker is both inactive and disabled. Then run the combined
+read-only doctor:
 
-Rollback uses two independent controls:
+```bash
+sudo /usr/bin/node scripts/production-doctor.mjs \
+  --release ./smallverse-<commit>.tar.gz \
+  --audit "$HOME/smallverse-production-shadow.json" \
+  --stage shadow \
+  --env-dir /etc/smallverse
+```
 
-1. restore the previous Nginx enabled-site/configuration;
-2. atomically repoint `/srv/smallverse/current` to the previous immutable
-   release and restart only the affected new services.
+## Gate 9 — public cutover, separately approved
 
-The existing preservation system remains untouched, so rollback never depends
-on PostgreSQL or the new worker.
+Public activation is not implied by a successful shadow. First identify the
+exact existing Nginx site and whether it owns TLS.
+
+For a plain reviewed HTTP site, preview:
+
+```bash
+sudo /usr/bin/node scripts/production-deploy.mjs activate \
+  --hostname <public-hostname> \
+  --replace-site <existing-site-filename>
+```
+
+The apply confirmation is
+`ACTIVATE:<hostname>:<commit-prefix>`. The command backs up only the named site,
+validates and reloads Nginx, and smokes the SPA and API through loopback using
+the public Host header. Failure restores the previous Nginx state.
+
+The tool refuses to overwrite TLS/443/HTTP3/QUIC configuration. For an existing
+HTTPS site, review and include:
+
+```text
+infra/nginx/smallverse-lab.locations.conf.template
+```
+
+inside the existing TLS server block. That fragment owns no listener,
+hostname, certificate, or redirect. The manual edit, `nginx -t`, reload, and
+smoke require a separate review.
+
+After either activation path is verified, preview and separately approve boot
+persistence:
+
+```bash
+sudo /usr/bin/node scripts/production-deploy.mjs finalize
+```
+
+Repeat with the reported `FINALIZE:<commit-prefix>` confirmation. Finalization
+rechecks Nginx and both API health endpoints, refuses an active or enabled
+worker, and enables only public/operator services. It records prior enablement
+for rollback.
+
+## Rollback
+
+Each switch, shadow, and activation operation writes a private state record
+under `/srv/smallverse/shared/deployments`. Preview the latest rollback:
+
+```bash
+sudo /usr/bin/node scripts/production-deploy.mjs rollback
+```
+
+Then repeat with `--apply --confirm ROLLBACK:<state-id>`. A specific older state
+may be selected with `--state <file>`.
+
+Rollback restores only the release symlink and/or Nginx snapshot recorded by
+that operation. It does not delete the failed release or alter preservation
+data.
+
+## Later gate — PostgreSQL and ingestion
+
+Only after the file-backed deployment is stable:
+
+1. install and secure PostgreSQL;
+2. create separate migration, public-read, operator-audit, and worker roles;
+3. evaluate the audit with `--stage database`;
+4. run migrations only against the new PostgreSQL database;
+5. implement idempotent, transactional, checkpointed importers;
+6. compare PostgreSQL results privately while public reads remain file-backed;
+7. approve endpoint authority changes separately.
+
+No current rollout command enables ingestion or modifies SQLite.
+
+## Lockfile portability gate
+
+Every source and release certification must pass `npm run lockfile:verify` before
+installing dependencies. The repository pins `https://registry.npmjs.org/` and
+permits only public npm tarball URLs plus repository-relative workspace entries
+inside `package-lock.json`. Private mirrors, localhost, private IP addresses,
+plain HTTP, and unknown package registries are release blockers.

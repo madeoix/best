@@ -1,3 +1,4 @@
+.npmrc
 .nvmrc
 package.json
 package-lock.json

@@ -2,6 +2,8 @@
 Description=Smallverse preservation ingestion worker
 After=network-online.target postgresql.service
 Wants=network-online.target
+StartLimitIntervalSec=60
+StartLimitBurst=5
 ConditionPathExists=/srv/smallverse/current/apps/api/dist/entrypoints/worker.js
 ConditionPathExists=/etc/smallverse/worker.env
 
@@ -17,6 +19,7 @@ RestartSec=5
 TimeoutStopSec=60
 KillSignal=SIGTERM
 UMask=0077
+SyslogIdentifier=smallverse-worker
 
 NoNewPrivileges=true
 PrivateTmp=true
@@ -35,7 +38,7 @@ RestrictSUIDSGID=true
 ReadOnlyPaths=-/opt/smallverse/workspace
 ReadOnlyPaths=-/opt/smallverse/automation-workspace
 ReadOnlyPaths=-/var/www/smallverse
-ReadWritePaths=-/srv/smallverse/shared
+ReadWritePaths=-/srv/smallverse/shared/worker
 RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
 SystemCallArchitectures=native
 LockPersonality=true

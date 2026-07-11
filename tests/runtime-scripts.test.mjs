@@ -42,7 +42,18 @@ test('runtime JavaScript entry scripts parse', () => {
     'scripts/evaluate-production-audit.mjs',
     'scripts/smoke-production.mjs',
     'scripts/verify-production-release.mjs',
-    'scripts/package-release.mjs'
+    'scripts/package-release.mjs',
+    'scripts/audit-dependencies.mjs',
+    'scripts/production-deploy.mjs',
+    'scripts/production-doctor.mjs',
+    'scripts/validate-production-env.mjs',
+    'scripts/verify-installed-release.mjs',
+    'scripts/verify-release-lifecycle.mjs',
+    'scripts/verify-toolchain.mjs',
+    'scripts/write-dependency-inventory.mjs',
+    'scripts/verify-lockfile-portability.mjs',
+    'scripts/lib/production-config.mjs',
+    'scripts/lib/production-release.mjs'
   ]) {
     commandSucceeds(process.execPath, ['--check', script]);
   }
@@ -116,6 +127,12 @@ test('production runtime is pinned and exposes gated operations commands', () =>
   );
 
   assert.equal(packageJson.engines.node, '24.x');
+  assert.equal(packageJson.engines.npm, '11.x');
+  assert.equal(packageJson.packageManager, 'npm@11.18.0');
+  assert.deepEqual(packageJson.allowScripts, {
+    '@hugeicons/svelte': true,
+    esbuild: true
+  });
   assert.equal(readFileSync('.nvmrc', 'utf8').trim(), '24');
   assert.equal(
     packageJson.scripts['production:audit'],
@@ -128,6 +145,18 @@ test('production runtime is pinned and exposes gated operations commands', () =>
   assert.equal(
     packageJson.scripts['release:verify'],
     'node scripts/verify-production-release.mjs'
+  );
+  assert.equal(
+    packageJson.scripts['production:deploy'],
+    'node scripts/production-deploy.mjs'
+  );
+  assert.equal(
+    packageJson.scripts['production:doctor'],
+    'node scripts/production-doctor.mjs'
+  );
+  assert.equal(
+    packageJson.scripts['release:lifecycle'],
+    'node scripts/verify-release-lifecycle.mjs'
   );
 });
 
@@ -204,6 +233,9 @@ test('release packager includes workspace manifests and verifies output', () => 
   assert.match(source, /packages\/database\/package\.json/);
   assert.match(source, /MANIFEST\.sha256/);
   assert.match(source, /verify-production-release\.mjs/);
+  assert.match(source, /DEPENDENCY-INVENTORY\.json/);
+  assert.match(source, /SECURITY-AUDIT\.json/);
+  assert.match(source, /production-deploy\.mjs/);
   assert.match(source, /SMALLVERSE_RELEASE_COMMIT/);
   assert.match(source, /status',\s*'--porcelain'/);
   assert.match(source, /clean Git worktree/);
@@ -242,6 +274,8 @@ test('production units preserve the source boundary and service identities', () 
   assert.doesNotMatch(operatorUnit, /MemoryDenyWriteExecute=true/);
   assert.doesNotMatch(workerUnit, /MemoryDenyWriteExecute=true/);
   assert.match(workerEnv, /^SMALLVERSE_WORKER_ENABLED=false$/m);
+  assert.match(operatorUnit, /^ReadWritePaths=-\/srv\/smallverse\/shared\/operator$/m);
+  assert.match(workerUnit, /^ReadWritePaths=-\/srv\/smallverse\/shared\/worker$/m);
 });
 
 test('shadow Nginx listener cannot claim a public interface', () => {
@@ -254,4 +288,63 @@ test('shadow Nginx listener cannot claim a public interface', () => {
   assert.doesNotMatch(source, /^\s*listen (?:80|443|\[::\])/m);
   assert.match(source, /location \^~ \/ops\//);
   assert.doesNotMatch(source, /proxy_pass[^;]*8781/);
+  assert.match(source, /location \^~ \/api\//);
+  assert.match(source, /location \/avatar-oracles\//);
+  assert.match(source, /X-Content-Type-Options/);
+});
+
+test('TLS-managed public sites require reviewed fragment integration', () => {
+  const fragment = readFileSync(
+    'infra/nginx/smallverse-lab.locations.conf.template',
+    'utf8'
+  );
+  const deploy = readFileSync('scripts/production-deploy.mjs', 'utf8');
+
+  assert.doesNotMatch(fragment, /^\s*(?:listen|server_name|ssl_certificate)\b/m);
+  assert.match(fragment, /location \^~ \/api\//);
+  assert.match(fragment, /location \^~ \/ops\/[\s\S]*return 404/);
+  assert.doesNotMatch(fragment, /proxy_pass[^;]*8781/);
+  assert.match(deploy, /Refusing to replace TLS-managed Nginx site/);
+  assert.match(deploy, /smallverse-lab\.locations\.conf\.template/);
+  assert.match(deploy, /ssl_certificate/);
+});
+
+test('production deployment mutations are explicit and preservation-safe', () => {
+  const source = readFileSync('scripts/production-deploy.mjs', 'utf8');
+
+  assert.match(source, /if \(!options\.apply\) return/);
+  assert.match(source, /requireConfirmation/);
+  assert.match(source, /INSTALL:/);
+  assert.match(source, /archiveDigest\.slice\(0, 12\)/);
+  assert.match(source, /Root-private release copy failed SHA-256 verification/);
+  assert.match(source, /chmod\(stagedArchive, 0o600\)/);
+  assert.match(source, /SWITCH:/);
+  assert.match(source, /ACTIVATE:/);
+  assert.match(source, /FINALIZE:/);
+  assert.match(source, /ROLLBACK:/);
+  assert.doesNotMatch(source, /(?:rm|rename|writeFile|copyFile)\([^\n]*\/opt\/smallverse/);
+  assert.doesNotMatch(source, /systemctl['"], \[['"](?:start|restart|enable)['"], ['"]smallverse-worker/);
+  assert.match(source, /Refusing to finalize while the ingestion worker is active or enabled/);
+  assert.match(source, /serviceEnabled/);
+  assert.match(source, /--ignore-scripts/);
+  assert.match(source, /SMALLVERSE_NPM_BIN: '\/usr\/bin\/npm'/);
+  assert.match(source, /automatic|restore/i);
+});
+
+test('release lifecycle publishes only after production install verification', () => {
+  const source = readFileSync('scripts/verify-release-lifecycle.mjs', 'utf8');
+
+  assert.match(source, /verify-installed-release\.mjs/);
+  assert.match(source, /SMALLVERSE_CERTIFIED_RELEASE_ROOT/);
+  assert.match(source, /copyFile\(packageResult\.archive, certifiedArchive\)/);
+  assert.match(source, /sha256sum/);
+});
+
+test('database readiness is separate from file-backed shadow readiness', () => {
+  const source = readFileSync('scripts/evaluate-production-audit.mjs', 'utf8');
+
+  assert.match(source, /'database'/);
+  assert.match(source, /POSTGRES_NOT_READY/);
+  assert.match(source, /does not block the file-backed shadow runtime/);
+  assert.match(source, /evaluateDatabase/);
 });

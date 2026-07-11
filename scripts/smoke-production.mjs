@@ -8,6 +8,8 @@ function usage() {
     `  --public-base <url>    Public API base (default: loopback:8780).\n` +
     `  --with-operator        Also run read-only operator checks.\n` +
     `  --operator-base <url>  Operator API base.\n` +
+    `  --with-static          Verify the static SPA root through Nginx.\n` +
+    `  --host-header <host>   Send an explicit Host header.\n` +
     `  --help                 Show this help.\n\n` +
     `Operator checks require SMALLVERSE_OPERATOR_TOKEN. No mutation routes ` +
     `are called.\n`);
@@ -19,7 +21,9 @@ function parseArguments(argv) {
       process.env.SMALLVERSE_PUBLIC_API_BASE || 'http://127.0.0.1:8780',
     operatorBase:
       process.env.SMALLVERSE_OPERATOR_API_BASE || 'http://127.0.0.1:8781',
-    withOperator: false
+    withOperator: false,
+    withStatic: false,
+    hostHeader: null
   };
 
   for (let index = 0; index < argv.length; index += 1) {
@@ -35,12 +39,18 @@ function parseArguments(argv) {
       continue;
     }
 
-    if (argument === '--public-base' || argument === '--operator-base') {
+    if (argument === '--with-static') {
+      result.withStatic = true;
+      continue;
+    }
+
+    if (argument === '--public-base' || argument === '--operator-base' || argument === '--host-header') {
       const value = argv[index + 1];
       if (!value) throw new Error(`${argument} requires a URL`);
 
       if (argument === '--public-base') result.publicBase = value;
-      else result.operatorBase = value;
+      else if (argument === '--operator-base') result.operatorBase = value;
+      else result.hostHeader = value;
 
       index += 1;
       continue;
@@ -68,7 +78,12 @@ async function request(
 
   try {
     const response = await fetch(`${base}${pathname}`, {
-      headers,
+      headers: {
+        ...(globalThis.SMALLVERSE_SMOKE_HOST_HEADER
+          ? { host: globalThis.SMALLVERSE_SMOKE_HOST_HEADER }
+          : {}),
+        ...headers
+      },
       signal: controller.signal
     });
     const body = parse === 'text'
@@ -89,7 +104,14 @@ async function request(
   }
 }
 
-async function smokePublic(base) {
+async function smokePublic(base, withStatic = false) {
+  if (withStatic) {
+    const html = await request(base, '/', { parse: 'text' });
+    if (!/<!doctype html|<html/i.test(html)) {
+      throw new Error('Static root did not return the Beacon SPA document.');
+    }
+  }
+
   const health = await request(base, '/api/v1/health');
   if (!health?.data?.dependencies) {
     throw new Error('Public health response omitted dependency status.');
@@ -166,8 +188,10 @@ async function smokeOperator(base) {
 async function main() {
   const options = parseArguments(process.argv.slice(2));
 
+  globalThis.SMALLVERSE_SMOKE_HOST_HEADER = options.hostHeader;
   console.log(`Public smoke target: ${options.publicBase}`);
-  await smokePublic(options.publicBase);
+  if (options.hostHeader) console.log(`Host header: ${options.hostHeader}`);
+  await smokePublic(options.publicBase, options.withStatic);
 
   if (options.withOperator) {
     console.log(`Operator smoke target: ${options.operatorBase}`);

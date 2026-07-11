@@ -1,13 +1,13 @@
 # Smallverse Lab
 
-Smallverse Lab is a consumer-facing preservation and exploration interface for
-SmallWorlds data, spaces, items, avatars, prices, and captured evidence.
+Smallverse Lab is the Beacon preservation and exploration runtime for SmallWorlds
+spaces, items, avatars, prices, and captured evidence.
 
-## Runtime layout
+## Runtime boundaries
 
 ```text
-SvelteKit static SPA
-├── public API client
+Static Svelte SPA
+├── public read API client
 └── browser avatar renderer
 
 Tauri desktop boundary
@@ -16,27 +16,38 @@ Tauri desktop boundary
 └── private operator API mediation
 
 Fastify runtime
-├── public read API
-├── VPN-only operator API
-└── preservation worker
-
-PostgreSQL
-└── canonical metadata and jobs
+├── loopback public read API
+├── Tailscale-only operator API
+└── disabled-by-default preservation worker
 
 Existing preservation system
-└── /opt/smallverse
+└── /opt/smallverse remains authoritative and read-only to the new runtime
 ```
 
-The existing Python preservation system remains active while data is imported
-into PostgreSQL. Public requests no longer SSH into that system. The static frontend contains no server endpoints.
+The public runtime currently reads allowlisted preserved exports. PostgreSQL and
+canonical ingestion are a later, separately approved stage; they do not block a
+safe file-backed deployment.
 
-## Install and verify
+## Toolchain and local verification
+
+Production and release certification are pinned to Node 24.x and npm 11.18.0.
+Use a clean checkout:
 
 ```bash
-npm install
+node --version
+npm --version
+npm ci
 npm test
 npm run build:all
 npm run test:desktop
+```
+
+The dependency policy allows no known production findings and no high or
+critical findings anywhere in the complete dependency tree. It never runs an
+automatic audit fix:
+
+```bash
+npm run dependency:audit
 ```
 
 ## Local integrated runtime
@@ -46,54 +57,60 @@ npm run infra:up
 
 export DATABASE_URL='postgresql://smallverse:smallverse-development-only@127.0.0.1:5432/smallverse'
 npm run db:verify
-
 npm run sync:exports
 npm run dev:all
 ```
 
-In a second terminal:
+In another terminal:
 
 ```bash
 npm run smoke:runtime
 ```
 
-Detailed instructions:
+See `docs/operations/local-runtime.md`.
 
-```text
-docs/operations/local-runtime.md
-```
+## Certified production release
 
-## Public read model
-
-The public API reads only allowlisted preservation exports while PostgreSQL
-ingestion is built. Item, avatar, space, Observatory, and cached spin-price
-routes are implemented in `apps/api`.
-
-```text
-docs/architecture/public-read-model.md
-docs/architecture/endpoint-migration.md
-```
-
-## Production rollout
-
-Production is pinned to Node 24.x and proceeds through read-only inventory,
-foundation, immutable release verification, loopback shadow deployment, data
-reconciliation, and a separately approved cutover.
+The full release lifecycle builds from a clean Git archive, installs from the
+lockfile, runs tests and builds, audits dependencies, packages the immutable
+release, performs a production-only install, and verifies the result:
 
 ```bash
-npm run production:audit -- --output production-audit.json
-npm run production:evaluate -- production-audit.json --stage inventory
-npm run release:package
+npm run release:lifecycle
 ```
 
-The worker is disabled by default in production and authoritative preservation
-paths remain read-only. Follow:
+A verified archive and its checksum are written to `releases/`. No command in
+that lifecycle connects to or changes the VPS.
+
+## VPS operations
+
+The production control surface is dry-run by default:
+
+```bash
+npm run production:deploy -- status
+npm run production:deploy -- <command> [options]
+```
+
+Every mutating command requires both `--apply` and a command-specific
+confirmation value shown by its dry run. It never installs OS packages, changes
+`/opt/smallverse`, runs database migrations, or starts the worker.
+
+Before any live action, run and review the read-only audit:
+
+```bash
+npm run production:audit -- --output "$HOME/smallverse-production-audit.json"
+npm run production:evaluate -- \
+  "$HOME/smallverse-production-audit.json" --stage inventory
+```
+
+Follow these documents in order:
 
 ```text
 docs/operations/production-rollout.md
+docs/operations/production-command-reference.md
 docs/operations/production-audit.md
+docs/operations/vps-foundation.md
 ```
-
 
 ## Desktop development
 
@@ -103,13 +120,17 @@ Start the private runtime in one terminal:
 npm run dev:runtime
 ```
 
-Then start the desktop shell in another terminal:
+Then start the desktop shell in another:
 
 ```bash
 npm run dev:desktop
 ```
 
-The development launcher supplies loopback-only API defaults, verifies both APIs
-before opening Tauri, and keeps the operator token outside browser JavaScript.
-Environment variables may still override the defaults. Local files, sessions,
-and process launchers remain Tauri-only.
+The desktop launcher verifies both APIs before opening Tauri. Operator tokens,
+local files, sessions, and process launchers remain outside browser JavaScript.
+
+### Dependency source boundary
+
+Run `npm run lockfile:verify` before installing or packaging. Beacon release
+lockfiles may resolve packages only from `https://registry.npmjs.org/` or local
+workspace paths; private mirrors and unknown registries are rejected.

@@ -12,41 +12,62 @@ The audit does not:
 - reload Nginx;
 - read `/etc/smallverse/*.env` contents;
 - write under `/opt`, `/srv`, `/etc`, or `/var/www`;
-- connect to Smallverse application endpoints;
+- call Smallverse application endpoints;
 - modify PostgreSQL or SQLite.
 
-It may write one report file when `--output` is supplied. That file is created
-with mode `0600`.
+When `--output` is supplied, the only write is the requested mode-`0600` JSON
+report.
 
 ## Report contents
 
-The JSON report includes:
+The report includes:
 
 - host, OS, kernel, architecture, user, Node, and npm;
-- availability of required commands;
-- fixed service-account existence;
+- availability of exact deployment commands;
+- service-account existence;
 - fixed systemd service and timer states;
 - listener addresses without process command lines;
 - Tailscale IPv4 availability;
 - Nginx version, config-test result, and enabled-site metadata;
-- PostgreSQL client version and readiness;
-- metadata for preservation and deployment paths;
+- PostgreSQL client availability and readiness;
+- metadata for preservation, release, shared, environment, and unit paths;
 - discovered Observatory database metadata;
 - disk and memory summaries.
 
-Environment-file contents and tokens are never included.
+Environment values and tokens are never included.
+
+## Commands
+
+```bash
+npm run production:audit -- \
+  --output "$HOME/smallverse-production-audit.json"
+
+npm run production:evaluate -- \
+  "$HOME/smallverse-production-audit.json" --stage inventory
+```
+
+Hashing a multi-gigabyte preservation database is optional and can be slow:
+
+```bash
+npm run production:audit -- \
+  --hash-preservation \
+  --output "$HOME/smallverse-production-audit-with-hashes.json"
+```
 
 ## Evaluation stages
 
-`evaluate-production-audit.mjs` has three increasingly strict stages:
+The evaluator has four stages:
 
-- `inventory`: validates that the preservation source and audit tools are
-  discoverable;
-- `foundation`: additionally requires Node 24, PostgreSQL, Tailscale, service
-  accounts, deployment paths, private environment files, and a current release
-  symlink;
-- `shadow`: additionally requires public/operator services active, the worker
-  inactive, and no wildcard operator listener.
+- `inventory`: confirms the authoritative preservation root and reports basic
+  tooling without requiring any deployment changes;
+- `foundation`: requires Node 24.x, npm 11.18.0, Nginx, Tailscale, dedicated
+  accounts, safe directories, and root-owned private environment files;
+- `shadow`: additionally requires a selected immutable release, installed
+  units, active public/operator APIs, private listeners, and a stopped and
+  disabled worker;
+- `database`: separately requires PostgreSQL tooling, account, and readiness.
 
-A blocker produces a non-zero exit status. Warnings remain visible but do not
-change the exit status.
+PostgreSQL absence is only a warning during file-backed foundation and shadow
+stages. It blocks the later database stage, not initial Beacon deployment.
+
+A blocker exits non-zero. Warnings remain visible for review.

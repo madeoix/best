@@ -38,6 +38,7 @@ const FIXED_ACCOUNTS = [
 const FIXED_PATHS = [
   '/',
   '/usr/bin/node',
+  '/usr/bin/npm',
   '/opt/smallverse',
   '/opt/smallverse/workspace',
   '/opt/smallverse/automation-workspace',
@@ -46,11 +47,18 @@ const FIXED_PATHS = [
   '/srv/smallverse',
   '/srv/smallverse/releases',
   '/srv/smallverse/shared',
+  '/srv/smallverse/shared/operator',
+  '/srv/smallverse/shared/worker',
+  '/srv/smallverse/shared/deployments',
   '/srv/smallverse/current',
   '/etc/smallverse',
   '/etc/smallverse/public-api.env',
   '/etc/smallverse/operator-api.env',
-  '/etc/smallverse/worker.env'
+  '/etc/smallverse/worker.env',
+  '/etc/systemd/system/smallverse-public-api.service',
+  '/etc/systemd/system/smallverse-operator-api.service',
+  '/etc/systemd/system/smallverse-worker.service',
+  '/etc/sudoers.d/smallverse-operator'
 ];
 
 function usage() {
@@ -339,6 +347,10 @@ async function main() {
     'npm',
     'nginx',
     'systemctl',
+    'systemd-analyze',
+    'visudo',
+    'getent',
+    'useradd',
     'ss',
     'tailscale',
     'psql',

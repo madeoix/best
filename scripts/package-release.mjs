@@ -1,6 +1,7 @@
 import { createHash } from 'node:crypto';
 import { execFile } from 'node:child_process';
 import {
+  chmod,
   cp,
   mkdir,
   readFile,
@@ -15,10 +16,25 @@ import { promisify } from 'node:util';
 
 const execute = promisify(execFile);
 const root = process.cwd();
+const packageJson = JSON.parse(
+  await readFile(path.join(root, 'package.json'), 'utf8')
+);
+const expectedPackageManager = packageJson.packageManager;
+
+await execute(process.execPath, ['scripts/verify-lockfile-portability.mjs'], { cwd: root });
 
 if (Number(process.versions.node.split('.')[0]) !== 24) {
   throw new Error(
     `Production releases must be built with Node 24.x; found ${process.version}`
+  );
+}
+
+const npmVersion = (
+  await execute('npm', ['--version'], { cwd: root })
+).stdout.trim();
+if (`npm@${npmVersion}` !== expectedPackageManager) {
+  throw new Error(
+    `Production releases require ${expectedPackageManager}; found npm@${npmVersion}`
   );
 }
 
@@ -133,12 +149,21 @@ const sources = [
   'infra',
   'deploy',
   'docs/operations',
-  'scripts/production-audit.mjs',
+  'scripts/lib',
+  'scripts/audit-dependencies.mjs',
   'scripts/evaluate-production-audit.mjs',
+  'scripts/production-audit.mjs',
+  'scripts/production-deploy.mjs',
+  'scripts/production-doctor.mjs',
   'scripts/run-db-verify.mjs',
   'scripts/smoke-production.mjs',
+  'scripts/validate-production-env.mjs',
+  'scripts/verify-installed-release.mjs',
   'scripts/verify-postgres.mjs',
-  'scripts/verify-production-release.mjs'
+  'scripts/verify-production-release.mjs',
+  'scripts/verify-toolchain.mjs',
+  'scripts/write-dependency-inventory.mjs',
+  'scripts/verify-lockfile-portability.mjs'
 ];
 
 for (const source of sources) {
@@ -147,18 +172,41 @@ for (const source of sources) {
   await cp(absolute, path.join(staging, source), { recursive: true });
 }
 
+await execute(
+  process.execPath,
+  ['scripts/write-dependency-inventory.mjs', path.join(staging, 'DEPENDENCY-INVENTORY.json')],
+  { cwd: root }
+);
+await execute(
+  process.execPath,
+  ['scripts/audit-dependencies.mjs', '--output', path.join(staging, 'SECURITY-AUDIT.json'), '--json'],
+  { cwd: root, maxBuffer: 32 * 1024 * 1024 }
+);
+await chmod(path.join(staging, 'DEPENDENCY-INVENTORY.json'), 0o644);
+await chmod(path.join(staging, 'SECURITY-AUDIT.json'), 0o644);
+
 await writeFile(
   path.join(staging, 'RELEASE.json'),
   JSON.stringify({
-    schemaVersion: 1,
+    schemaVersion: 2,
     commit,
+    artifact: `smallverse-${shortCommit}`,
     generatedAt: new Date().toISOString(),
     node: process.version,
-    packageManager: `npm@${process.env.npm_config_user_agent?.match(/npm\/([^\s]+)/)?.[1] ?? 'unknown'}`,
+    packageManager: expectedPackageManager,
+    releaseFormat: 'immutable-vps-release-v1',
     sourceBoundary: {
       authoritativeRoot: '/opt/smallverse',
       authoritativeDataIsReadOnly: true,
       workerEnabledByDefault: false
+    },
+    deploymentBoundary: {
+      releaseRoot: '/srv/smallverse/releases',
+      currentSymlink: '/srv/smallverse/current',
+      environmentRoot: '/etc/smallverse',
+      publicApi: '127.0.0.1:8780',
+      operatorApi: 'tailscale-or-loopback:8781',
+      shadowNginx: '127.0.0.1:8088'
     }
   }, null, 2) + '\n'
 );
@@ -207,5 +255,6 @@ console.log(JSON.stringify({
   staging,
   archive,
   sha256: archiveDigest,
+  packageManager: expectedPackageManager,
   fileCount: files.length + 1
 }, null, 2));
