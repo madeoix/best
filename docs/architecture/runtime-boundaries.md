@@ -1,126 +1,83 @@
 # Smallverse runtime boundaries
 
-This document describes the implemented runtime split. The SvelteKit
-application is a static SPA; server behavior belongs in separate processes.
-
 ## Public web
 
-Browser code may call APIs only through:
+The SvelteKit application is a static consumer SPA. It contains no server
+routes and no direct operator API client.
+
+Public requests pass through:
 
 ```text
 src/lib/runtime/apiClient.js
 ```
 
-Configuration:
+The browser may configure only:
 
 ```text
 VITE_SMALLVERSE_PUBLIC_API_BASE
-VITE_SMALLVERSE_OPERATOR_API_BASE
 ```
 
-An empty base preserves same-origin proxying. Production should proxy `/api/`
-to the public API and expose the operator base only on the VPN.
+Gateway, Explorer, Truth, and session controls are hidden outside the desktop
+runtime.
 
 ## Public API
 
-Entry point:
-
-```text
-apps/api/src/entrypoints/public.ts
-```
-
-Default listener:
-
-```text
-127.0.0.1:8780
-```
-
-The process is read-only. It may read explicit preservation exports and
-PostgreSQL health, but it may not execute commands, SSH, read credentials, or
-control services.
-
-Implemented compatibility routes:
-
-```text
-GET /api/beacon/world
-GET /api/beacon/observatory/status
-GET /api/beacon/observatory/search
-GET /api/beacon/observatory/item
-GET /api/beacon/item/profile
-GET /api/beacon/item/profiles
-GET /api/beacon/avatar/profile
-GET /api/beacon/avatar/badge
-GET /api/beacon/space/profile
-GET /api/beacon/spin/prices
-```
-
-Versioned routes are documented in `endpoint-migration.md`.
+`apps/api/src/entrypoints/public.ts` serves read-only preservation data. It may
+read allowlisted exports and PostgreSQL, but it may not execute commands, SSH,
+read credentials, or control services.
 
 ## Operator API
 
-Entry point:
+`apps/api/src/entrypoints/operator.ts` is private and should bind to the
+Tailscale address in production.
+
+Every non-health route requires:
+
+1. a bearer token;
+2. a route-specific scope;
+3. allowlisted inputs;
+4. exact confirmation for mutations;
+5. an audit event.
+
+Recent audit records are available through `GET /ops/v1/audit` when the
+operator API has a database connection.
+
+The configured bootstrap token receives only the scopes listed in
+`SMALLVERSE_OPERATOR_SCOPES`.
+
+## Desktop boundary
+
+Tauri owns local-machine behavior:
 
 ```text
-apps/api/src/entrypoints/operator.ts
+desktop_runtime_info
+desktop_recent_files
+desktop_sessions
+desktop_session_action
+desktop_launch_tool
+desktop_operator_action
+desktop_operator_overview
 ```
 
-Production should bind it to the Tailscale address, not a public interface.
+The Rust layer keeps the operator token out of the JavaScript bundle. It reads
+`SMALLVERSE_OPERATOR_API_URL` and `SMALLVERSE_OPERATOR_TOKEN` at process
+startup and exposes only fixed operator operations.
 
-Every non-health route requires a bearer token. Service operations use an
-allowlist and a narrow sudoers rule. No arbitrary command route exists.
+The Tauri webview has a non-null CSP and a single capability file. Browser
+builds receive no Tauri controls.
 
 ## Worker
 
-Entry point:
-
-```text
-apps/api/src/entrypoints/worker.ts
-```
-
-The worker owns future ingestion, indexing, rendering, and integrity jobs. It
-requires PostgreSQL and is intentionally separate from request handling.
-
-## Existing preservation system
-
-`/opt/smallverse` remains the active preservation source during migration.
-
-Known VPS facts:
-
-- Ubuntu 24.04;
-- Nginx 1.24;
-- Tailscale active;
-- legacy Smallverse services exist but are not healthy;
-- the Observatory SQLite database is large and irreplaceable;
-- Node.js must be upgraded before the new Fastify runtime is deployed.
-
-No migration step may rewrite preserved data in place.
-
-## Local integration
-
-The supported local flow is:
-
-```text
-Docker PostgreSQL and MinIO
-        ↓
-database migrations
-        ↓
-safe JSON export sync from casa
-        ↓
-public API + operator API + worker
-        ↓
-SvelteKit SPA
-        ↓
-runtime smoke test
-```
-
-See `docs/operations/local-runtime.md`.
+`apps/api/src/entrypoints/worker.ts` owns future ingestion, indexing, rendering,
+and integrity jobs.
 
 ## Enforcement
 
 `scripts/check-runtime-boundaries.mjs` fails when:
 
-- browser components bypass the central API client;
-- migrated public SvelteKit server routes reappear;
-- public API modules import process execution;
-- public API modules contain SSH behavior;
-- API base configuration leaks outside the runtime client.
+- a SvelteKit `+server.js` route returns;
+- browser code executes processes;
+- browser code connects directly to the operator API;
+- Tauri globals are accessed outside `desktopBridge.js`;
+- the public API imports process execution;
+- desktop CSP is disabled.

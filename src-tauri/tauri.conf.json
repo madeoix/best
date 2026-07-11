@@ -1,8 +1,8 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "BESTNAME Beacon",
+  "productName": "Smallverse Beacon",
   "version": "0.1.0",
-  "identifier": "com.bestname.beacon",
+  "identifier": "com.smallverse.beacon",
   "build": {
     "frontendDist": "../build",
     "devUrl": "http://localhost:5173",
@@ -12,7 +12,7 @@
   "app": {
     "windows": [
       {
-        "title": "BESTNAME Beacon",
+        "title": "Smallverse Beacon",
         "width": 1320,
         "height": 860,
         "minWidth": 1100,
@@ -24,8 +24,14 @@
       }
     ],
     "security": {
-      "csp": null
-    }
+      "csp": "default-src 'self'; connect-src 'self' http://127.0.0.1:8780 https:; img-src 'self' asset: http://asset.localhost blob: data: https:; style-src 'self' 'unsafe-inline'; font-src 'self' data:; object-src 'none'; base-uri 'self'; frame-ancestors 'none'",
+      "devCsp": "default-src 'self'; connect-src 'self' http://localhost:5173 ws://localhost:5173 http://127.0.0.1:5173 ws://127.0.0.1:5173 http://127.0.0.1:8780 https:; img-src 'self' asset: http://asset.localhost blob: data: https:; style-src 'self' 'unsafe-inline'; font-src 'self' data:; script-src 'self' 'unsafe-eval'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'",
+      "freezePrototype": true,
+      "capabilities": [
+        "default"
+      ]
+    },
+    "withGlobalTauri": true
   },
   "bundle": {
     "active": true,

@@ -70,6 +70,52 @@ export const OperatorServiceActionSchema = Type.Object({
 });
 export type OperatorServiceAction = Static<typeof OperatorServiceActionSchema>;
 
+
+
+export const OperatorScopeSchema = Type.Union([
+  Type.Literal('services:read'),
+  Type.Literal('services:write'),
+  Type.Literal('operations:read'),
+  Type.Literal('operations:write'),
+  Type.Literal('sessions:write'),
+  Type.Literal('audit:read')
+]);
+export type OperatorScope = Static<typeof OperatorScopeSchema>;
+
+export const OperatorActionNameSchema = Type.Union([
+  Type.Literal('stop-run'),
+  Type.Literal('timer-off'),
+  Type.Literal('timer-on'),
+  Type.Literal('test-gateway'),
+  Type.Literal('oom-check'),
+  Type.Literal('disk'),
+  Type.Literal('spin-files'),
+  Type.Literal('safe-run'),
+  Type.Literal('render-icons')
+]);
+export type OperatorActionName =
+  Static<typeof OperatorActionNameSchema>;
+
+export const OperatorActionRequestSchema = Type.Object({
+  confirmation: OperatorActionNameSchema,
+  reason: Type.String({ minLength: 3, maxLength: 500 })
+});
+export type OperatorActionRequest =
+  Static<typeof OperatorActionRequestSchema>;
+
+export const OperatorSessionImportSchema = Type.Object({
+  cookie: Type.String({ minLength: 1, maxLength: 16_384 }),
+  label: Type.Optional(Type.String({ minLength: 1, maxLength: 128 })),
+  avatarName: Type.Optional(
+    Type.String({ minLength: 1, maxLength: 128 })
+  ),
+  capturedAt: Type.Optional(
+    Type.String({ format: 'date-time' })
+  )
+});
+export type OperatorSessionImport =
+  Static<typeof OperatorSessionImportSchema>;
+
 export const SourceXmlQuerySchema = Type.Object({
   source_xml: Type.String({ minLength: 1, maxLength: 2_048 })
 });

@@ -1,4 +1,5 @@
 import { spawn } from 'node:child_process';
+import net from 'node:net';
 import path from 'node:path';
 import process from 'node:process';
 import { fileURLToPath } from 'node:url';
@@ -32,8 +33,8 @@ const sharedEnvironment = {
   SMALLVERSE_PUBLIC_DIR:
     process.env.SMALLVERSE_PUBLIC_DIR ||
     path.join(root, 'static'),
-  SMALLVERSE_ALLOWED_ORIGINS:
-    process.env.SMALLVERSE_ALLOWED_ORIGINS ||
+  SMALLVERSE_PUBLIC_ALLOWED_ORIGINS:
+    process.env.SMALLVERSE_PUBLIC_ALLOWED_ORIGINS ||
     `http://127.0.0.1:${webPort},http://localhost:${webPort}`,
   SMALLVERSE_PUBLIC_HOST:
     process.env.SMALLVERSE_PUBLIC_HOST || '127.0.0.1',
@@ -51,11 +52,39 @@ const sharedEnvironment = {
     'postgresql://smallverse:smallverse-development-only@127.0.0.1:5432/smallverse',
   VITE_SMALLVERSE_PUBLIC_API_BASE:
     process.env.VITE_SMALLVERSE_PUBLIC_API_BASE ||
-    'http://127.0.0.1:8780',
-  VITE_SMALLVERSE_OPERATOR_API_BASE:
-    process.env.VITE_SMALLVERSE_OPERATOR_API_BASE ||
-    'http://127.0.0.1:8781'
+    'http://127.0.0.1:8780'
 };
+
+
+function assertPortAvailable(host, port, label) {
+  return new Promise((resolve, reject) => {
+    const server = net.createServer();
+    server.unref();
+
+    server.once('error', (error) => {
+      if (error?.code === 'EADDRINUSE') {
+        reject(
+          new Error(
+            `${label} cannot start because ${host}:${port} is already in use. ` +
+            'Stop the previous Smallverse runtime before starting another one.'
+          )
+        );
+        return;
+      }
+
+      reject(error);
+    });
+
+    server.listen(
+      {
+        host,
+        port: Number(port),
+        exclusive: true
+      },
+      () => server.close(resolve)
+    );
+  });
+}
 
 const commands = [
   {
@@ -88,6 +117,33 @@ if (includeWeb) {
       '--strictPort'
     ]
   });
+}
+
+
+const requiredPorts = [
+  [
+    sharedEnvironment.SMALLVERSE_PUBLIC_HOST,
+    sharedEnvironment.SMALLVERSE_PUBLIC_PORT,
+    'Public API'
+  ],
+  [
+    sharedEnvironment.SMALLVERSE_OPERATOR_HOST,
+    sharedEnvironment.SMALLVERSE_OPERATOR_PORT,
+    'Operator API'
+  ]
+];
+
+if (includeWeb) {
+  requiredPorts.push(['127.0.0.1', webPort, 'Web development server']);
+}
+
+try {
+  for (const [host, port, label] of requiredPorts) {
+    await assertPortAvailable(host, port, label);
+  }
+} catch (error) {
+  console.error(error?.message || error);
+  process.exit(1);
 }
 
 const children = new Map();

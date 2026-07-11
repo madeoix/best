@@ -16,7 +16,7 @@ RestartSec=5
 TimeoutStopSec=30
 KillSignal=SIGTERM
 
-NoNewPrivileges=true
+NoNewPrivileges=false
 PrivateTmp=true
 ProtectSystem=strict
 ProtectHome=true
@@ -24,6 +24,7 @@ ReadOnlyPaths=/opt/smallverse/workspace
 ReadOnlyPaths=/opt/smallverse/automation-workspace
 ReadOnlyPaths=/var/www/smallverse
 ReadWritePaths=/srv/smallverse/shared
+ReadWritePaths=/opt/smallverse/probe-lab-connect
 RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
 LockPersonality=true
 MemoryDenyWriteExecute=true

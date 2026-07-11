@@ -4,7 +4,7 @@ export const modes = [
   { id: 'observatory', label: 'Atlas' },
   { id: 'zoltar', label: 'Zoltar' },
   { id: 'receipts', label: 'Receipts' },
-  { id: 'gateway', label: 'Gateway' },
-  { id: 'explorer', label: 'Explorer' },
-  { id: 'truth', label: 'Truth' }
+  { id: 'gateway', label: 'Gateway', desktopOnly: true },
+  { id: 'explorer', label: 'Explorer', desktopOnly: true },
+  { id: 'truth', label: 'Truth', desktopOnly: true }
 ];

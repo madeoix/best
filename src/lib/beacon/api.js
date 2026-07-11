@@ -1,17 +1,19 @@
 import {
-  operatorRequestJson,
   publicRequestJson
 } from '$lib/runtime/apiClient.js';
+import {
+  getDesktopSessions,
+  launchDesktopTool,
+  runDesktopOperatorAction,
+  runDesktopSessionAction
+} from '$lib/runtime/desktopBridge.js';
 
 export function getSessions() {
-  return operatorRequestJson('/api/beacon/sessions');
+  return getDesktopSessions();
 }
 
 export function sessionAction(action, payload = {}) {
-  return operatorRequestJson('/api/beacon/sessions', {
-    method: 'POST',
-    body: JSON.stringify({ action, ...payload })
-  });
+  return runDesktopSessionAction(action, payload);
 }
 
 export function getObservatoryStatus() {
@@ -39,11 +41,18 @@ export function getSpinPrices() {
   return publicRequestJson('/api/beacon/spin/prices');
 }
 
+const LOCAL_DESKTOP_ACTIONS = new Set([
+  'grab-session',
+  'ssh',
+  'logs'
+]);
+
 export function runBeaconAction(action) {
-  return operatorRequestJson('/api/beacon/action', {
-    method: 'POST',
-    body: JSON.stringify({ action })
-  });
+  if (LOCAL_DESKTOP_ACTIONS.has(action)) {
+    return launchDesktopTool(action);
+  }
+
+  return runDesktopOperatorAction(action);
 }
 
 // Item profiles carry live identity enrichment. Do not client-cache them while

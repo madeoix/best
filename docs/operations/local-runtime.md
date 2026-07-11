@@ -2,7 +2,10 @@
 
 ## One-time setup
 
+The desktop crate requires Rust 1.88 or newer.
+
 ```bash
+rustup update stable
 npm install
 npm run infra:up
 npm run db:verify
@@ -109,3 +112,33 @@ SMALLVERSE_WEB_PORT=5174 npm run dev:all
 `infra:up`, `infra:down`, and `infra:logs` use the Docker Compose plugin when
 available, then the legacy `docker-compose` command, and finally a direct
 Docker fallback for the development PostgreSQL and MinIO containers.
+
+
+## Desktop operator runtime
+
+Start the APIs with the same operator token that the desktop process will use:
+
+```bash
+export SMALLVERSE_OPERATOR_TOKEN='smallverse-local-operator-token-change-me'
+npm run dev:runtime
+```
+
+In another terminal:
+
+```bash
+export SMALLVERSE_OPERATOR_API_URL='http://127.0.0.1:8781'
+export SMALLVERSE_OPERATOR_TOKEN='smallverse-local-operator-token-change-me'
+npm run dev:desktop
+```
+
+The token is read by Rust at process startup. It is not compiled into the
+frontend and is not stored in browser storage.
+
+Verify the Rust command layer before launching the desktop app:
+
+```bash
+npm run test:desktop
+```
+
+The normal web app remains consumer-only. Session controls and technical modes
+appear only in the Tauri runtime.

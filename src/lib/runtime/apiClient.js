@@ -30,12 +30,6 @@ export function publicApiUrl(pathname) {
   );
 }
 
-export function operatorApiUrl(pathname) {
-  return joinApiUrl(
-    runtimeEnvironment().VITE_SMALLVERSE_OPERATOR_API_BASE,
-    pathname
-  );
-}
 
 export class ApiRequestError extends Error {
   constructor(message, options = {}) {
@@ -117,8 +111,4 @@ async function requestJson(url, options = {}) {
 
 export function publicRequestJson(pathname, options) {
   return requestJson(publicApiUrl(pathname), options);
-}
-
-export function operatorRequestJson(pathname, options) {
-  return requestJson(operatorApiUrl(pathname), options);
 }

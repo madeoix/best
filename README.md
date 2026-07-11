@@ -8,8 +8,12 @@ SmallWorlds data, spaces, items, avatars, prices, and captured evidence.
 ```text
 SvelteKit static SPA
 ├── public API client
-├── operator API client
 └── browser avatar renderer
+
+Tauri desktop boundary
+├── local files and sessions
+├── allowlisted process launchers
+└── private operator API mediation
 
 Fastify runtime
 ├── public read API
@@ -24,7 +28,7 @@ Existing preservation system
 ```
 
 The existing Python preservation system remains active while data is imported
-into PostgreSQL. Public requests no longer SSH into that system.
+into PostgreSQL. Public requests no longer SSH into that system. The static frontend contains no server endpoints.
 
 ## Install and verify
 
@@ -32,6 +36,7 @@ into PostgreSQL. Public requests no longer SSH into that system.
 npm install
 npm test
 npm run build:all
+npm run test:desktop
 ```
 
 ## Local integrated runtime
@@ -80,3 +85,23 @@ This creates a checksummed archive under `releases/`.
 Do not deploy the Fastify services to the current VPS until its Node runtime,
 service accounts, environment files, database, and reverse-proxy routes have
 been prepared.
+
+
+## Desktop development
+
+Start the private runtime in one terminal:
+
+```bash
+npm run dev:runtime
+```
+
+Then start the desktop shell in another terminal:
+
+```bash
+npm run dev:desktop
+```
+
+The development launcher supplies loopback-only API defaults, verifies both APIs
+before opening Tauri, and keeps the operator token outside browser JavaScript.
+Environment variables may still override the defaults. Local files, sessions,
+and process launchers remain Tauri-only.

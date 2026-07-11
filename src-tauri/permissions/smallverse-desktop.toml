@@ -1,0 +1,12 @@
+[[permission]]
+identifier = "allow-smallverse-desktop"
+description = "Allows the main Smallverse desktop window to use the fixed local preservation and operator bridge commands."
+commands.allow = [
+  "desktop_runtime_info",
+  "desktop_recent_files",
+  "desktop_sessions",
+  "desktop_session_action",
+  "desktop_operator_action",
+  "desktop_operator_overview",
+  "desktop_launch_tool"
+]

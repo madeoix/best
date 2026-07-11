@@ -2,9 +2,11 @@
   import { onMount } from 'svelte';
   import { fmtDate } from '$lib/beacon/format.js';
   import { getSessions, sessionAction as postSessionAction } from '$lib/beacon/api.js';
+  import { getDesktopRuntimeInfo } from '$lib/runtime/desktopBridge.js';
 
   import * as DropdownMenu from '$lib/components/ui/dropdown-menu/index.js';
 
+  let desktop = false;
   let sessionPanel = null;
   let message = '';
 
@@ -51,7 +53,15 @@
     await runSessionAction('switch', { id });
   }
 
-  onMount(loadSessions);
+  onMount(async () => {
+    try {
+      await getDesktopRuntimeInfo();
+      desktop = true;
+      await loadSessions();
+    } catch {
+      desktop = false;
+    }
+  });
 
   $: currentSession = sessionPanel?.current;
   $: sessionName = currentSession?.label || currentSession?.avatar_name || 'Unknown avatar';
@@ -60,6 +70,7 @@
   $: profiles = sessionPanel?.profiles || [];
 </script>
 
+{#if desktop}
 <section class="session-menu">
   <DropdownMenu.DropdownMenu>
     <DropdownMenu.DropdownMenuTrigger class="session-trigger">
@@ -117,4 +128,6 @@
 
 {#if message}
   <aside class="toast">{message}</aside>
+{/if}
+
 {/if}

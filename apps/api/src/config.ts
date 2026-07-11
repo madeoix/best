@@ -21,8 +21,12 @@ export interface OperatorApiConfig extends SharedConfig {
   host: string;
   port: number;
   operatorToken: string;
+  operatorScopes: string[];
   allowedServices: string[];
   systemctlCommand: string[];
+  privilegedCommand: string[];
+  smallverseRoot: string;
+  remoteSessionRoot: string;
 }
 
 export interface WorkerConfig extends SharedConfig {
@@ -85,6 +89,10 @@ export function loadPublicConfig(
 ): PublicApiConfig {
   return {
     ...shared(env),
+    allowedOrigins: list(
+      env.SMALLVERSE_PUBLIC_ALLOWED_ORIGINS ??
+      env.SMALLVERSE_ALLOWED_ORIGINS
+    ),
     host: env.SMALLVERSE_PUBLIC_HOST?.trim() || '127.0.0.1',
     port: integer(env.SMALLVERSE_PUBLIC_PORT, 8780, 'SMALLVERSE_PUBLIC_PORT')
   };
@@ -103,6 +111,9 @@ export function loadOperatorConfig(
 
   return {
     ...shared(env),
+    allowedOrigins: list(
+      env.SMALLVERSE_OPERATOR_ALLOWED_ORIGINS
+    ),
     host: env.SMALLVERSE_OPERATOR_HOST?.trim() || '127.0.0.1',
     port: integer(
       env.SMALLVERSE_OPERATOR_PORT,
@@ -110,6 +121,16 @@ export function loadOperatorConfig(
       'SMALLVERSE_OPERATOR_PORT'
     ),
     operatorToken,
+    operatorScopes: list(env.SMALLVERSE_OPERATOR_SCOPES).length
+      ? list(env.SMALLVERSE_OPERATOR_SCOPES)
+      : [
+          'services:read',
+          'services:write',
+          'operations:read',
+          'operations:write',
+          'sessions:write',
+          'audit:read'
+        ],
     allowedServices: list(env.SMALLVERSE_OPERATOR_SERVICES).length
       ? list(env.SMALLVERSE_OPERATOR_SERVICES)
       : [
@@ -119,7 +140,16 @@ export function loadOperatorConfig(
     systemctlCommand:
       list(env.SMALLVERSE_SYSTEMCTL_COMMAND).length
         ? list(env.SMALLVERSE_SYSTEMCTL_COMMAND)
-        : ['/usr/bin/sudo', '-n', '/usr/bin/systemctl']
+        : ['/usr/bin/sudo', '-n', '/usr/bin/systemctl'],
+    privilegedCommand:
+      list(env.SMALLVERSE_PRIVILEGED_COMMAND).length
+        ? list(env.SMALLVERSE_PRIVILEGED_COMMAND)
+        : ['/usr/bin/sudo', '-n'],
+    smallverseRoot:
+      env.SMALLVERSE_ROOT?.trim() || '/opt/smallverse',
+    remoteSessionRoot:
+      env.SMALLVERSE_REMOTE_SESSION_ROOT?.trim() ||
+      '/opt/smallverse/probe-lab-connect'
   };
 }
 

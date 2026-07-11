@@ -5,6 +5,7 @@ import {
 import type { FastifyInstance } from 'fastify';
 
 export interface OptionalDatabase {
+  database?: ReturnType<typeof createDatabase>;
   status(): Promise<'ok' | 'unavailable' | 'not-configured'>;
 }
 
@@ -32,6 +33,7 @@ export function registerOptionalDatabase(
   });
 
   return {
+    database,
     async status() {
       try {
         await pingDatabase(database);

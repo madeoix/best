@@ -1,4 +1,4 @@
-import { timingSafeEqual } from 'node:crypto';
+import { createHash, timingSafeEqual } from 'node:crypto';
 import type { FastifyInstance, FastifyRequest } from 'fastify';
 import { HttpError } from './errors.js';
 
@@ -19,9 +19,14 @@ function bearerToken(request: FastifyRequest): string {
   return match?.[1]?.trim() ?? '';
 }
 
+function tokenPrefix(token: string): string {
+  return createHash('sha256').update(token).digest('hex').slice(0, 12);
+}
+
 export function registerOperatorAuthentication(
   app: FastifyInstance,
-  expectedToken: string
+  expectedToken: string,
+  scopes: string[]
 ): void {
   app.addHook('onRequest', async (request) => {
     if (
@@ -44,5 +49,24 @@ export function registerOperatorAuthentication(
         'A valid operator bearer token is required.'
       );
     }
+
+    request.operatorActor = {
+      label: 'configured-operator',
+      tokenPrefix: tokenPrefix(provided),
+      scopes: [...scopes]
+    };
   });
+}
+
+export function requireOperatorScope(
+  request: FastifyRequest,
+  scope: string
+): void {
+  if (!request.operatorActor?.scopes.includes(scope)) {
+    throw new HttpError(
+      403,
+      'OPERATOR_SCOPE_REQUIRED',
+      `The operator token requires the ${scope} scope.`
+    );
+  }
 }

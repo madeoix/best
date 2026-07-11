@@ -2,6 +2,21 @@ Cmnd_Alias SMALLVERSE_SERVICE_CONTROL = \
   /usr/bin/systemctl show smallverse-explorer.service *, \
   /usr/bin/systemctl show smallverse-admin.service *, \
   /usr/bin/systemctl restart smallverse-explorer.service, \
-  /usr/bin/systemctl restart smallverse-admin.service
+  /usr/bin/systemctl restart smallverse-admin.service, \
+  /usr/bin/systemctl stop smallverse-explorer.service, \
+  /usr/bin/systemctl stop smallverse-explorer.timer, \
+  /usr/bin/systemctl start smallverse-explorer.timer, \
+  /usr/bin/systemctl enable smallverse-explorer.timer, \
+  /usr/bin/systemctl disable smallverse-explorer.timer, \
+  /usr/bin/systemctl is-active smallverse-explorer.timer, \
+  /usr/bin/systemctl is-enabled smallverse-explorer.timer
 
-smallverse-operator ALL=(root) NOPASSWD: SMALLVERSE_SERVICE_CONTROL
+Cmnd_Alias SMALLVERSE_OPERATOR_ACTIONS = \
+  /usr/bin/dmesg --ctime, \
+  /opt/smallverse/beacon-safe-run.sh, \
+  /opt/smallverse/beacon-render-icons.sh, \
+  /opt/smallverse/.venv/bin/python -m smallverse_core.active_probe_lab_cli spintowin-prices --token-file /opt/smallverse/probe-lab-connect/svsid.txt --cookie-file /opt/smallverse/probe-lab-connect/cookie.txt
+
+smallverse-operator ALL=(root) NOPASSWD: \
+  SMALLVERSE_SERVICE_CONTROL, \
+  SMALLVERSE_OPERATOR_ACTIONS
