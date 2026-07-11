@@ -277,9 +277,9 @@ async function validateEnvironmentSet(commit) {
   }
 }
 
-async function httpCheck(url, headers = {}) {
+async function httpCheck(url, headers = {}, timeoutMs = 15_000) {
   const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), 15_000);
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
   try {
     const response = await fetch(url, { headers, signal: controller.signal });
     const body = await response.text();
@@ -290,6 +290,30 @@ async function httpCheck(url, headers = {}) {
   } finally {
     clearTimeout(timer);
   }
+}
+
+async function waitForHttp(url, headers = {}, options = {}) {
+  const timeoutMs = options.timeoutMs ?? 60_000;
+  const intervalMs = options.intervalMs ?? 500;
+  const deadline = Date.now() + timeoutMs;
+  let lastError = null;
+
+  while (Date.now() < deadline) {
+    const remainingMs = Math.max(1, deadline - Date.now());
+    try {
+      return await httpCheck(url, headers, Math.min(2_000, remainingMs));
+    } catch (error) {
+      lastError = error;
+    }
+
+    const sleepMs = Math.min(intervalMs, Math.max(0, deadline - Date.now()));
+    if (sleepMs > 0) {
+      await new Promise((resolve) => setTimeout(resolve, sleepMs));
+    }
+  }
+
+  const detail = lastError instanceof Error ? lastError.message : String(lastError);
+  throw new Error(`Timed out waiting for ${url}: ${detail}`);
 }
 
 async function releaseDirectory(commit) {
@@ -590,7 +614,7 @@ async function switchRelease(options) {
   try {
     await atomicCurrent(release);
     for (const service of SERVICES) execute('systemctl', ['restart', service]);
-    await httpCheck('http://127.0.0.1:8780/api/v1/health');
+    await waitForHttp('http://127.0.0.1:8780/api/v1/health');
     const operator = await environmentValues('operator');
     const operatorHost = operator.SMALLVERSE_OPERATOR_HOST === 'localhost'
       ? '127.0.0.1'
@@ -598,7 +622,7 @@ async function switchRelease(options) {
     const operatorAuthority = operatorHost.includes(':')
       ? `[${operatorHost}]`
       : operatorHost;
-    await httpCheck(`http://${operatorAuthority}:8781/ops/v1/health`);
+    await waitForHttp(`http://${operatorAuthority}:8781/ops/v1/health`);
   } catch (error) {
     if (previous) {
       await atomicCurrent(previous);
@@ -875,7 +899,7 @@ async function finalize(options) {
   verifyInstalledRelease(current);
   await validateEnvironmentSet(metadata.commit);
   execute('nginx', ['-t']);
-  await httpCheck('http://127.0.0.1:8780/api/v1/health');
+  await waitForHttp('http://127.0.0.1:8780/api/v1/health');
   const operator = await environmentValues('operator');
   const operatorHost = operator.SMALLVERSE_OPERATOR_HOST === 'localhost'
     ? '127.0.0.1'
@@ -883,7 +907,7 @@ async function finalize(options) {
   const operatorAuthority = operatorHost.includes(':')
     ? `[${operatorHost}]`
     : operatorHost;
-  await httpCheck(`http://${operatorAuthority}:8781/ops/v1/health`);
+  await waitForHttp(`http://${operatorAuthority}:8781/ops/v1/health`);
 
   const workerActive = execute(
     'systemctl',

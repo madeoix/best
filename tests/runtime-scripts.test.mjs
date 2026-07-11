@@ -344,6 +344,16 @@ test('deployment verifies installed trees with the installed-release verifier', 
   assert.doesNotMatch(source, /verifyRelease\(\s*current,/);
 });
 
+test('deployment waits for API readiness before accepting a release', () => {
+  const source = readFileSync('scripts/production-deploy.mjs', 'utf8');
+
+  assert.match(source, /async function waitForHttp\(url, headers = \{\}, options = \{\}\)/);
+  assert.match(source, /timeoutMs = options\.timeoutMs \?\? 60_000/);
+  assert.match(source, /await new Promise\(\(resolve\) => setTimeout\(resolve, sleepMs\)\)/);
+  assert.equal((source.match(/await waitForHttp\(/g) ?? []).length, 4);
+  assert.doesNotMatch(source, /await httpCheck\('http:\/\/127\.0\.0\.1:8780\/api\/v1\/health'\)/);
+});
+
 test('release lifecycle publishes only after production install verification', () => {
   const source = readFileSync('scripts/verify-release-lifecycle.mjs', 'utf8');
 
