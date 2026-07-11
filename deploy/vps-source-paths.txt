@@ -1,3 +1,4 @@
+.nvmrc
 package.json
 package-lock.json
 svelte.config.js
@@ -5,5 +6,9 @@ vite.config.js
 jsconfig.json
 src
 static
+apps
+packages
+infra
 deploy
+docs/operations
 scripts

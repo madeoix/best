@@ -30,6 +30,7 @@ export interface OperatorApiConfig extends SharedConfig {
 }
 
 export interface WorkerConfig extends SharedConfig {
+  enabled: boolean;
   workerId: string;
   pollIntervalMs: number;
 }
@@ -56,6 +57,17 @@ function nodeEnvironment(
 ): SharedConfig['nodeEnv'] {
   if (value === 'production' || value === 'test') return value;
   return 'development';
+}
+
+function boolean(
+  value: string | undefined,
+  fallback: boolean,
+  name: string
+): boolean {
+  if (value === undefined || value === '') return fallback;
+  if (value === 'true') return true;
+  if (value === 'false') return false;
+  throw new Error(`${name} must be either true or false`);
 }
 
 function list(value: string | undefined): string[] {
@@ -87,13 +99,24 @@ function shared(env: NodeJS.ProcessEnv): SharedConfig {
 export function loadPublicConfig(
   env: NodeJS.ProcessEnv = process.env
 ): PublicApiConfig {
+  const host = env.SMALLVERSE_PUBLIC_HOST?.trim() || '127.0.0.1';
+
+  if (
+    nodeEnvironment(env.NODE_ENV) === 'production' &&
+    !['127.0.0.1', '::1', 'localhost'].includes(host)
+  ) {
+    throw new Error(
+      'SMALLVERSE_PUBLIC_HOST must remain loopback-only in production'
+    );
+  }
+
   return {
     ...shared(env),
     allowedOrigins: list(
       env.SMALLVERSE_PUBLIC_ALLOWED_ORIGINS ??
       env.SMALLVERSE_ALLOWED_ORIGINS
     ),
-    host: env.SMALLVERSE_PUBLIC_HOST?.trim() || '127.0.0.1',
+    host,
     port: integer(env.SMALLVERSE_PUBLIC_PORT, 8780, 'SMALLVERSE_PUBLIC_PORT')
   };
 }
@@ -102,10 +125,20 @@ export function loadOperatorConfig(
   env: NodeJS.ProcessEnv = process.env
 ): OperatorApiConfig {
   const operatorToken = env.SMALLVERSE_OPERATOR_TOKEN?.trim() || '';
+  const host = env.SMALLVERSE_OPERATOR_HOST?.trim() || '127.0.0.1';
 
   if (nodeEnvironment(env.NODE_ENV) === 'production' && operatorToken.length < 32) {
     throw new Error(
       'SMALLVERSE_OPERATOR_TOKEN must contain at least 32 characters in production'
+    );
+  }
+
+  if (
+    nodeEnvironment(env.NODE_ENV) === 'production' &&
+    ['0.0.0.0', '::', '*'].includes(host)
+  ) {
+    throw new Error(
+      'SMALLVERSE_OPERATOR_HOST may not use a wildcard address in production'
     );
   }
 
@@ -114,7 +147,7 @@ export function loadOperatorConfig(
     allowedOrigins: list(
       env.SMALLVERSE_OPERATOR_ALLOWED_ORIGINS
     ),
-    host: env.SMALLVERSE_OPERATOR_HOST?.trim() || '127.0.0.1',
+    host,
     port: integer(
       env.SMALLVERSE_OPERATOR_PORT,
       8781,
@@ -158,6 +191,11 @@ export function loadWorkerConfig(
 ): WorkerConfig {
   return {
     ...shared(env),
+    enabled: boolean(
+      env.SMALLVERSE_WORKER_ENABLED,
+      nodeEnvironment(env.NODE_ENV) !== 'production',
+      'SMALLVERSE_WORKER_ENABLED'
+    ),
     workerId:
       env.SMALLVERSE_WORKER_ID?.trim() ||
       `${os.hostname()}-${process.pid}`,

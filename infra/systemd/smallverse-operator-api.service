@@ -3,6 +3,8 @@ Description=Smallverse VPN-only operator API
 After=network-online.target tailscaled.service
 Wants=network-online.target
 Requires=tailscaled.service
+ConditionPathExists=/srv/smallverse/current/apps/api/dist/entrypoints/operator.js
+ConditionPathExists=/etc/smallverse/operator-api.env
 
 [Service]
 Type=simple
@@ -15,19 +17,30 @@ Restart=on-failure
 RestartSec=5
 TimeoutStopSec=30
 KillSignal=SIGTERM
+UMask=0077
 
+# The process is unprivileged. NoNewPrivileges remains false only because the
+# fixed service/action allowlist invokes the exact sudo commands declared in
+# infra/sudoers/smallverse-operator.
 NoNewPrivileges=false
 PrivateTmp=true
+PrivateDevices=true
 ProtectSystem=strict
 ProtectHome=true
-ReadOnlyPaths=/opt/smallverse/workspace
-ReadOnlyPaths=/opt/smallverse/automation-workspace
-ReadOnlyPaths=/var/www/smallverse
-ReadWritePaths=/srv/smallverse/shared
-ReadWritePaths=/opt/smallverse/probe-lab-connect
+ProtectClock=true
+ProtectKernelLogs=true
+ProtectKernelModules=true
+ProtectKernelTunables=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+ReadOnlyPaths=-/opt/smallverse/workspace
+ReadOnlyPaths=-/opt/smallverse/automation-workspace
+ReadOnlyPaths=-/var/www/smallverse
+ReadWritePaths=-/srv/smallverse/shared
+ReadWritePaths=-/opt/smallverse/probe-lab-connect
 RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+SystemCallArchitectures=native
 LockPersonality=true
-MemoryDenyWriteExecute=true
 
 [Install]
 WantedBy=multi-user.target

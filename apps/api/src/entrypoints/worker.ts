@@ -3,6 +3,12 @@ import { loadWorkerConfig } from '../config.js';
 
 const config = loadWorkerConfig();
 
+if (!config.enabled) {
+  throw new Error(
+    'Worker startup is disabled. Set SMALLVERSE_WORKER_ENABLED=true only after ingestion handlers and reconciliation have been approved.'
+  );
+}
+
 if (!config.databaseUrl) {
   throw new Error('DATABASE_URL is required to start the worker');
 }

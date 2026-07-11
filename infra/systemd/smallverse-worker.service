@@ -1,12 +1,14 @@
 [Unit]
-Description=Smallverse preservation worker
+Description=Smallverse preservation ingestion worker
 After=network-online.target postgresql.service
 Wants=network-online.target
+ConditionPathExists=/srv/smallverse/current/apps/api/dist/entrypoints/worker.js
+ConditionPathExists=/etc/smallverse/worker.env
 
 [Service]
 Type=simple
-User=smallverse
-Group=smallverse
+User=smallverse-worker
+Group=smallverse-worker
 WorkingDirectory=/srv/smallverse/current
 EnvironmentFile=/etc/smallverse/worker.env
 ExecStart=/usr/bin/node apps/api/dist/entrypoints/worker.js
@@ -14,18 +16,29 @@ Restart=on-failure
 RestartSec=5
 TimeoutStopSec=60
 KillSignal=SIGTERM
+UMask=0077
 
 NoNewPrivileges=true
 PrivateTmp=true
+PrivateDevices=true
 ProtectSystem=strict
 ProtectHome=true
-ReadWritePaths=/opt/smallverse/workspace
-ReadWritePaths=/opt/smallverse/automation-workspace
-ReadWritePaths=/var/www/smallverse
-ReadWritePaths=/srv/smallverse/shared
+ProtectClock=true
+ProtectKernelLogs=true
+ProtectKernelModules=true
+ProtectKernelTunables=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+
+# The existing preservation system is authoritative. The ingestion worker may
+# read these paths, but it may never mutate them.
+ReadOnlyPaths=-/opt/smallverse/workspace
+ReadOnlyPaths=-/opt/smallverse/automation-workspace
+ReadOnlyPaths=-/var/www/smallverse
+ReadWritePaths=-/srv/smallverse/shared
 RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+SystemCallArchitectures=native
 LockPersonality=true
-MemoryDenyWriteExecute=true
 
 [Install]
 WantedBy=multi-user.target

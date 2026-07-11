@@ -35,7 +35,11 @@
     "tauri": "tauri",
     "test:desktop": "cargo test --manifest-path src-tauri/Cargo.toml",
     "dev:desktop": "node scripts/dev-desktop.mjs",
-    "build:desktop": "tauri build"
+    "build:desktop": "tauri build",
+    "production:audit": "node scripts/production-audit.mjs",
+    "production:evaluate": "node scripts/evaluate-production-audit.mjs",
+    "production:smoke": "node scripts/smoke-production.mjs",
+    "release:verify": "node scripts/verify-production-release.mjs"
   },
   "devDependencies": {
     "@fontsource-variable/inter": "^5.2.8",
@@ -66,5 +70,9 @@
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "engines": {
+    "node": "24.x",
+    "npm": ">=10"
+  }
 }

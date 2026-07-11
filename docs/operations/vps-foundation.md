@@ -1,19 +1,16 @@
-# VPS foundation deployment
+# VPS foundation
 
-Do not deploy this batch directly over `/opt/smallverse`. The existing Python
-preservation system and its 22 GB workspace remain authoritative during the
+The production sequence and approval gates are defined in:
+
+```text
+docs/operations/production-rollout.md
+```
+
+Do not deploy over `/opt/smallverse`. The existing Python preservation system,
+workspace, exports, and SQLite databases remain authoritative during the
 transition.
 
-## Prerequisites
-
-- Create a backup or storage snapshot of `/opt/smallverse`.
-- Upgrade the VPS Node.js runtime from 18.19.1 to a currently supported release
-  compatible with the lockfile.
-- Install PostgreSQL before enabling the worker.
-- Keep Nginx's existing `receipt-viewer` site untouched.
-- Confirm the Tailscale address before copying the operator environment file.
-
-## Filesystem
+## Required layout
 
 ```text
 /srv/smallverse/releases/<git-commit>
@@ -24,55 +21,42 @@ transition.
 /etc/smallverse/worker.env
 ```
 
+## Dedicated identities
 
-## Operator service account
+Use three non-login Linux accounts:
 
-```bash
-sudo useradd   --system   --home-dir /nonexistent   --shell /usr/sbin/nologin   smallverse-operator 2>/dev/null || true
-
-sudo install   -d   -o smallverse-operator   -g smallverse-operator   -m 0700   /opt/smallverse/probe-lab-connect
-
-sudo install   -o root   -g root   -m 0440   infra/sudoers/smallverse-operator   /etc/sudoers.d/smallverse-operator
-
-sudo visudo   -cf   /etc/sudoers.d/smallverse-operator
+```text
+smallverse-public
+smallverse-operator
+smallverse-worker
 ```
 
-Verify the exact privilege boundary before starting the API:
+Do not run a new API or worker as root. The operator account receives only the
+exact sudo commands in `infra/sudoers/smallverse-operator`, installed mode
+`0440` and validated with `visudo -cf`.
 
-```bash
-sudo -u smallverse-operator   sudo -n   /usr/bin/systemctl   show   smallverse-explorer.service   --property=ActiveState   --no-pager
+The public and worker accounts receive no sudo privileges. Preservation paths
+are read-only in all three service units. Only the operator session staging
+path and `/srv/smallverse/shared` are writable where explicitly declared.
+
+## Worker kill switch
+
+Production defaults to:
+
+```text
+SMALLVERSE_WORKER_ENABLED=false
 ```
 
-The operator API does not require browser CORS. Leave
-`SMALLVERSE_OPERATOR_ALLOWED_ORIGINS` empty when the Tauri Rust bridge is the
-only client.
+The worker entrypoint refuses to start until that value is explicitly changed
+to `true`. Do not change it during foundation or shadow deployment.
 
-## Public API smoke test
+## Listener boundaries
 
-```bash
-curl -fsS http://127.0.0.1:8780/api/v1/health
-curl -fsS http://127.0.0.1:8780/api/beacon/observatory/status
-```
+- public API: `127.0.0.1:8780`;
+- operator API: confirmed Tailscale IPv4 on port `8781`, or loopback for local
+  testing;
+- shadow Nginx: `127.0.0.1:8088`;
+- public Nginx: unchanged until a separate cutover approval.
 
-## Operator API smoke test
-
-Run through Tailscale:
-
-```bash
-curl -fsS http://100.118.39.6:8781/ops/v1/health
-curl -fsS \
-  -H "Authorization: Bearer $SMALLVERSE_OPERATOR_TOKEN" \
-  http://100.118.39.6:8781/ops/v1/services/smallverse-explorer.service
-```
-
-## Safety
-
-The operator service must run as `smallverse-operator`, not root. Install the
-narrow sudoers file from `infra/sudoers/smallverse-operator` with mode `0440`
-and validate it with `visudo -cf`.
-
-The operator systemd unit intentionally sets `NoNewPrivileges=false`. The API
-itself remains unprivileged, but its fixed service/action allowlist uses
-passwordless `sudo` for only the exact commands declared in the sudoers file.
-Setting `NoNewPrivileges=true` would make those allowlisted commands fail.
-Do not broaden the sudoers entries or replace them with a shell wildcard.
+Production configuration rejects a non-loopback public API host and rejects a
+wildcard operator host.

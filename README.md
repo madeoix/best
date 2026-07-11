@@ -74,17 +74,25 @@ docs/architecture/public-read-model.md
 docs/architecture/endpoint-migration.md
 ```
 
-## Production packaging
+## Production rollout
+
+Production is pinned to Node 24.x and proceeds through read-only inventory,
+foundation, immutable release verification, loopback shadow deployment, data
+reconciliation, and a separately approved cutover.
 
 ```bash
+npm run production:audit -- --output production-audit.json
+npm run production:evaluate -- production-audit.json --stage inventory
 npm run release:package
 ```
 
-This creates a checksummed archive under `releases/`.
+The worker is disabled by default in production and authoritative preservation
+paths remain read-only. Follow:
 
-Do not deploy the Fastify services to the current VPS until its Node runtime,
-service accounts, environment files, database, and reverse-proxy routes have
-been prepared.
+```text
+docs/operations/production-rollout.md
+docs/operations/production-audit.md
+```
 
 
 ## Desktop development

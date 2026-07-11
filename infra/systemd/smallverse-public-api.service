@@ -2,11 +2,13 @@
 Description=Smallverse public read API
 After=network-online.target
 Wants=network-online.target
+ConditionPathExists=/srv/smallverse/current/apps/api/dist/entrypoints/public.js
+ConditionPathExists=/etc/smallverse/public-api.env
 
 [Service]
 Type=simple
-User=smallverse
-Group=smallverse
+User=smallverse-public
+Group=smallverse-public
 WorkingDirectory=/srv/smallverse/current
 EnvironmentFile=/etc/smallverse/public-api.env
 ExecStart=/usr/bin/node apps/api/dist/entrypoints/public.js
@@ -14,18 +16,25 @@ Restart=on-failure
 RestartSec=5
 TimeoutStopSec=30
 KillSignal=SIGTERM
+UMask=0077
 
 NoNewPrivileges=true
 PrivateTmp=true
+PrivateDevices=true
 ProtectSystem=strict
 ProtectHome=true
-ReadOnlyPaths=/opt/smallverse/workspace
-ReadOnlyPaths=/opt/smallverse/automation-workspace
-ReadOnlyPaths=/var/www/smallverse
-ReadWritePaths=/srv/smallverse/shared
+ProtectClock=true
+ProtectKernelLogs=true
+ProtectKernelModules=true
+ProtectKernelTunables=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+ReadOnlyPaths=-/opt/smallverse/workspace
+ReadOnlyPaths=-/opt/smallverse/automation-workspace
+ReadOnlyPaths=-/var/www/smallverse
 RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+SystemCallArchitectures=native
 LockPersonality=true
-MemoryDenyWriteExecute=true
 
 [Install]
 WantedBy=multi-user.target
