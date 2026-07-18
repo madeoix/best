@@ -750,3 +750,208 @@
     min-height: 240px;
   }
 }
+
+
+/* V2 art direction: atmospheric Smallverse client rather than flat admin UI. */
+
+.ambient {
+  opacity: 1;
+  background:
+    linear-gradient(90deg, rgba(2, 7, 10, .90), rgba(2, 7, 10, .58) 58%, rgba(2, 7, 10, .74)),
+    url('/beacon-observatory-scene.svg') center / cover no-repeat fixed;
+}
+
+.ambient::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 72% 28%, rgba(72, 215, 205, .13), transparent 34%),
+    linear-gradient(180deg, rgba(2, 7, 10, .18), rgba(2, 7, 10, .72));
+}
+
+.app-chrome {
+  background:
+    linear-gradient(180deg, rgba(8, 18, 24, .96), rgba(2, 8, 12, .92));
+  box-shadow: 18px 0 70px rgba(0, 0, 0, .28);
+}
+
+.command-home {
+  padding-top: 36px;
+}
+
+.command-topline h1 {
+  font-size: clamp(34px, 3.6vw, 52px);
+  text-shadow: 0 12px 38px rgba(0, 0, 0, .72);
+}
+
+.command-panel {
+  border-color: rgba(127, 229, 220, .12);
+  background:
+    linear-gradient(135deg, rgba(16, 34, 41, .72), rgba(4, 10, 15, .88) 48%, rgba(2, 7, 11, .94));
+  box-shadow:
+    0 38px 120px rgba(0, 0, 0, .52),
+    inset 0 1px rgba(255, 255, 255, .035);
+}
+
+.command-search {
+  background:
+    linear-gradient(90deg, rgba(5, 15, 20, .96), rgba(6, 13, 18, .88));
+  box-shadow:
+    0 18px 50px rgba(0, 0, 0, .32),
+    0 0 34px rgba(72, 215, 205, .05),
+    inset 0 1px rgba(255, 255, 255, .025);
+}
+
+.command-list-pane {
+  background:
+    linear-gradient(135deg, rgba(13, 30, 36, .34), rgba(2, 8, 12, .48));
+}
+
+.command-list-rows {
+  gap: 5px;
+  padding: 9px;
+}
+
+.command-list-rows > button {
+  min-height: 98px;
+  border-radius: 9px;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, .043), rgba(255, 255, 255, .018));
+  box-shadow: inset 0 1px rgba(255, 255, 255, .018);
+  transition:
+    transform 150ms ease,
+    border-color 150ms ease,
+    background 150ms ease,
+    box-shadow 150ms ease;
+}
+
+.command-list-rows > button:hover,
+.command-list-rows > button.selected {
+  transform: translateX(3px);
+  background:
+    linear-gradient(90deg, rgba(72, 215, 205, .15), rgba(72, 215, 205, .035) 66%, rgba(255, 255, 255, .018));
+  box-shadow:
+    inset 0 1px rgba(255, 255, 255, .035),
+    0 12px 32px rgba(0, 0, 0, .24);
+}
+
+.command-row-visual {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  overflow: visible;
+  background:
+    radial-gradient(circle at 50% 48%, rgba(72, 215, 205, .19), transparent 62%),
+    linear-gradient(145deg, rgba(255, 255, 255, .075), rgba(255, 255, 255, .018));
+  box-shadow:
+    inset 0 1px rgba(255, 255, 255, .045),
+    0 12px 28px rgba(0, 0, 0, .26);
+}
+
+.command-row-visual .sv-icon {
+  overflow: visible;
+}
+
+.command-row-visual img {
+  transform: scale(1.15);
+  filter:
+    drop-shadow(0 12px 16px rgba(0, 0, 0, .48))
+    saturate(1.08);
+  transition: transform 170ms ease;
+}
+
+.command-list-rows > button:hover .command-row-visual img,
+.command-list-rows > button.selected .command-row-visual img {
+  transform: scale(1.24) translateY(-2px);
+}
+
+.command-row-copy b {
+  font-size: 15px;
+  letter-spacing: -.025em;
+}
+
+.evidence-preview {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 24% 22%, rgba(72, 215, 205, .15), transparent 36%),
+    linear-gradient(145deg, rgba(17, 40, 46, .62), rgba(2, 8, 12, .88) 58%);
+}
+
+.evidence-preview::before {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  top: -120px;
+  right: -160px;
+  width: 440px;
+  height: 440px;
+  border-radius: 50%;
+  background: rgba(72, 215, 205, .055);
+  filter: blur(40px);
+  pointer-events: none;
+}
+
+.evidence-preview > * {
+  position: relative;
+  z-index: 1;
+}
+
+.command-preview-object {
+  grid-template-columns: minmax(190px, 48%) minmax(0, 1fr);
+  padding: 20px;
+}
+
+.command-preview-icon {
+  min-height: 280px;
+  overflow: visible;
+  border-color: rgba(72, 215, 205, .08);
+  background:
+    radial-gradient(circle at 50% 42%, rgba(72, 215, 205, .26), transparent 58%),
+    linear-gradient(155deg, rgba(27, 71, 73, .22), rgba(2, 9, 12, .42));
+  box-shadow:
+    inset 0 1px rgba(255, 255, 255, .035),
+    0 22px 54px rgba(0, 0, 0, .28);
+}
+
+.command-preview-icon .sv-icon {
+  overflow: visible;
+}
+
+.command-preview-icon img {
+  transform: scale(1.20);
+  filter:
+    drop-shadow(0 30px 28px rgba(0, 0, 0, .58))
+    saturate(1.10);
+}
+
+.preview-object-copy h2 {
+  font-size: clamp(28px, 2.8vw, 42px);
+}
+
+.preview-metrics strong {
+  font-size: 28px;
+}
+
+.preview-evidence-rows article {
+  min-height: 54px;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, .045), rgba(255, 255, 255, .018));
+}
+
+.command-preview-footer button {
+  min-width: 190px;
+  box-shadow: 0 14px 32px rgba(72, 215, 205, .17);
+}
+
+@media (min-width: 1400px) {
+  .command-shell {
+    max-width: 1560px;
+  }
+
+  .command-body {
+    grid-template-columns: minmax(680px, 1.48fr) minmax(470px, .82fr);
+    min-height: 680px;
+  }
+}
