@@ -1,0 +1,16 @@
+[Unit]
+Description=Harvest crawler RTMP avatar configs and local portrait PNGs
+After=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/smallverse
+ExecStart=/usr/bin/python3 /opt/smallverse/harvest_crawler_avatar_assets.py --captures /opt/smallverse/automation-workspace/live-captures --workspace /opt/smallverse/workspace --extractor /opt/smallverse/extract_smallverse_avatar_configs.py --thumbnail-cache /opt/smallverse/cache_avatar_thumbnails_via_cdp.py
+Nice=10
+CPUQuota=40%
+MemoryHigh=384M
+MemoryMax=512M
+MemorySwapMax=64M
+TasksMax=96
+TimeoutStartSec=10min
+OOMPolicy=stop

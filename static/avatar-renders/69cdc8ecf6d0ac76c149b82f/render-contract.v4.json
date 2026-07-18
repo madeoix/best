@@ -1,0 +1,207 @@
+{
+  "ok": true,
+  "contract": "smallverse-avatar-render-contract/v4",
+  "avatar_id": "69cdc8ecf6d0ac76c149b82f",
+  "gender": "female",
+  "source_config_xml": "/home/maddie/smallverse-lab/static/avatar-calibration/69cdc8ecf6d0ac76c149b82f/live-config.xml",
+  "oracle": null,
+  "selected_options": {
+    "EyeOptions": "EyeReal",
+    "EyeColorOptions": "EyeBlue",
+    "MorphTargetOptionsA": "MorphStandardA",
+    "MorphTargetOptionsB": "MorphBigeyeB",
+    "NoseColorOptions": "NoseDark",
+    "EarOptions": "EarStandard",
+    "PropOptions": "",
+    "PropColorOptions": "PropColorPink",
+    "MuzzleOptions": "MuzzleStandard",
+    "CoatTypeOptions": "CoatTypeRegular",
+    "TailOptions": "TailMedium",
+    "CollarOptions": "CollarStandard",
+    "SkinColorOptions": "SkinColorGolden",
+    "SkinColor2Options": "SkinColor2Black",
+    "CollarColorOptions": "CollarBlue",
+    "BodyDecalOptions": "DecalsBodyPaws"
+  },
+  "weights": {
+    "MorphStandardA": 0.24,
+    "MorphBigeyeB": 0.76
+  },
+  "transforms": {},
+  "dances": [],
+  "selected_asset_groups": {
+    "EyeOptions": [
+      {
+        "selected_id": "EyeReal",
+        "design_node_found": false,
+        "design_tag": null,
+        "design_attrs": {},
+        "exact_refs": [],
+        "assets": []
+      }
+    ],
+    "EyeColorOptions": [
+      {
+        "selected_id": "EyeBlue",
+        "design_node_found": false,
+        "design_tag": null,
+        "design_attrs": {},
+        "exact_refs": [],
+        "assets": []
+      }
+    ],
+    "MorphTargetOptionsA": [
+      {
+        "selected_id": "MorphStandardA",
+        "design_node_found": false,
+        "design_tag": null,
+        "design_attrs": {},
+        "exact_refs": [],
+        "assets": []
+      }
+    ],
+    "MorphTargetOptionsB": [
+      {
+        "selected_id": "MorphBigeyeB",
+        "design_node_found": false,
+        "design_tag": null,
+        "design_attrs": {},
+        "exact_refs": [],
+        "assets": []
+      }
+    ],
+    "NoseColorOptions": [
+      {
+        "selected_id": "NoseDark",
+        "design_node_found": false,
+        "design_tag": null,
+        "design_attrs": {},
+        "exact_refs": [],
+        "assets": []
+      }
+    ],
+    "EarOptions": [
+      {
+        "selected_id": "EarStandard",
+        "design_node_found": false,
+        "design_tag": null,
+        "design_attrs": {},
+        "exact_refs": [],
+        "assets": []
+      }
+    ],
+    "PropColorOptions": [
+      {
+        "selected_id": "PropColorPink",
+        "design_node_found": false,
+        "design_tag": null,
+        "design_attrs": {},
+        "exact_refs": [],
+        "assets": []
+      }
+    ],
+    "MuzzleOptions": [
+      {
+        "selected_id": "MuzzleStandard",
+        "design_node_found": false,
+        "design_tag": null,
+        "design_attrs": {},
+        "exact_refs": [],
+        "assets": []
+      }
+    ],
+    "CoatTypeOptions": [
+      {
+        "selected_id": "CoatTypeRegular",
+        "design_node_found": false,
+        "design_tag": null,
+        "design_attrs": {},
+        "exact_refs": [],
+        "assets": []
+      }
+    ],
+    "TailOptions": [
+      {
+        "selected_id": "TailMedium",
+        "design_node_found": false,
+        "design_tag": null,
+        "design_attrs": {},
+        "exact_refs": [],
+        "assets": []
+      }
+    ],
+    "CollarOptions": [
+      {
+        "selected_id": "CollarStandard",
+        "design_node_found": false,
+        "design_tag": null,
+        "design_attrs": {},
+        "exact_refs": [],
+        "assets": []
+      }
+    ],
+    "SkinColorOptions": [
+      {
+        "selected_id": "SkinColorGolden",
+        "design_node_found": false,
+        "design_tag": null,
+        "design_attrs": {},
+        "exact_refs": [],
+        "assets": []
+      }
+    ],
+    "SkinColor2Options": [
+      {
+        "selected_id": "SkinColor2Black",
+        "design_node_found": false,
+        "design_tag": null,
+        "design_attrs": {},
+        "exact_refs": [],
+        "assets": []
+      }
+    ],
+    "CollarColorOptions": [
+      {
+        "selected_id": "CollarBlue",
+        "design_node_found": false,
+        "design_tag": null,
+        "design_attrs": {},
+        "exact_refs": [],
+        "assets": []
+      }
+    ],
+    "BodyDecalOptions": [
+      {
+        "selected_id": "DecalsBodyPaws",
+        "design_node_found": false,
+        "design_tag": null,
+        "design_attrs": {},
+        "exact_refs": [],
+        "assets": []
+      }
+    ]
+  },
+  "head": {
+    "rigid_meshes": [],
+    "morph_groups": {},
+    "rejected_morph_targets": [],
+    "textures": [],
+    "sprite_manifest_url": "/avatar-renders/69cdc8ecf6d0ac76c149b82f/head-design-sprites.json"
+  },
+  "body": {
+    "textures": []
+  },
+  "other_assets": [],
+  "stats": {
+    "selected_option_count": 16,
+    "selected_asset_group_count": 15,
+    "copied_asset_count": 0,
+    "missing_asset_count": 0,
+    "rigid_mesh_count": 0,
+    "accepted_morph_target_count": 0,
+    "rejected_morph_target_count": 0,
+    "head_texture_count": 0,
+    "body_texture_count": 0
+  },
+  "missing_assets": []
+}

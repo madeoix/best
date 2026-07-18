@@ -1,0 +1,90 @@
+<avatar gender="male">
+  <options pr="Y">
+    <option id="CuteEyeShadowOptions" sel="CuteLightBrownShadow"/>
+    <option id="Bot00" sel=""/>
+    <option id="Bot01" sel=""/>
+    <option id="Bot02" sel=""/>
+    <option id="Bot03" sel=""/>
+    <option id="Bot05" sel=""/>
+    <option id="Top00" sel=""/>
+    <option id="Top01" sel=""/>
+    <option id="Top02" sel=""/>
+    <option id="Top03" sel=""/>
+    <option id="Top04" sel=""/>
+    <option id="Top05" sel=""/>
+    <option id="Top06" sel=""/>
+    <option id="Top07" sel=""/>
+    <option id="Top08" sel=""/>
+    <option id="Top09" sel=""/>
+    <option id="ConSuit" sel=""/>
+    <option id="Suits" sel=""/>
+    <option id="TopColorOptions" sel="White"/>
+    <option id="OuterColorOptions" sel="Brown"/>
+    <option id="BottomColorOptions" sel="Black"/>
+    <option id="BeltColorOptions" sel="White"/>
+    <option id="NecklaceColorOptions" sel="Yellow"/>
+    <option id="GenderOptions" sel="Male"/>
+    <option id="JSTop" sel="JumpTshirt"/>
+    <option id="JSBottom" sel="JumpPants"/>
+    <option id="JSFeet" sel="NoShoe"/>
+    <option id="BodySkin" sel="Arms,Legs,Torso"/>
+    <option id="GlassesOptions" sel="GlassesBrowline"/>
+    <option id="FaceAOptions" sel="FaceRoundOne"/>
+    <option id="FaceRoundOne" w="0.50"/>
+    <option id="FaceBOptions" sel="FaceAnimeTwo"/>
+    <option id="FaceAnimeTwo" w="0.50"/>
+    <option id="NoseAOptions" sel="NoseButtonOne"/>
+    <option id="NoseButtonOne" w="0.57"/>
+    <option id="NoseBOptions" sel="NoseFlatTwo"/>
+    <option id="NoseFlatTwo" w="0.43"/>
+    <option id="EyeOptions" sel="EyesStandardReal"/>
+    <option id="LeftEyeTransform"/>
+    <option id="RightEyeTransform"/>
+    <option id="HairstyleOptions" sel="HairSpikeyUp"/>
+    <option id="DecalOptions" sel="DecalPointFacial,Piercing4,DecalScarEye,DecalScarForhead"/>
+    <option id="MouthOptions" sel="Mouth10"/>
+    <option id="MouthTransform" r="0.4228395061728394" sx="1.018148148148148" sy="1.018148148148148"/>
+    <option id="BrowOptions" sel="Anim09"/>
+    <option id="EyeColorOptions" sel="EyeColorBlue"/>
+    <option id="HatColorOptions" sel="HatColorRed"/>
+    <option id="HairColorOptions" sel="HairColorBlack"/>
+    <option id="EyebrowColorOptions" sel="EyebrowColorBlack"/>
+    <option id="TintOptions" sel="HairTintBlue"/>
+    <option id="SkinColorOptions" sel="SkinColorDarkBrown"/>
+  </options>
+  <dances>
+    <dance id="Dance 1">
+      <f r="0" d="5" h="Forward" a="Relaxed" l="Relaxed"/>
+      <f r="45" d="5" h="HalfLeft" a="Walk3" l="Walk1"/>
+      <f r="0" d="5" h="HalfRight" a="Relaxed" l="Walk3"/>
+      <f r="315" d="5" h="HalfRight" a="Walk1" l="Walk4"/>
+      <f r="225" d="3" h="HalfRight" a="Walk1" l="Walk4"/>
+      <f r="180" d="3" h="HalfRight" a="Walk2" l="Walk4"/>
+      <f r="135" d="3" h="HalfRight" a="Walk3" l="Walk4"/>
+      <f r="90" d="3" h="HalfRight" a="Walk1" l="Walk4"/>
+      <f r="45" d="3" h="HalfRight" a="Walk2" l="Walk4"/>
+    </dance>
+    <dance id="Dance 2">
+      <f r="0" d="5" h="Forward" a="Relaxed" l="Relaxed"/>
+      <f r="45" d="5" h="HalfLeft" a="Walk3" l="Walk1"/>
+      <f r="0" d="5" h="HalfRight" a="Relaxed" l="Walk3"/>
+      <f r="315" d="5" h="HalfRight" a="Walk1" l="Walk4"/>
+      <f r="225" d="3" h="HalfRight" a="Walk1" l="Walk4"/>
+      <f r="180" d="3" h="HalfRight" a="Walk2" l="Walk4"/>
+      <f r="135" d="3" h="HalfRight" a="Walk3" l="Walk4"/>
+      <f r="90" d="3" h="HalfRight" a="Walk1" l="Walk4"/>
+      <f r="45" d="3" h="HalfRight" a="Walk2" l="Walk4"/>
+    </dance>
+    <dance id="Dance 3">
+      <f r="0" d="5" h="Forward" a="Relaxed" l="Relaxed"/>
+      <f r="45" d="5" h="HalfLeft" a="Walk3" l="Walk1"/>
+      <f r="0" d="5" h="HalfRight" a="Relaxed" l="Walk3"/>
+      <f r="315" d="5" h="HalfRight" a="Walk1" l="Walk4"/>
+      <f r="225" d="3" h="HalfRight" a="Walk1" l="Walk4"/>
+      <f r="180" d="3" h="HalfRight" a="Walk2" l="Walk4"/>
+      <f r="135" d="3" h="HalfRight" a="Walk3" l="Walk4"/>
+      <f r="90" d="3" h="HalfRight" a="Walk1" l="Walk4"/>
+      <f r="45" d="3" h="HalfRight" a="Walk2" l="Walk4"/>
+    </dance>
+  </dances>
+</avatar>

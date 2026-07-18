@@ -1,0 +1,57 @@
+{
+  "ok": true,
+  "contract": "smallverse-avatar-head-design-sprites/v1",
+  "avatar_id": "6a50b95ecc06b352bcc62cf1",
+  "selected": {
+    "EyeOptions": [
+      "EyeReal"
+    ],
+    "SkinColorOptions": [
+      "SkinColorGolden"
+    ],
+    "EyeColorOptions": [
+      "EyeColorBrown"
+    ]
+  },
+  "weights": {
+    "MorphGreyA": 0.5,
+    "MorphBoxerB": 0.5
+  },
+  "transforms": {},
+  "sprites": [],
+  "colors": [
+    {
+      "option_id": "EyeColorOptions",
+      "selected_id": "EyeColorBrown",
+      "attrs": {
+        "sId": "RightPupil",
+        "c": "14719614",
+        "a": 1.0,
+        "b": -14.5,
+        "ct": 0.01,
+        "lId": "EyeColor"
+      }
+    },
+    {
+      "option_id": "EyeColorOptions",
+      "selected_id": "EyeColorBrown",
+      "attrs": {
+        "sId": "LeftPupil",
+        "c": "9869045",
+        "a": 1.0,
+        "b": 37.9,
+        "ct": 0.68,
+        "lId": "EyeColor",
+        "lw": "N"
+      }
+    }
+  ],
+  "models": [],
+  "missing": [],
+  "stats": {
+    "sprite_count": 0,
+    "color_rule_count": 2,
+    "model_ref_count": 0,
+    "missing_count": 0
+  }
+}

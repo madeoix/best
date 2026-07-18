@@ -1,0 +1,21 @@
+[Unit]
+Description=Refresh Beacon avatar thumbnails through the SWF Find Friends protocol
+After=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/smallverse
+# This is a read-only crawler-02 call.  The bridge reads the renewed session
+# from the VPS-native vault in memory, writes only a mode-0600 manifest, and
+# never places cookie material in the command line or logs.
+Environment=PYTHONDONTWRITEBYTECODE=1
+Environment=PYTHONPATH=/opt/smallverse-staging-dual:/opt/smallverse
+ExecStart=/bin/bash -lc 'set -euo pipefail; query=$(/opt/smallverse-universal/.venv/bin/python /opt/smallverse/next_smallverse_friend_query.py --state /opt/smallverse/workspace/friend-search-query-state.json --peek); /opt/smallverse-universal/.venv/bin/python /opt/smallverse/beacon_friend_search_bridge.py --session-profile crawler-02 --session-workspace /opt/smallverse-staging-dual/workspace --query "$query" --timer-state /opt/smallverse/workspace/friend-search-timer-state.json --resolve-owner-avatars --owner-limit 25 --avatar-config-queue /opt/smallverse/workspace/beacon-avatar-render-queue.json --output /opt/smallverse/workspace/friend-search-live.json; /opt/smallverse-universal/.venv/bin/python /opt/smallverse/cache_avatar_thumbnails_via_cdp.py --manifest /opt/smallverse/workspace/friend-search-live.json --output-dir /opt/smallverse/workspace/avatar-images --avatar-index /opt/smallverse/workspace/avatar-url-index.json --variants thumb --transport auto; /opt/smallverse-universal/.venv/bin/python /opt/smallverse/beacon_owner_avatar_identity_graph.py --database /opt/smallverse/workspace/identity.sqlite --friend-manifest /opt/smallverse/workspace/friend-search-live.json --avatar-index /opt/smallverse/workspace/avatar-url-index.json --output /opt/smallverse/workspace/owner-avatar-identity-graph.json; /opt/smallverse-universal/.venv/bin/python /opt/smallverse/next_smallverse_friend_query.py --state /opt/smallverse/workspace/friend-search-query-state.json --advance'
+Nice=10
+CPUQuota=40%
+MemoryHigh=384M
+MemoryMax=512M
+MemorySwapMax=64M
+TasksMax=96
+TimeoutStartSec=10min
+OOMPolicy=stop

@@ -1,0 +1,754 @@
+{
+  "ok": true,
+  "contract": "smallverse-avatar-head-design-sprites/v1",
+  "avatar_id": "694851205036e1068d5ac6da",
+  "selected": {
+    "HairstyleOptions": [
+      "HairEmoTinted"
+    ],
+    "EyeOptions": [
+      "Anime06Real"
+    ],
+    "EyeShadowOptions": [
+      "CuteDarkBlueShadow"
+    ],
+    "CuteEyeShadowOptions": [
+      "CuteLightBrownShadow"
+    ],
+    "BrowOptions": [
+      "BrowsMediumRaise"
+    ],
+    "MouthOptions": [
+      "MouthpoutStick"
+    ],
+    "LipstickOptions": [
+      "LipStickMarylin"
+    ],
+    "FoundationOptions": [
+      "Sheen3"
+    ],
+    "BlusherOptions": [
+      "80sBlusher"
+    ],
+    "BlusherColorOptions": [
+      "BlusherHot"
+    ],
+    "HairColorOptions": [
+      "HairColorBlack"
+    ],
+    "HighlightOptions": [
+      "HairStreakDark"
+    ],
+    "TintOptions": [
+      "HairTintLight"
+    ],
+    "SkinColorOptions": [
+      "SkinColorEggshell"
+    ],
+    "EyeColorOptions": [
+      "EyeColorGreen"
+    ]
+  },
+  "weights": {
+    "FaceOvalTwo": 0.5,
+    "FaceCuteOne": 0.76,
+    "NoseStraightOne": 0.5,
+    "NoseButtonTwo": 0.03
+  },
+  "transforms": {
+    "Bot00": {
+      "id": "Bot00",
+      "sel": ""
+    },
+    "Bot01": {
+      "id": "Bot01",
+      "sel": ""
+    },
+    "Bot02": {
+      "id": "Bot02",
+      "sel": ""
+    },
+    "Bot03": {
+      "id": "Bot03",
+      "sel": ""
+    },
+    "Bot05": {
+      "id": "Bot05",
+      "sel": ""
+    },
+    "Top00": {
+      "id": "Top00",
+      "sel": ""
+    },
+    "Top01": {
+      "id": "Top01",
+      "sel": ""
+    },
+    "Top02": {
+      "id": "Top02",
+      "sel": ""
+    },
+    "Top03": {
+      "id": "Top03",
+      "sel": ""
+    },
+    "Top04": {
+      "id": "Top04",
+      "sel": ""
+    },
+    "Top05": {
+      "id": "Top05",
+      "sel": ""
+    },
+    "Top06": {
+      "id": "Top06",
+      "sel": ""
+    },
+    "Top07": {
+      "id": "Top07",
+      "sel": ""
+    },
+    "Top08": {
+      "id": "Top08",
+      "sel": ""
+    },
+    "Top09": {
+      "id": "Top09",
+      "sel": ""
+    },
+    "ConSuit": {
+      "id": "ConSuit",
+      "sel": ""
+    },
+    "Suits": {
+      "id": "Suits",
+      "sel": ""
+    },
+    "MouthTransform": {
+      "id": "MouthTransform",
+      "sx": "0.8627272727272728",
+      "sy": "0.8627272727272728"
+    },
+    "GlassesOptions": {
+      "id": "GlassesOptions",
+      "sel": ""
+    },
+    "LeftEyeTransform": {
+      "id": "LeftEyeTransform",
+      "sx": "0.8",
+      "sy": "0.8"
+    },
+    "RightEyeTransform": {
+      "id": "RightEyeTransform",
+      "sx": "0.8",
+      "sy": "0.8"
+    }
+  },
+  "sprites": [
+    {
+      "option_id": "HairstyleOptions",
+      "selected_id": "HairEmoTinted",
+      "id": "HairBase",
+      "name": null,
+      "cId": "Hair",
+      "sId": null,
+      "ref": "avatars/head/base/unisex/hair/h_base.png",
+      "url": "/avatar-assets/avatars/head/base/unisex/hair/h_base.png",
+      "attrs": {
+        "id": "HairBase",
+        "cId": "Hair",
+        "s": "$hu/hair/h_base.png",
+        "sx": 2.0,
+        "sy": 2.0
+      }
+    },
+    {
+      "option_id": "HairstyleOptions",
+      "selected_id": "HairEmoTinted",
+      "id": null,
+      "name": null,
+      "cId": "Skin",
+      "sId": null,
+      "ref": "avatars/head/base/male/hair/ht_emo_shadow.png",
+      "url": "/avatar-assets/avatars/head/base/male/hair/ht_emo_shadow.png",
+      "attrs": {
+        "cId": "Skin",
+        "s": "$hm/hair/ht_emo_shadow.png",
+        "m": "multiply",
+        "ty": -2.0,
+        "sx": 8.0,
+        "sy": 8.0
+      }
+    },
+    {
+      "option_id": "HairstyleOptions",
+      "selected_id": "HairEmoTinted",
+      "id": "HairHiliteColour1",
+      "name": null,
+      "cId": "Hair",
+      "sId": null,
+      "ref": "avatars/head/base/unisex/hair/h_hilite.png",
+      "url": "/avatar-assets/avatars/head/base/unisex/hair/h_hilite.png",
+      "attrs": {
+        "id": "HairHiliteColour1",
+        "cId": "Hair",
+        "s": "$hu/hair/h_hilite.png",
+        "m": "hardlight",
+        "tx": 128.0,
+        "ty": 115.5,
+        "sy": 1.45
+      }
+    },
+    {
+      "option_id": "HairstyleOptions",
+      "selected_id": "HairEmoTinted",
+      "id": "HairHiliteColour2",
+      "name": null,
+      "cId": "Hair",
+      "sId": null,
+      "ref": "avatars/head/base/unisex/hair/h_hilite.png",
+      "url": "/avatar-assets/avatars/head/base/unisex/hair/h_hilite.png",
+      "attrs": {
+        "id": "HairHiliteColour2",
+        "cId": "Hair",
+        "s": "$hu/hair/h_hilite.png",
+        "m": "hardlight",
+        "tx": 63.0,
+        "ty": 267.5,
+        "sy": 2.65
+      }
+    },
+    {
+      "option_id": "EyeOptions",
+      "selected_id": "Anime06Real",
+      "id": null,
+      "name": "Left Eye",
+      "cId": "Skin",
+      "sId": null,
+      "ref": "avatars/head/base/unisex/eyes/eye_anim06_base.png",
+      "url": "/avatar-assets/avatars/head/base/unisex/eyes/eye_anim06_base.png",
+      "attrs": {
+        "name": "Left Eye",
+        "cId": "Skin",
+        "s": "$hu/eyes/eye_anim06_base.png",
+        "tx": 572.0,
+        "ty": 195.5,
+        "rot": -18.0,
+        "sx": -2.2,
+        "sy": 1.1,
+        "cx": 38.0,
+        "cy": 19.0,
+        "pri": 3.0
+      }
+    },
+    {
+      "option_id": "EyeOptions",
+      "selected_id": "Anime06Real",
+      "id": "LeftPupil",
+      "name": "Left pupil",
+      "cId": "Skin",
+      "sId": null,
+      "ref": "avatars/head/base/unisex/eyes/eye_anim06_iris.png",
+      "url": "/avatar-assets/avatars/head/base/unisex/eyes/eye_anim06_iris.png",
+      "attrs": {
+        "id": "LeftPupil",
+        "name": "Left pupil",
+        "cId": "Skin",
+        "s": "$hu/eyes/eye_anim06_iris.png",
+        "tx": 582.5,
+        "rot": 10.0,
+        "sx": -2.2,
+        "sy": 1.1,
+        "cx": 16.0,
+        "cy": 11.0,
+        "pri": 3.0,
+        "ty": 194.0
+      }
+    },
+    {
+      "option_id": "EyeOptions",
+      "selected_id": "Anime06Real",
+      "id": null,
+      "name": "L hilite",
+      "cId": "Skin",
+      "sId": null,
+      "ref": "avatars/head/base/male/eyes/eye_normhilite.png",
+      "url": "/avatar-assets/avatars/head/base/male/eyes/eye_normhilite.png",
+      "attrs": {
+        "name": "L hilite",
+        "cId": "Skin",
+        "s": "$hm/eyes/eye_normhilite.png",
+        "tx": 590.0,
+        "ty": 192.5,
+        "sy": 0.4,
+        "cx": 8.0,
+        "cy": 8.0,
+        "pri": 3.0
+      }
+    },
+    {
+      "option_id": "EyeOptions",
+      "selected_id": "Anime06Real",
+      "id": null,
+      "name": "Right Eye",
+      "cId": "Skin",
+      "sId": null,
+      "ref": "avatars/head/base/unisex/eyes/eye_anim06_base.png",
+      "url": "/avatar-assets/avatars/head/base/unisex/eyes/eye_anim06_base.png",
+      "attrs": {
+        "name": "Right Eye",
+        "cId": "Skin",
+        "s": "$hu/eyes/eye_anim06_base.png",
+        "tx": 453.0,
+        "ty": 195.5,
+        "rot": -18.0,
+        "sx": 2.2,
+        "sy": 1.1,
+        "cx": 36.0,
+        "cy": 19.0,
+        "pri": 3.0
+      }
+    },
+    {
+      "option_id": "EyeOptions",
+      "selected_id": "Anime06Real",
+      "id": "RightPupil",
+      "name": "Right pupil",
+      "cId": "Skin",
+      "sId": null,
+      "ref": "avatars/head/base/unisex/eyes/eye_anim06_iris.png",
+      "url": "/avatar-assets/avatars/head/base/unisex/eyes/eye_anim06_iris.png",
+      "attrs": {
+        "id": "RightPupil",
+        "name": "Right pupil",
+        "cId": "Skin",
+        "s": "$hu/eyes/eye_anim06_iris.png",
+        "tx": 443.5,
+        "ty": 193.5,
+        "rot": -4.0,
+        "sx": 2.2,
+        "sy": 1.1,
+        "cx": 16.0,
+        "cy": 12.0,
+        "pri": 3.0
+      }
+    },
+    {
+      "option_id": "EyeOptions",
+      "selected_id": "Anime06Real",
+      "id": null,
+      "name": "R hilite",
+      "cId": "Skin",
+      "sId": null,
+      "ref": "avatars/head/base/male/eyes/eye_normhilite.png",
+      "url": "/avatar-assets/avatars/head/base/male/eyes/eye_normhilite.png",
+      "attrs": {
+        "name": "R hilite",
+        "cId": "Skin",
+        "s": "$hm/eyes/eye_normhilite.png",
+        "tx": 454.0,
+        "ty": 190.5,
+        "sy": 0.4,
+        "cx": 8.0,
+        "cy": 8.0,
+        "pri": 3.0
+      }
+    },
+    {
+      "option_id": "BrowOptions",
+      "selected_id": "BrowsMediumRaise",
+      "id": null,
+      "name": "Left",
+      "cId": "Eyebrow",
+      "sId": null,
+      "ref": "avatars/head/base/male/brow/b_medium.png",
+      "url": "/avatar-assets/avatars/head/base/male/brow/b_medium.png",
+      "attrs": {
+        "name": "Left",
+        "cId": "Eyebrow",
+        "s": "$hm/brow/b_medium.png",
+        "tx": 579.0,
+        "ty": 156.0,
+        "rot": -6.0,
+        "sx": 1.7,
+        "sy": 1.2,
+        "cx": 32.0,
+        "cy": 10.0
+      }
+    },
+    {
+      "option_id": "BrowOptions",
+      "selected_id": "BrowsMediumRaise",
+      "id": null,
+      "name": "Right",
+      "cId": "Eyebrow",
+      "sId": null,
+      "ref": "avatars/head/base/male/brow/b_medium.png",
+      "url": "/avatar-assets/avatars/head/base/male/brow/b_medium.png",
+      "attrs": {
+        "name": "Right",
+        "cId": "Eyebrow",
+        "s": "$hm/brow/b_medium.png",
+        "tx": 442.0,
+        "ty": 168.5,
+        "rot": 6.0,
+        "sx": -1.7,
+        "sy": 1.2,
+        "cx": 32.0,
+        "cy": 10.0
+      }
+    },
+    {
+      "option_id": "MouthOptions",
+      "selected_id": "MouthpoutStick",
+      "id": "Lipstick",
+      "name": null,
+      "cId": "Skin",
+      "sId": null,
+      "ref": "avatars/head/base/female/mouth/m_pout.png",
+      "url": "/avatar-assets/avatars/head/base/female/mouth/m_pout.png",
+      "attrs": {
+        "id": "Lipstick",
+        "cId": "Skin",
+        "s": "$hf/mouth/m_pout.png",
+        "sx": 1.4,
+        "sy": 1.2,
+        "cx": 32.0,
+        "cy": 17.5,
+        "pri": 1.0,
+        "tx": 511.0,
+        "ty": 334.0
+      }
+    },
+    {
+      "option_id": "MouthOptions",
+      "selected_id": "MouthpoutStick",
+      "id": null,
+      "name": null,
+      "cId": "Skin",
+      "sId": null,
+      "ref": "avatars/head/base/female/mouth/m_pouthilite.png",
+      "url": "/avatar-assets/avatars/head/base/female/mouth/m_pouthilite.png",
+      "attrs": {
+        "cId": "Skin",
+        "s": "$hf/mouth/m_pouthilite.png",
+        "sx": 1.4,
+        "sy": 1.2,
+        "cx": 32.0,
+        "cy": 17.5,
+        "pri": 1.0,
+        "tx": 511.0,
+        "ty": 334.0
+      }
+    },
+    {
+      "option_id": "FoundationOptions",
+      "selected_id": "Sheen3",
+      "id": "SkinSheen3",
+      "name": null,
+      "cId": "Skin",
+      "sId": null,
+      "ref": "avatars/head/base/unisex/skin/s_colour_hilite.png",
+      "url": "/avatar-assets/avatars/head/base/unisex/skin/s_colour_hilite.png",
+      "attrs": {
+        "id": "SkinSheen3",
+        "cId": "Skin",
+        "s": "$hu/skin/s_colour_hilite.png",
+        "m": "add",
+        "tx": 6.0,
+        "rot": 2.0,
+        "sx": 4.0,
+        "sy": 4.0
+      }
+    },
+    {
+      "option_id": "BlusherOptions",
+      "selected_id": "80sBlusher",
+      "id": "80sBlusherCheekRight",
+      "name": null,
+      "cId": "Skin",
+      "sId": null,
+      "ref": "avatars/head/base/female/skin/mu_80blusher.png",
+      "url": "/avatar-assets/avatars/head/base/female/skin/mu_80blusher.png",
+      "attrs": {
+        "id": "80sBlusherCheekRight",
+        "cId": "Skin",
+        "s": "$hf/skin/mu_80blusher.png",
+        "tx": 355.0,
+        "ty": 260.0,
+        "sx": 4.0,
+        "sy": 4.0,
+        "cx": 34.0,
+        "cy": 25.0
+      }
+    },
+    {
+      "option_id": "BlusherOptions",
+      "selected_id": "80sBlusher",
+      "id": "80sBlusherCheekLeft",
+      "name": null,
+      "cId": "Skin",
+      "sId": null,
+      "ref": "avatars/head/base/female/skin/mu_80blusher.png",
+      "url": "/avatar-assets/avatars/head/base/female/skin/mu_80blusher.png",
+      "attrs": {
+        "id": "80sBlusherCheekLeft",
+        "cId": "Skin",
+        "s": "$hf/skin/mu_80blusher.png",
+        "tx": 657.0,
+        "ty": 260.0,
+        "sx": -4.0,
+        "sy": 4.0,
+        "cx": 34.0,
+        "cy": 25.0
+      }
+    }
+  ],
+  "colors": [
+    {
+      "option_id": "EyeShadowOptions",
+      "selected_id": "CuteDarkBlueShadow",
+      "attrs": {
+        "name": "Makeup Colour Master",
+        "sId": "MakeupLeft",
+        "c": "1514320",
+        "a": 0.99,
+        "b": 49.0,
+        "ct": 0.27,
+        "lId": "cutegreen"
+      }
+    },
+    {
+      "option_id": "EyeShadowOptions",
+      "selected_id": "CuteDarkBlueShadow",
+      "attrs": {
+        "sId": "MakeupRight",
+        "c": "1514320",
+        "a": 0.99,
+        "b": 49.0,
+        "ct": 0.27,
+        "lId": "cutegreen",
+        "lw": "N"
+      }
+    },
+    {
+      "option_id": "CuteEyeShadowOptions",
+      "selected_id": "CuteLightBrownShadow",
+      "attrs": {
+        "name": "Makeup Colour Master",
+        "sId": "MakeupLeft",
+        "c": "7360308",
+        "a": 0.97,
+        "b": 88.5,
+        "ct": 1.0,
+        "lId": "cutecork"
+      }
+    },
+    {
+      "option_id": "CuteEyeShadowOptions",
+      "selected_id": "CuteLightBrownShadow",
+      "attrs": {
+        "sId": "MakeupRight",
+        "c": "7360308",
+        "a": 0.97,
+        "b": 88.5,
+        "ct": 1.0,
+        "lId": "cutecork",
+        "lw": "N"
+      }
+    },
+    {
+      "option_id": "LipstickOptions",
+      "selected_id": "LipStickMarylin",
+      "attrs": {
+        "sId": "Lipstick",
+        "c": "16523283",
+        "a": 1.0,
+        "b": 24.6
+      }
+    },
+    {
+      "option_id": "FoundationOptions",
+      "selected_id": "Sheen3",
+      "attrs": {
+        "sId": "SkinSheen3",
+        "c": "16722176",
+        "b": -219.7,
+        "ct": 0.05
+      }
+    },
+    {
+      "option_id": "BlusherOptions",
+      "selected_id": "80sBlusher",
+      "attrs": {
+        "sId": "80sBlusherCheekRight",
+        "c": "15424864",
+        "a": 0.9,
+        "b": 75.2,
+        "ct": 0.62,
+        "lId": "BlusherMakeup",
+        "lw": "N"
+      }
+    },
+    {
+      "option_id": "BlusherOptions",
+      "selected_id": "80sBlusher",
+      "attrs": {
+        "sId": "80sBlusherCheekLeft",
+        "c": "15424864",
+        "a": 0.9,
+        "b": 75.2,
+        "ct": 0.62,
+        "lId": "BlusherMakeup",
+        "lw": "N"
+      }
+    },
+    {
+      "option_id": "BlusherColorOptions",
+      "selected_id": "BlusherHot",
+      "attrs": {
+        "c": "16542351",
+        "a": 1.0,
+        "b": 44.7,
+        "ct": 0.32,
+        "lId": "BlusherMakeup"
+      }
+    },
+    {
+      "option_id": "HairColorOptions",
+      "selected_id": "HairColorBlack",
+      "attrs": {
+        "name": "Black hair",
+        "sId": "HairBase",
+        "c": "7368816",
+        "a": 1.0,
+        "b": 68.6,
+        "ct": 2.0
+      }
+    },
+    {
+      "option_id": "HairColorOptions",
+      "selected_id": "HairColorBlack",
+      "attrs": {
+        "name": "Black facial",
+        "sId": "FacialHairStep",
+        "c": "1710618",
+        "a": 0.17,
+        "b": -33.8,
+        "ct": 1.3,
+        "lId": "FacialHairColor"
+      }
+    },
+    {
+      "option_id": "HighlightOptions",
+      "selected_id": "HairStreakDark",
+      "attrs": {
+        "name": "Tint Darken 1",
+        "sId": "HairHighlight1",
+        "c": "923428",
+        "a": 0.81,
+        "b": 95.0,
+        "ct": 1.3,
+        "lId": "LinkTintDark"
+      }
+    },
+    {
+      "option_id": "HighlightOptions",
+      "selected_id": "HairStreakDark",
+      "attrs": {
+        "name": "Tint Darken 2",
+        "sId": "HairHighlight2",
+        "c": "923428",
+        "a": 0.81,
+        "b": 95.0,
+        "ct": 1.3,
+        "lId": "LinkTintDark",
+        "lw": "N"
+      }
+    },
+    {
+      "option_id": "TintOptions",
+      "selected_id": "HairTintLight",
+      "attrs": {
+        "id": "TintLight",
+        "sId": "HairHiliteColour1",
+        "c": "16777215",
+        "a": 0.81,
+        "b": 95.0,
+        "ct": 1.3,
+        "lId": "LinkTintLight"
+      }
+    },
+    {
+      "option_id": "TintOptions",
+      "selected_id": "HairTintLight",
+      "attrs": {
+        "id": "TintLight2",
+        "sId": "HairHiliteColour2",
+        "c": "16777215",
+        "a": 0.81,
+        "b": 95.0,
+        "ct": 1.3,
+        "lId": "LinkTintLight",
+        "lw": "N"
+      }
+    },
+    {
+      "option_id": "SkinColorOptions",
+      "selected_id": "SkinColorEggshell",
+      "attrs": {
+        "id": "SkinColorEggshell",
+        "name": "Egg shell",
+        "icon": "$hu/skin/icon_skin_eggshell.png",
+        "sId": "SkinBase",
+        "c": "15122065",
+        "a": 0.56,
+        "b": 24.8,
+        "ct": 0.26,
+        "lId": "SkinColor"
+      }
+    },
+    {
+      "option_id": "EyeColorOptions",
+      "selected_id": "EyeColorGreen",
+      "attrs": {
+        "sId": "RightPupil",
+        "c": "504583",
+        "a": 1.0,
+        "b": 28.8,
+        "ct": 0.21,
+        "lId": "EyeColor"
+      }
+    },
+    {
+      "option_id": "EyeColorOptions",
+      "selected_id": "EyeColorGreen",
+      "attrs": {
+        "sId": "LeftPupil",
+        "c": "45533",
+        "a": 1.0,
+        "b": 46.9,
+        "ct": 0.88,
+        "lId": "EyeColor",
+        "lw": "N"
+      }
+    }
+  ],
+  "models": [
+    {
+      "option_id": "HairstyleOptions",
+      "selected_id": "HairEmoTinted",
+      "ref": "avatars/head/base/male/hair/hair_emo.o3d",
+      "attrs": {
+        "s": "$hm/hair/hair_emo.o3d"
+      }
+    }
+  ],
+  "missing": [],
+  "stats": {
+    "sprite_count": 17,
+    "color_rule_count": 18,
+    "model_ref_count": 1,
+    "missing_count": 0
+  }
+}

@@ -1,0 +1,243 @@
+{
+  "ok": true,
+  "contract": "smallverse-avatar-render-contract/v4",
+  "avatar_id": "69ca052e090b7a3bb2b28f81",
+  "gender": "female",
+  "source_config_xml": "/home/maddie/smallverse-lab/static/avatar-calibration/69ca052e090b7a3bb2b28f81/live-config.xml",
+  "oracle": null,
+  "selected_options": {
+    "EyeOptions": "EyeHalf",
+    "EyeColorOptions": "EyeGreen",
+    "MorphTargetOptionsA": "MorphStandardA",
+    "MorphTargetOptionsB": "MorphStandardB",
+    "NoseColorOptions": "NoseDark",
+    "EarOptions": "EarShort",
+    "PropOptions": "",
+    "PropColorOptions": "PropColorBlack",
+    "MuzzleOptions": "MuzzleStandard",
+    "CoatTypeOptions": "CoatTypeTabby",
+    "TailOptions": "TailMedium",
+    "CollarOptions": "CollarSpike",
+    "SkinColorOptions": "SkinColorPink",
+    "SkinColor2Options": "SkinColor2Grey",
+    "CollarColorOptions": "CollarBlack",
+    "BodyDecalOptions": "DecalsBodyNone"
+  },
+  "weights": {
+    "MorphStandardA": 0.0,
+    "MorphStandardB": 1.0
+  },
+  "transforms": {},
+  "dances": [],
+  "selected_asset_groups": {
+    "EyeOptions": [
+      {
+        "selected_id": "EyeHalf",
+        "design_node_found": false,
+        "design_tag": null,
+        "design_attrs": {},
+        "exact_refs": [],
+        "assets": []
+      }
+    ],
+    "EyeColorOptions": [
+      {
+        "selected_id": "EyeGreen",
+        "design_node_found": false,
+        "design_tag": null,
+        "design_attrs": {},
+        "exact_refs": [],
+        "assets": []
+      }
+    ],
+    "MorphTargetOptionsA": [
+      {
+        "selected_id": "MorphStandardA",
+        "design_node_found": false,
+        "design_tag": null,
+        "design_attrs": {},
+        "exact_refs": [],
+        "assets": []
+      }
+    ],
+    "MorphTargetOptionsB": [
+      {
+        "selected_id": "MorphStandardB",
+        "design_node_found": false,
+        "design_tag": null,
+        "design_attrs": {},
+        "exact_refs": [],
+        "assets": []
+      }
+    ],
+    "NoseColorOptions": [
+      {
+        "selected_id": "NoseDark",
+        "design_node_found": false,
+        "design_tag": null,
+        "design_attrs": {},
+        "exact_refs": [],
+        "assets": []
+      }
+    ],
+    "EarOptions": [
+      {
+        "selected_id": "EarShort",
+        "design_node_found": false,
+        "design_tag": null,
+        "design_attrs": {},
+        "exact_refs": [],
+        "assets": []
+      }
+    ],
+    "PropColorOptions": [
+      {
+        "selected_id": "PropColorBlack",
+        "design_node_found": false,
+        "design_tag": null,
+        "design_attrs": {},
+        "exact_refs": [],
+        "assets": []
+      }
+    ],
+    "MuzzleOptions": [
+      {
+        "selected_id": "MuzzleStandard",
+        "design_node_found": false,
+        "design_tag": null,
+        "design_attrs": {},
+        "exact_refs": [],
+        "assets": []
+      }
+    ],
+    "CoatTypeOptions": [
+      {
+        "selected_id": "CoatTypeTabby",
+        "design_node_found": false,
+        "design_tag": null,
+        "design_attrs": {},
+        "exact_refs": [],
+        "assets": []
+      }
+    ],
+    "TailOptions": [
+      {
+        "selected_id": "TailMedium",
+        "design_node_found": false,
+        "design_tag": null,
+        "design_attrs": {},
+        "exact_refs": [],
+        "assets": []
+      }
+    ],
+    "CollarOptions": [
+      {
+        "selected_id": "CollarSpike",
+        "design_node_found": false,
+        "design_tag": null,
+        "design_attrs": {},
+        "exact_refs": [],
+        "assets": []
+      }
+    ],
+    "SkinColorOptions": [
+      {
+        "selected_id": "SkinColorPink",
+        "design_node_found": true,
+        "design_tag": "c",
+        "design_attrs": {
+          "id": "SkinColorPink",
+          "name": "Salmon",
+          "icon": "$hu/skin/icon_skin_pink.png",
+          "sId": "SkinBase",
+          "c": "11888208",
+          "a": "0.48",
+          "b": "49.4",
+          "ct": "0.43",
+          "lId": "SkinColor"
+        },
+        "exact_refs": [
+          "avatars/head/base/unisex/skin/icon_skin_pink.png"
+        ],
+        "assets": [
+          {
+            "ref": "avatars/head/base/unisex/skin/icon_skin_pink.png",
+            "url": "/avatar-assets/avatars/head/base/unisex/skin/icon_skin_pink.png",
+            "exists": true,
+            "bytes": 561,
+            "option_id": "SkinColorOptions",
+            "selected_id": "SkinColorPink",
+            "kind": "texture",
+            "existed_before_hydrate": true,
+            "hydrated": false
+          }
+        ]
+      }
+    ],
+    "SkinColor2Options": [
+      {
+        "selected_id": "SkinColor2Grey",
+        "design_node_found": false,
+        "design_tag": null,
+        "design_attrs": {},
+        "exact_refs": [],
+        "assets": []
+      }
+    ],
+    "CollarColorOptions": [
+      {
+        "selected_id": "CollarBlack",
+        "design_node_found": false,
+        "design_tag": null,
+        "design_attrs": {},
+        "exact_refs": [],
+        "assets": []
+      }
+    ],
+    "BodyDecalOptions": [
+      {
+        "selected_id": "DecalsBodyNone",
+        "design_node_found": false,
+        "design_tag": null,
+        "design_attrs": {},
+        "exact_refs": [],
+        "assets": []
+      }
+    ]
+  },
+  "head": {
+    "rigid_meshes": [],
+    "morph_groups": {},
+    "rejected_morph_targets": [],
+    "textures": [
+      {
+        "ref": "avatars/head/base/unisex/skin/icon_skin_pink.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/skin/icon_skin_pink.png",
+        "exists": true,
+        "bytes": 561,
+        "option_id": "SkinColorOptions",
+        "selected_id": "SkinColorPink",
+        "kind": "texture",
+        "existed_before_hydrate": true,
+        "hydrated": false
+      }
+    ],
+    "sprite_manifest_url": "/avatar-renders/69ca052e090b7a3bb2b28f81/head-design-sprites.json"
+  },
+  "body": {
+    "textures": []
+  },
+  "other_assets": [],
+  "stats": {
+    "selected_option_count": 16,
+    "selected_asset_group_count": 15,
+    "copied_asset_count": 1,
+    "missing_asset_count": 0,
+    "rigid_mesh_count": 0,
+    "accepted_morph_target_count": 0,
+    "rejected_morph_target_count": 0,
+    "head_texture_count": 1,
+    "body_texture_count": 0
+  },
+  "missing_assets": []
+}

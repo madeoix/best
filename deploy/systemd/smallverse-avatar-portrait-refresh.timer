@@ -1,0 +1,11 @@
+[Unit]
+Description=Periodically refresh cached Beacon owner portrait PNGs
+
+[Timer]
+OnBootSec=5m
+OnUnitActiveSec=6h
+Persistent=true
+Unit=smallverse-avatar-portrait-refresh.service
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,16 @@
+[Unit]
+Description=Refresh cached Beacon owner portrait PNGs through crawler-01
+After=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/smallverse
+ExecStart=/bin/bash -lc 'python3 /opt/smallverse/export_avatar_live_manifest.py --database /opt/smallverse/workspace/identity.sqlite --item-profiles /opt/smallverse/workspace/beacon-item-profiles.json --output /opt/smallverse/workspace/owner-avatar-thumbnail-manifest.json && python3 /opt/smallverse/cache_avatar_thumbnails_via_cdp.py --manifest /opt/smallverse/workspace/owner-avatar-thumbnail-manifest.json --output-dir /opt/smallverse/workspace/avatar-images --avatar-index /opt/smallverse/workspace/avatar-url-index.json --variants thumb'
+Nice=10
+CPUQuota=40%
+MemoryHigh=384M
+MemoryMax=512M
+MemorySwapMax=64M
+TasksMax=96
+TimeoutStartSec=10min
+OOMPolicy=stop

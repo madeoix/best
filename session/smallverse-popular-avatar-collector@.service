@@ -1,0 +1,11 @@
+[Unit]
+Description=Smallverse Popular avatar collector (%i)
+
+[Service]
+Type=oneshot
+User=root
+ExecStart=/opt/smallverse-crawler-client/vps_popular_avatar_collector.sh %i 1
+TimeoutStartSec=8min
+CPUQuota=50%
+MemoryHigh=1536M
+MemoryMax=2048M

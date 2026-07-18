@@ -1,0 +1,36 @@
+{
+  "ok": true,
+  "contract": "smallverse-avatar-head-design-sprites/v1",
+  "avatar_id": "6a5701e1b1558d6dc8e17e78",
+  "selected": {
+    "EyeOptions": [
+      "EyePussReal"
+    ],
+    "SkinColorOptions": [
+      "SkinColorGrey"
+    ],
+    "EyeColorOptions": [
+      "EyeGreen"
+    ]
+  },
+  "weights": {
+    "MorphStandardA": 0.5,
+    "MorphBigeyeB": 0.5
+  },
+  "transforms": {
+    "PropOptions": {
+      "id": "PropOptions",
+      "sel": ""
+    }
+  },
+  "sprites": [],
+  "colors": [],
+  "models": [],
+  "missing": [],
+  "stats": {
+    "sprite_count": 0,
+    "color_rule_count": 0,
+    "model_ref_count": 0,
+    "missing_count": 0
+  }
+}

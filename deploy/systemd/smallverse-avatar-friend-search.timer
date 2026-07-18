@@ -1,0 +1,11 @@
+[Unit]
+Description=Periodically refresh Beacon identities and thumbnails from crawler-02 Find Friends
+
+[Timer]
+OnBootSec=12m
+OnUnitActiveSec=6h
+Persistent=true
+Unit=smallverse-avatar-friend-search.service
+
+[Install]
+WantedBy=timers.target

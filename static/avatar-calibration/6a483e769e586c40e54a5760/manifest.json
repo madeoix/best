@@ -1,0 +1,12 @@
+{
+  "contract": "beacon-avatar-calibration/v1",
+  "avatar_id": "6a483e769e586c40e54a5760",
+  "gender": "female",
+  "sanitized": true,
+  "captured_at": "2026-07-16T02:53:00+00:00",
+  "states": [
+    {
+      "config": "/avatar-calibration/6a483e769e586c40e54a5760/live-config.xml"
+    }
+  ]
+}

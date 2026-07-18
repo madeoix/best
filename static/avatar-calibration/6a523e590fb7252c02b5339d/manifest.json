@@ -1,0 +1,22 @@
+{
+  "contract": "beacon-avatar-calibration/v1",
+  "avatar_id": "6a523e590fb7252c02b5339d",
+  "gender": "male",
+  "sanitized": true,
+  "states": [
+    {
+      "label": "State 1",
+      "captured_at": "2026-07-11T13:00:35.487Z",
+      "config": "/avatar-calibration/6a523e590fb7252c02b5339d/full-00/config.xml",
+      "preview": "/avatar-calibration/6a523e590fb7252c02b5339d/full-00/preview.png",
+      "body": "/avatar-calibration/6a523e590fb7252c02b5339d/full-00/body.png",
+      "thumb": "/avatar-calibration/6a523e590fb7252c02b5339d/full-00/thumb.png",
+      "state_sha256": "ab79db4d6efec289af6f1fbfc0ac5ed8262d44b11b0ba69c9266ca59e56664c5",
+      "config_sha256": "a9c5d1f287a7c3e3b4a05060fde205e541c70c4376c5c7d88b26661cedeface5",
+      "preview_sha256": "9e544ec75b41fe4a22d81d5b76cde43b1239619de9885c9d7e55e43f2c531d5e",
+      "body_sha256": "1c79dee1f1d9e181be5d89b8c3ccb4213ad4134fcf9963d513ba8cbce26757d0",
+      "thumb_sha256": "b7a0a0c03f47dccc8b5a0e7a8795e647bca5475af00e8a9360f6792362c16bcc"
+    }
+  ],
+  "snapshots": []
+}

@@ -1,0 +1,247 @@
+{
+  "ok": true,
+  "contract": "smallverse-avatar-render-contract/v4",
+  "avatar_id": "6a24266f03fcd36dce0900e5",
+  "gender": "female",
+  "source_config_xml": "/home/maddie/smallverse-lab/static/avatar-calibration/6a24266f03fcd36dce0900e5/live-config.xml",
+  "oracle": null,
+  "selected_options": {
+    "EyeColorOptions": "EyeColorBrown",
+    "EarOptions": "EarFolded",
+    "MorphTargetOptionsA": "MorphPugA",
+    "MorphTargetOptionsB": "MorphChichB",
+    "EyeOptions": "EyePugReal",
+    "NoseColorOptions": "NoseBrown",
+    "PropOptions": "PropColorBowtieHead",
+    "MuzzleOptions": "MuzzleStandard",
+    "PropColorOptions": "PropColorBlack",
+    "SkinColor2Options": "SkinColor2Brown",
+    "CoatTypeOptions": "CoatTypeSpots",
+    "TailOptions": "TailMedium",
+    "CollarOptions": "CollarNeckercheif",
+    "SkinColorOptions": "SkinColorChocolate",
+    "BodyDecalOptions": "BodyDecalPAws",
+    "CollarColorOptions": "CollarSilver"
+  },
+  "weights": {
+    "MorphPugA": 0.4,
+    "MorphChichB": 0.6
+  },
+  "transforms": {},
+  "dances": [],
+  "selected_asset_groups": {
+    "EyeColorOptions": [
+      {
+        "selected_id": "EyeColorBrown",
+        "design_node_found": true,
+        "design_tag": "g",
+        "design_attrs": {
+          "id": "EyeColorBrown",
+          "name": "Brown",
+          "icon": "$hu/eyes/icon_eye_col_brown.png"
+        },
+        "exact_refs": [
+          "avatars/head/base/unisex/eyes/icon_eye_col_brown.png"
+        ],
+        "assets": [
+          {
+            "ref": "avatars/head/base/unisex/eyes/icon_eye_col_brown.png",
+            "url": "/avatar-assets/avatars/head/base/unisex/eyes/icon_eye_col_brown.png",
+            "exists": true,
+            "bytes": 1232,
+            "option_id": "EyeColorOptions",
+            "selected_id": "EyeColorBrown",
+            "kind": "texture",
+            "existed_before_hydrate": true,
+            "hydrated": false
+          }
+        ]
+      }
+    ],
+    "EarOptions": [
+      {
+        "selected_id": "EarFolded",
+        "design_node_found": false,
+        "design_tag": null,
+        "design_attrs": {},
+        "exact_refs": [],
+        "assets": []
+      }
+    ],
+    "MorphTargetOptionsA": [
+      {
+        "selected_id": "MorphPugA",
+        "design_node_found": false,
+        "design_tag": null,
+        "design_attrs": {},
+        "exact_refs": [],
+        "assets": []
+      }
+    ],
+    "MorphTargetOptionsB": [
+      {
+        "selected_id": "MorphChichB",
+        "design_node_found": false,
+        "design_tag": null,
+        "design_attrs": {},
+        "exact_refs": [],
+        "assets": []
+      }
+    ],
+    "EyeOptions": [
+      {
+        "selected_id": "EyePugReal",
+        "design_node_found": false,
+        "design_tag": null,
+        "design_attrs": {},
+        "exact_refs": [],
+        "assets": []
+      }
+    ],
+    "NoseColorOptions": [
+      {
+        "selected_id": "NoseBrown",
+        "design_node_found": false,
+        "design_tag": null,
+        "design_attrs": {},
+        "exact_refs": [],
+        "assets": []
+      }
+    ],
+    "PropOptions": [
+      {
+        "selected_id": "PropColorBowtieHead",
+        "design_node_found": false,
+        "design_tag": null,
+        "design_attrs": {},
+        "exact_refs": [],
+        "assets": []
+      }
+    ],
+    "MuzzleOptions": [
+      {
+        "selected_id": "MuzzleStandard",
+        "design_node_found": false,
+        "design_tag": null,
+        "design_attrs": {},
+        "exact_refs": [],
+        "assets": []
+      }
+    ],
+    "PropColorOptions": [
+      {
+        "selected_id": "PropColorBlack",
+        "design_node_found": false,
+        "design_tag": null,
+        "design_attrs": {},
+        "exact_refs": [],
+        "assets": []
+      }
+    ],
+    "SkinColor2Options": [
+      {
+        "selected_id": "SkinColor2Brown",
+        "design_node_found": false,
+        "design_tag": null,
+        "design_attrs": {},
+        "exact_refs": [],
+        "assets": []
+      }
+    ],
+    "CoatTypeOptions": [
+      {
+        "selected_id": "CoatTypeSpots",
+        "design_node_found": false,
+        "design_tag": null,
+        "design_attrs": {},
+        "exact_refs": [],
+        "assets": []
+      }
+    ],
+    "TailOptions": [
+      {
+        "selected_id": "TailMedium",
+        "design_node_found": false,
+        "design_tag": null,
+        "design_attrs": {},
+        "exact_refs": [],
+        "assets": []
+      }
+    ],
+    "CollarOptions": [
+      {
+        "selected_id": "CollarNeckercheif",
+        "design_node_found": false,
+        "design_tag": null,
+        "design_attrs": {},
+        "exact_refs": [],
+        "assets": []
+      }
+    ],
+    "SkinColorOptions": [
+      {
+        "selected_id": "SkinColorChocolate",
+        "design_node_found": false,
+        "design_tag": null,
+        "design_attrs": {},
+        "exact_refs": [],
+        "assets": []
+      }
+    ],
+    "BodyDecalOptions": [
+      {
+        "selected_id": "BodyDecalPAws",
+        "design_node_found": false,
+        "design_tag": null,
+        "design_attrs": {},
+        "exact_refs": [],
+        "assets": []
+      }
+    ],
+    "CollarColorOptions": [
+      {
+        "selected_id": "CollarSilver",
+        "design_node_found": false,
+        "design_tag": null,
+        "design_attrs": {},
+        "exact_refs": [],
+        "assets": []
+      }
+    ]
+  },
+  "head": {
+    "rigid_meshes": [],
+    "morph_groups": {},
+    "rejected_morph_targets": [],
+    "textures": [
+      {
+        "ref": "avatars/head/base/unisex/eyes/icon_eye_col_brown.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/eyes/icon_eye_col_brown.png",
+        "exists": true,
+        "bytes": 1232,
+        "option_id": "EyeColorOptions",
+        "selected_id": "EyeColorBrown",
+        "kind": "texture",
+        "existed_before_hydrate": true,
+        "hydrated": false
+      }
+    ],
+    "sprite_manifest_url": "/avatar-renders/6a24266f03fcd36dce0900e5/head-design-sprites.json"
+  },
+  "body": {
+    "textures": []
+  },
+  "other_assets": [],
+  "stats": {
+    "selected_option_count": 16,
+    "selected_asset_group_count": 16,
+    "copied_asset_count": 1,
+    "missing_asset_count": 0,
+    "rigid_mesh_count": 0,
+    "accepted_morph_target_count": 0,
+    "rejected_morph_target_count": 0,
+    "head_texture_count": 1,
+    "body_texture_count": 0
+  },
+  "missing_assets": []
+}

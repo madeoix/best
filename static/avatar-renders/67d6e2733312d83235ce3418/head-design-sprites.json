@@ -1,0 +1,960 @@
+{
+  "ok": true,
+  "contract": "smallverse-avatar-head-design-sprites/v1",
+  "avatar_id": "67d6e2733312d83235ce3418",
+  "selected": {
+    "HairstyleOptions": [
+      "HatBeaniePattern"
+    ],
+    "EyeOptions": [
+      "EyesDarkEye"
+    ],
+    "EyeShadowOptions": [
+      "GoldenShadow"
+    ],
+    "CuteEyeShadowOptions": [
+      "CuteLightBrownShadow"
+    ],
+    "BrowOptions": [
+      "BrowsTick"
+    ],
+    "MouthOptions": [
+      "Halloween Lip01"
+    ],
+    "LipstickOptions": [
+      "LipStickMagent"
+    ],
+    "FoundationOptions": [
+      "SheenNone"
+    ],
+    "BlusherOptions": [
+      "LiteBlusher"
+    ],
+    "BlusherColorOptions": [
+      "BlusherFire"
+    ],
+    "HairColorOptions": [
+      "HairColorGray"
+    ],
+    "HighlightOptions": [
+      "HairTintGreenbright"
+    ],
+    "TintOptions": [
+      "HairColorPurple"
+    ],
+    "SkinColorOptions": [
+      "SkinColorYellow"
+    ],
+    "EyeColorOptions": [
+      "EyeColorRed"
+    ]
+  },
+  "weights": {
+    "FaceOvalTwo": 0.5,
+    "FaceCuteOne": 1.0,
+    "NoseButtonOne": 0.53,
+    "NoseRomanTwo": 0.47
+  },
+  "transforms": {
+    "Bot00": {
+      "id": "Bot00",
+      "sel": ""
+    },
+    "Bot01": {
+      "id": "Bot01",
+      "sel": ""
+    },
+    "Bot02": {
+      "id": "Bot02",
+      "sel": ""
+    },
+    "Bot03": {
+      "id": "Bot03",
+      "sel": ""
+    },
+    "Bot05": {
+      "id": "Bot05",
+      "sel": ""
+    },
+    "Top00": {
+      "id": "Top00",
+      "sel": ""
+    },
+    "Top01": {
+      "id": "Top01",
+      "sel": ""
+    },
+    "Top02": {
+      "id": "Top02",
+      "sel": ""
+    },
+    "Top03": {
+      "id": "Top03",
+      "sel": ""
+    },
+    "Top04": {
+      "id": "Top04",
+      "sel": ""
+    },
+    "Top05": {
+      "id": "Top05",
+      "sel": ""
+    },
+    "Top06": {
+      "id": "Top06",
+      "sel": ""
+    },
+    "Top07": {
+      "id": "Top07",
+      "sel": ""
+    },
+    "Top08": {
+      "id": "Top08",
+      "sel": ""
+    },
+    "Top09": {
+      "id": "Top09",
+      "sel": ""
+    },
+    "ConSuit": {
+      "id": "ConSuit",
+      "sel": ""
+    },
+    "Suits": {
+      "id": "Suits",
+      "sel": ""
+    },
+    "MouthTransform": {
+      "id": "MouthTransform"
+    },
+    "GlassesOptions": {
+      "id": "GlassesOptions",
+      "sel": ""
+    },
+    "HatLogoOptions": {
+      "id": "HatLogoOptions",
+      "sel": ""
+    },
+    "HatPatternOptions": {
+      "id": "HatPatternOptions",
+      "sel": ""
+    },
+    "LeftEyeTransform": {
+      "id": "LeftEyeTransform"
+    },
+    "RightEyeTransform": {
+      "id": "RightEyeTransform"
+    }
+  },
+  "sprites": [
+    {
+      "option_id": "HairstyleOptions",
+      "selected_id": "HatBeaniePattern",
+      "id": "HatBase",
+      "name": null,
+      "cId": "Hat",
+      "sId": null,
+      "ref": "avatars/head/base/unisex/hat/ht_beanie.png",
+      "url": "/avatar-assets/avatars/head/base/unisex/hat/ht_beanie.png",
+      "attrs": {
+        "id": "HatBase",
+        "cId": "Hat",
+        "s": "$hu/hat/ht_beanie.png",
+        "sx": 2.0,
+        "sy": 2.0
+      }
+    },
+    {
+      "option_id": "HairstyleOptions",
+      "selected_id": "HatBeaniePattern",
+      "id": null,
+      "name": null,
+      "cId": "Skin",
+      "sId": null,
+      "ref": "avatars/head/base/male/hair/ht_beanie_shadow.png",
+      "url": "/avatar-assets/avatars/head/base/male/hair/ht_beanie_shadow.png",
+      "attrs": {
+        "cId": "Skin",
+        "s": "$hm/hair/ht_beanie_shadow.png",
+        "m": "multiply",
+        "ty": -2.0,
+        "sx": 8.0,
+        "sy": 8.0
+      }
+    },
+    {
+      "option_id": "HairstyleOptions",
+      "selected_id": "HatBeaniePattern",
+      "id": "HatLogo1",
+      "name": "Skull",
+      "cId": "Hat",
+      "sId": null,
+      "ref": "avatars/head/base/unisex/decals/logo_u_skull.png",
+      "url": "/avatar-assets/avatars/head/base/unisex/decals/logo_u_skull.png",
+      "attrs": {
+        "id": "HatLogo1",
+        "name": "Skull",
+        "icon": "$hu/decals/logo_u_skull.png",
+        "cId": "Hat",
+        "s": "$hu/decals/logo_u_skull.png",
+        "tx": 193.5,
+        "ty": 196.0,
+        "sx": 1.8,
+        "sy": 1.15,
+        "cx": 24.0,
+        "cy": 24.0,
+        "pri": 0.1
+      }
+    },
+    {
+      "option_id": "HairstyleOptions",
+      "selected_id": "HatBeaniePattern",
+      "id": "HatLogoRock",
+      "name": "Rock",
+      "cId": "Hat",
+      "sId": null,
+      "ref": "avatars/head/base/unisex/decals/logo_u_rock.png",
+      "url": "/avatar-assets/avatars/head/base/unisex/decals/logo_u_rock.png",
+      "attrs": {
+        "id": "HatLogoRock",
+        "name": "Rock",
+        "icon": "$hu/decals/logo_u_rock.png",
+        "cId": "Hat",
+        "s": "$hu/decals/logo_u_rock.png",
+        "tx": 194.0,
+        "ty": 196.0,
+        "sx": 2.9,
+        "sy": 1.85,
+        "cx": 24.0,
+        "cy": 24.0,
+        "pri": 0.1
+      }
+    },
+    {
+      "option_id": "HairstyleOptions",
+      "selected_id": "HatBeaniePattern",
+      "id": "HatLogoRave",
+      "name": "Rave",
+      "cId": "Hat",
+      "sId": null,
+      "ref": "avatars/head/base/unisex/decals/logo_m_rave.png",
+      "url": "/avatar-assets/avatars/head/base/unisex/decals/logo_m_rave.png",
+      "attrs": {
+        "id": "HatLogoRave",
+        "name": "Rave",
+        "icon": "$hu/decals/logo_m_rave.png",
+        "cId": "Hat",
+        "s": "$hu/decals/logo_m_rave.png",
+        "tx": 193.0,
+        "ty": 196.0,
+        "sx": 2.3,
+        "sy": 1.35,
+        "cx": 24.0,
+        "cy": 24.0,
+        "pri": 0.1
+      }
+    },
+    {
+      "option_id": "HairstyleOptions",
+      "selected_id": "HatBeaniePattern",
+      "id": "HatLogoSurfFlower",
+      "name": "Surf Flower",
+      "cId": "Hat",
+      "sId": null,
+      "ref": "avatars/head/base/unisex/decals/hat_logo_surflower.png",
+      "url": "/avatar-assets/avatars/head/base/unisex/decals/hat_logo_surflower.png",
+      "attrs": {
+        "id": "HatLogoSurfFlower",
+        "name": "Surf Flower",
+        "icon": "$hu/decals/hat_logo_surflower.png",
+        "cId": "Hat",
+        "s": "$hu/decals/hat_logo_surflower.png",
+        "tx": 194.0,
+        "ty": 196.0,
+        "sx": 2.7,
+        "sy": 1.45,
+        "cx": 24.0,
+        "cy": 24.0,
+        "pri": 0.1
+      }
+    },
+    {
+      "option_id": "HairstyleOptions",
+      "selected_id": "HatBeaniePattern",
+      "id": "HatLogoGhost",
+      "name": "Ghost",
+      "cId": "Hat",
+      "sId": null,
+      "ref": "avatars/head/base/unisex/decals/logo_u_ghost.png",
+      "url": "/avatar-assets/avatars/head/base/unisex/decals/logo_u_ghost.png",
+      "attrs": {
+        "id": "HatLogoGhost",
+        "name": "Ghost",
+        "icon": "$hu/decals/logo_u_ghost.png",
+        "cId": "Hat",
+        "s": "$hu/decals/logo_u_ghost.png",
+        "tx": 194.0,
+        "ty": 196.0,
+        "sx": 2.15,
+        "sy": 1.5,
+        "cx": 24.0,
+        "cy": 24.0,
+        "pri": 0.1
+      }
+    },
+    {
+      "option_id": "HairstyleOptions",
+      "selected_id": "HatBeaniePattern",
+      "id": "HatLogoAlien",
+      "name": "Alien",
+      "cId": "Hat",
+      "sId": null,
+      "ref": "avatars/head/base/unisex/decals/hat_logo_alien.png",
+      "url": "/avatar-assets/avatars/head/base/unisex/decals/hat_logo_alien.png",
+      "attrs": {
+        "id": "HatLogoAlien",
+        "name": "Alien",
+        "icon": "$hu/decals/hat_logo_alien.png",
+        "cId": "Hat",
+        "s": "$hu/decals/hat_logo_alien.png",
+        "tx": 194.0,
+        "ty": 196.0,
+        "sx": 1.65,
+        "sy": 1.05,
+        "cx": 24.0,
+        "cy": 24.0,
+        "pri": 0.1
+      }
+    },
+    {
+      "option_id": "HairstyleOptions",
+      "selected_id": "HatBeaniePattern",
+      "id": "HatLogoHip",
+      "name": "Hip Hop",
+      "cId": "Hat",
+      "sId": null,
+      "ref": "avatars/head/base/unisex/decals/logo_u_hip.png",
+      "url": "/avatar-assets/avatars/head/base/unisex/decals/logo_u_hip.png",
+      "attrs": {
+        "id": "HatLogoHip",
+        "name": "Hip Hop",
+        "icon": "$hu/decals/logo_u_hip.png",
+        "cId": "Hat",
+        "s": "$hu/decals/logo_u_hip.png",
+        "tx": 193.5,
+        "ty": 202.5,
+        "sx": 2.5,
+        "sy": 1.8,
+        "cx": 24.0,
+        "cy": 24.0,
+        "pri": 0.1
+      }
+    },
+    {
+      "option_id": "HairstyleOptions",
+      "selected_id": "HatBeaniePattern",
+      "id": "HatLogo7",
+      "name": "Number 7",
+      "cId": "Hat",
+      "sId": null,
+      "ref": "avatars/head/base/unisex/decals/logo_u_7.png",
+      "url": "/avatar-assets/avatars/head/base/unisex/decals/logo_u_7.png",
+      "attrs": {
+        "id": "HatLogo7",
+        "name": "Number 7",
+        "icon": "$hu/decals/logo_u_7.png",
+        "cId": "Hat",
+        "s": "$hu/decals/logo_u_7.png",
+        "tx": 194.0,
+        "ty": 196.0,
+        "sx": 1.65,
+        "sy": 1.25,
+        "cx": 24.0,
+        "cy": 24.0,
+        "pri": 0.1
+      }
+    },
+    {
+      "option_id": "HairstyleOptions",
+      "selected_id": "HatBeaniePattern",
+      "id": "HatLogoHot",
+      "name": "Hot",
+      "cId": "Hat",
+      "sId": null,
+      "ref": "avatars/head/base/unisex/decals/logo_u_hot.png",
+      "url": "/avatar-assets/avatars/head/base/unisex/decals/logo_u_hot.png",
+      "attrs": {
+        "id": "HatLogoHot",
+        "name": "Hot",
+        "icon": "$hu/decals/logo_u_hot.png",
+        "cId": "Hat",
+        "s": "$hu/decals/logo_u_hot.png",
+        "tx": 194.0,
+        "ty": 193.0,
+        "sx": 2.65,
+        "sy": 1.95,
+        "cx": 24.0,
+        "cy": 24.0,
+        "pri": 0.1
+      }
+    },
+    {
+      "option_id": "HairstyleOptions",
+      "selected_id": "HatBeaniePattern",
+      "id": "HatLogoShamrock",
+      "name": "Shamrock",
+      "cId": "Hat",
+      "sId": null,
+      "ref": "avatars/head/base/unisex/decals/logo_u_shamrock.png",
+      "url": "/avatar-assets/avatars/head/base/unisex/decals/logo_u_shamrock.png",
+      "attrs": {
+        "id": "HatLogoShamrock",
+        "name": "Shamrock",
+        "icon": "$hu/decals/logo_u_shamrock.png",
+        "cId": "Hat",
+        "s": "$hu/decals/logo_u_shamrock.png",
+        "tx": 194.0,
+        "ty": 196.0,
+        "sx": 1.7,
+        "sy": 1.15,
+        "cx": 24.0,
+        "cy": 24.0,
+        "pri": 0.1
+      }
+    },
+    {
+      "option_id": "HairstyleOptions",
+      "selected_id": "HatBeaniePattern",
+      "id": "HatLogoFlame",
+      "name": "Flame",
+      "cId": "Hat",
+      "sId": null,
+      "ref": "avatars/head/base/unisex/decals/logo_u_flame.png",
+      "url": "/avatar-assets/avatars/head/base/unisex/decals/logo_u_flame.png",
+      "attrs": {
+        "id": "HatLogoFlame",
+        "name": "Flame",
+        "icon": "$hu/decals/logo_u_flame.png",
+        "cId": "Hat",
+        "s": "$hu/decals/logo_u_flame.png",
+        "tx": 194.0,
+        "ty": 196.0,
+        "sx": 1.5,
+        "sy": 1.5,
+        "cx": 24.0,
+        "cy": 24.0,
+        "pri": 0.1
+      }
+    },
+    {
+      "option_id": "HairstyleOptions",
+      "selected_id": "HatBeaniePattern",
+      "id": "RapBeanStripes",
+      "name": null,
+      "cId": "Hat",
+      "sId": null,
+      "ref": "avatars/head/base/unisex/hat/f_rapbeanie_pat1.png",
+      "url": "/avatar-assets/avatars/head/base/unisex/hat/f_rapbeanie_pat1.png",
+      "attrs": {
+        "id": "RapBeanStripes",
+        "cId": "Hat",
+        "s": "$hu/hat/f_rapbeanie_pat1.png",
+        "m": "multiply",
+        "sx": 2.0,
+        "sy": 2.0
+      }
+    },
+    {
+      "option_id": "HairstyleOptions",
+      "selected_id": "HatBeaniePattern",
+      "id": "RapBeanLine",
+      "name": null,
+      "cId": "Hat",
+      "sId": null,
+      "ref": "avatars/head/base/unisex/hat/f_rapbeanie_pat2.png",
+      "url": "/avatar-assets/avatars/head/base/unisex/hat/f_rapbeanie_pat2.png",
+      "attrs": {
+        "id": "RapBeanLine",
+        "cId": "Hat",
+        "s": "$hu/hat/f_rapbeanie_pat2.png",
+        "m": "lighten",
+        "sx": 2.0,
+        "sy": 2.0
+      }
+    },
+    {
+      "option_id": "HairstyleOptions",
+      "selected_id": "HatBeaniePattern",
+      "id": "RapBeanLine",
+      "name": null,
+      "cId": "Hat",
+      "sId": null,
+      "ref": "avatars/head/base/unisex/hat/f_rapbeanie_pat2.png",
+      "url": "/avatar-assets/avatars/head/base/unisex/hat/f_rapbeanie_pat2.png",
+      "attrs": {
+        "id": "RapBeanLine",
+        "cId": "Hat",
+        "s": "$hu/hat/f_rapbeanie_pat2.png",
+        "m": "multiply",
+        "sx": 2.0,
+        "sy": 2.0
+      }
+    },
+    {
+      "option_id": "EyeOptions",
+      "selected_id": "EyesDarkEye",
+      "id": null,
+      "name": "Left Eye",
+      "cId": "Skin",
+      "sId": null,
+      "ref": "avatars/head/base/unisex/eyes/eye_halloween_dark_base.png",
+      "url": "/avatar-assets/avatars/head/base/unisex/eyes/eye_halloween_dark_base.png",
+      "attrs": {
+        "name": "Left Eye",
+        "cId": "Skin",
+        "s": "$hu/eyes/eye_halloween_dark_base.png",
+        "tx": 656.0,
+        "ty": 183.0,
+        "rot": -3.0,
+        "sx": -1.9,
+        "sy": 1.2,
+        "cx": 36.0,
+        "cy": 19.0,
+        "pri": 3.0
+      }
+    },
+    {
+      "option_id": "EyeOptions",
+      "selected_id": "EyesDarkEye",
+      "id": null,
+      "name": "L hilite",
+      "cId": "Skin",
+      "sId": null,
+      "ref": "avatars/head/base/male/eyes/eye_normhilite.png",
+      "url": "/avatar-assets/avatars/head/base/male/eyes/eye_normhilite.png",
+      "attrs": {
+        "name": "L hilite",
+        "cId": "Skin",
+        "s": "$hm/eyes/eye_normhilite.png",
+        "tx": 590.5,
+        "ty": 194.5,
+        "sx": 0.85,
+        "sy": 0.35,
+        "cx": 8.0,
+        "cy": 8.0,
+        "pri": 3.0
+      }
+    },
+    {
+      "option_id": "EyeOptions",
+      "selected_id": "EyesDarkEye",
+      "id": null,
+      "name": "Right Eye",
+      "cId": "Skin",
+      "sId": null,
+      "ref": "avatars/head/base/unisex/eyes/eye_halloween_dark_base.png",
+      "url": "/avatar-assets/avatars/head/base/unisex/eyes/eye_halloween_dark_base.png",
+      "attrs": {
+        "name": "Right Eye",
+        "cId": "Skin",
+        "s": "$hu/eyes/eye_halloween_dark_base.png",
+        "tx": 373.5,
+        "ty": 183.0,
+        "rot": -3.0,
+        "sx": 1.9,
+        "sy": 1.2,
+        "cx": 36.0,
+        "cy": 19.0,
+        "pri": 3.0
+      }
+    },
+    {
+      "option_id": "EyeOptions",
+      "selected_id": "EyesDarkEye",
+      "id": null,
+      "name": "R hilite",
+      "cId": "Skin",
+      "sId": null,
+      "ref": "avatars/head/base/male/eyes/eye_normhilite.png",
+      "url": "/avatar-assets/avatars/head/base/male/eyes/eye_normhilite.png",
+      "attrs": {
+        "name": "R hilite",
+        "cId": "Skin",
+        "s": "$hm/eyes/eye_normhilite.png",
+        "tx": 445.5,
+        "ty": 194.5,
+        "sx": 0.85,
+        "sy": 0.35,
+        "cx": 8.0,
+        "cy": 8.0,
+        "pri": 3.0
+      }
+    },
+    {
+      "option_id": "BrowOptions",
+      "selected_id": "BrowsTick",
+      "id": null,
+      "name": "Left",
+      "cId": "Eyebrow",
+      "sId": null,
+      "ref": "avatars/head/base/unisex/brow/tick.png",
+      "url": "/avatar-assets/avatars/head/base/unisex/brow/tick.png",
+      "attrs": {
+        "name": "Left",
+        "cId": "Eyebrow",
+        "s": "$hu/brow/tick.png",
+        "tx": 581.0,
+        "ty": 161.0,
+        "rot": 6.0,
+        "sx": -1.7,
+        "sy": 1.2,
+        "cx": 32.0,
+        "cy": 10.0
+      }
+    },
+    {
+      "option_id": "BrowOptions",
+      "selected_id": "BrowsTick",
+      "id": null,
+      "name": "Right",
+      "cId": "Eyebrow",
+      "sId": null,
+      "ref": "avatars/head/base/unisex/brow/tick.png",
+      "url": "/avatar-assets/avatars/head/base/unisex/brow/tick.png",
+      "attrs": {
+        "name": "Right",
+        "cId": "Eyebrow",
+        "s": "$hu/brow/tick.png",
+        "tx": 442.0,
+        "ty": 160.0,
+        "rot": 6.0,
+        "sx": 1.7,
+        "sy": 1.2,
+        "cx": 32.0,
+        "cy": 10.0
+      }
+    },
+    {
+      "option_id": "MouthOptions",
+      "selected_id": "Halloween Lip01",
+      "id": null,
+      "name": null,
+      "cId": "Skin",
+      "sId": null,
+      "ref": "avatars/head/base/unisex/mouth/mouth_skeleton.png",
+      "url": "/avatar-assets/avatars/head/base/unisex/mouth/mouth_skeleton.png",
+      "attrs": {
+        "cId": "Skin",
+        "s": "$hu/mouth/mouth_skeleton.png",
+        "tx": 470.5,
+        "ty": 332.5,
+        "sx": 3.05,
+        "sy": 2.35,
+        "cx": 30.0,
+        "cy": 14.5,
+        "pri": 1.0
+      }
+    },
+    {
+      "option_id": "BlusherOptions",
+      "selected_id": "LiteBlusher",
+      "id": "BlusherCheekRight",
+      "name": null,
+      "cId": "Skin",
+      "sId": null,
+      "ref": "avatars/head/base/female/skin/mu_blusherlite.png",
+      "url": "/avatar-assets/avatars/head/base/female/skin/mu_blusherlite.png",
+      "attrs": {
+        "id": "BlusherCheekRight",
+        "cId": "Skin",
+        "s": "$hf/skin/mu_blusherlite.png",
+        "tx": 349.0,
+        "ty": 256.0,
+        "rot": 2.0,
+        "sx": 4.0,
+        "sy": 4.0,
+        "cx": 21.0,
+        "cy": 20.0
+      }
+    },
+    {
+      "option_id": "BlusherOptions",
+      "selected_id": "LiteBlusher",
+      "id": "BlusherCheekLeft",
+      "name": null,
+      "cId": "Skin",
+      "sId": null,
+      "ref": "avatars/head/base/female/skin/mu_blusherlite.png",
+      "url": "/avatar-assets/avatars/head/base/female/skin/mu_blusherlite.png",
+      "attrs": {
+        "id": "BlusherCheekLeft",
+        "cId": "Skin",
+        "s": "$hf/skin/mu_blusherlite.png",
+        "tx": 659.0,
+        "ty": 256.0,
+        "rot": 2.0,
+        "sx": -4.0,
+        "sy": 4.0,
+        "cx": 21.0,
+        "cy": 20.0
+      }
+    }
+  ],
+  "colors": [
+    {
+      "option_id": "HairstyleOptions",
+      "selected_id": "HatBeaniePattern",
+      "attrs": {
+        "sId": "RapBeanStripes",
+        "b": 198.0
+      }
+    },
+    {
+      "option_id": "HairstyleOptions",
+      "selected_id": "HatBeaniePattern",
+      "attrs": {
+        "sId": "RapBeanLine",
+        "b": 55.9
+      }
+    },
+    {
+      "option_id": "HairstyleOptions",
+      "selected_id": "HatBeaniePattern",
+      "attrs": {
+        "sId": "RapBeanLine",
+        "b": 35.3
+      }
+    },
+    {
+      "option_id": "EyeShadowOptions",
+      "selected_id": "GoldenShadow",
+      "attrs": {
+        "name": "Makeup Colour Master",
+        "sId": "MakeupLeft",
+        "c": "11565086",
+        "a": 0.96,
+        "b": 88.0,
+        "ct": 0.54,
+        "lId": "cutepink"
+      }
+    },
+    {
+      "option_id": "EyeShadowOptions",
+      "selected_id": "GoldenShadow",
+      "attrs": {
+        "sId": "MakeupRight",
+        "c": "11565086",
+        "a": 0.96,
+        "b": 88.0,
+        "ct": 0.54,
+        "lId": "cutepink",
+        "lw": "N"
+      }
+    },
+    {
+      "option_id": "CuteEyeShadowOptions",
+      "selected_id": "CuteLightBrownShadow",
+      "attrs": {
+        "name": "Makeup Colour Master",
+        "sId": "MakeupLeft",
+        "c": "7360308",
+        "a": 0.97,
+        "b": 88.5,
+        "ct": 1.0,
+        "lId": "cutecork"
+      }
+    },
+    {
+      "option_id": "CuteEyeShadowOptions",
+      "selected_id": "CuteLightBrownShadow",
+      "attrs": {
+        "sId": "MakeupRight",
+        "c": "7360308",
+        "a": 0.97,
+        "b": 88.5,
+        "ct": 1.0,
+        "lId": "cutecork",
+        "lw": "N"
+      }
+    },
+    {
+      "option_id": "LipstickOptions",
+      "selected_id": "LipStickMagent",
+      "attrs": {
+        "sId": "Lipstick",
+        "c": "16529772",
+        "a": 1.0,
+        "b": 24.6
+      }
+    },
+    {
+      "option_id": "BlusherOptions",
+      "selected_id": "LiteBlusher",
+      "attrs": {
+        "sId": "BlusherCheekRight",
+        "c": "15424864",
+        "a": 0.9,
+        "b": 75.2,
+        "ct": 0.62,
+        "lId": "BlusherMakeup",
+        "lw": "N"
+      }
+    },
+    {
+      "option_id": "BlusherOptions",
+      "selected_id": "LiteBlusher",
+      "attrs": {
+        "sId": "BlusherCheekLeft",
+        "c": "15424864",
+        "a": 0.9,
+        "b": 75.2,
+        "ct": 0.62,
+        "lId": "BlusherMakeup",
+        "lw": "N"
+      }
+    },
+    {
+      "option_id": "BlusherColorOptions",
+      "selected_id": "BlusherFire",
+      "attrs": {
+        "c": "14715152",
+        "a": 0.9,
+        "b": 75.2,
+        "ct": 0.62,
+        "lId": "BlusherMakeup"
+      }
+    },
+    {
+      "option_id": "HairColorOptions",
+      "selected_id": "HairColorGray",
+      "attrs": {
+        "name": "Gray",
+        "sId": "HairBase",
+        "c": "8224125",
+        "a": 0.88,
+        "b": 88.8,
+        "ct": 1.95
+      }
+    },
+    {
+      "option_id": "HairColorOptions",
+      "selected_id": "HairColorGray",
+      "attrs": {
+        "name": "Gray facial",
+        "sId": "FacialHairStep",
+        "c": "8224125",
+        "a": 0.86,
+        "b": 35.0,
+        "ct": 2.0,
+        "lId": "FacialHairColor"
+      }
+    },
+    {
+      "option_id": "HighlightOptions",
+      "selected_id": "HairTintGreenbright",
+      "attrs": {
+        "name": "Greenbright",
+        "sId": "HairHighlight1",
+        "c": "65310",
+        "a": 0.73,
+        "b": 91.3,
+        "ct": 2.0
+      }
+    },
+    {
+      "option_id": "HighlightOptions",
+      "selected_id": "HairTintGreenbright",
+      "attrs": {
+        "name": "Greenbright facial",
+        "sId": "HairHighlight2",
+        "c": "65310",
+        "a": 0.74,
+        "b": -9.6,
+        "ct": 2.0,
+        "lId": "FacialHairColor"
+      }
+    },
+    {
+      "option_id": "TintOptions",
+      "selected_id": "HairColorPurple",
+      "attrs": {
+        "name": "Purple",
+        "sId": "HairBase",
+        "c": "5584608",
+        "a": 0.79,
+        "b": 78.6,
+        "ct": 1.75
+      }
+    },
+    {
+      "option_id": "TintOptions",
+      "selected_id": "HairColorPurple",
+      "attrs": {
+        "name": "Purple facial",
+        "sId": "FacialHairStep",
+        "c": "4597890",
+        "a": 0.52,
+        "b": 18.7,
+        "ct": 1.52,
+        "lId": "FacialHairColor"
+      }
+    },
+    {
+      "option_id": "SkinColorOptions",
+      "selected_id": "SkinColorYellow",
+      "attrs": {
+        "id": "SkinColorYellow",
+        "name": "Golden",
+        "icon": "$hu/skin/icon_skin_golden.png",
+        "sId": "SkinBase",
+        "c": "12557645",
+        "a": 0.44,
+        "b": 24.8,
+        "ct": 0.26,
+        "lId": "SkinColor"
+      }
+    },
+    {
+      "option_id": "EyeColorOptions",
+      "selected_id": "EyeColorRed",
+      "attrs": {
+        "sId": "RightPupil",
+        "c": "16713472",
+        "a": 1.0,
+        "b": 16.7,
+        "ct": 0.61,
+        "lId": "EyeColor"
+      }
+    },
+    {
+      "option_id": "EyeColorOptions",
+      "selected_id": "EyeColorRed",
+      "attrs": {
+        "sId": "LeftPupil",
+        "c": "16713472",
+        "a": 1.0,
+        "b": 16.7,
+        "ct": 0.61,
+        "lId": "EyeColor",
+        "lw": "N"
+      }
+    }
+  ],
+  "models": [
+    {
+      "option_id": "HairstyleOptions",
+      "selected_id": "HatBeaniePattern",
+      "ref": "avatars/head/base/male/hair/hat_beanie.o3d",
+      "attrs": {
+        "s": "$hm/hair/hat_beanie.o3d"
+      }
+    }
+  ],
+  "missing": [],
+  "stats": {
+    "sprite_count": 25,
+    "color_rule_count": 20,
+    "model_ref_count": 1,
+    "missing_count": 0
+  }
+}

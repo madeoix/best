@@ -43,3 +43,4 @@ releases/
 
 # Synced local preservation read models
 .local-data/
+static/avatar-thumbnails.previous/

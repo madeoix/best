@@ -1,0 +1,1506 @@
+{
+  "ok": true,
+  "contract": "smallverse-avatar-render-contract/v4",
+  "avatar_id": "69ce4b20e57119757988a431",
+  "gender": "male",
+  "source_config_xml": "/home/maddie/smallverse-lab/static/avatar-calibration/69ce4b20e57119757988a431/live-config.xml",
+  "oracle": null,
+  "selected_options": {
+    "CuteEyeShadowOptions": "CuteLightBrownShadow",
+    "Bot00": "",
+    "Bot01": "",
+    "Bot02": "",
+    "Bot03": "",
+    "Bot05": "",
+    "Top00": "",
+    "Top01": "",
+    "Top02": "",
+    "Top03": "",
+    "Top04": "",
+    "Top05": "",
+    "Top06": "",
+    "Top07": "",
+    "Top08": "",
+    "Top09": "",
+    "ConSuit": "",
+    "Suits": "",
+    "TopColorOptions": "White",
+    "OuterColorOptions": "Brown",
+    "BottomColorOptions": "Black",
+    "BeltColorOptions": "White",
+    "NecklaceColorOptions": "Yellow",
+    "GenderOptions": "Male",
+    "JSTop": "JumpTshirt",
+    "JSBottom": "JumpPants",
+    "JSFeet": "NoShoe",
+    "BodySkin": "Arms,Legs,Torso",
+    "GlassesOptions": "",
+    "FaceAOptions": "FaceAnimeOne",
+    "FaceBOptions": "FaceAnimeTwo",
+    "NoseAOptions": "NoseButtonOne",
+    "NoseBOptions": "NoseFlatTwo",
+    "EyeOptions": "EyesStandardThinReal",
+    "HairstyleOptions": "HairSpikeyUp",
+    "DecalOptions": "",
+    "MouthOptions": "Anim Lip01",
+    "BrowOptions": "Anim01",
+    "EyeColorOptions": "EyeColorBrown",
+    "HatColorOptions": "HatColorRed",
+    "HairColorOptions": "HairColorBrown",
+    "EyebrowColorOptions": "EyebrowColorBlack",
+    "TintOptions": "HairTintDark",
+    "SkinColorOptions": "SkinColorPeach"
+  },
+  "weights": {
+    "FaceAnimeOne": 0.58,
+    "FaceAnimeTwo": 0.42,
+    "NoseButtonOne": 0.85,
+    "NoseFlatTwo": 0.15
+  },
+  "transforms": {
+    "LeftEyeTransform": {
+      "id": "LeftEyeTransform",
+      "sx": "1.0781725888324871",
+      "sy": "1.0781725888324871"
+    },
+    "RightEyeTransform": {
+      "id": "RightEyeTransform",
+      "sx": "1.0781725888324871",
+      "sy": "1.0781725888324871"
+    },
+    "MouthTransform": {
+      "id": "MouthTransform"
+    }
+  },
+  "dances": [
+    {
+      "id": "Dance 1",
+      "frames": [
+        {
+          "r": "0",
+          "d": "7",
+          "h": "Forward",
+          "a": "DoublePoint",
+          "l": "Walk2"
+        },
+        {
+          "r": "0",
+          "d": "7",
+          "h": "Forward",
+          "a": "DoublePoint",
+          "l": "Walk4"
+        }
+      ]
+    },
+    {
+      "id": "Dance 2",
+      "frames": [
+        {
+          "r": "0",
+          "d": "1",
+          "h": "Forward",
+          "a": "RightSwing1",
+          "l": "LeftRaise"
+        },
+        {
+          "r": "0",
+          "d": "1",
+          "h": "Forward",
+          "a": "RightSwing2",
+          "l": "LeftRaise"
+        },
+        {
+          "r": "0",
+          "d": "1",
+          "h": "Forward",
+          "a": "RightSwing3",
+          "l": "LeftRaise"
+        },
+        {
+          "r": "0",
+          "d": "1",
+          "h": "Forward",
+          "a": "RightSwing1",
+          "l": "LeftRaise"
+        },
+        {
+          "r": "0",
+          "d": "1",
+          "h": "Forward",
+          "a": "RightSwing2",
+          "l": "LeftRaise"
+        },
+        {
+          "r": "0",
+          "d": "1",
+          "h": "Forward",
+          "a": "RightSwing3",
+          "l": "LeftRaise"
+        },
+        {
+          "r": "0",
+          "d": "1",
+          "h": "Forward",
+          "a": "RightSwing1",
+          "l": "LeftRaise"
+        },
+        {
+          "r": "0",
+          "d": "1",
+          "h": "Forward",
+          "a": "RightSwing2",
+          "l": "LeftRaise"
+        },
+        {
+          "r": "0",
+          "d": "1",
+          "h": "Forward",
+          "a": "RightSwing3",
+          "l": "LeftRaise"
+        }
+      ]
+    },
+    {
+      "id": "Dance 3",
+      "frames": [
+        {
+          "r": "0",
+          "d": "1",
+          "h": "Forward",
+          "a": "ArmRaise",
+          "l": "Relaxed"
+        },
+        {
+          "r": "45",
+          "d": "1",
+          "h": "Walk2",
+          "a": "ArmRaise",
+          "l": "Relaxed"
+        },
+        {
+          "r": "90",
+          "d": "1",
+          "h": "HalfRight",
+          "a": "ArmRaise",
+          "l": "Relaxed"
+        },
+        {
+          "r": "135",
+          "d": "1",
+          "h": "HalfRight",
+          "a": "ArmRaise",
+          "l": "Relaxed"
+        },
+        {
+          "r": "180",
+          "d": "1",
+          "h": "HalfRight",
+          "a": "ArmRaise",
+          "l": "Relaxed"
+        },
+        {
+          "r": "225",
+          "d": "1",
+          "h": "HalfRight",
+          "a": "ArmRaise",
+          "l": "Relaxed"
+        },
+        {
+          "r": "270",
+          "d": "1",
+          "h": "HalfRight",
+          "a": "ArmRaise",
+          "l": "Relaxed"
+        },
+        {
+          "r": "270",
+          "d": "1",
+          "h": "HalfRight",
+          "a": "ArmRaise",
+          "l": "Relaxed"
+        },
+        {
+          "r": "315",
+          "d": "1",
+          "h": "HalfRight",
+          "a": "ArmRaise",
+          "l": "Relaxed"
+        }
+      ]
+    }
+  ],
+  "selected_asset_groups": {
+    "CuteEyeShadowOptions": [
+      {
+        "selected_id": "CuteLightBrownShadow",
+        "design_node_found": true,
+        "design_tag": "g",
+        "design_attrs": {
+          "id": "CuteLightBrownShadow",
+          "name": "Cork"
+        },
+        "exact_refs": [],
+        "assets": []
+      }
+    ],
+    "TopColorOptions": [
+      {
+        "selected_id": "White",
+        "design_node_found": true,
+        "design_tag": "c",
+        "design_attrs": {
+          "id": "White",
+          "icon": "$bu/icon_white.png",
+          "c": "10592673",
+          "a": "0.88",
+          "b": "70.9",
+          "ct": "1.66",
+          "lId": "ClothingTopColor"
+        },
+        "exact_refs": [
+          "avatars/body/base/unisex/icon_white.png"
+        ],
+        "assets": [
+          {
+            "ref": "avatars/body/base/unisex/icon_white.png",
+            "url": "/avatar-assets/avatars/body/base/unisex/icon_white.png",
+            "exists": true,
+            "bytes": 532,
+            "option_id": "TopColorOptions",
+            "selected_id": "White",
+            "kind": "texture",
+            "existed_before_hydrate": true,
+            "hydrated": false
+          }
+        ]
+      }
+    ],
+    "OuterColorOptions": [
+      {
+        "selected_id": "Brown",
+        "design_node_found": true,
+        "design_tag": "c",
+        "design_attrs": {
+          "id": "Brown",
+          "icon": "$bu/icon_brown.png",
+          "c": "4534275",
+          "a": "0.99",
+          "b": "67.0",
+          "ct": "1.61",
+          "lId": "ClothingJacketColor"
+        },
+        "exact_refs": [
+          "avatars/body/base/unisex/icon_brown.png"
+        ],
+        "assets": [
+          {
+            "ref": "avatars/body/base/unisex/icon_brown.png",
+            "url": "/avatar-assets/avatars/body/base/unisex/icon_brown.png",
+            "exists": true,
+            "bytes": 513,
+            "option_id": "OuterColorOptions",
+            "selected_id": "Brown",
+            "kind": "texture",
+            "existed_before_hydrate": true,
+            "hydrated": false
+          }
+        ]
+      }
+    ],
+    "BottomColorOptions": [
+      {
+        "selected_id": "Black",
+        "design_node_found": true,
+        "design_tag": "c",
+        "design_attrs": {
+          "id": "Black",
+          "icon": "$bu/icon_black.png",
+          "c": "4013373",
+          "a": "1.00",
+          "b": "66.8",
+          "ct": "2.00",
+          "lId": "ClothingBottomColor"
+        },
+        "exact_refs": [
+          "avatars/body/base/unisex/icon_black.png"
+        ],
+        "assets": [
+          {
+            "ref": "avatars/body/base/unisex/icon_black.png",
+            "url": "/avatar-assets/avatars/body/base/unisex/icon_black.png",
+            "exists": true,
+            "bytes": 407,
+            "option_id": "BottomColorOptions",
+            "selected_id": "Black",
+            "kind": "texture",
+            "existed_before_hydrate": true,
+            "hydrated": false
+          }
+        ]
+      }
+    ],
+    "BeltColorOptions": [
+      {
+        "selected_id": "White",
+        "design_node_found": true,
+        "design_tag": "c",
+        "design_attrs": {
+          "id": "White",
+          "icon": "$bu/icon_white.png",
+          "c": "10592673",
+          "a": "0.88",
+          "b": "70.9",
+          "ct": "1.66",
+          "lId": "BeltColor"
+        },
+        "exact_refs": [
+          "avatars/body/base/unisex/icon_white.png"
+        ],
+        "assets": [
+          {
+            "ref": "avatars/body/base/unisex/icon_white.png",
+            "url": "/avatar-assets/avatars/body/base/unisex/icon_white.png",
+            "exists": true,
+            "bytes": 532,
+            "option_id": "BeltColorOptions",
+            "selected_id": "White",
+            "kind": "texture",
+            "existed_before_hydrate": true,
+            "hydrated": false
+          }
+        ]
+      }
+    ],
+    "NecklaceColorOptions": [
+      {
+        "selected_id": "Yellow",
+        "design_node_found": true,
+        "design_tag": "c",
+        "design_attrs": {
+          "id": "Yellow",
+          "icon": "$bu/icon_yellow.png",
+          "c": "16776960",
+          "a": "0.94",
+          "b": "42.6",
+          "ct": "0.36",
+          "lId": "NecklaceColor"
+        },
+        "exact_refs": [
+          "avatars/body/base/unisex/icon_yellow.png"
+        ],
+        "assets": [
+          {
+            "ref": "avatars/body/base/unisex/icon_yellow.png",
+            "url": "/avatar-assets/avatars/body/base/unisex/icon_yellow.png",
+            "exists": true,
+            "bytes": 548,
+            "option_id": "NecklaceColorOptions",
+            "selected_id": "Yellow",
+            "kind": "texture",
+            "existed_before_hydrate": true,
+            "hydrated": false
+          }
+        ]
+      }
+    ],
+    "GenderOptions": [
+      {
+        "selected_id": "Male",
+        "design_node_found": true,
+        "design_tag": "g",
+        "design_attrs": {
+          "id": "Male",
+          "name": "Male",
+          "icon": "$hu/gender/icon_gender_male.png"
+        },
+        "exact_refs": [
+          "avatars/head/base/unisex/gender/icon_gender_male.png"
+        ],
+        "assets": [
+          {
+            "ref": "avatars/head/base/unisex/gender/icon_gender_male.png",
+            "url": "/avatar-assets/avatars/head/base/unisex/gender/icon_gender_male.png",
+            "exists": true,
+            "bytes": 481,
+            "option_id": "GenderOptions",
+            "selected_id": "Male",
+            "kind": "texture",
+            "existed_before_hydrate": true,
+            "hydrated": false
+          }
+        ]
+      }
+    ],
+    "JSTop": [
+      {
+        "selected_id": "JumpTshirt",
+        "design_node_found": true,
+        "design_tag": "g",
+        "design_attrs": {
+          "id": "JumpTshirt",
+          "name": "Tshirt",
+          "icon": "$bm/icon_m_tshirt.png"
+        },
+        "exact_refs": [
+          "avatars/body/base/male/icon_m_tshirt.png"
+        ],
+        "assets": [
+          {
+            "ref": "avatars/body/base/male/icon_m_tshirt.png",
+            "url": "/avatar-assets/avatars/body/base/male/icon_m_tshirt.png",
+            "exists": false,
+            "option_id": "JSTop",
+            "selected_id": "JumpTshirt",
+            "kind": "texture",
+            "existed_before_hydrate": false,
+            "hydrated": false
+          }
+        ]
+      }
+    ],
+    "JSBottom": [
+      {
+        "selected_id": "JumpPants",
+        "design_node_found": true,
+        "design_tag": "g",
+        "design_attrs": {
+          "id": "JumpPants",
+          "name": "Drain pipe jeans",
+          "icon": "$bu/icon_skinny_trouser.png"
+        },
+        "exact_refs": [
+          "avatars/body/base/unisex/icon_skinny_trouser.png"
+        ],
+        "assets": [
+          {
+            "ref": "avatars/body/base/unisex/icon_skinny_trouser.png",
+            "url": "/avatar-assets/avatars/body/base/unisex/icon_skinny_trouser.png",
+            "exists": false,
+            "option_id": "JSBottom",
+            "selected_id": "JumpPants",
+            "kind": "texture",
+            "existed_before_hydrate": false,
+            "hydrated": false
+          }
+        ]
+      }
+    ],
+    "JSFeet": [
+      {
+        "selected_id": "NoShoe",
+        "design_node_found": true,
+        "design_tag": "g",
+        "design_attrs": {
+          "id": "NoShoe",
+          "name": "Bare feet",
+          "icon": "$bu/icon_shoe_foot.png"
+        },
+        "exact_refs": [
+          "avatars/body/base/unisex/icon_shoe_foot.png"
+        ],
+        "assets": [
+          {
+            "ref": "avatars/body/base/unisex/icon_shoe_foot.png",
+            "url": "/avatar-assets/avatars/body/base/unisex/icon_shoe_foot.png",
+            "exists": false,
+            "option_id": "JSFeet",
+            "selected_id": "NoShoe",
+            "kind": "texture",
+            "existed_before_hydrate": false,
+            "hydrated": false
+          }
+        ]
+      }
+    ],
+    "BodySkin": [
+      {
+        "selected_id": "Arms",
+        "design_node_found": true,
+        "design_tag": "g",
+        "design_attrs": {
+          "id": "Arms"
+        },
+        "exact_refs": [],
+        "assets": []
+      },
+      {
+        "selected_id": "Legs",
+        "design_node_found": true,
+        "design_tag": "g",
+        "design_attrs": {
+          "id": "Legs"
+        },
+        "exact_refs": [],
+        "assets": []
+      },
+      {
+        "selected_id": "Torso",
+        "design_node_found": true,
+        "design_tag": "g",
+        "design_attrs": {
+          "id": "Torso"
+        },
+        "exact_refs": [],
+        "assets": []
+      }
+    ],
+    "FaceAOptions": [
+      {
+        "selected_id": "FaceAnimeOne",
+        "design_node_found": true,
+        "design_tag": "target",
+        "design_attrs": {
+          "id": "FaceAnimeOne",
+          "name": "Anime",
+          "icon": "$hm/faces/icon_anime.png",
+          "mId": "Face",
+          "s": "$hm/faces/f_anime.o3d",
+          "i": "0",
+          "w": "0.5"
+        },
+        "exact_refs": [
+          "avatars/head/base/male/faces/f_anime.o3d",
+          "avatars/head/base/male/faces/icon_anime.png"
+        ],
+        "assets": [
+          {
+            "ref": "avatars/head/base/male/faces/f_anime.o3d",
+            "url": "/avatar-assets/avatars/head/base/male/faces/f_anime.o3d",
+            "exists": true,
+            "bytes": 86237,
+            "option_id": "FaceAOptions",
+            "selected_id": "FaceAnimeOne",
+            "kind": "mesh",
+            "existed_before_hydrate": true,
+            "hydrated": false,
+            "topology": [
+              {
+                "name": "face_M_anime",
+                "vertex_count": 362,
+                "face_count": 676,
+                "uv_count": 362,
+                "topology_hash": "9a1b4c213c30dc37cc5b34d14f080db18e7ca0f08c1f85dcd13990fc399292c5"
+              }
+            ]
+          },
+          {
+            "ref": "avatars/head/base/male/faces/icon_anime.png",
+            "url": "/avatar-assets/avatars/head/base/male/faces/icon_anime.png",
+            "exists": true,
+            "bytes": 1022,
+            "option_id": "FaceAOptions",
+            "selected_id": "FaceAnimeOne",
+            "kind": "texture",
+            "existed_before_hydrate": true,
+            "hydrated": false
+          }
+        ]
+      }
+    ],
+    "FaceBOptions": [
+      {
+        "selected_id": "FaceAnimeTwo",
+        "design_node_found": true,
+        "design_tag": "target",
+        "design_attrs": {
+          "id": "FaceAnimeTwo",
+          "name": "Anime",
+          "icon": "$hm/faces/icon_anime.png",
+          "mId": "Face",
+          "s": "$hm/faces/f_anime.o3d",
+          "i": "1",
+          "w": "0.5"
+        },
+        "exact_refs": [
+          "avatars/head/base/male/faces/f_anime.o3d",
+          "avatars/head/base/male/faces/icon_anime.png"
+        ],
+        "assets": [
+          {
+            "ref": "avatars/head/base/male/faces/f_anime.o3d",
+            "url": "/avatar-assets/avatars/head/base/male/faces/f_anime.o3d",
+            "exists": true,
+            "bytes": 86237,
+            "option_id": "FaceBOptions",
+            "selected_id": "FaceAnimeTwo",
+            "kind": "mesh",
+            "existed_before_hydrate": true,
+            "hydrated": false,
+            "topology": [
+              {
+                "name": "face_M_anime",
+                "vertex_count": 362,
+                "face_count": 676,
+                "uv_count": 362,
+                "topology_hash": "9a1b4c213c30dc37cc5b34d14f080db18e7ca0f08c1f85dcd13990fc399292c5"
+              }
+            ]
+          },
+          {
+            "ref": "avatars/head/base/male/faces/icon_anime.png",
+            "url": "/avatar-assets/avatars/head/base/male/faces/icon_anime.png",
+            "exists": true,
+            "bytes": 1022,
+            "option_id": "FaceBOptions",
+            "selected_id": "FaceAnimeTwo",
+            "kind": "texture",
+            "existed_before_hydrate": true,
+            "hydrated": false
+          }
+        ]
+      }
+    ],
+    "NoseAOptions": [
+      {
+        "selected_id": "NoseButtonOne",
+        "design_node_found": true,
+        "design_tag": "target",
+        "design_attrs": {
+          "id": "NoseButtonOne",
+          "name": "Button",
+          "icon": "$hu/faces/icon_nose_button.png",
+          "mId": "Face",
+          "s": "$hm/faces/f_anime.o3d",
+          "i": "2",
+          "w": "0",
+          "t": "1"
+        },
+        "exact_refs": [
+          "avatars/head/base/male/faces/f_anime.o3d",
+          "avatars/head/base/unisex/faces/icon_nose_button.png"
+        ],
+        "assets": [
+          {
+            "ref": "avatars/head/base/male/faces/f_anime.o3d",
+            "url": "/avatar-assets/avatars/head/base/male/faces/f_anime.o3d",
+            "exists": true,
+            "bytes": 86237,
+            "option_id": "NoseAOptions",
+            "selected_id": "NoseButtonOne",
+            "kind": "mesh",
+            "existed_before_hydrate": true,
+            "hydrated": false,
+            "topology": [
+              {
+                "name": "face_M_anime",
+                "vertex_count": 362,
+                "face_count": 676,
+                "uv_count": 362,
+                "topology_hash": "9a1b4c213c30dc37cc5b34d14f080db18e7ca0f08c1f85dcd13990fc399292c5"
+              }
+            ]
+          },
+          {
+            "ref": "avatars/head/base/unisex/faces/icon_nose_button.png",
+            "url": "/avatar-assets/avatars/head/base/unisex/faces/icon_nose_button.png",
+            "exists": true,
+            "bytes": 706,
+            "option_id": "NoseAOptions",
+            "selected_id": "NoseButtonOne",
+            "kind": "texture",
+            "existed_before_hydrate": true,
+            "hydrated": false
+          }
+        ]
+      }
+    ],
+    "NoseBOptions": [
+      {
+        "selected_id": "NoseFlatTwo",
+        "design_node_found": true,
+        "design_tag": "target",
+        "design_attrs": {
+          "id": "NoseFlatTwo",
+          "name": "Flat",
+          "icon": "$hu/faces/icon_nose_flat.png",
+          "mId": "Face",
+          "s": "$hm/faces/n_01_flatwide.o3d",
+          "i": "3",
+          "w": "0.5",
+          "t": "1"
+        },
+        "exact_refs": [
+          "avatars/head/base/male/faces/n_01_flatwide.o3d",
+          "avatars/head/base/unisex/faces/icon_nose_flat.png"
+        ],
+        "assets": [
+          {
+            "ref": "avatars/head/base/male/faces/n_01_flatwide.o3d",
+            "url": "/avatar-assets/avatars/head/base/male/faces/n_01_flatwide.o3d",
+            "exists": true,
+            "bytes": 86239,
+            "option_id": "NoseBOptions",
+            "selected_id": "NoseFlatTwo",
+            "kind": "mesh",
+            "existed_before_hydrate": true,
+            "hydrated": false,
+            "topology": [
+              {
+                "name": "basenose_01_flatwide",
+                "vertex_count": 362,
+                "face_count": 676,
+                "uv_count": 362,
+                "topology_hash": "9a1b4c213c30dc37cc5b34d14f080db18e7ca0f08c1f85dcd13990fc399292c5"
+              }
+            ]
+          },
+          {
+            "ref": "avatars/head/base/unisex/faces/icon_nose_flat.png",
+            "url": "/avatar-assets/avatars/head/base/unisex/faces/icon_nose_flat.png",
+            "exists": true,
+            "bytes": 981,
+            "option_id": "NoseBOptions",
+            "selected_id": "NoseFlatTwo",
+            "kind": "texture",
+            "existed_before_hydrate": true,
+            "hydrated": false
+          }
+        ]
+      }
+    ],
+    "EyeOptions": [
+      {
+        "selected_id": "EyesStandardThinReal",
+        "design_node_found": true,
+        "design_tag": "g",
+        "design_attrs": {
+          "id": "EyesStandardThinReal",
+          "name": "Thin",
+          "icon": "$hm/eyes/icons_m_eye_thin.png"
+        },
+        "exact_refs": [
+          "avatars/head/base/male/eyes/icons_m_eye_thin.png"
+        ],
+        "assets": [
+          {
+            "ref": "avatars/head/base/male/eyes/icons_m_eye_thin.png",
+            "url": "/avatar-assets/avatars/head/base/male/eyes/icons_m_eye_thin.png",
+            "exists": true,
+            "bytes": 1951,
+            "option_id": "EyeOptions",
+            "selected_id": "EyesStandardThinReal",
+            "kind": "texture",
+            "existed_before_hydrate": true,
+            "hydrated": false
+          }
+        ]
+      }
+    ],
+    "HairstyleOptions": [
+      {
+        "selected_id": "HairSpikeyUp",
+        "design_node_found": true,
+        "design_tag": "g",
+        "design_attrs": {
+          "id": "HairSpikeyUp",
+          "name": "Spikey",
+          "icon": "$hm/hair/icon_mhair_spikey.png"
+        },
+        "exact_refs": [
+          "avatars/head/base/male/hair/hair_spikey.o3d",
+          "avatars/head/base/male/hair/ht_spikey_shadow.png",
+          "avatars/head/base/male/hair/icon_mhair_spikey.png"
+        ],
+        "assets": [
+          {
+            "ref": "avatars/head/base/male/hair/hair_spikey.o3d",
+            "url": "/avatar-assets/avatars/head/base/male/hair/hair_spikey.o3d",
+            "exists": true,
+            "bytes": 104124,
+            "option_id": "HairstyleOptions",
+            "selected_id": "HairSpikeyUp",
+            "kind": "mesh",
+            "existed_before_hydrate": true,
+            "hydrated": false,
+            "topology": [
+              {
+                "name": "mhair_spikey02",
+                "vertex_count": 230,
+                "face_count": 414,
+                "uv_count": 674,
+                "topology_hash": "f9c78493d5b245861a05389a5e9bcad56ff05988ee6309e093a7d838db13ec51"
+              },
+              {
+                "name": "mhair_f_head05",
+                "vertex_count": 176,
+                "face_count": 242,
+                "uv_count": 196,
+                "topology_hash": "f01bc6daa3d3c639c0268bed559597270fa771f8ee35a10c1fdd86640764db75"
+              }
+            ]
+          },
+          {
+            "ref": "avatars/head/base/male/hair/ht_spikey_shadow.png",
+            "url": "/avatar-assets/avatars/head/base/male/hair/ht_spikey_shadow.png",
+            "exists": true,
+            "bytes": 806,
+            "option_id": "HairstyleOptions",
+            "selected_id": "HairSpikeyUp",
+            "kind": "texture",
+            "existed_before_hydrate": true,
+            "hydrated": false
+          },
+          {
+            "ref": "avatars/head/base/male/hair/icon_mhair_spikey.png",
+            "url": "/avatar-assets/avatars/head/base/male/hair/icon_mhair_spikey.png",
+            "exists": true,
+            "bytes": 2163,
+            "option_id": "HairstyleOptions",
+            "selected_id": "HairSpikeyUp",
+            "kind": "texture",
+            "existed_before_hydrate": true,
+            "hydrated": false
+          }
+        ]
+      }
+    ],
+    "MouthOptions": [
+      {
+        "selected_id": "Anim Lip01",
+        "design_node_found": true,
+        "design_tag": "g",
+        "design_attrs": {
+          "id": "Anim Lip01",
+          "name": "Flat",
+          "icon": "$hm/mouth/m_mouth_anim01_icon.png"
+        },
+        "exact_refs": [
+          "avatars/head/base/male/mouth/m_mouth_anim01_icon.png"
+        ],
+        "assets": [
+          {
+            "ref": "avatars/head/base/male/mouth/m_mouth_anim01_icon.png",
+            "url": "/avatar-assets/avatars/head/base/male/mouth/m_mouth_anim01_icon.png",
+            "exists": true,
+            "bytes": 1357,
+            "option_id": "MouthOptions",
+            "selected_id": "Anim Lip01",
+            "kind": "texture",
+            "existed_before_hydrate": true,
+            "hydrated": false
+          }
+        ]
+      }
+    ],
+    "BrowOptions": [
+      {
+        "selected_id": "Anim01",
+        "design_node_found": true,
+        "design_tag": "g",
+        "design_attrs": {
+          "id": "Anim01",
+          "name": "Cute Flat",
+          "icon": "$hu/brow/eyebrows_anim01_icon.png"
+        },
+        "exact_refs": [
+          "avatars/head/base/unisex/brow/eyebrows_anim01_icon.png"
+        ],
+        "assets": [
+          {
+            "ref": "avatars/head/base/unisex/brow/eyebrows_anim01_icon.png",
+            "url": "/avatar-assets/avatars/head/base/unisex/brow/eyebrows_anim01_icon.png",
+            "exists": true,
+            "bytes": 612,
+            "option_id": "BrowOptions",
+            "selected_id": "Anim01",
+            "kind": "texture",
+            "existed_before_hydrate": true,
+            "hydrated": false
+          }
+        ]
+      }
+    ],
+    "EyeColorOptions": [
+      {
+        "selected_id": "EyeColorBrown",
+        "design_node_found": true,
+        "design_tag": "g",
+        "design_attrs": {
+          "id": "EyeColorBrown",
+          "name": "Brown",
+          "icon": "$hu/eyes/icon_eye_col_brown.png"
+        },
+        "exact_refs": [
+          "avatars/head/base/unisex/eyes/icon_eye_col_brown.png"
+        ],
+        "assets": [
+          {
+            "ref": "avatars/head/base/unisex/eyes/icon_eye_col_brown.png",
+            "url": "/avatar-assets/avatars/head/base/unisex/eyes/icon_eye_col_brown.png",
+            "exists": true,
+            "bytes": 1232,
+            "option_id": "EyeColorOptions",
+            "selected_id": "EyeColorBrown",
+            "kind": "texture",
+            "existed_before_hydrate": true,
+            "hydrated": false
+          }
+        ]
+      }
+    ],
+    "HatColorOptions": [
+      {
+        "selected_id": "HatColorRed",
+        "design_node_found": true,
+        "design_tag": "c",
+        "design_attrs": {
+          "id": "HatColorRed",
+          "name": "Red",
+          "icon": "$hu/hat/icon_hat_col_red.png",
+          "sId": "HatBase",
+          "c": "16711682",
+          "a": "1.00",
+          "b": "10.6"
+        },
+        "exact_refs": [
+          "avatars/head/base/unisex/hat/icon_hat_col_red.png"
+        ],
+        "assets": [
+          {
+            "ref": "avatars/head/base/unisex/hat/icon_hat_col_red.png",
+            "url": "/avatar-assets/avatars/head/base/unisex/hat/icon_hat_col_red.png",
+            "exists": true,
+            "bytes": 747,
+            "option_id": "HatColorOptions",
+            "selected_id": "HatColorRed",
+            "kind": "texture",
+            "existed_before_hydrate": true,
+            "hydrated": false
+          }
+        ]
+      }
+    ],
+    "HairColorOptions": [
+      {
+        "selected_id": "HairColorBrown",
+        "design_node_found": true,
+        "design_tag": "g",
+        "design_attrs": {
+          "id": "HairColorBrown",
+          "name": "Brown",
+          "icon": "$hu/hair/icon_hair_color_brown.png"
+        },
+        "exact_refs": [
+          "avatars/head/base/unisex/hair/icon_hair_color_brown.png"
+        ],
+        "assets": [
+          {
+            "ref": "avatars/head/base/unisex/hair/icon_hair_color_brown.png",
+            "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_brown.png",
+            "exists": true,
+            "bytes": 486,
+            "option_id": "HairColorOptions",
+            "selected_id": "HairColorBrown",
+            "kind": "texture",
+            "existed_before_hydrate": true,
+            "hydrated": false
+          }
+        ]
+      }
+    ],
+    "EyebrowColorOptions": [
+      {
+        "selected_id": "EyebrowColorBlack",
+        "design_node_found": true,
+        "design_tag": "g",
+        "design_attrs": {
+          "id": "EyebrowColorBlack",
+          "name": "Black Eyebrow",
+          "icon": "$hu/icon_colour/icon_black.png"
+        },
+        "exact_refs": [
+          "avatars/head/base/unisex/icon_colour/icon_black.png"
+        ],
+        "assets": [
+          {
+            "ref": "avatars/head/base/unisex/icon_colour/icon_black.png",
+            "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_black.png",
+            "exists": true,
+            "bytes": 483,
+            "option_id": "EyebrowColorOptions",
+            "selected_id": "EyebrowColorBlack",
+            "kind": "texture",
+            "existed_before_hydrate": true,
+            "hydrated": false
+          }
+        ]
+      }
+    ],
+    "TintOptions": [
+      {
+        "selected_id": "HairTintDark",
+        "design_node_found": true,
+        "design_tag": "g",
+        "design_attrs": {
+          "id": "HairTintDark",
+          "name": "Darken",
+          "icon": "$hu/icon_colour/icon_black.png"
+        },
+        "exact_refs": [
+          "avatars/head/base/unisex/icon_colour/icon_black.png"
+        ],
+        "assets": [
+          {
+            "ref": "avatars/head/base/unisex/icon_colour/icon_black.png",
+            "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_black.png",
+            "exists": true,
+            "bytes": 483,
+            "option_id": "TintOptions",
+            "selected_id": "HairTintDark",
+            "kind": "texture",
+            "existed_before_hydrate": true,
+            "hydrated": false
+          }
+        ]
+      }
+    ],
+    "SkinColorOptions": [
+      {
+        "selected_id": "SkinColorPeach",
+        "design_node_found": true,
+        "design_tag": "c",
+        "design_attrs": {
+          "id": "SkinColorPeach",
+          "name": "Peach",
+          "icon": "$hu/skin/icon_skin_peachy.png",
+          "sId": "SkinBase",
+          "c": "16760213",
+          "a": "0.29",
+          "b": "11.7",
+          "ct": "0.33",
+          "lId": "SkinColor"
+        },
+        "exact_refs": [
+          "avatars/head/base/unisex/skin/icon_skin_peachy.png"
+        ],
+        "assets": [
+          {
+            "ref": "avatars/head/base/unisex/skin/icon_skin_peachy.png",
+            "url": "/avatar-assets/avatars/head/base/unisex/skin/icon_skin_peachy.png",
+            "exists": true,
+            "bytes": 550,
+            "option_id": "SkinColorOptions",
+            "selected_id": "SkinColorPeach",
+            "kind": "texture",
+            "existed_before_hydrate": true,
+            "hydrated": false
+          }
+        ]
+      }
+    ]
+  },
+  "head": {
+    "rigid_meshes": [
+      {
+        "option_id": "HairstyleOptions",
+        "selected_id": "HairSpikeyUp",
+        "ref": "avatars/head/base/male/hair/hair_spikey.o3d",
+        "url": "/avatar-assets/avatars/head/base/male/hair/hair_spikey.o3d",
+        "topology": [
+          {
+            "name": "mhair_spikey02",
+            "vertex_count": 230,
+            "face_count": 414,
+            "uv_count": 674,
+            "topology_hash": "f9c78493d5b245861a05389a5e9bcad56ff05988ee6309e093a7d838db13ec51"
+          },
+          {
+            "name": "mhair_f_head05",
+            "vertex_count": 176,
+            "face_count": 242,
+            "uv_count": 196,
+            "topology_hash": "f01bc6daa3d3c639c0268bed559597270fa771f8ee35a10c1fdd86640764db75"
+          }
+        ]
+      }
+    ],
+    "morph_groups": {
+      "face": {
+        "topology": [
+          {
+            "name": "face_M_anime",
+            "vertex_count": 362,
+            "face_count": 676,
+            "uv_count": 362,
+            "topology_hash": "9a1b4c213c30dc37cc5b34d14f080db18e7ca0f08c1f85dcd13990fc399292c5"
+          }
+        ],
+        "targets": [
+          {
+            "morph_group": "face",
+            "option_id": "FaceAOptions",
+            "selected_id": "FaceAnimeOne",
+            "weight": 0.58,
+            "ref": "avatars/head/base/male/faces/f_anime.o3d",
+            "url": "/avatar-assets/avatars/head/base/male/faces/f_anime.o3d",
+            "topology": [
+              {
+                "name": "face_M_anime",
+                "vertex_count": 362,
+                "face_count": 676,
+                "uv_count": 362,
+                "topology_hash": "9a1b4c213c30dc37cc5b34d14f080db18e7ca0f08c1f85dcd13990fc399292c5"
+              }
+            ],
+            "normalized_weight": 0.58
+          },
+          {
+            "morph_group": "face",
+            "option_id": "FaceBOptions",
+            "selected_id": "FaceAnimeTwo",
+            "weight": 0.42,
+            "ref": "avatars/head/base/male/faces/f_anime.o3d",
+            "url": "/avatar-assets/avatars/head/base/male/faces/f_anime.o3d",
+            "topology": [
+              {
+                "name": "face_M_anime",
+                "vertex_count": 362,
+                "face_count": 676,
+                "uv_count": 362,
+                "topology_hash": "9a1b4c213c30dc37cc5b34d14f080db18e7ca0f08c1f85dcd13990fc399292c5"
+              }
+            ],
+            "normalized_weight": 0.42
+          }
+        ],
+        "raw_weight_total": 1.0
+      },
+      "nose": {
+        "topology": [
+          {
+            "name": "face_M_anime",
+            "vertex_count": 362,
+            "face_count": 676,
+            "uv_count": 362,
+            "topology_hash": "9a1b4c213c30dc37cc5b34d14f080db18e7ca0f08c1f85dcd13990fc399292c5"
+          }
+        ],
+        "targets": [
+          {
+            "morph_group": "nose",
+            "option_id": "NoseAOptions",
+            "selected_id": "NoseButtonOne",
+            "weight": 0.85,
+            "ref": "avatars/head/base/male/faces/f_anime.o3d",
+            "url": "/avatar-assets/avatars/head/base/male/faces/f_anime.o3d",
+            "topology": [
+              {
+                "name": "face_M_anime",
+                "vertex_count": 362,
+                "face_count": 676,
+                "uv_count": 362,
+                "topology_hash": "9a1b4c213c30dc37cc5b34d14f080db18e7ca0f08c1f85dcd13990fc399292c5"
+              }
+            ],
+            "normalized_weight": 0.85
+          },
+          {
+            "morph_group": "nose",
+            "option_id": "NoseBOptions",
+            "selected_id": "NoseFlatTwo",
+            "weight": 0.15,
+            "ref": "avatars/head/base/male/faces/n_01_flatwide.o3d",
+            "url": "/avatar-assets/avatars/head/base/male/faces/n_01_flatwide.o3d",
+            "topology": [
+              {
+                "name": "basenose_01_flatwide",
+                "vertex_count": 362,
+                "face_count": 676,
+                "uv_count": 362,
+                "topology_hash": "9a1b4c213c30dc37cc5b34d14f080db18e7ca0f08c1f85dcd13990fc399292c5"
+              }
+            ],
+            "normalized_weight": 0.15
+          }
+        ],
+        "raw_weight_total": 1.0
+      }
+    },
+    "rejected_morph_targets": [],
+    "textures": [
+      {
+        "ref": "avatars/head/base/unisex/gender/icon_gender_male.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/gender/icon_gender_male.png",
+        "exists": true,
+        "bytes": 481,
+        "option_id": "GenderOptions",
+        "selected_id": "Male",
+        "kind": "texture",
+        "existed_before_hydrate": true,
+        "hydrated": false
+      },
+      {
+        "ref": "avatars/head/base/male/faces/icon_anime.png",
+        "url": "/avatar-assets/avatars/head/base/male/faces/icon_anime.png",
+        "exists": true,
+        "bytes": 1022,
+        "option_id": "FaceAOptions",
+        "selected_id": "FaceAnimeOne",
+        "kind": "texture",
+        "existed_before_hydrate": true,
+        "hydrated": false
+      },
+      {
+        "ref": "avatars/head/base/male/faces/icon_anime.png",
+        "url": "/avatar-assets/avatars/head/base/male/faces/icon_anime.png",
+        "exists": true,
+        "bytes": 1022,
+        "option_id": "FaceBOptions",
+        "selected_id": "FaceAnimeTwo",
+        "kind": "texture",
+        "existed_before_hydrate": true,
+        "hydrated": false
+      },
+      {
+        "ref": "avatars/head/base/unisex/faces/icon_nose_button.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/faces/icon_nose_button.png",
+        "exists": true,
+        "bytes": 706,
+        "option_id": "NoseAOptions",
+        "selected_id": "NoseButtonOne",
+        "kind": "texture",
+        "existed_before_hydrate": true,
+        "hydrated": false
+      },
+      {
+        "ref": "avatars/head/base/unisex/faces/icon_nose_flat.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/faces/icon_nose_flat.png",
+        "exists": true,
+        "bytes": 981,
+        "option_id": "NoseBOptions",
+        "selected_id": "NoseFlatTwo",
+        "kind": "texture",
+        "existed_before_hydrate": true,
+        "hydrated": false
+      },
+      {
+        "ref": "avatars/head/base/male/eyes/icons_m_eye_thin.png",
+        "url": "/avatar-assets/avatars/head/base/male/eyes/icons_m_eye_thin.png",
+        "exists": true,
+        "bytes": 1951,
+        "option_id": "EyeOptions",
+        "selected_id": "EyesStandardThinReal",
+        "kind": "texture",
+        "existed_before_hydrate": true,
+        "hydrated": false
+      },
+      {
+        "ref": "avatars/head/base/male/hair/ht_spikey_shadow.png",
+        "url": "/avatar-assets/avatars/head/base/male/hair/ht_spikey_shadow.png",
+        "exists": true,
+        "bytes": 806,
+        "option_id": "HairstyleOptions",
+        "selected_id": "HairSpikeyUp",
+        "kind": "texture",
+        "existed_before_hydrate": true,
+        "hydrated": false
+      },
+      {
+        "ref": "avatars/head/base/male/hair/icon_mhair_spikey.png",
+        "url": "/avatar-assets/avatars/head/base/male/hair/icon_mhair_spikey.png",
+        "exists": true,
+        "bytes": 2163,
+        "option_id": "HairstyleOptions",
+        "selected_id": "HairSpikeyUp",
+        "kind": "texture",
+        "existed_before_hydrate": true,
+        "hydrated": false
+      },
+      {
+        "ref": "avatars/head/base/male/mouth/m_mouth_anim01_icon.png",
+        "url": "/avatar-assets/avatars/head/base/male/mouth/m_mouth_anim01_icon.png",
+        "exists": true,
+        "bytes": 1357,
+        "option_id": "MouthOptions",
+        "selected_id": "Anim Lip01",
+        "kind": "texture",
+        "existed_before_hydrate": true,
+        "hydrated": false
+      },
+      {
+        "ref": "avatars/head/base/unisex/brow/eyebrows_anim01_icon.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/brow/eyebrows_anim01_icon.png",
+        "exists": true,
+        "bytes": 612,
+        "option_id": "BrowOptions",
+        "selected_id": "Anim01",
+        "kind": "texture",
+        "existed_before_hydrate": true,
+        "hydrated": false
+      },
+      {
+        "ref": "avatars/head/base/unisex/eyes/icon_eye_col_brown.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/eyes/icon_eye_col_brown.png",
+        "exists": true,
+        "bytes": 1232,
+        "option_id": "EyeColorOptions",
+        "selected_id": "EyeColorBrown",
+        "kind": "texture",
+        "existed_before_hydrate": true,
+        "hydrated": false
+      },
+      {
+        "ref": "avatars/head/base/unisex/hat/icon_hat_col_red.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hat/icon_hat_col_red.png",
+        "exists": true,
+        "bytes": 747,
+        "option_id": "HatColorOptions",
+        "selected_id": "HatColorRed",
+        "kind": "texture",
+        "existed_before_hydrate": true,
+        "hydrated": false
+      },
+      {
+        "ref": "avatars/head/base/unisex/hair/icon_hair_color_brown.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/hair/icon_hair_color_brown.png",
+        "exists": true,
+        "bytes": 486,
+        "option_id": "HairColorOptions",
+        "selected_id": "HairColorBrown",
+        "kind": "texture",
+        "existed_before_hydrate": true,
+        "hydrated": false
+      },
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_black.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_black.png",
+        "exists": true,
+        "bytes": 483,
+        "option_id": "EyebrowColorOptions",
+        "selected_id": "EyebrowColorBlack",
+        "kind": "texture",
+        "existed_before_hydrate": true,
+        "hydrated": false
+      },
+      {
+        "ref": "avatars/head/base/unisex/icon_colour/icon_black.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/icon_colour/icon_black.png",
+        "exists": true,
+        "bytes": 483,
+        "option_id": "TintOptions",
+        "selected_id": "HairTintDark",
+        "kind": "texture",
+        "existed_before_hydrate": true,
+        "hydrated": false
+      },
+      {
+        "ref": "avatars/head/base/unisex/skin/icon_skin_peachy.png",
+        "url": "/avatar-assets/avatars/head/base/unisex/skin/icon_skin_peachy.png",
+        "exists": true,
+        "bytes": 550,
+        "option_id": "SkinColorOptions",
+        "selected_id": "SkinColorPeach",
+        "kind": "texture",
+        "existed_before_hydrate": true,
+        "hydrated": false
+      }
+    ],
+    "sprite_manifest_url": "/avatar-renders/69ce4b20e57119757988a431/head-design-sprites.json"
+  },
+  "body": {
+    "textures": [
+      {
+        "ref": "avatars/body/base/unisex/icon_white.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/icon_white.png",
+        "exists": true,
+        "bytes": 532,
+        "option_id": "TopColorOptions",
+        "selected_id": "White",
+        "kind": "texture",
+        "existed_before_hydrate": true,
+        "hydrated": false
+      },
+      {
+        "ref": "avatars/body/base/unisex/icon_brown.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/icon_brown.png",
+        "exists": true,
+        "bytes": 513,
+        "option_id": "OuterColorOptions",
+        "selected_id": "Brown",
+        "kind": "texture",
+        "existed_before_hydrate": true,
+        "hydrated": false
+      },
+      {
+        "ref": "avatars/body/base/unisex/icon_black.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/icon_black.png",
+        "exists": true,
+        "bytes": 407,
+        "option_id": "BottomColorOptions",
+        "selected_id": "Black",
+        "kind": "texture",
+        "existed_before_hydrate": true,
+        "hydrated": false
+      },
+      {
+        "ref": "avatars/body/base/unisex/icon_white.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/icon_white.png",
+        "exists": true,
+        "bytes": 532,
+        "option_id": "BeltColorOptions",
+        "selected_id": "White",
+        "kind": "texture",
+        "existed_before_hydrate": true,
+        "hydrated": false
+      },
+      {
+        "ref": "avatars/body/base/unisex/icon_yellow.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/icon_yellow.png",
+        "exists": true,
+        "bytes": 548,
+        "option_id": "NecklaceColorOptions",
+        "selected_id": "Yellow",
+        "kind": "texture",
+        "existed_before_hydrate": true,
+        "hydrated": false
+      },
+      {
+        "ref": "avatars/body/base/male/icon_m_tshirt.png",
+        "url": "/avatar-assets/avatars/body/base/male/icon_m_tshirt.png",
+        "exists": false,
+        "option_id": "JSTop",
+        "selected_id": "JumpTshirt",
+        "kind": "texture",
+        "existed_before_hydrate": false,
+        "hydrated": false
+      },
+      {
+        "ref": "avatars/body/base/unisex/icon_skinny_trouser.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/icon_skinny_trouser.png",
+        "exists": false,
+        "option_id": "JSBottom",
+        "selected_id": "JumpPants",
+        "kind": "texture",
+        "existed_before_hydrate": false,
+        "hydrated": false
+      },
+      {
+        "ref": "avatars/body/base/unisex/icon_shoe_foot.png",
+        "url": "/avatar-assets/avatars/body/base/unisex/icon_shoe_foot.png",
+        "exists": false,
+        "option_id": "JSFeet",
+        "selected_id": "NoShoe",
+        "kind": "texture",
+        "existed_before_hydrate": false,
+        "hydrated": false
+      }
+    ]
+  },
+  "other_assets": [],
+  "stats": {
+    "selected_option_count": 44,
+    "selected_asset_group_count": 25,
+    "copied_asset_count": 21,
+    "missing_asset_count": 3,
+    "rigid_mesh_count": 1,
+    "accepted_morph_target_count": 4,
+    "rejected_morph_target_count": 0,
+    "head_texture_count": 16,
+    "body_texture_count": 8
+  },
+  "missing_assets": [
+    "avatars/body/base/male/icon_m_tshirt.png",
+    "avatars/body/base/unisex/icon_shoe_foot.png",
+    "avatars/body/base/unisex/icon_skinny_trouser.png"
+  ]
+}
