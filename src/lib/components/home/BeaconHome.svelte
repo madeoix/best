@@ -3,6 +3,7 @@
   import '$lib/styles/beacon.css';
 
   import { fmtDate, fmtNumber } from '$lib/beacon/format.js';
+  import { loadWorld, worldStore } from '$lib/beacon/stores/worldStore.js';
 
   import {
     beaconState,
@@ -31,6 +32,7 @@
 
   onMount(() => {
     ensureBeaconHomeLoaded();
+    loadWorld();
   });
 
   onDestroy(() => {
@@ -39,9 +41,26 @@
 
   $: state = $beaconState;
   $: counts = state.status?.counts || {};
+  $: featuredSpace =
+    $worldStore.world?.sections?.market?.[0] ||
+    $worldStore.world?.sections?.useful?.[0] ||
+    $worldStore.world?.spaces?.[0] ||
+    null;
+  $: worldImage = featuredSpace?.snapshot_url || featuredSpace?.thumb_url || '';
 </script>
 
 <section class="module home-module command-home">
+  {#if worldImage}
+    <img
+      class="command-world-backdrop"
+      src={worldImage}
+      alt=""
+      aria-hidden="true"
+      loading="eager"
+      decoding="async"
+    />
+  {/if}
+
   <section class="command-shell">
     <header class="command-topline">
       <div>
