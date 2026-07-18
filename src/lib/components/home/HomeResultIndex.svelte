@@ -122,13 +122,11 @@
             <small>{meta(item)}</small>
           </span>
 
-          {#if price}
-            <span class="command-row-price">
-              <img src="/gold32.png" alt="" />
-              <b>{price}</b>
-              <small>observed ask</small>
-            </span>
-          {/if}
+          <span class="command-row-price" class:missing={!price}>
+            <i aria-hidden="true">◉</i>
+            <b>{price || '—'}</b>
+            <small>{price ? 'observed ask' : 'no ask indexed'}</small>
+          </span>
 
           <span class="command-row-count">
             <b>{fmtNumber(item.uid_count || 0)}</b>
