@@ -955,3 +955,48 @@
     min-height: 680px;
   }
 }
+
+
+/* Live world imagery: real curated Beacon space capture, with vector scene fallback. */
+
+.command-world-backdrop {
+  position: fixed;
+  z-index: 0;
+  inset: 0 0 0 var(--client-rail);
+  width: calc(100vw - var(--client-rail));
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+  opacity: .44;
+  filter: saturate(.82) contrast(1.08) brightness(.72);
+  pointer-events: none;
+}
+
+.command-home::before {
+  content: '';
+  position: fixed;
+  z-index: 0;
+  inset: 0 0 0 var(--client-rail);
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, rgba(2, 8, 12, .92), rgba(2, 8, 12, .55) 46%, rgba(2, 8, 12, .68)),
+    linear-gradient(180deg, rgba(2, 8, 12, .50), rgba(2, 8, 12, .88));
+}
+
+.command-shell {
+  position: relative;
+  z-index: 2;
+}
+
+.command-panel {
+  background:
+    linear-gradient(135deg, rgba(14, 34, 40, .78), rgba(4, 10, 15, .90) 48%, rgba(2, 7, 11, .95));
+  backdrop-filter: blur(28px) saturate(1.12);
+}
+
+@media (max-width: 760px) {
+  .command-world-backdrop,
+  .command-home::before {
+    left: var(--client-rail);
+  }
+}
