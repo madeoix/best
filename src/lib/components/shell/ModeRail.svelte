@@ -24,12 +24,19 @@
 </script>
 
 <nav class="mode-rail" aria-label="Beacon modules">
-  {#each visibleModes as mode}
+  {#each visibleModes as mode, index}
+    {#if mode.technical && !visibleModes[index - 1]?.technical}
+      <span class="mode-group-label">Technical</span>
+    {/if}
+
     <button
       class:active={active === mode.id}
+      class:technical={mode.technical}
       on:click={() => active = mode.id}
+      title={mode.label}
     >
-      {mode.label}
+      <span class="mode-glyph" aria-hidden="true">{mode.glyph}</span>
+      <span>{mode.label}</span>
     </button>
   {/each}
 </nav>
