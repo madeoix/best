@@ -7,6 +7,7 @@
   export let selected = null;
   export let query = '';
   export let onSelect = () => {};
+  export let onInspect = () => {};
   export let onOpen = () => {};
 
   $: grouped = makeItemGroups(items);
@@ -81,7 +82,7 @@
                 class:selected={selected?.source_xml === item.source_xml}
                 on:mouseenter={() => onSelect(item)}
                 on:focus={() => onSelect(item)}
-                on:click={() => onSelect(item)}
+                on:click={() => onInspect(item)}
                 on:dblclick={() => onOpen(item)}
               >
                 <span class="command-row-visual"><SmallverseIcon {item} /></span>
@@ -112,7 +113,7 @@
           class:selected={selected?.source_xml === item.source_xml}
           on:mouseenter={() => onSelect(item)}
           on:focus={() => onSelect(item)}
-          on:click={() => onSelect(item)}
+          on:click={() => onInspect(item)}
           on:dblclick={() => onOpen(item)}
         >
           <span class="command-row-visual"><SmallverseIcon {item} /></span>
@@ -145,7 +146,7 @@
 
     <footer class="command-results-hint">
       <span>Hover to preview</span>
-      <span>Double-click to open the complete profile</span>
+      <span>Click an item to enter inspection mode</span>
     </footer>
   {/if}
 </section>
