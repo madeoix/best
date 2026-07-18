@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" role="img" aria-label="Dark Smallverse-inspired architectural interior">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07141c"/>
+      <stop offset=".48" stop-color="#0a2830"/>
+      <stop offset="1" stop-color="#02070b"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a2026"/>
+      <stop offset=".35" stop-color="#061116"/>
+      <stop offset="1" stop-color="#020407"/>
+    </linearGradient>
+    <linearGradient id="portal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#112e35"/>
+      <stop offset=".7" stop-color="#071116"/>
+      <stop offset="1" stop-color="#020609"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="#57e0d5" stop-opacity=".36"/>
+      <stop offset=".42" stop-color="#2c8c8c" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#071218" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="18"/></filter>
+    <filter id="soft"><feGaussianBlur stdDeviation="5"/></filter>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#sky)"/>
+  <ellipse cx="1420" cy="340" rx="620" ry="520" fill="url(#glow)" filter="url(#blur)"/>
+
+  <path d="M0 0h420l310 670H0z" fill="#03080c" opacity=".94"/>
+  <path d="M1920 0h-265l-330 650h595z" fill="#020609" opacity=".91"/>
+  <path d="M400 0h170l300 632H685z" fill="#0d2128" opacity=".45"/>
+  <path d="M1670 0h-110l-345 620h155z" fill="#123139" opacity=".34"/>
+
+  <path d="M760 105h780l-214 526H913z" fill="url(#portal)" stroke="#4cd8ce" stroke-opacity=".09" stroke-width="3"/>
+  <path d="M870 140h540l-150 412H978z" fill="#071319" opacity=".82"/>
+  <path d="M920 172h438l-124 338H1013z" fill="#0d2930" opacity=".48"/>
+
+  <g opacity=".55">
+    <rect x="1000" y="210" width="6" height="350" rx="3" fill="#64e6dd" transform="rotate(23 1000 210)"/>
+    <rect x="1130" y="170" width="4" height="430" rx="2" fill="#64e6dd" opacity=".62" transform="rotate(23 1130 170)"/>
+    <rect x="1280" y="138" width="3" height="470" rx="2" fill="#64e6dd" opacity=".32" transform="rotate(23 1280 138)"/>
+  </g>
+
+  <rect y="646" width="1920" height="434" fill="url(#floor)"/>
+  <path d="M0 682h1920v6H0z" fill="#66e6dd" opacity=".06"/>
+  <path d="M700 700h800l260 380H400z" fill="#0b252b" opacity=".26"/>
+  <path d="M1050 702h410l125 350H900z" fill="#4bd8ce" opacity=".035"/>
+  <path d="M1150 692h270l90 310H1050z" fill="#64e6dd" opacity=".045" filter="url(#soft)"/>
+
+  <g opacity=".3" stroke="#4cd8ce" stroke-width="2">
+    <path d="M750 770h680"/>
+    <path d="M600 850h970"/>
+    <path d="M440 960h1300"/>
+    <path d="M960 650L620 1080"/>
+    <path d="M1120 650L980 1080"/>
+    <path d="M1280 650l160 430"/>
+  </g>
+
+  <g filter="url(#soft)">
+    <rect x="1410" y="694" width="330" height="8" rx="4" fill="#7ef3e9" opacity=".54"/>
+    <rect x="1470" y="715" width="240" height="3" rx="2" fill="#7ef3e9" opacity=".18"/>
+  </g>
+
+  <rect width="1920" height="1080" fill="#02070b" opacity=".24"/>
+</svg>
