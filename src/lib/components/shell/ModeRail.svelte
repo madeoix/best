@@ -3,7 +3,7 @@
   import { modes } from '$lib/beacon/modes.js';
   import { getDesktopRuntimeInfo } from '$lib/runtime/desktopBridge.js';
 
-  export let active = 'observatory';
+  export let active = 'home';
 
   let desktop = false;
 
@@ -21,22 +21,41 @@
   });
 
   $: visibleModes = modes.filter((mode) => !mode.desktopOnly || desktop);
+  $: publicModes = visibleModes.filter((mode) => !mode.technical);
+  $: technicalModes = visibleModes.filter((mode) => mode.technical);
 </script>
 
 <nav class="mode-rail" aria-label="Beacon modules">
-  {#each visibleModes as mode, index}
-    {#if mode.technical && !visibleModes[index - 1]?.technical}
-      <span class="mode-group-label">Technical</span>
-    {/if}
+  <div class="mode-rail-primary">
+    {#each publicModes as mode}
+      <button
+        class:active={active === mode.id}
+        on:click={() => active = mode.id}
+        title={mode.label}
+        aria-label={mode.label}
+      >
+        <span class="mode-glyph" aria-hidden="true">{mode.glyph}</span>
+        <span class="mode-label">{mode.label}</span>
+      </button>
+    {/each}
+  </div>
 
-    <button
-      class:active={active === mode.id}
-      class:technical={mode.technical}
-      on:click={() => active = mode.id}
-      title={mode.label}
-    >
-      <span class="mode-glyph" aria-hidden="true">{mode.glyph}</span>
-      <span>{mode.label}</span>
-    </button>
-  {/each}
+  {#if technicalModes.length}
+    <div class="mode-rail-technical">
+      <span class="mode-group-label">Operator tools</span>
+
+      {#each technicalModes as mode}
+        <button
+          class:active={active === mode.id}
+          class:technical={mode.technical}
+          on:click={() => active = mode.id}
+          title={mode.label}
+          aria-label={mode.label}
+        >
+          <span class="mode-glyph" aria-hidden="true">{mode.glyph}</span>
+          <span class="mode-label">{mode.label}</span>
+        </button>
+      {/each}
+    </div>
+  {/if}
 </nav>
